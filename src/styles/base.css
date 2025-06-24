@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Uni Sans';
+  font-weight: 300;
+  font-display: block;
+  font-style: normal;
+  src: url('../fonts/Uni-Sans-Book.woff2') format('woff2');
+}
+
+.theme--default {
+  --color-theme: var(--color-white);
+  --coloe-theme-contrast: var(--color-black);
+}
+
+.theme--green {
+  --color-theme: var(--color-white);
+  --coloe-theme-contrast: var(--color-black);
+}
+
+.theme--blue {
+  --color-theme: var(--color-white);
+  --coloe-theme-contrast: var(--color-black);
+}
+
+.theme--red {
+  --color-theme: var(--color-white);
+  --coloe-theme-contrast: var(--color-black);
+}
+
+.theme--default {
+  --color-theme: var(--color-white);
+  --coloe-theme-contrast: var(--color-black);
+}
