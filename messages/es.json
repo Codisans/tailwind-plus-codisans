@@ -5,7 +5,19 @@
     "say-hello": "Saludanos"
   },
   "HomePage": {
+    "meta": {
+      "title": "Codisans | Software conciente. Impacto estratégico.",
+      "description": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web."
+    },
     "title": "Software conciente. Impacto estratégico.",
     "intro": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web."
+  },
+  "AboutPage": {
+    "meta": {
+      "title": "Codisans | Sobre nosotros",
+      "description": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos."
+    },
+    "title": "Sobre nosotros",
+    "intro": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos."
   }
 }

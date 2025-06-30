@@ -88,21 +88,16 @@ const dummyList = [
   }
 ]
 
-export const metadata: Metadata = {
-  description:
-    'We are a development studio working at the intersection of design and technology.',
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+
+  const t = await getTranslations({locale, namespace: 'HomePage'});
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description')
+  };
 }
-
-// export async function generateMetadata(props: {params: Promise<{locale: string}>}) {
-//   const {locale} = await props.params;
-
-//   const t = await getTranslations({locale, namespace: 'HomePage'});
-
-//   return {
-//     title: t('title')
-//   };
-// }
-
 
 export default async function Home() {
   const t = await getTranslations('HomePage');

@@ -1,21 +1,12 @@
-import { type Metadata } from 'next'
-import Image from 'next/image'
-
-import { Border } from '@/components/Border'
 import { ContactSection } from '@/components/ContactSection'
-import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
-import { GridList, GridListItem } from '@/components/GridList'
 import { PageIntro } from '@/components/PageIntro'
-import { PageLinks } from '@/components/PageLinks'
-import { SectionIntro } from '@/components/SectionIntro'
-import { StatList, StatListItem } from '@/components/StatList'
-import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
-import imageMichaelFoster from '@/images/team/michael-foster.jpg'
-import { loadArticles } from '@/lib/mdx'
+import imageNicolasCanala from '@/images/team/nico-profile.jpg'
+import imageSebastianStrand from '@/images/team/sebastian-profile.png'
+// import { loadArticles } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { TeamBlock } from '@/blocks/TeamBlock'
+import { getTranslations } from 'next-intl/server'
 
 const promoList = [
   {
@@ -36,27 +27,33 @@ const team = [
   {
     name: 'Nicolas Canala',
     role: 'Co-Founder / Backend Lead',
-    image: { src: imageLeslieAlexander },
+    image: { src: imageNicolasCanala },
   },
   {
     name: 'Sebastian Strand',
     role: 'Co-Founder / Frontend Lead',
-    image: { src: imageMichaelFoster },
+    image: { src: imageSebastianStrand },
   },
 ]
 
-export const metadata: Metadata = {
-  title: 'About Us',
-  description:
-    'We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.',
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+
+  const t = await getTranslations({locale, namespace: 'AboutPage'});
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description')
+  };
 }
 
 export default async function About() {
-  let blogArticles = (await loadArticles()).slice(0, 2)
+  // let blogArticles = (await loadArticles()).slice(0, 2)
+  const t = await getTranslations('AboutPage');
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="About us" title="Codisans was born from a shared belief: great software is both engineered and crafted.">
+      <PageIntro eyebrow={t('title')} title={t('intro')}>
         <p>
         We combine technical excellence with strategic insight to help startups and brands unlock new possibilities.
         </p>

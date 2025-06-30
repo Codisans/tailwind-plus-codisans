@@ -5,7 +5,19 @@
     "say-hello": "Say Hello"
   },
   "HomePage": {
+    "meta": {
+      "title": "Codisans | Crafted Code. Strategic Impact.",
+      "description": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
+    },
     "title": "Crafted Code. Strategic Impact.",
     "intro": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
+  },
+  "AboutPage": {
+    "meta": {
+      "title": "Codisans | About Us",
+      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+    },
+    "title": "About Us",
+    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
   }
 }
