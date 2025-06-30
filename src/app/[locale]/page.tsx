@@ -1,4 +1,6 @@
 import { type Metadata } from 'next'
+import {getTranslations} from 'next-intl/server';
+
 
 import { ContactSection } from '@/components/ContactSection'
 import { Testimonial } from '@/components/Testimonial'
@@ -12,10 +14,10 @@ import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { RootLayout } from '@/components/RootLayout'
-import { LogosBlock } from '../blocks/LogosBlock'
-import { CardsBlock } from '../blocks/CardsBlock'
-import { ListBlock } from '../blocks/ListBlock'
-import { PageHeader } from '../blocks/PageHeader'
+import { LogosBlock } from '../../blocks/LogosBlock'
+import { CardsBlock } from '../../blocks/CardsBlock'
+import { ListBlock } from '../../blocks/ListBlock'
+import { PageHeader } from '../../blocks/PageHeader'
 
 const dummyItems = [{
   name: "Laravel PHP",
@@ -91,21 +93,34 @@ export const metadata: Metadata = {
     'We are a development studio working at the intersection of design and technology.',
 }
 
+// export async function generateMetadata(props: {params: Promise<{locale: string}>}) {
+//   const {locale} = await props.params;
+
+//   const t = await getTranslations({locale, namespace: 'HomePage'});
+
+//   return {
+//     title: t('title')
+//   };
+// }
+
+
 export default async function Home() {
+  const t = await getTranslations('HomePage');
+
   return (
     <RootLayout>
-      <PageHeader title="Web development agency based in Santiago, Chile." summary="We are a web development agency working with state-of-the-art technology, crafting high-qulaity solutions for our clients." /> 
+      <PageHeader title={t('title')} summary={t('intro')} /> 
       <LogosBlock title="Some of the technologies we enjoy working with" items={dummyItems} />
+      <ListBlock eyebrow='Services' title="We specialise in crafting beautiful, high quality marketing pages." summary=" As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those." image={imageLaptop} items={dummyList} />
       <CardsBlock title="Our work" summary="We build a variety of web solutions, from simple landing pages to complex web applications." cards={workCards} />
-      <Testimonial
+      {/* <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia', logo: logoPhobiaDark }}
       >
         The team at Studio went above and beyond with our onboarding, even
         finding a way to access the user’s microphone without triggering one of
         those annoying permission dialogs.
-      </Testimonial>
-      <ListBlock eyebrow='Services' title="We specialise in crafting beautiful, high quality marketing pages." summary=" As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those." image={imageLaptop} items={dummyList} />
+      </Testimonial> */}
       <ContactSection />
     </RootLayout>
   )

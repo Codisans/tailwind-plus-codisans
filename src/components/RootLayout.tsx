@@ -8,18 +8,18 @@ import {
   useRef,
   useState,
 } from 'react'
-import Link from 'next/link'
+import {Link} from '@/i18n/navigation'
 import { usePathname } from 'next/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
-
+import { useTranslations } from 'next-intl'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
-import { Offices } from '@/components/Offices'
-import { SocialMedia } from '@/components/SocialMedia'
+// import { Offices } from '@/components/Offices'
+// import { SocialMedia } from '@/components/SocialMedia'
 
 const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -59,6 +59,7 @@ function Header({
   invert?: boolean
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
+  const t = useTranslations('Global')
 
   return (
     <Container>
@@ -81,8 +82,14 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
+          <Link className='es:hidden' href="/" locale="es">
+            ES
+          </Link>
+          <Link className='en:hidden' href="/" locale="en">
+            EN
+          </Link>
           <Button href="/contact" invert={invert}>
-            Contact us
+            {t('Contact')}
           </Button>
           <button
             ref={toggleRef}
@@ -146,10 +153,10 @@ function Navigation() {
         <NavigationItem href="/work">Our Work</NavigationItem>
         <NavigationItem href="/about">About Us</NavigationItem>
       </NavigationRow>
-      <NavigationRow>
+      {/* <NavigationRow>
         <NavigationItem href="/process">Our Process</NavigationItem>
         <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
+      </NavigationRow> */}
     </nav>
   )
 }
@@ -285,7 +292,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-neutral-50 stroke-neutral-950/5"
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-accent/5 stroke-theme-accent-950/10"
             yOffset={-96}
             interactive
           />

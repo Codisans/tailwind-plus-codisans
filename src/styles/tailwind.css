@@ -2,8 +2,12 @@
 @import './base.css';
 @import './typography.css' layer(components);
 
+@custom-variant en (html[lang=en] &);
+@custom-variant es (html[lang=es] &);
+
 @theme {
   --color-theme: var(--color-white);
+  --color-theme-accent: var(--color-orange-500);
   --color-theme-contrast: var(--color-black);
 
   --color-theme-950: var(--color-sky-950);

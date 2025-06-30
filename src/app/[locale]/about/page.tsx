@@ -125,17 +125,13 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro eyebrow="About us" title="Codisans was born from a shared belief: great software is both engineered and crafted.">
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+        We combine technical excellence with strategic insight to help startups and brands unlock new possibilities.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+          Codisans was born from a shared belief: great software is both engineered and crafted.
           </p>
           <p>
             At Studio, we’re more than just colleagues — we’re a family. This

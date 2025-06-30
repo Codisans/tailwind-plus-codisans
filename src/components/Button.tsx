@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import {Link} from '@/i18n/navigation'
 import clsx from 'clsx'
 
 type ButtonProps = {
@@ -16,10 +16,10 @@ export function Button({
 }: ButtonProps) {
   className = clsx(
     className,
-    'inline-flex rounded-full px-4 py-1.5 text-sm font-semibold transition',
+    'inline-flex cursor-pointer relative before:inset-0 before:transition-all hover:before:-inset-[0.2rem] before:border before:rounded-full before:absolute ring hover:ring-offset-1 rounded-full px-4 py-1.5 text-sm font-semibold transition',
     invert
-      ? 'bg-white text-neutral-950 hover:bg-neutral-200'
-      : 'bg-neutral-950 text-white hover:bg-neutral-800',
+      ? 'bg-white text-neutral-950 before:border-white'
+      : 'bg-neutral-950 text-white before:border-neutral-950',
   )
 
   let inner = <span className="relative top-px">{children}</span>

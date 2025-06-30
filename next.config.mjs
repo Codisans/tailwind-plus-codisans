@@ -10,9 +10,14 @@ import { remarkRehypeWrap } from 'remark-rehype-wrap'
 import remarkUnwrapImages from 'remark-unwrap-images'
 import shiki from 'shiki'
 import { unifiedConditional } from 'unified-conditional'
+import createNextIntlPlugin from 'next-intl/plugin';
+
+const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  locales: ['es', 'en'],
+  defaultLocale: 'en',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
@@ -79,5 +84,5 @@ export default async function config() {
     },
   })
 
-  return withMDX(nextConfig)
+  return withNextIntl(withMDX(nextConfig))
 }

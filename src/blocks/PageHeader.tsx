@@ -13,7 +13,7 @@ export const PageHeader = ({ title, summary }: PageHeaderProps) => {
       <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
         {title}
       </h1>
-      <p className="mt-6 text-xl text-neutral-600">
+      <p className="mt-6 text-xl text-neutral-600 max-w-lg">
         {summary}
       </p>
     </FadeIn>
