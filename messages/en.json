@@ -9,6 +9,7 @@
       "title": "Codisans | Crafted Code. Strategic Impact.",
       "description": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
     },
+    "eyebrow": "",
     "title": "Crafted Code. Strategic Impact.",
     "intro": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
   },
@@ -17,7 +18,17 @@
       "title": "Codisans | About Us",
       "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
     },
-    "title": "About Us",
+    "eyebrow": "About Us",
+    "title": "Codisans was born from a shared belief: great software is both engineered and crafted.",
     "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+  },
+  "ContactPage": {
+    "meta": {
+      "title": "Codisans | Contact Us",
+      "description": "Let’s work together. We can’t wait to hear from you."
+    },
+    "eyebrow": "Contact Us",
+    "title": "Let’s work together.",
+    "intro": "We can’t wait to hear from you."
   }
 }

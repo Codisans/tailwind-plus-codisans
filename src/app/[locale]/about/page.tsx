@@ -53,11 +53,9 @@ export default async function About() {
 
   return (
     <RootLayout>
-      <PageIntro eyebrow={t('title')} title={t('intro')}>
-        <p>
-        We combine technical excellence with strategic insight to help startups and brands unlock new possibilities.
-        </p>
-        <div className="mt-10 max-w-2xl space-y-6 text-base">
+      <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
+        <p>{t('intro')}</p>
+        {/* <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
           Codisans was born from a shared belief: great software is both engineered and crafted.
           </p>
@@ -67,7 +65,7 @@ export default async function About() {
             employees to bring their whole selves to work. In return, we just
             ask that they keep themselves there until at least 6:30pm.
           </p>
-        </div>
+        </div> */}
       </PageIntro>
       {/* <Container className="mt-16">
         <StatList>

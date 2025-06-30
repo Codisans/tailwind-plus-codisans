@@ -1,15 +1,14 @@
 import { useId } from 'react'
-import { type Metadata } from 'next'
 import {Link} from '@/i18n/navigation'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
 import { PageIntro } from '@/components/PageIntro'
 import { SocialMedia } from '@/components/SocialMedia'
 import { RootLayout } from '@/components/RootLayout'
+import { getTranslations } from 'next-intl/server'
 
 function TextInput({
   label,
@@ -129,16 +128,23 @@ function ContactDetails() {
   )
 }
 
-export const metadata: Metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
 
-export default function Contact() {
+  const t = await getTranslations({locale, namespace: 'ContactPage'});
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description')
+  };
+}
+export default async function Contact() {
+  const t = await getTranslations('ContactPage');
+
   return (
     <RootLayout>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
+        <p>{t('intro')}</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">

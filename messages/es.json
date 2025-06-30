@@ -17,7 +17,17 @@
       "title": "Codisans | Sobre nosotros",
       "description": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos."
     },
-    "title": "Sobre nosotros",
+    "eyebrow": "Sobre nosotros",
+    "title": "Codisans fue creado de la creencia compartida: el software de calidad es tanto diseñado como desarrollado.",
     "intro": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos."
+  },
+  "ContactPage": {
+    "meta": {
+      "title": "Codisans | Contacto",
+      "description": "Trabajemos juntos. No podemos esperar a escuchar de ti."
+    },
+    "eyebrow": "Contacto",
+    "title": "Trabajemos juntos.",
+    "intro": "No podemos esperar a escuchar de ti."
   }
 }
