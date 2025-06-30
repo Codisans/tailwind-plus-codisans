@@ -9,7 +9,7 @@ import {
   useState,
 } from 'react'
 import {Link} from '@/i18n/navigation'
-import { usePathname } from 'next/navigation'
+import { usePathname } from '@/i18n/navigation'
 import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
@@ -59,6 +59,7 @@ function Header({
   invert?: boolean
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
+  const pathname = usePathname()
   const t = useTranslations('Global')
 
   return (
@@ -82,10 +83,10 @@ function Header({
           />
         </Link>
         <div className="flex items-center gap-x-8">
-          <Link className='es:hidden' href="/" locale="es">
+          <Link className='es:hidden' href={pathname} locale="es">
             ES
           </Link>
-          <Link className='en:hidden' href="/" locale="en">
+          <Link className='en:hidden' href={pathname} locale="en" >
             EN
           </Link>
           <Button href="/contact" invert={invert}>
