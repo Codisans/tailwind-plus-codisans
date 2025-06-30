@@ -90,7 +90,7 @@ function Header({
             EN
           </Link>
           <Button href="/contact" invert={invert}>
-            {t('Contact')}
+            {t('contact')}
           </Button>
           <button
             ref={toggleRef}

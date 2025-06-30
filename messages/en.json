@@ -1,7 +1,8 @@
 {
   "Global": {
-    "Contact": "Contact",
-    "About": "About"
+    "contact": "Contact",
+    "about": "About",
+    "say-hello": "Say Hello"
   },
   "HomePage": {
     "title": "Crafted Code. Strategic Impact.",

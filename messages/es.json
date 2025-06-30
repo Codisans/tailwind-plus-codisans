@@ -1,7 +1,8 @@
 {
   "Global": {
-    "Contact": "Contacto",
-    "About": "Sobre nosotros"
+    "contact": "Contacto",
+    "about": "Sobre nosotros",
+    "say-hello": "Saludanos"
   },
   "HomePage": {
     "title": "Software conciente. Impacto estratégico.",
