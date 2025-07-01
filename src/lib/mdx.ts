@@ -7,9 +7,9 @@ async function loadEntries<T extends { date: string }>(
 ): Promise<Array<MDXEntry<T>>> {
   return (
     await Promise.all(
-      (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
+      (await glob('**/page.mdx', { cwd: `src/app/[locale]/${directory}` })).map(
         async (filename) => {
-          let metadata = (await import(`../app/${directory}/${filename}`))[
+          let metadata = (await import(`../app/[locale]/${directory}/${filename}`))[
             metaName
           ] as T
           return {
