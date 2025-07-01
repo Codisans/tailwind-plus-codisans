@@ -11,7 +11,8 @@
     },
     "eyebrow": "",
     "title": "Crafted Code. Strategic Impact.",
-    "intro": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
+    "intro": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website.",
+    "cta": "Let’s build something together."
   },
   "AboutPage": {
     "meta": {
@@ -30,5 +31,15 @@
     "eyebrow": "Contact Us",
     "title": "Let’s work together.",
     "intro": "We can’t wait to hear from you."
+  },
+  "ProcessPage": {
+    "meta": {
+      "title": "Codisans | Our Process",
+      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+    },
+    "eyebrow": "Our Process",
+    "title": "Our Process",
+    "intro": "During the rapidly changing times of AI, we're here to help you navigate the digital landscape. ",
+    "cta": "Let’s build something together."
   }
 }
