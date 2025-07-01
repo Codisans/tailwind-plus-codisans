@@ -1,5 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900');
+
+.lexend-300 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lexend-400 {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .typography {
-  color: var(--color-neutral-950);
+  /* color: var(--color-neutral-950); */
   font-size: var(--text-xl);
   line-height: var(--text-xl--line-height);
 

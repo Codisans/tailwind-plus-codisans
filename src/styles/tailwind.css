@@ -48,10 +48,10 @@
 
   --radius-4xl: 2.5rem;
 
-  --font-sans: Uni Sans, ui-sans-serif, system-ui, sans-serif,
+  --font-sans: "Lexend", ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-  --font-display: Uni Sans, ui-sans-serif, system-ui, sans-serif,
+  --font-display: "Lexend", ui-sans-serif, system-ui, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   --font-display-length: 2;
