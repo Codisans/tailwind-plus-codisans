@@ -22,9 +22,9 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 interface Page {
   href: string
-  date: string
   title: string
   description: string
+  blocks: unknown[]
 }
 
 function PageLink({ page }: { page: Page }) {

@@ -1,22 +1,20 @@
-import { Container } from "@/components/Container"
-import { FadeIn } from "@/components/FadeIn"
+import { Container } from '@/components/Container'
+import { FadeIn } from '@/components/FadeIn'
 
 type PageHeaderProps = {
-    title: string
-    summary: string
+  title: string
+  summary: string
 }
 
 export const PageHeader = ({ title, summary }: PageHeaderProps) => {
-    return (
+  return (
     <Container className="mt-24 sm:mt-32 md:mt-56">
-    <FadeIn className="max-w-3xl">
-      <h1 className="font-display text-5xl font-medium tracking-tight text-balance text-neutral-950 sm:text-7xl">
-        {title}
-      </h1>
-      <p className="mt-6 text-xl text-neutral-600 max-w-lg">
-        {summary}
-      </p>
-    </FadeIn>
-  </Container>
+      <FadeIn className="max-w-3xl">
+        <h1 className="font-display text-theme-950 text-balance text-5xl font-medium tracking-tight sm:text-7xl">
+          {title}
+        </h1>
+        <p className="text-theme-600 mt-6 max-w-lg text-xl">{summary}</p>
+      </FadeIn>
+    </Container>
   )
 }

@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import Image from 'next/image'
-import {Link} from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation'
 
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
@@ -30,7 +30,7 @@ function CaseStudies({
   return (
     <Container className="mt-40">
       <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+        <h2 className="font-display text-theme-950 text-2xl font-semibold">
           Case studies
         </h2>
       </FadeIn>
@@ -47,15 +47,15 @@ function CaseStudies({
                       className="h-16 w-16 flex-none"
                       unoptimized
                     />
-                    <h3 className="mt-6 text-sm font-semibold text-neutral-950 sm:mt-0 lg:mt-8">
+                    <h3 className="text-theme-950 mt-6 text-sm font-semibold sm:mt-0 lg:mt-8">
                       {caseStudy.client}
                     </h3>
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                    <p className="text-sm tracking-tight text-neutral-950 after:ml-4 after:font-semibold after:text-neutral-300 after:content-['/'] lg:mt-2 lg:after:hidden">
+                    <p className="text-theme-950 after:text-theme-300 text-sm tracking-tight after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden">
                       {caseStudy.service}
                     </p>
-                    <p className="text-sm text-neutral-950 lg:mt-2">
+                    <p className="text-theme-950 text-sm lg:mt-2">
                       <time dateTime={caseStudy.date}>
                         {formatDate(caseStudy.date)}
                       </time>
@@ -63,10 +63,10 @@ function CaseStudies({
                   </div>
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                  <p className="font-display text-4xl font-medium text-neutral-950">
+                  <p className="font-display text-theme-950 text-4xl font-medium">
                     <Link href={caseStudy.href}>{caseStudy.title}</Link>
                   </p>
-                  <div className="mt-6 space-y-6 text-base text-neutral-600">
+                  <div className="text-theme-600 mt-6 space-y-6 text-base">
                     {caseStudy.summary.map((paragraph) => (
                       <p key={paragraph}>{paragraph}</p>
                     ))}
@@ -112,7 +112,7 @@ function Clients() {
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn>
-        <h2 className="font-display text-2xl font-semibold text-neutral-950">
+        <h2 className="font-display text-theme-950 text-2xl font-semibold">
           You’re in good company
         </h2>
       </FadeIn>
@@ -125,7 +125,7 @@ function Clients() {
           {clients.map(([client, logo]) => (
             <li key={client} className="group">
               <FadeIn className="overflow-hidden">
-                <Border className="pt-12 group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px">
+                <Border className="group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px pt-12">
                   <Image src={logo} alt={client} unoptimized />
                 </Border>
               </FadeIn>

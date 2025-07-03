@@ -19,13 +19,13 @@ export function Logomark({
         height="97"
         className={clsx(
           'transition-all duration-300',
-          invert ? 'fill-white' : 'fill-neutral-950',
+          invert ? 'fill-white' : 'fill-theme-950',
           filled ? 'w-full' : 'w-0 group-hover/logo:w-full',
         )}
       />
       <use
         href={`#${id}-path`}
-        className={invert ? 'stroke-white' : 'stroke-neutral-950'}
+        className={invert ? 'stroke-white' : 'stroke-theme-950'}
         fill="none"
         strokeWidth="3"
       />
@@ -66,7 +66,7 @@ export function Logo({
         filled={filled}
       />
       {/* <path
-        className={invert ? 'fill-white' : 'fill-neutral-950'}
+        className={invert ? 'fill-white' : 'fill-theme-950'}
         d=""
       /> */}
     </svg>

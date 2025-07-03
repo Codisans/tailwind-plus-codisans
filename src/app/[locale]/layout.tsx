@@ -1,7 +1,7 @@
 import '@/styles/tailwind.css'
-import {NextIntlClientProvider, hasLocale} from 'next-intl';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
+import { NextIntlClientProvider, hasLocale } from 'next-intl'
+import { notFound } from 'next/navigation'
+import { routing } from '@/i18n/routing'
 import { type Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -13,22 +13,25 @@ export const metadata: Metadata = {
 
 export default async function LocaleLayout({
   children,
-  params
+  params,
 }: {
-  children: React.ReactNode;
-  params: Promise<{locale: string}>;
+  children: React.ReactNode
+  params: Promise<{ locale: string }>
 }) {
   // Ensure that the incoming `locale` is valid
-  const {locale} = await params;
+  const { locale } = await params
   if (!hasLocale(routing.locales, locale)) {
-    notFound();
+    notFound()
   }
- 
+
   return (
-    <html lang={locale} className="h-full bg-neutral-950 text-white text-base antialiased">
+    <html
+      lang={locale}
+      className="bg-theme-950 h-full text-base text-white antialiased"
+    >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import {Link} from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -43,15 +43,15 @@ function Navigation() {
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
         {navigation.map((section, sectionIndex) => (
           <li key={sectionIndex}>
-            <div className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+            <div className="font-display text-theme-950 text-sm font-semibold tracking-wider">
               {section.title}
             </div>
-            <ul role="list" className="mt-4 text-sm text-neutral-700">
+            <ul role="list" className="text-theme-700 mt-4 text-sm">
               {section.links.map((link, linkIndex) => (
                 <li key={linkIndex} className="mt-4">
                   <Link
                     href={link.href}
-                    className="transition hover:text-neutral-950"
+                    className="hover:text-theme-950 transition"
                   >
                     {link.title}
                   </Link>
@@ -81,10 +81,10 @@ function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 function NewsletterForm() {
   return (
     <form className="max-w-sm">
-      <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
+      <h2 className="font-display text-theme-950 text-sm font-semibold tracking-wider">
         Sign up for our newsletter
       </h2>
-      <p className="mt-4 text-sm text-neutral-700">
+      <p className="text-theme-700 mt-4 text-sm">
         Subscribe to get the latest design news, articles, resources and
         inspiration.
       </p>
@@ -94,13 +94,13 @@ function NewsletterForm() {
           placeholder="Email address"
           autoComplete="email"
           aria-label="Email address"
-          className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pr-20 pl-6 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:ring-neutral-950/5 focus:outline-hidden"
+          className="border-theme-300 text-theme-950 placeholder:text-theme-500 focus:border-theme-950 focus:ring-theme-950/5 focus:outline-hidden block w-full rounded-2xl border bg-transparent py-4 pl-6 pr-20 text-base/6 ring-4 ring-transparent transition"
         />
         <div className="absolute inset-y-1 right-1 flex justify-end">
           <button
             type="submit"
             aria-label="Submit"
-            className="flex aspect-square h-full items-center justify-center rounded-xl bg-neutral-950 text-white transition hover:bg-neutral-800"
+            className="bg-theme-950 hover:bg-theme-800 flex aspect-square h-full items-center justify-center rounded-xl text-white transition"
           >
             <ArrowIcon className="w-4" />
           </button>
@@ -115,11 +115,11 @@ export function Footer() {
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
         <Navigation />
-        <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-neutral-950/10 pt-12">
+        <div className="border-theme-950/10 mb-20 mt-24 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t pt-12">
           <Link href="/" aria-label="Home">
             <Logo className="h-8" fillOnHover />
           </Link>
-          <p className="text-sm text-neutral-700">
+          <p className="text-theme-700 text-sm">
             © CODISANS SpA. {new Date().getFullYear()}
           </p>
         </div>
