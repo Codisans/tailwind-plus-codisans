@@ -1,44 +1,57 @@
+import { type Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getArticleBySlug } from '@/lib/articles'
-import { ContactSection } from '@/components/ContactSection'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { ArticleRenderer } from '@/components/ArticleRenderer'
-import { PageLinks } from '@/components/PageLinks'
-import { RootLayout } from '@/components/RootLayout'
-import { formatDate } from '@/lib/formatDate'
-import BlogWrapper from '../BlogWrapper'
+import { loadArticle, loadArticles } from '@/lib/mdx'
+import BlogArticleWrapper from '../wrapper'
+
+export async function generateStaticParams() {
+  const articles = await loadArticles()
+  return articles.map((article) => ({
+    slug: article.href.split('/').pop(),
+  }))
+}
 
 export async function generateMetadata({
-  params,
+  params: { slug, locale },
 }: {
-  params: { slug: string }
-}) {
-  const article = await getArticleBySlug(params.slug)
-
+  params: { slug: string; locale: string }
+}): Promise<Metadata> {
+  const article = await loadArticle(slug, locale)
+  
   if (!article) {
-    return {}
+    return {
+      title: 'Article not found',
+    }
   }
 
   return {
-    title: article.title,
-    description: article.description,
+    title: article.metadata.title,
+    description: article.metadata.description,
   }
 }
 
-export default async function BlogPostPage({
-  params,
+export default async function BlogPost({
+  params: { slug, locale },
 }: {
-  params: { slug: string }
+  params: { slug: string; locale: string }
 }) {
-  const article = await getArticleBySlug(params.slug)
-
+  const article = await loadArticle(slug, locale)
+  
   if (!article) {
     notFound()
   }
-
+  
+  const { default: MDXContent } = article.component
+  
+  const articleEntry = {
+    ...article.metadata,
+    href: `/blog/${slug}`,
+    metadata: article.metadata,
+    isLocalized: true,
+  }
+  
   return (
-     <BlogWrapper article={article}>
-dlkcvjds lsk
-     </BlogWrapper>
+    <BlogArticleWrapper article={articleEntry} locale={locale}>
+      <MDXContent />
+    </BlogArticleWrapper>
+  )
 } 
