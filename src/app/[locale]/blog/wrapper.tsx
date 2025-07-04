@@ -4,7 +4,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { MDXComponents } from '@/components/MDXComponents'
 import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
-import { formatDate } from '@/lib/formatDate'
+import moment from '@/lib/moment'
 import { type Article, type MDXEntry, loadArticles } from '@/lib/mdx'
 
 export default async function BlogArticleWrapper({
@@ -33,7 +33,7 @@ export default async function BlogArticleWrapper({
               dateTime={article.date}
               className="order-first text-sm text-neutral-950"
             >
-              {formatDate(article.date)}
+              {moment(article.date).format('D MMMM YYYY')}
             </time>
             <p className="mt-6 text-sm font-semibold text-neutral-950">
               by {article.author.name}, {article.author.role}

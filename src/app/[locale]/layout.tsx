@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
 import { type Metadata } from 'next'
+import moment from '@/lib/moment'
 
 export const metadata: Metadata = {
   title: {
@@ -24,10 +25,12 @@ export default async function LocaleLayout({
     notFound()
   }
 
+  moment.locale(locale)
+
   return (
     <html
       lang={locale}
-      className="bg-theme-950 h-full text-base text-theme-950 antialiased"
+      className="h-full bg-theme-950 text-base text-theme-950 antialiased"
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

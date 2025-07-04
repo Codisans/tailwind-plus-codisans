@@ -16,7 +16,7 @@ export async function generateMetadata({
   params: { slug: string; locale: string }
 }): Promise<Metadata> {
   const article = await loadArticle(slug, locale)
-  
+
   if (!article) {
     return {
       title: 'Article not found',
@@ -35,23 +35,23 @@ export default async function BlogPost({
   params: { slug: string; locale: string }
 }) {
   const article = await loadArticle(slug, locale)
-  
+
   if (!article) {
     notFound()
   }
-  
+
   const { default: MDXContent } = article.component
-  
+
   const articleEntry = {
     ...article.metadata,
     href: `/blog/${slug}`,
     metadata: article.metadata,
     isLocalized: true,
   }
-  
+
   return (
     <BlogArticleWrapper article={articleEntry} locale={locale}>
       <MDXContent />
     </BlogArticleWrapper>
   )
-} 
+}

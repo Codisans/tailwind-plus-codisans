@@ -9,7 +9,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
-import { formatDate } from '@/lib/formatDate'
+import moment from '@/lib/moment'
 import { loadArticles } from '@/lib/mdx'
 import { getTranslations } from 'next-intl/server'
 
@@ -48,7 +48,7 @@ export default async function Blog({
                         <dt className="sr-only">Published</dt>
                         <dd className="absolute top-0 left-0 text-sm text-neutral-950 lg:static">
                           <time dateTime={article.date}>
-                            {formatDate(article.date)}
+                            {moment(article.date).format('D MMMM YYYY')}
                           </time>
                         </dd>
                         <dt className="sr-only">Author</dt>

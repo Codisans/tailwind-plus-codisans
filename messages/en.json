@@ -20,7 +20,15 @@
     "submit": "Let’s work together",
     "more-than": "More than",
     "contact-invitation": "Let’s work together",
-    "contact-form-title": "Work inquiries"
+    "contact-form-title": "Work inquiries",
+    "nicolas": {
+      "name": "Nicolas Canala",
+      "role": "Co-founder / Backend Lead"
+    },
+    "sebastian": {
+      "name": "Sebastian Strand",
+      "role": "Co-founder / Frontend Lead"
+    }
   },
   "HomePage": {
     "meta": {
