@@ -1,4 +1,4 @@
-import {Link} from '@/i18n/navigation'
+import { Link } from '@/i18n/navigation'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -27,7 +27,7 @@ const navigation = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
-      // { title: 'Blog', href: '/blog' },
+      { title: 'Blog', href: '/blog' },
       { title: 'Contact us', href: '/contact' },
     ],
   },
