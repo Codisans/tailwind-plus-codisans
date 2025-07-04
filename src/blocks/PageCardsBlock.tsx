@@ -24,6 +24,7 @@ interface Page {
   href: string
   title: string
   description: string
+  date?: string
   blocks: unknown[]
 }
 
@@ -34,19 +35,21 @@ function PageLink({ page }: { page: Page }) {
         position="left"
         className="relative flex flex-col items-start pl-8"
       >
-        <h3 className="text-theme-950 mt-6 text-base font-semibold">
+        <h3 className="mt-6 text-base font-semibold text-theme-950">
           {page.title}
         </h3>
-        <time
-          dateTime={page.date}
-          className="text-theme-600 order-first text-sm"
-        >
-          {formatDate(page.date)}
-        </time>
-        <p className="text-theme-600 mt-2.5 text-base">{page.description}</p>
+        {page.date && (
+          <time
+            dateTime={page.date}
+            className="order-first text-sm text-theme-600"
+          >
+            {formatDate(page.date)}
+          </time>
+        )}
+        <p className="mt-2.5 text-base text-theme-600">{page.description}</p>
         <Link
           href={page.href}
-          className="text-theme-950 hover:text-theme-700 mt-6 flex gap-x-3 text-base font-semibold transition"
+          className="mt-6 flex gap-x-3 text-base font-semibold text-theme-950 transition hover:text-theme-700"
           aria-label={`Read more: ${page.title}`}
         >
           Read more
@@ -71,9 +74,9 @@ export function PageLinks({
 }) {
   return (
     <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40', className)}>
-      <div className="rounded-t-4xl bg-linear-to-b from-theme-50 absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-theme-50">
         <GridPattern
-          className="mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-100 stroke-theme-950/5 absolute inset-0 h-full w-full"
+          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-100 stroke-theme-950/5"
           yOffset={-270}
         />
       </div>
