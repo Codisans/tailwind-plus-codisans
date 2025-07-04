@@ -7,17 +7,17 @@
 
 @theme {
   --color-theme-accent: var(--color-orange-500);
-  --color-theme-950: var(--color-slate-950);
-  --color-theme-900: var(--color-slate-900);
-  --color-theme-800: var(--color-slate-800);
-  --color-theme-700: var(--color-slate-700);
-  --color-theme-600: var(--color-slate-600);
-  --color-theme-500: var(--color-slate-500);
-  --color-theme-400: var(--color-slate-400);
-  --color-theme-300: var(--color-slate-300);
-  --color-theme-200: var(--color-slate-200);
-  --color-theme-100: var(--color-slate-100);
-  --color-theme-50: var(--color-slate-50);
+  --color-theme-950: var(--color-neutral-950);
+  --color-theme-900: var(--color-neutral-900);
+  --color-theme-800: var(--color-neutral-800);
+  --color-theme-700: var(--color-neutral-700);
+  --color-theme-600: var(--color-neutral-600);
+  --color-theme-500: var(--color-neutral-500);
+  --color-theme-400: var(--color-neutral-400);
+  --color-theme-300: var(--color-neutral-300);
+  --color-theme-200: var(--color-neutral-200);
+  --color-theme-100: var(--color-neutral-100);
+  --color-theme-50: var(--color-neutral-50);
   /* --color-white: var(--color-white); */
 
   --text-*: initial;
@@ -53,4 +53,7 @@
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
   --font-display-length: 2;
+
+  --shadow-hidden: 0 0 0 0 var(--color-theme-400);
+  --shadow-button: 0 0 0 0.2em var(--color-theme-400);
 }
