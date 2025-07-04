@@ -17,9 +17,9 @@
     "phone": "Phone",
     "message": "Message",
     "budget": "Budget",
-    "submit": "Let’s work together",
+    "submit": "Let's work together",
     "more-than": "More than",
-    "contact-invitation": "Let’s work together",
+    "contact-invitation": "Let's work together",
     "contact-form-title": "Work inquiries",
     "nicolas": {
       "name": "Nicolas Canala",
@@ -33,12 +33,12 @@
   "HomePage": {
     "meta": {
       "title": "Codisans | Crafted Code. Strategic Impact.",
-      "description": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
+      "description": "Tired of devs who don't understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
     },
     "eyebrow": "",
     "title": "Crafted Code. Strategic Impact.",
-    "intro": "Tired of devs who don’t understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website.",
-    "cta": "Let’s build something together."
+    "intro": "Tired of devs who don't understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website.",
+    "cta": "Let's build something together."
   },
   "AboutPage": {
     "meta": {
@@ -57,7 +57,7 @@
     "eyebrow": "Our Process",
     "title": "Our Process",
     "intro": "During the rapidly changing times of AI, we're here to help you navigate the digital landscape. ",
-    "cta": "Let’s build something together."
+    "cta": "Let's build something together."
   },
   "BlogPage": {
     "meta": {
@@ -71,11 +71,20 @@
   "ContactPage": {
     "meta": {
       "title": "Codisans | Contact Us",
-      "description": "Let’s work together. We can’t wait to hear from you."
+      "description": "Let's work together. We can't wait to hear from you."
     },
     "eyebrow": "Contact Us",
-    "title": "Let’s work together.",
-    "intro": "We can’t wait to hear from you.",
+    "title": "Let's work together.",
+    "intro": "We can't wait to hear from you.",
     "form-title": "Work inquiries"
+  },
+  "WorkPage": {
+    "meta": {
+      "title": "Codisans | Our Work",
+      "description": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
+    },
+    "eyebrow": "Our work",
+    "title": "Proven solutions for real-world problems.",
+    "intro": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we've been developing for the past decade."
   }
 }

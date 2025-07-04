@@ -1,0 +1,63 @@
+import logo from '@/images/clients/family-fund/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageDebraFiscal from './debra-fiscal.jpg'
+
+export const caseStudy = {
+  client: 'FamilyFund',
+  title: 'Sáltate el banco, pide prestado a quienes confías',
+  description:
+    'FamilyFund es una plataforma de crowdfunding para amigos y familia. Permite a los usuarios obtener préstamos personales de su red sin una institución financiera tradicional.',
+  summary: [
+    'FamilyFund es una plataforma de crowdfunding para amigos y familia. Permite a los usuarios obtener préstamos personales de su red sin una institución financiera tradicional.',
+    'Desarrollamos un CMS personalizado para impulsar su blog y optimizamos su sitio para posicionarse mejor en las palabras clave "Gary Vee" y "Tony Robbins".',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Desarrollo web, CMS',
+  testimonial: {
+    author: { name: 'Debra Fiscal', role: 'CEO de FamilyFund' },
+    content:
+      'Trabajando con Studio, nos sentimos más como un socio que como un cliente. Realmente sintonizaron con nuestra misión de cambiar la forma en que las personas convencen a sus padres de retirar sus pensiones.',
+  },
+}
+
+export const metadata = {
+  title: `Caso de Estudio ${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Resumen
+
+Después de haber escrito uno de los posts más compartidos en medium.com ("_Cómo retirar el 401K de tu papá sin que se dé cuenta_"), FamilyFund nos contactó buscando construir su propio blog.
+
+El blog ayudaría a atraer nuevo tráfico a su sitio y serviría como un centro de recursos para usuarios que ya estaban tratando de explotar su red por dinero. Debido a que era tan importante que fueran dueños de su propio contenido, decidimos que una solución on-prem sería la mejor.
+
+Instalamos 24 Mac Minis comprados en craigslist en el closet de almacenamiento de su oficina. Una máquina se usaría para el servidor web y otra para el servidor de build. Las otras 22 eran para redundancia, y para hacer DDOS a squarespace.com cada pocos meses para mantenerlos alerta.
+
+Para optimizar su tráfico de búsqueda usamos una técnica innovadora. Cada post tiene un post sombra visible solo para los web crawlers que es alguna variación de _"Gary Vee está buscando invertir en nuevos fundadores"_. Como abejas a la miel.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Frontend (Next.js)</TagListItem>
+  <TagListItem>CMS personalizado</TagListItem>
+  <TagListItem>SEO</TagListItem>
+  <TagListItem>Infraestructura</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Debra Fiscal', role: 'CEO de FamilyFund' }}
+  image={{ src: imageDebraFiscal }}
+>
+  Trabajando con Studio, nos sentimos más como un socio que como un cliente. 
+  Realmente sintonizaron con nuestra misión de cambiar la forma en que las personas 
+  convencen a sus padres de retirar sus pensiones.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="25%" label="Menos tráfico" />
+  <StatListItem value="10x" label="Tiempos de carga" />
+  <StatListItem value="15%" label="Mayores costos de infra" />
+  <StatListItem value="$1.2M" label="Honorarios legales" />
+</StatList>

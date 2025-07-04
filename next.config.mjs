@@ -16,8 +16,6 @@ const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  locales: ['es', 'en'],
-  defaultLocale: 'en',
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
 }
 
@@ -73,11 +71,11 @@ export default async function config() {
           unifiedConditional,
           [
             new RegExp(`^${escapeStringRegexp(path.resolve('src/app/blog'))}`),
-            [[remarkMDXLayout, '@/app/blog/wrapper', 'article']],
+            [[remarkMDXLayout, '@/app/[locale]/blog/wrapper', 'article']],
           ],
           [
             new RegExp(`^${escapeStringRegexp(path.resolve('src/app/work'))}`),
-            [[remarkMDXLayout, '@/app/work/wrapper', 'caseStudy']],
+            [[remarkMDXLayout, '@/app/[locale]/work/wrapper', 'caseStudy']],
           ],
         ],
       ],

@@ -65,5 +65,14 @@
     "eyebrow": "Blog",
     "title": "Algunas de nuestras perspectivas",
     "intro": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
+  },
+  "WorkPage": {
+    "meta": {
+      "title": "Codisans | Nuestro Trabajo",
+      "description": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes."
+    },
+    "eyebrow": "Nuestro trabajo",
+    "title": "Soluciones probadas para problemas del mundo real.",
+    "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
   }
 }

@@ -8,16 +8,18 @@ import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
-export default async function CaseStudyLayout({
+export default async function CaseStudyWrapper({
   caseStudy,
   children,
+  locale = 'en',
 }: {
   caseStudy: MDXEntry<CaseStudy>
   children: React.ReactNode
+  locale?: string
 }) {
-  let allCaseStudies = await loadCaseStudies()
+  let allCaseStudies = await loadCaseStudies(locale)
   let moreCaseStudies = allCaseStudies
-    .filter(({ metadata }) => metadata !== caseStudy)
+    .filter(({ metadata }) => metadata.title !== caseStudy.title)
     .slice(0, 2)
 
   return (
@@ -29,15 +31,15 @@ export default async function CaseStudyLayout({
           </PageIntro>
 
           <FadeIn>
-            <div className="border-theme-200 mt-24 border-t bg-white/50 sm:mt-32 lg:mt-40">
+            <div className="mt-24 border-t border-theme-200 bg-white/50 sm:mt-32 lg:mt-40">
               <Container>
                 <div className="mx-auto max-w-5xl">
-                  <dl className="text-theme-950 -mx-6 grid grid-cols-1 text-sm sm:mx-0 sm:grid-cols-3">
-                    <div className="border-theme-200 border-t px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
+                  <dl className="-mx-6 grid grid-cols-1 text-sm text-theme-950 sm:mx-0 sm:grid-cols-3">
+                    <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">Client</dt>
                       <dd>{caseStudy.client}</dd>
                     </div>
-                    <div className="border-theme-200 border-t px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
+                    <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">Year</dt>
                       <dd>
                         <time dateTime={caseStudy.date.split('-')[0]}>
@@ -45,7 +47,7 @@ export default async function CaseStudyLayout({
                         </time>
                       </dd>
                     </div>
-                    <div className="border-theme-200 border-t px-6 py-4 first:border-t-0 sm:border-l sm:border-t-0">
+                    <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">Service</dt>
                       <dd>{caseStudy.service}</dd>
                     </div>
@@ -54,8 +56,8 @@ export default async function CaseStudyLayout({
               </Container>
             </div>
 
-            <div className="border-theme-200 bg-theme-100 border-y">
-              <div className="max-w-304 bg-theme-200 -my-px mx-auto">
+            <div className="border-y border-theme-200 bg-theme-100">
+              <div className="mx-auto -my-px max-w-304 bg-theme-200">
                 <GrayscaleTransitionImage
                   {...caseStudy.image}
                   quality={90}

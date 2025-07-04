@@ -106,3 +106,28 @@ export async function loadArticle(slug: string, locale: string = 'en'): Promise<
     }
   }
 }
+
+export async function loadCaseStudy(slug: string, locale: string = 'en'): Promise<{
+  component: any
+  metadata: CaseStudy
+} | null> {
+  try {
+    // Try loading locale-specific version first
+    const localeSpecific = await import(`../app/[locale]/work/${slug}/page.${locale}.mdx`)
+    return {
+      component: localeSpecific,
+      metadata: localeSpecific.caseStudy
+    }
+  } catch {
+    try {
+      // Fall back to default version
+      const defaultVersion = await import(`../app/[locale]/work/${slug}/page.mdx`)
+      return {
+        component: defaultVersion,
+        metadata: defaultVersion.caseStudy
+      }
+    } catch {
+      return null
+    }
+  }
+}

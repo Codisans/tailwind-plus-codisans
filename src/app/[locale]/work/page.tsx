@@ -1,4 +1,3 @@
-import { type Metadata } from 'next'
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
 
@@ -10,17 +9,12 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { Testimonial } from '@/components/Testimonial'
-import logoBrightPath from '@/images/clients/bright-path/logo-dark.svg'
-import logoFamilyFund from '@/images/clients/family-fund/logo-dark.svg'
-import logoGreenLife from '@/images/clients/green-life/logo-dark.svg'
-import logoHomeWork from '@/images/clients/home-work/logo-dark.svg'
 import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
-import logoNorthAdventures from '@/images/clients/north-adventures/logo-dark.svg'
-import logoPhobia from '@/images/clients/phobia/logo-dark.svg'
-import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
+import { Clients } from '@/components/Clients'
+import { getTranslations } from 'next-intl/server'
 
 function CaseStudies({
   caseStudies,
@@ -30,7 +24,7 @@ function CaseStudies({
   return (
     <Container className="mt-40">
       <FadeIn>
-        <h2 className="font-display text-theme-950 text-2xl font-semibold">
+        <h2 className="font-display text-2xl font-semibold text-theme-950">
           Case studies
         </h2>
       </FadeIn>
@@ -47,15 +41,15 @@ function CaseStudies({
                       className="h-16 w-16 flex-none"
                       unoptimized
                     />
-                    <h3 className="text-theme-950 mt-6 text-sm font-semibold sm:mt-0 lg:mt-8">
+                    <h3 className="mt-6 text-sm font-semibold text-theme-950 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
                     </h3>
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
-                    <p className="text-theme-950 after:text-theme-300 text-sm tracking-tight after:ml-4 after:font-semibold after:content-['/'] lg:mt-2 lg:after:hidden">
+                    <p className="text-sm tracking-tight text-theme-950 after:ml-4 after:font-semibold after:text-theme-300 after:content-['/'] lg:mt-2 lg:after:hidden">
                       {caseStudy.service}
                     </p>
-                    <p className="text-theme-950 text-sm lg:mt-2">
+                    <p className="text-sm text-theme-950 lg:mt-2">
                       <time dateTime={caseStudy.date}>
                         {formatDate(caseStudy.date)}
                       </time>
@@ -63,10 +57,10 @@ function CaseStudies({
                   </div>
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
-                  <p className="font-display text-theme-950 text-4xl font-medium">
+                  <p className="font-display text-4xl font-medium text-theme-950">
                     <Link href={caseStudy.href}>{caseStudy.title}</Link>
                   </p>
-                  <div className="text-theme-600 mt-6 space-y-6 text-base">
+                  <div className="mt-6 space-y-6 text-base text-theme-600">
                     {caseStudy.summary.map((paragraph) => (
                       <p key={paragraph}>{paragraph}</p>
                     ))}
@@ -97,66 +91,33 @@ function CaseStudies({
   )
 }
 
-const clients = [
-  ['Phobia', logoPhobia],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
-]
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
 
-function Clients() {
-  return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
-      <FadeIn>
-        <h2 className="font-display text-theme-950 text-2xl font-semibold">
-          You’re in good company
-        </h2>
-      </FadeIn>
-      <FadeInStagger className="mt-10" faster>
-        <Border as={FadeIn} />
-        <ul
-          role="list"
-          className="grid grid-cols-2 gap-x-8 gap-y-12 sm:grid-cols-3 lg:grid-cols-4"
-        >
-          {clients.map(([client, logo]) => (
-            <li key={client} className="group">
-              <FadeIn className="overflow-hidden">
-                <Border className="group-nth-[-n+2]:-mt-px sm:group-nth-3:-mt-px lg:group-nth-4:-mt-px pt-12">
-                  <Image src={logo} alt={client} unoptimized />
-                </Border>
-              </FadeIn>
-            </li>
-          ))}
-        </ul>
-      </FadeInStagger>
-    </Container>
-  )
+  const t = await getTranslations({ locale, namespace: 'WorkPage' })
+
+  return {
+    title: t('meta.title'),
+    description: t('meta.description'),
+  }
 }
 
-export const metadata: Metadata = {
-  title: 'Our Work',
-  description:
-    'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
-}
-
-export default async function Work() {
-  let caseStudies = await loadCaseStudies()
+export default async function Work({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations('WorkPage')
+  let caseStudies = await loadCaseStudies(locale)
 
   return (
     <RootLayout>
-      <PageIntro
-        eyebrow="Our work"
-        title="Proven solutions for real-world problems."
-      >
-        <p>
-          We believe in efficiency and maximizing our resources to provide the
-          best value to our clients. The primary way we do that is by re-using
-          the same five projects we’ve been developing for the past decade.
-        </p>
+      <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
+        <p>{t('intro')}</p>
       </PageIntro>
 
       <CaseStudies caseStudies={caseStudies} />

@@ -1,0 +1,63 @@
+import logo from '@/images/clients/phobia/logomark-dark.svg'
+import imageHero from './hero.jpg'
+import imageJennyWilson from './jenny-wilson.jpg'
+
+export const caseStudy = {
+  client: 'Phobia',
+  title: 'Supera tus miedos, encuentra tu pareja',
+  description:
+    'Encuentra el amor frente al miedo — Phobia es una app de citas que conecta usuarios basándose en sus fobias mutuas para que puedan asustarse juntos.',
+  summary: [
+    'Encuentra el amor frente al miedo — Phobia es una app de citas que conecta usuarios basándose en sus fobias mutuas para que puedan asustarse juntos.',
+    'Trabajamos con Phobia para desarrollar un nuevo flujo de onboarding. Al usuario se le muestran imágenes de fobias comunes y usamos el micrófono para detectar cuáles les dan más miedo, alimentando los resultados al algoritmo de matching.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2022-06',
+  service: 'Desarrollo de app',
+  testimonial: {
+    author: { name: 'Jenny Wilson', role: 'CPO de Phobia' },
+    content:
+      'El equipo de Studio fue más allá de lo esperado con nuestro onboarding, incluso encontrando una forma de acceder al micrófono del usuario sin activar esos molestos diálogos de permisos.',
+  },
+}
+
+export const metadata = {
+  title: `Caso de Estudio ${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Resumen
+
+Al notar una rotación de usuarios increíblemente alta, el equipo de Phobia llegó a la conclusión de que, en lugar de tener una idea de negocio fundamentalmente defectuosa, necesitaban mejorar su proceso de onboarding.
+
+Anteriormente los usuarios seleccionaban sus fobias manualmente, pero esto llevaba a que algunos usuarios seleccionaran cosas que en realidad no les daban miedo para aumentar sus matches.
+
+Para combatir esto, desarrollamos un sistema que muestra una presentación de fobias comunes durante el onboarding. Luego usamos malware para acceder subrepticiamente a su micrófono y detectar cuando tienen reacciones audibles. Medimos el tono, volumen y duración de sus gritos y alimentamos esa información al algoritmo de matching.
+
+La siguiente fase es una versión VR del flujo de onboarding donde los usuarios son sometidos a una serie de escenarios que determinarán sus miedos. Actualmente estamos desarrollando el primer escenario, título de trabajo: "Saltando de un avión lleno de arañas".
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Android</TagListItem>
+  <TagListItem>iOS</TagListItem>
+  <TagListItem>Malware</TagListItem>
+  <TagListItem>VR</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Jenny Wilson', role: 'CPO de Phobia' }}
+  image={{ src: imageJennyWilson }}
+>
+  El equipo de Studio fue más allá de lo esperado con nuestro onboarding, incluso 
+  encontrando una forma de acceder al micrófono del usuario sin activar esos molestos 
+  diálogos de permisos.
+</Blockquote>
+
+<StatList>
+  <StatListItem value="20%" label="Tasa de abandono" />
+  <StatListItem value="5x" label="Desinstalaciones" />
+  <StatListItem value="2.3" label="Calificación en app store" />
+  <StatListItem value="8" label="Demandas pendientes" />
+</StatList>
