@@ -1,169 +1,19 @@
 'use client'
 
-import {
-  createContext,
-  useContext,
-  useEffect,
-  useId,
-  useRef,
-  useState,
-} from 'react'
-import { Link } from '@/i18n/navigation'
+import { createContext, useEffect, useId, useRef, useState } from 'react'
 import { usePathname } from '@/i18n/navigation'
-import clsx from 'clsx'
 import { motion, MotionConfig, useReducedMotion } from 'framer-motion'
-import { useTranslations } from 'next-intl'
-import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
-import { Logo } from '@/components/Logo'
-// import { Offices } from '@/components/Offices'
+import { Header, Navigation } from '@/components/Header'
+import { Emails } from './Emails'
 // import { SocialMedia } from '@/components/SocialMedia'
 
-const RootLayoutContext = createContext<{
+export const RootLayoutContext = createContext<{
   logoHovered: boolean
   setLogoHovered: React.Dispatch<React.SetStateAction<boolean>>
 } | null>(null)
-
-function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path d="m5.636 4.223 14.142 14.142-1.414 1.414L4.222 5.637z" />
-      <path d="M4.222 18.363 18.364 4.22l1.414 1.414L5.636 19.777z" />
-    </svg>
-  )
-}
-
-function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path d="M2 6h20v2H2zM2 16h20v2H2z" />
-    </svg>
-  )
-}
-
-function Header({
-  panelId,
-  icon: Icon,
-  expanded,
-  onToggle,
-  toggleRef,
-  invert = false,
-}: {
-  panelId: string
-  icon: React.ComponentType<{ className?: string }>
-  expanded: boolean
-  onToggle: () => void
-  toggleRef: React.RefObject<HTMLButtonElement>
-  invert?: boolean
-}) {
-  let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
-  const pathname = usePathname()
-  const t = useTranslations('Global')
-
-  return (
-    <Container>
-      <div className="flex items-center justify-between">
-        <Link
-          href="/"
-          aria-label="Home"
-          onMouseEnter={() => setLogoHovered(true)}
-          onMouseLeave={() => setLogoHovered(false)}
-        >
-          <Logo
-            className="mb-1 h-6 sm:mb-2 sm:h-8"
-            invert={invert}
-            filled={logoHovered}
-          />
-        </Link>
-        <div className="flex items-center gap-x-4 sm:gap-x-8">
-          <Link
-            className={`es:hidden pt-1 ${invert ? 'text-white' : 'text-theme-950'}`}
-            href={pathname}
-            locale="es"
-          >
-            ES
-          </Link>
-          <Link
-            className={`en:hidden pt-1 ${invert ? 'text-white' : 'text-theme-950'}`}
-            href={pathname}
-            locale="en"
-          >
-            EN
-          </Link>
-          <Button href="/contact" invert={invert}>
-            {t('contact')}
-          </Button>
-          <button
-            ref={toggleRef}
-            type="button"
-            onClick={onToggle}
-            aria-expanded={expanded ? 'true' : 'false'}
-            aria-controls={panelId}
-            className={clsx(
-              'group -m-2.5 rounded-full p-2.5 transition',
-              invert ? 'hover:bg-white/10' : 'hover:bg-theme-950/10',
-            )}
-            aria-label="Toggle navigation"
-          >
-            <Icon
-              className={clsx(
-                'h-6 w-6',
-                invert
-                  ? 'group-hover:fill-theme-200 fill-white'
-                  : 'fill-theme-950 group-hover:fill-theme-700',
-              )}
-            />
-          </button>
-        </div>
-      </div>
-    </Container>
-  )
-}
-
-function NavigationRow({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="sm:bg-theme-950 even:mt-px">
-      <Container>
-        <div className="grid grid-cols-1 sm:grid-cols-2">{children}</div>
-      </Container>
-    </div>
-  )
-}
-
-function NavigationItem({
-  href,
-  children,
-}: {
-  href: string
-  children: React.ReactNode
-}) {
-  return (
-    <Link
-      href={href}
-      className="bg-theme-950 sm:even:border-theme-800 group relative isolate -mx-6 px-6 py-10 even:mt-px sm:mx-0 sm:px-0 sm:py-16 sm:odd:pr-16 sm:even:mt-0 sm:even:border-l sm:even:pl-16"
-    >
-      {children}
-      <span className="bg-theme-900 absolute inset-y-0 -z-10 w-screen opacity-0 transition group-odd:right-0 group-even:left-0 group-hover:opacity-100" />
-    </Link>
-  )
-}
-
-function Navigation() {
-  return (
-    <nav className="font-display mt-px text-5xl font-medium tracking-tight text-white">
-      <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
-      </NavigationRow>
-      <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
-      </NavigationRow>
-    </nav>
-  )
-}
 
 function RootLayoutInner({ children }: { children: React.ReactNode }) {
   let panelId = useId()
@@ -200,7 +50,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
     >
       <header>
         <div
-          className="absolute left-0 right-0 top-2 z-40 pt-14"
+          className="absolute top-2 right-0 left-0 z-40 pt-14"
           aria-hidden={expanded ? 'true' : undefined}
           // @ts-ignore (https://github.com/facebook/react/issues/17157)
           inert={expanded ? '' : undefined}
@@ -224,13 +74,13 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           layout
           id={panelId}
           style={{ height: expanded ? 'auto' : '0.5rem' }}
-          className="bg-theme-950 relative z-50 overflow-hidden pt-2"
+          className="relative z-50 overflow-hidden bg-theme-950 pt-2"
           aria-hidden={expanded ? undefined : 'true'}
           // @ts-ignore (https://github.com/facebook/react/issues/17157)
           inert={expanded ? undefined : ''}
         >
           <motion.div layout className="bg-theme-800">
-            <div ref={navRef} className="bg-theme-950 pb-16 pt-14">
+            <div ref={navRef} className="bg-theme-950 pt-14 pb-16">
               <Header
                 invert
                 panelId={panelId}
@@ -247,32 +97,10 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
               />
             </div>
             <Navigation />
-            <div className="bg-theme-950 before:bg-theme-800 relative before:absolute before:inset-x-0 before:top-0 before:h-px">
+            <div className="relative bg-theme-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-theme-800">
               <Container>
-                <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:pt-16">
-                  <div>
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Email us
-                    </h2>
-                    <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-                      {[
-                        ['Nicolas', 'nico@codisans.com'],
-                        ['Sebastian', 'sebastian@codisans.com'],
-                      ].map(([label, email]) => (
-                        <div key={email}>
-                          <dt className="font-semibold text-white">{label}</dt>
-                          <dd>
-                            <Link
-                              href={`mailto:${email}`}
-                              className="text-theme-200 text-2xl hover:text-white"
-                            >
-                              {email}
-                            </Link>
-                          </dd>
-                        </div>
-                      ))}
-                    </dl>
-                  </div>
+                <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:pt-16">
+                  <Emails invert />
                   {/* <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
                       Follow us
@@ -296,7 +124,7 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-accent/5 stroke-theme-accent-950/10 absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full"
+            className="stroke-theme-accent-950/10 absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-accent/5"
             yOffset={-96}
             interactive
           />
@@ -318,5 +146,22 @@ export function RootLayout({ children }: { children: React.ReactNode }) {
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
       <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
     </RootLayoutContext.Provider>
+  )
+}
+
+function XIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="m5.636 4.223 14.142 14.142-1.414 1.414L4.222 5.637z" />
+      <path d="M4.222 18.363 18.364 4.22l1.414 1.414L5.636 19.777z" />
+    </svg>
+  )
+}
+
+function MenuIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M2 6h20v2H2zM2 16h20v2H2z" />
+    </svg>
   )
 }

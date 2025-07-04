@@ -1,5 +1,5 @@
 import { Link } from '@/i18n/navigation'
-import clsx from 'clsx'
+import { getTranslations } from 'next-intl/server'
 
 function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -31,36 +31,34 @@ export const socialMediaProfiles = [
   { title: 'GitHub', href: 'https://github.com', icon: GitHubIcon },
 ]
 
-export function SocialMedia({
-  className,
+export async function SocialMedia({
   invert = false,
+  ...props
 }: {
-  className?: string
   invert?: boolean
-}) {
+} & React.ComponentPropsWithoutRef<'div'>) {
+  const t = await getTranslations('Global')
   return (
-    <ul
-      role="list"
-      className={clsx(
-        'flex gap-x-10',
-        invert ? 'text-white' : 'text-theme-950',
-        className,
-      )}
-    >
-      {socialMediaProfiles.map((socialMediaProfile) => (
-        <li key={socialMediaProfile.title}>
-          <Link
-            href={socialMediaProfile.href}
-            aria-label={socialMediaProfile.title}
-            className={clsx(
-              'transition',
-              invert ? 'hover:text-theme-200' : 'hover:text-theme-700',
-            )}
-          >
-            <socialMediaProfile.icon className="h-6 w-6 fill-current" />
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div {...props}>
+      <h2 className="font-display text-base font-semibold text-theme-950">
+        {t('follow-us')}
+      </h2>
+      <ul
+        role="list"
+        className={`flex gap-x-10 ${invert ? 'text-white' : 'text-theme-950'}`}
+      >
+        {socialMediaProfiles.map((socialMediaProfile) => (
+          <li key={socialMediaProfile.title}>
+            <Link
+              href={socialMediaProfile.href}
+              aria-label={socialMediaProfile.title}
+              className={`transition ${invert ? 'hover:text-theme-200' : 'hover:text-theme-700'}`}
+            >
+              <socialMediaProfile.icon className="h-6 w-6 fill-current" />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }

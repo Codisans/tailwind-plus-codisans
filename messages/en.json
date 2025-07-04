@@ -1,26 +1,26 @@
 {
-  "BlogPosts": {
-    "meta": {
-      "title": "Codisans | Blog",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
-    },
-    "eyebrow": "Blog",
-    "title": "Some of our takes.",
-    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
-  },
-  "BlogPage": {
-    "meta": {
-      "title": "Codisans | Blog",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
-    },
-    "eyebrow": "Blog",
-    "title": "Some of our takes.",
-    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
-  },
   "Global": {
-    "contact": "Contact",
     "about": "About",
-    "say-hello": "Say Hello"
+    "contact": "Contact",
+    "contact-us": "Contact Us",
+    "about-us": "About Us",
+    "our-work": "Our Work",
+    "our-process": "Our Process",
+    "blog": "Blog",
+    "contact-cta": "Say hello",
+    "emails-heading": "Email us",
+    "follow-us": "Follow us",
+    "contact-message": "Tell us about your project",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "phone": "Phone",
+    "message": "Message",
+    "budget": "Budget",
+    "submit": "Let’s work together",
+    "more-than": "More than",
+    "contact-invitation": "Let’s work together",
+    "contact-form-title": "Work inquiries"
   },
   "HomePage": {
     "meta": {
@@ -41,15 +41,6 @@
     "title": "Codisans was born from a shared belief: great software is both engineered and crafted.",
     "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
   },
-  "ContactPage": {
-    "meta": {
-      "title": "Codisans | Contact Us",
-      "description": "Let’s work together. We can’t wait to hear from you."
-    },
-    "eyebrow": "Contact Us",
-    "title": "Let’s work together.",
-    "intro": "We can’t wait to hear from you."
-  },
   "ProcessPage": {
     "meta": {
       "title": "Codisans | Our Process",
@@ -59,5 +50,24 @@
     "title": "Our Process",
     "intro": "During the rapidly changing times of AI, we're here to help you navigate the digital landscape. ",
     "cta": "Let’s build something together."
+  },
+  "BlogPage": {
+    "meta": {
+      "title": "Codisans | Blog",
+      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+    },
+    "eyebrow": "Blog",
+    "title": "Some of our takes.",
+    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+  },
+  "ContactPage": {
+    "meta": {
+      "title": "Codisans | Contact Us",
+      "description": "Let’s work together. We can’t wait to hear from you."
+    },
+    "eyebrow": "Contact Us",
+    "title": "Let’s work together.",
+    "intro": "We can’t wait to hear from you.",
+    "form-title": "Work inquiries"
   }
 }

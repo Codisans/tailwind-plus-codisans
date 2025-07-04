@@ -11,6 +11,7 @@ import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
+import { getTranslations } from 'next-intl/server'
 
 export const metadata: Metadata = {
   title: 'Blog',
@@ -23,15 +24,13 @@ export default async function Blog({
 }: {
   params: { locale: string }
 }) {
+  const t = await getTranslations('BlogPage')
   let articles = await loadArticles(locale)
 
   return (
     <RootLayout>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
-        <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
-        </p>
+      <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
+        <p>{t('intro')}</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">

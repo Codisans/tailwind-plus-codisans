@@ -27,7 +27,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className="bg-theme-950 h-full text-base text-white antialiased"
+      className="bg-theme-950 h-full text-base text-theme-950 antialiased"
     >
       <body className="flex min-h-full flex-col">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
