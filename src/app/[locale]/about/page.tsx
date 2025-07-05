@@ -7,19 +7,23 @@ import { RootLayout } from '@/components/RootLayout'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { TeamBlock } from '@/blocks/TeamBlock'
 import { getTranslations } from 'next-intl/server'
+import { Technologies } from '@/blocks/Technologies'
 
 const promoList = [
   {
     heading: 'Loyalty',
-    description: 'Our team has been with us since the beginning because none of them are allowed to have LinkedIn profiles.',
+    description:
+      'Our team has been with us since the beginning because none of them are allowed to have LinkedIn profiles.',
   },
   {
     heading: 'Trust',
-    description: 'We don’t care when our team works just as long as they are working every waking second.',
+    description:
+      'We don’t care when our team works just as long as they are working every waking second.',
   },
   {
     heading: 'Compassion',
-    description: 'You never know what someone is going through at home and we make sure to never find out.',
+    description:
+      'You never know what someone is going through at home and we make sure to never find out.',
   },
 ]
 
@@ -36,20 +40,24 @@ const team = [
   },
 ]
 
-export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
-  const {locale} = await params;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>
+}) {
+  const { locale } = await params
 
-  const t = await getTranslations({locale, namespace: 'AboutPage'});
+  const t = await getTranslations({ locale, namespace: 'AboutPage' })
 
   return {
     title: t('meta.title'),
-    description: t('meta.description')
-  };
+    description: t('meta.description'),
+  }
 }
 
 export default async function About() {
   // let blogArticles = (await loadArticles()).slice(0, 2)
-  const t = await getTranslations('AboutPage');
+  const t = await getTranslations('AboutPage')
 
   return (
     <RootLayout>
@@ -75,9 +83,17 @@ export default async function About() {
         </StatList>
       </Container> */}
 
-      <PromoListBlock eyebrow="Our culture" title="Balance your passion with your passion for life." description="We are a group of like-minded people who share the same core values." items={promoList} invert={true} />
+      <PromoListBlock
+        eyebrow="Our culture"
+        title="Balance your passion with your passion for life."
+        description="We are a group of like-minded people who share the same core values."
+        items={promoList}
+        invert={true}
+      />
 
       <TeamBlock title="Team" team={team} />
+
+      <Technologies title="Some of the technologies we enjoy working with" />
 
       <ContactSection />
     </RootLayout>
