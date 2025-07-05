@@ -1,26 +1,38 @@
 {
   "Global": {
     "about": "About",
-    "contact": "Contact",
-    "contact-us": "Contact Us",
     "about-us": "About Us",
-    "our-work": "Our Work",
-    "our-process": "Our Process",
-    "blog": "Blog",
+    "blog": "Blog", 
+    "budget": "Budget",
+    "case-study": "Case study",
+    "case-studies": "Case studies",
+    "case-studies-summary": "We build a variety of web solutions, from simple landing pages to complex web applications.",
+    "company": "Company",
+    "connect": "Connect",
+    "contact": "Contact",
     "contact-cta": "Say hello",
+    "contact-form-title": "Work inquiries",
+    "contact-invitation": "Let's work together",
+    "contact-message": "Tell us about your project",
+    "contact-us": "Contact Us",
+    "email": "Email",
     "emails-heading": "Email us",
     "follow-us": "Follow us",
-    "contact-message": "Tell us about your project",
-    "name": "Name",
-    "email": "Email",
-    "company": "Company",
-    "phone": "Phone",
     "message": "Message",
-    "budget": "Budget",
-    "submit": "Let's work together",
     "more-than": "More than",
-    "contact-invitation": "Let's work together",
-    "contact-form-title": "Work inquiries",
+    "name": "Name",
+    "our-process": "Our Process",
+    "process": "Process",
+    "work": "Work",
+    "our-work": "Our Work",
+    "phone": "Phone",
+    "see-all": "See all",
+    "services": "Services",
+    "services-title": "We specialise in crafting beautiful, high quality marketing pages.",
+    "services-summary": "As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those.",
+    "submit": "Let's work together",
+    "technologies": "Technologies",
+    "technologies-title": "Some of the technologies we enjoy working with",
     "nicolas": {
       "name": "Nicolas Canala",
       "role": "Co-founder / Backend Lead"
@@ -38,7 +50,36 @@
     "eyebrow": "",
     "title": "Crafted Code. Strategic Impact.",
     "intro": "Tired of devs who don't understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website.",
-    "cta": "Let's build something together."
+    "cta": "Let's build something together.",
+    "pain-point": "This is some text about client painpoints. This sparks curiosity and makes them want to know more.",
+    "services": {
+      "eyebrow": "Services",
+      "title": "We specialise in crafting beautiful, high quality marketing pages.",
+      "summary": "As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those.",
+      "web-development": {
+        "title": "Web Development",
+        "description": "We build custom websites and web applications that are tailored to your business needs. We use the latest technologies to ensure that your website is fast, secure, and easy to use."
+      },
+      "ai-automation": {
+        "title": "AI Automation",
+        "description": "We automate your business processes using AI. We use the latest technologies to ensure that your AI automation is fast, secure, and easy to use."
+      },
+      "e-commerce": {
+        "title": "E-Commerce",
+        "description": "We are at the forefront of modern e-commerce development. Which mainly means adding your logo to the Shopify store template we’ve used for the past six years."
+      },
+      "custom-content-management": {
+        "title": "Custom Content Management",
+        "description": "We build custom content management systems that are tailored to your business needs. We use the latest technologies to ensure that your content management system is fast, secure, and easy to use."
+      }
+    },
+    "case-studies": {
+      "title": "Proven solutions for real-world problems.",
+      "summary": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we've been developing for the past decade."
+    },
+    "technologies": {
+      "title": "Some of the technologies we enjoy working with"
+    }
   },
   "AboutPage": {
     "meta": {

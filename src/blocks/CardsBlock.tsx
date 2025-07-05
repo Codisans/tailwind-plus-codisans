@@ -5,17 +5,19 @@ import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { SectionIntro } from '@/components/SectionIntro'
 
-type CardsBlockProps = {
+export type Card = {
+  type: string
+  title: string
+  link: string
+  date: string
+  image: string
+  description: string
+}
+
+export type CardsBlockProps = {
   title: string
   summary: string
-  cards: {
-    link: string
-    date: string
-    title: string
-    image: string
-    description: string
-    type: string
-  }[]
+  cards: Card[]
 }
 export const CardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
   return (
@@ -27,7 +29,7 @@ export const CardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           {cards.map((card, index) => (
             <FadeIn key={index} className="flex">
-              <article className="ring-theme-950/5 hover:bg-theme-50 relative flex w-full flex-col rounded-3xl p-6 ring-1 transition sm:p-8">
+              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 sm:p-8">
                 <h3>
                   <Link href={card.link}>
                     <span className="absolute inset-0 rounded-3xl" />
@@ -39,7 +41,7 @@ export const CardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
                     />
                   </Link>
                 </h3>
-                <p className="text-theme-950 mt-6 flex gap-x-2 text-sm">
+                <p className="mt-6 flex gap-x-2 text-sm text-theme-950">
                   <time
                     dateTime={card.date.split('-')[0]}
                     className="font-semibold"
@@ -52,10 +54,10 @@ export const CardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
 
                   {card.type && <span>{card.type}</span>}
                 </p>
-                <p className="font-display text-theme-950 mt-6 text-2xl font-semibold">
+                <p className="mt-6 font-display text-2xl font-semibold text-theme-950">
                   {card.title}
                 </p>
-                <p className="text-theme-600 mt-4 text-base">
+                <p className="mt-4 text-base text-theme-600">
                   {card.description}
                 </p>
               </article>

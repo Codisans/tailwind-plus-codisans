@@ -1,26 +1,37 @@
 {
   "Global": {
     "about": "Nosotros",
-    "contact": "Contacto",
-    "contact-us": "Contacto",
     "about-us": "Nosotros",
-    "our-work": "Proyectos",
-    "our-process": "Proceso",
     "blog": "Blog",
+    "budget": "Presupuesto",
+    "case-study": "Proyecto",
+    "case-studies": "Proyectos",
+    "company": "Empresa",
+    "connect": "Conectate",
+    "contact": "Contacto",
     "contact-cta": "Escribenos",
+    "contact-form-title": "Trabajemos juntos",
+    "contact-invitation": "Trabajemos juntos",
+    "contact-message": "No podemos esperar a escuchar de ti.",
+    "contact-us": "Contacto",
+    "email": "Correo electrónico",
     "emails-heading": "Correo electrónico",
     "follow-us": "Síguenos",
-    "contact-message": "No podemos esperar a escuchar de ti.",
-    "name": "Nombre",
-    "email": "Correo electrónico",
-    "company": "Empresa",
-    "phone": "Teléfono",
     "message": "Mensaje",
-    "budget": "Presupuesto",
-    "submit": "Trabajemos juntos",
     "more-than": "Más de",
-    "contact-invitation": "Trabajemos juntos",
-    "contact-form-title": "Trabajemos juntos",
+    "name": "Nombre",
+    "our-process": "Proceso",
+    "process": "Proceso",
+    "work": "Trabajo",
+    "our-work": "Proyectos",
+    "phone": "Teléfono",
+    "see-all": "Ver todos",
+    "services": "Servicios",
+    "services-title": "Nos especializamos en crear páginas de marketing de alta calidad.",
+    "services-summary": "Como siempre, las oportunidades que involucran darme dinero para reutilizar proyectos antiguos — podemos crear un número infinito de esos.",
+    "submit": "Trabajemos juntos",
+    "technologies": "Tecnologías",
+    "technologies-title": "Algunas de las tecnologías con las que trabajamos",
     "nicolas": {
       "name": "Nicolas Canala",
       "role": "Co-fundador / Ingeniero Backend"
@@ -36,7 +47,33 @@
       "description": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web."
     },
     "title": "Software conciente. Impacto estratégico.",
-    "intro": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web."
+    "intro": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web.",
+    "pain-point": "Este es un texto sobre los puntos de dolor de los clientes. Esto genera curiosidad y hace que quieran saber más.",
+    "services": {
+      "eyebrow": "Servicios",
+      "title": "Nos especializamos en crear páginas de marketing de alta calidad.",
+      "summary": "Como siempre, las oportunidades que involucran darme dinero para reutilizar proyectos antiguos — podemos crear un número infinito de esos.",
+      "web-development": {
+        "title": "Desarrollo Web",
+        "description": "Creamos sitios web y aplicaciones web personalizadas que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu sitio web sea rápido, seguro y fácil de usar."
+      },
+      "ai-automation": {
+        "title": "Integraciones de IA",
+        "description": "Automatizamos tus procesos de negocio usando IA. Usamos las últimas tecnologías para asegurar que tu automatización de IA sea rápida, segura y fácil de usar."
+      },
+      "e-commerce": {
+        "title": "E-Commerce",
+        "description": "Estamos a la vanguardia del desarrollo de e-commerce moderno. Lo que significa principalmente agregar tu logo al template de Shopify que hemos estado usando durante los últimos seis años."
+      },
+      "custom-content-management": {
+        "title": "CMS Personalizados",
+        "description": "Creamos sistemas de gestión de contenido personalizados que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu sistema de gestión de contenido sea rápido, seguro y fácil de usar."
+      }
+    },
+    "case-studies": {
+      "title": "Soluciones probadas para problemas del mundo real.",
+      "summary": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
+    }
   },
   "AboutPage": {
     "meta": {
