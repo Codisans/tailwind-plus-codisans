@@ -75,7 +75,7 @@ export const Technologies = ({
               unoptimized
             />
           </FadeIn>
-          <Link href={item.link} className="absolute inset-0">
+          <Link href={item.link} target="_blank" className="absolute inset-0">
             <span className="sr-only">{item.name}</span>
           </Link>
         </li>
