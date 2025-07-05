@@ -88,6 +88,16 @@
     },
     "eyebrow": "About Us",
     "title": "Codisans was born from a shared belief: great software is both engineered and crafted.",
+    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.",
+    "technologies-title": "Some of the technologies we enjoy working with"
+  },
+  "CulturePage": {
+    "meta": {
+      "title": "Codisans | Culture",
+      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+    },
+    "eyebrow": "Culture",
+    "title": "Culture",
     "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
   },
   "ProcessPage": {

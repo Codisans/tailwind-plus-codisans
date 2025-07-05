@@ -93,8 +93,7 @@ export default async function About() {
 
       <TeamBlock title="Team" team={team} />
 
-      <Technologies title="Some of the technologies we enjoy working with" />
-
+      <Technologies title={t('technologies-title')} />
       <ContactSection />
     </RootLayout>
   )
