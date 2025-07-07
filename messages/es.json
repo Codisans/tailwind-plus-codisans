@@ -112,5 +112,45 @@
     "eyebrow": "Nuestro trabajo",
     "title": "Soluciones probadas para problemas del mundo real.",
     "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
+  },
+  "ProcessPage": {
+    "meta": {
+      "title": "Codisans | Proceso",
+      "description": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes."
+    },
+    "eyebrow": "Proceso",
+    "title": "Proceso",
+    "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes.",
+    "steps": {
+      "discover": {
+        "title": "Descubrir",
+        "description": "Trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, nos integramos en sus operaciones diarias para comprender lo que hace que su negocio funcione."
+      },
+      "build": {
+        "title": "Construir",
+        "description": "Basado en la fase de descubrimiento, desarrollamos un plan integral para cada producto y comenzamos a trabajar hacia la entrega. El plan de ruta es un enredo técnico intrincado diseñado para arrastrar la entrega."
+      },
+      "deliver": {
+        "title": "Entregar",
+        "description": "Alrededor de la mitad de la fase de construcción, empujamos cada proyecto fuera en 6 semanas debido a un cambio en los requisitos. Esto nos permite aumentar el presupuesto una vez más antes del lanzamiento."
+      }
+    },
+    "values": {
+      "eyebrow": "Valores",
+      "title": "Balanceando confiabilidad e innovación",
+      "description": "Nos esforzamos por mantenernos en la vanguardia de las tendencias y tecnologías emergentes, mientras completamente ignoramos y bifurcamos ese viejo proyecto Rails con el que nos sentimos cómodos. Nos mantenemos fieles a nuestros valores para justificar esa decisión.",
+      "value-1": {
+        "title": "Meticuloso",
+        "description": "Nos esforzamos por ser meticulosos en nuestro enfoque para cada proyecto. Tomamos el tiempo para entender las necesidades y objetivos del cliente, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+      },
+      "value-2": {
+        "title": "Colaborativo",
+        "description": "Nos esforzamos por ser colaborativos en nuestro enfoque para cada proyecto. Trabajamos estrechamente con el cliente para entender sus necesidades y objetivos, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+      },
+      "value-3": {
+        "title": "Innovador",
+        "description": "Nos esforzamos por ser innovadores en nuestro enfoque para cada proyecto. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
+      }
+  }
   }
 }

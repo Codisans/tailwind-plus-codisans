@@ -67,7 +67,7 @@ export const Technologies = ({
           className="group/stamp pointer-events-auto relative mt-8"
           key={item.name}
         >
-          <FadeIn className="overflow-hidden px-2 py-4">
+          <FadeIn className="overflow-hidden px-2 py-4 md:px-5">
             <Image
               className="size-10 object-contain brightness-0 transition duration-300 ease-out group-hover/stamp:!opacity-100 group-hover/stamp:brightness-100 group-hover/stamps:opacity-60"
               src={item.logo}

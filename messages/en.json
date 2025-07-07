@@ -108,7 +108,38 @@
     "eyebrow": "Our Process",
     "title": "Our Process",
     "intro": "During the rapidly changing times of AI, we're here to help you navigate the digital landscape. ",
-    "cta": "Let's build something together."
+    "cta": "Let's build something together.",
+    "steps": {
+      "discover": {
+        "title": "Discover",
+        "description": "We work closely with our clients to understand their needs and goals, embedding ourselves in their every day operations to understand what makes their business tick."
+      },
+      "build": {
+        "title": "Build",
+        "description": "Based off of the discovery phase, we develop a comprehensive roadmap for each product and start working towards delivery. The roadmap is an intricately tangled mess of technical nonsense designed to drag the delivery."
+      },
+      "deliver": {
+        "title": "Deliver",
+        "description": "About halfway through the Build phase, we push each project out by 6 weeks due to a change in requirements. This allows us to increase the budget a final time before launch."
+      }
+    },
+    "values": {
+      "eyebrow": "Values",
+      "title": "Balancing reliability and innovation",
+      "description": "We strive to stay at the forefront of emerging trends and technologies, while completely ignoring them and forking that old Rails project we feel comfortable using. We stand by our core values to justify that decision.",
+      "value-1": {
+        "title": "Meticulous",
+        "description": "We are meticulous in our approach to every project. We take the time to understand the client's needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
+      },
+      "value-2": {
+        "title": "Collaborative",
+        "description": "We are collaborative in our approach to every project. We work closely with the client to understand their needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
+      },
+      "value-3": {
+        "title": "Innovative",
+        "description": "We are innovative in our approach to every project. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
+      }
+    }
   },
   "BlogPage": {
     "meta": {
