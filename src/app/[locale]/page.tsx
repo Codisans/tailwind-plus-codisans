@@ -38,8 +38,8 @@ export default async function Home({
       description: t('HomePage.services.web-development.description'),
     },
     {
-      title: t('HomePage.services.ai-automation.title'),
-      description: t('HomePage.services.ai-automation.description'),
+      title: t('HomePage.services.ai-solutions.title'),
+      description: t('HomePage.services.ai-solutions.description'),
     },
     {
       title: t('HomePage.services.e-commerce.title'),

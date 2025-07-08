@@ -57,9 +57,9 @@
         "title": "Desarrollo Web",
         "description": "Creamos sitios web y aplicaciones web personalizadas que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu sitio web sea rápido, seguro y fácil de usar."
       },
-      "ai-automation": {
-        "title": "Integraciones de IA",
-        "description": "Automatizamos tus procesos de negocio usando IA. Usamos las últimas tecnologías para asegurar que tu automatización de IA sea rápida, segura y fácil de usar."
+      "ai-solutions": {
+        "title": "Soluciones de IA",
+        "description": "Creamos soluciones de IA que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu solución de IA sea rápida, segura y fácil de usar."
       },
       "e-commerce": {
         "title": "E-Commerce",
@@ -83,7 +83,28 @@
     "eyebrow": "Sobre nosotros",
     "title": "Codisans fue creado de la creencia compartida: el software de calidad es tanto diseñado como desarrollado.",
     "intro": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos.",
-    "technologies-title": "Algunas de las tecnologías que nos gustan"
+    "technologies-title": "Algunas de las tecnologías que nos gustan",
+    "culture": {
+      "eyebrow": "Cultura",
+      "title": "Cultura",
+      "description": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos.",
+      "value-1": {
+        "title": "Meticuloso",
+        "description": "Nos esforzamos por ser meticulosos en nuestro enfoque para cada proyecto. Tomamos el tiempo para entender las necesidades y objetivos del cliente, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+      },
+      "value-2": {
+        "title": "Colaborativo",
+        "description": "Nos esforzamos por ser colaborativos en nuestro enfoque para cada proyecto. Trabajamos estrechamente con el cliente para entender sus necesidades y objetivos, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+      },
+      "value-3": {
+        "title": "Innovador",
+        "description": "Nos esforzamos por ser innovadores en nuestro enfoque para cada proyecto. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
+      }
+    },
+    "team": {
+      "title": "Equipo",
+      "description": "Somos un equipo de personas apasionadas que están impulsadas por un propósito compartido. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
+    }
   },
   "ContactPage": {
     "meta": {

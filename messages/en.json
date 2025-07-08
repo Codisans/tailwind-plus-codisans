@@ -49,28 +49,28 @@
     },
     "eyebrow": "",
     "title": "Software built to deliver value, not just code.",
-    "intro": "We build smart, scalable software solutions for startups and brands that demand more than just a website.",
+    "intro": "Codisans builds more than software. We create outcomes. With a transparent process and real strategic input.",
     "cta": "Let's build something together.",
-    "pain-point": "This is some text about client painpoints. This sparks curiosity and makes them want to know more.",
+    "pain-point": "We help product teams ship fast, stay lean and focus on what actually matters.",
     "services": {
       "eyebrow": "Services",
-      "title": "We specialise in crafting beautiful, high quality marketing pages.",
-      "summary": "As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those.",
+      "title": "We build smart, scalable software solutions.",
+      "summary": "Using the latest technologies, we build custom software solutions for startups and brands that demand more than just a website.",
       "web-development": {
         "title": "Web Development",
-        "description": "We build custom websites and web applications that are tailored to your business needs. We use the latest technologies to ensure that your website is fast, secure, and easy to use."
+        "description": "We build web applications that are tailored to your business needs. We use the latest technologies to ensure that your application is fast, secure, and easy to use."
       },
-      "ai-automation": {
-        "title": "AI Automation",
-        "description": "We automate your business processes using AI. We use the latest technologies to ensure that your AI automation is fast, secure, and easy to use."
+      "ai-solutions": {
+        "title": "AI Solutions",
+        "description": "We build AI solutions that optimise business bottlenecks, allowing you stay lean and focused."
       },
       "e-commerce": {
         "title": "E-Commerce",
-        "description": "We are at the forefront of modern e-commerce development. Which mainly means adding your logo to the Shopify store template we’ve used for the past six years."
+        "description": "We specialise in headless e-commerce solutions, allowing you to scale your business through composable commerce arquitecture."
       },
       "custom-content-management": {
         "title": "Custom Content Management",
-        "description": "We build custom content management systems that are tailored to your business needs. We use the latest technologies to ensure that your content management system is fast, secure, and easy to use."
+        "description": "We build custom content management systems for clients that need more than just a website."
       }
     },
     "case-studies": {
@@ -87,9 +87,30 @@
       "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
     },
     "eyebrow": "About Us",
-    "title": "Codisans was born from a shared belief: great software is both engineered and crafted.",
-    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.",
-    "technologies-title": "Some of the technologies we enjoy working with"
+    "title": "We're driven by passion and purpose.",
+    "intro": "Born from ambition and a shared vision, we're here to make an impact.",
+    "technologies-title": "Some of the technologies we enjoy working with",
+    "culture": {
+      "eyebrow": "Culture",
+      "title": "Culture",
+      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.",
+      "value-1": {
+        "title": "Passion",
+        "description": "We are passionate about what we do. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
+      },
+      "value-2": {
+        "title": "Purpose",
+        "description": "We are driven by a shared purpose. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
+      },
+      "value-3": {
+        "title": "Collaboration",
+        "description": "We are collaborative in our approach. We work closely with our clients to understand their needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
+      }
+    },
+    "team": {
+      "title": "Team",
+      "description": "We are a team of passionate individuals who are driven by a shared purpose. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
+    }
   },
   "CulturePage": {
     "meta": {
