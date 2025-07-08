@@ -44,12 +44,12 @@
   },
   "HomePage": {
     "meta": {
-      "title": "Codisans | Crafted Code. Strategic Impact.",
-      "description": "Tired of devs who don't understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website."
+      "title": "Software built to deliver value, not just code. | Codisans",
+      "description": "We build smart, scalable software solutions for startups and brands that demand more than just a website."
     },
     "eyebrow": "",
-    "title": "Crafted Code. Strategic Impact.",
-    "intro": "Tired of devs who don't understand your business? We build smart, scalable software solutions for startups and brands that demand more than just a website.",
+    "title": "Software built to deliver value, not just code.",
+    "intro": "We build smart, scalable software solutions for startups and brands that demand more than just a website.",
     "cta": "Let's build something together.",
     "pain-point": "This is some text about client painpoints. This sparks curiosity and makes them want to know more.",
     "services": {

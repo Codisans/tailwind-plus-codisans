@@ -7,7 +7,7 @@ import moment from '@/lib/moment'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s |Codisans',
+    template: '%s | Codisans',
     default: 'Codisans | Software development',
   },
 }
