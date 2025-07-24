@@ -55,34 +55,34 @@ const blogPostRegistry = {
     {
       slug: 'your-gpu-is-the-new-printing-press',
       module: yourGpuEn,
-      metadata: yourGpuEn.article,
+      metadata: (yourGpuEn as any).article as Article,
     },
     {
       slug: 'the-new-digital-darwinism', 
       module: digitalDarwinismEn,
-      metadata: digitalDarwinismEn.article,
+      metadata: (digitalDarwinismEn as any).article as Article,
     },
     {
       slug: 'your-business-is-held-together-by-caffeine-and-chaos-time-for-an-upgrade',
       module: businessUpgradeEn,
-      metadata: businessUpgradeEn.article,
+      metadata: (businessUpgradeEn as any).article as Article,
     },
   ],
   es: [
     {
       slug: 'your-gpu-is-the-new-printing-press',
       module: yourGpuEs,
-      metadata: yourGpuEs.article,
+      metadata: (yourGpuEs as any).article as Article,
     },
     {
       slug: 'the-new-digital-darwinism',
       module: digitalDarwinismEs, 
-      metadata: digitalDarwinismEs.article,
+      metadata: (digitalDarwinismEs as any).article as Article,
     },
     {
       slug: 'your-business-is-held-together-by-caffeine-and-chaos-time-for-an-upgrade',
       module: businessUpgradeEs,
-      metadata: businessUpgradeEs.article,
+      metadata: (businessUpgradeEs as any).article as Article,
     },
   ],
 }
@@ -93,34 +93,34 @@ const caseStudyRegistry = {
     {
       slug: 'family-fund',
       module: familyFundEn,
-      metadata: familyFundEn.caseStudy,
+      metadata: (familyFundEn as any).caseStudy as CaseStudy,
     },
     {
       slug: 'phobia',
       module: phobiaEn,
-      metadata: phobiaEn.caseStudy,
+      metadata: (phobiaEn as any).caseStudy as CaseStudy,
     },
     {
       slug: 'unseal',
       module: unsealEn,
-      metadata: unsealEn.caseStudy,
+      metadata: (unsealEn as any).caseStudy as CaseStudy,
     },
   ],
   es: [
     {
       slug: 'family-fund',
       module: familyFundEs,
-      metadata: familyFundEs.caseStudy,
+      metadata: (familyFundEs as any).caseStudy as CaseStudy,
     },
     {
       slug: 'phobia',
       module: phobiaEs,
-      metadata: phobiaEs.caseStudy,
+      metadata: (phobiaEs as any).caseStudy as CaseStudy,
     },
     {
       slug: 'unseal',
       module: unsealEs,
-      metadata: unsealEs.caseStudy,
+      metadata: (unsealEs as any).caseStudy as CaseStudy,
     },
   ],
 }
