@@ -49,7 +49,7 @@ export async function SocialMedia({
       </h2>
       <ul
         role="list"
-        className={`flex gap-x-10 ${invert ? 'text-white' : 'text-theme-950'}`}
+        className={`mt-6 flex gap-x-10 ${invert ? 'text-white' : 'text-theme-950'}`}
       >
         {socialMediaProfiles.map((socialMediaProfile) => (
           <li key={socialMediaProfile.title}>

@@ -30,7 +30,7 @@ export async function ContactForm({ invert = false }: { invert?: boolean }) {
           autoComplete="tel"
         />
         <TextInput label={t('message')} name="message" />
-        <div className="border border-theme-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
+        {/* <div className="border border-theme-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
           <fieldset>
             <legend
               className={`text-base/6 ${invert ? 'text-theme-400' : 'text-theme-500'}`}
@@ -48,7 +48,7 @@ export async function ContactForm({ invert = false }: { invert?: boolean }) {
               />
             </div>
           </fieldset>
-        </div>
+        </div> */}
       </div>
       <Button type="submit" className="mt-10">
         {t('contact-invitation')}

@@ -74,8 +74,8 @@
       }
     },
     "case-studies": {
-      "title": "Proven solutions for real-world problems.",
-      "summary": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we've been developing for the past decade."
+      "title": "We work with our clients to solve their problems, delivering solutions that are not only functional, but also beautiful and easy to use.",
+      "summary": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
     },
     "technologies": {
       "title": "Some of the technologies we enjoy working with"
@@ -133,6 +133,10 @@
     "steps": {
       "discover": {
         "title": "Discover",
+        "description": "We work closely with our clients to understand their needs and goals, embedding ourselves in their every day operations to understand what makes their business tick."
+      },
+      "define": {
+        "title": "Define",
         "description": "We work closely with our clients to understand their needs and goals, embedding ourselves in their every day operations to understand what makes their business tick."
       },
       "build": {

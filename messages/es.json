@@ -147,6 +147,10 @@
         "title": "Descubrir",
         "description": "Trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, nos integramos en sus operaciones diarias para comprender lo que hace que su negocio funcione."
       },
+      "define": {
+        "title": "Definir",
+        "description": "Trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, nos integramos en sus operaciones diarias para comprender lo que hace que su negocio funcione."
+      },
       "build": {
         "title": "Construir",
         "description": "Basado en la fase de descubrimiento, desarrollamos un plan integral para cada producto y comenzamos a trabajar hacia la entrega. El plan de ruta es un enredo técnico intrincado diseñado para arrastrar la entrega."

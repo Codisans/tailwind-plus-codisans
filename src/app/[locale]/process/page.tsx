@@ -7,6 +7,10 @@ import { PageIntro } from '@/components/PageIntro'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
+import discoverImage from '@/images/laptop-help.jpg'
+import defineImage from '@/images/glasses-computer.jpg'
+import buildImage from '@/images/digital-block-tower.jpg'
+import deliverImage from '@/images/meeting.jpg'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
 
@@ -36,15 +40,23 @@ export default async function Process() {
       <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
         <Section
           title={t('steps.discover.title')}
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: discoverImage, shape: 1 }}
         >
           <div className="space-y-6 text-base text-theme-600">
             <p>{t('steps.discover.description')}</p>
           </div>
         </Section>
         <Section
+          title={t('steps.define.title')}
+          image={{ src: defineImage, shape: 1 }}
+        >
+          <div className="space-y-6 text-base text-theme-600">
+            <p>{t('steps.define.description')}</p>
+          </div>
+        </Section>
+        <Section
           title={t('steps.build.title')}
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: buildImage, shape: 1 }}
         >
           <div className="space-y-6 text-base text-theme-600">
             <p>{t('steps.build.description')}</p>
@@ -52,7 +64,7 @@ export default async function Process() {
         </Section>
         <Section
           title={t('steps.deliver.title')}
-          image={{ src: imageLaptop, shape: 1 }}
+          image={{ src: deliverImage, shape: 1 }}
         >
           <div className="space-y-6 text-base text-theme-600">
             <p>{t('steps.deliver.description')}</p>
