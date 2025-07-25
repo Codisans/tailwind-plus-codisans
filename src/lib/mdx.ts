@@ -114,6 +114,11 @@ const caseStudyRegistry = {
       module: swidStudioEn,
       metadata: (swidStudioEn as any).caseStudy as CaseStudy,
     },
+    {
+      slug: 'felici-house',
+      module: feliciHouseEn,
+      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
+    },
   ],
   es: [
     {
@@ -138,8 +143,8 @@ const caseStudyRegistry = {
     },
     {
       slug: 'felici-house',
-      module: feliciHouseEn,
-      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
+      module: feliciHouseEs,
+      metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
     },
   ],
 }

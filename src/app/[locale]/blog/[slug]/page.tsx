@@ -4,17 +4,28 @@ import { loadArticle, loadArticles } from '@/lib/mdx'
 import BlogArticleWrapper from '../wrapper'
 
 export async function generateStaticParams() {
-  const articles = await loadArticles()
-  return articles.map((article) => ({
-    slug: article.href.split('/').pop(),
-  }))
+  const locales = ['en', 'es']
+  const params = []
+
+  for (const locale of locales) {
+    const articles = await loadArticles(locale)
+    for (const article of articles) {
+      params.push({
+        locale,
+        slug: article.href.split('/').pop(),
+      })
+    }
+  }
+
+  return params
 }
 
 export async function generateMetadata({
-  params: { slug, locale },
+  params,
 }: {
-  params: { slug: string; locale: string }
+  params: Promise<{ slug: string; locale: string }>
 }): Promise<Metadata> {
+  const { slug, locale } = await params
   const article = await loadArticle(slug, locale)
 
   if (!article) {
@@ -30,10 +41,11 @@ export async function generateMetadata({
 }
 
 export default async function BlogPost({
-  params: { slug, locale },
+  params,
 }: {
-  params: { slug: string; locale: string }
+  params: Promise<{ slug: string; locale: string }>
 }) {
+  const { slug, locale } = await params
   const article = await loadArticle(slug, locale)
 
   if (!article) {

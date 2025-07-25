@@ -4,17 +4,28 @@ import { loadCaseStudy, loadCaseStudies } from '@/lib/mdx'
 import CaseStudyWrapper from '../wrapper'
 
 export async function generateStaticParams() {
-  const caseStudies = await loadCaseStudies()
-  return caseStudies.map((caseStudy) => ({
-    slug: caseStudy.href.split('/').pop(),
-  }))
+  const locales = ['en', 'es']
+  const params = []
+
+  for (const locale of locales) {
+    const caseStudies = await loadCaseStudies(locale)
+    for (const caseStudy of caseStudies) {
+      params.push({
+        locale,
+        slug: caseStudy.href.split('/').pop(),
+      })
+    }
+  }
+
+  return params
 }
 
 export async function generateMetadata({
-  params: { slug, locale },
+  params,
 }: {
-  params: { slug: string; locale: string }
+  params: Promise<{ slug: string; locale: string }>
 }): Promise<Metadata> {
+  const { slug, locale } = await params
   const caseStudy = await loadCaseStudy(slug, locale)
 
   if (!caseStudy) {
@@ -30,10 +41,11 @@ export async function generateMetadata({
 }
 
 export default async function CaseStudyPost({
-  params: { slug, locale },
+  params,
 }: {
-  params: { slug: string; locale: string }
+  params: Promise<{ slug: string; locale: string }>
 }) {
+  const { slug, locale } = await params
   const caseStudy = await loadCaseStudy(slug, locale)
 
   if (!caseStudy) {
