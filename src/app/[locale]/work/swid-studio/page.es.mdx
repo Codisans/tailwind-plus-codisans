@@ -1,0 +1,47 @@
+import logo from '@/images/clients/family-fund/logomark-dark.svg'
+import imageHero from './hero.png'
+import imageAlicia from './alicia-swiderski.webp'
+
+export const caseStudy = {
+  client: 'Swid Studio',
+  title: 'CMS personalizado para una agencia creativa',
+  description:
+    'Swid Studio es una agencia creativa que ayuda a marcas a crear contenido atractivo.',
+  summary: [
+    'Swid Studio es una agencia creativa que ayuda a marcas a crear contenido atractivo.',
+    'Desarrollamos un CMS personalizado para impulsar su blog y optimizamos su sitio para posicionarse mejor en las palabras clave "Gary Vee" y "Tony Robbins".',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Desarrollo web, CMS',
+  testimonial: {
+    author: { name: 'Alicia Swiderski', role: 'Fundadora de Swid Studio' },
+    content:
+      'Swid Studio es una agencia creativa que ayuda a marcas a crear contenido atractivo.',
+  },
+}
+
+export const metadata = {
+  title: `Caso de Estudio ${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Resumen
+
+Swid Studio es una agencia creativa que ayuda a marcas a crear contenido atractivo.
+
+## Lo que hicimos
+
+<TagList>
+  <TagListItem>Statamic CMS</TagListItem>
+  <TagListItem>Custom CMS</TagListItem>
+  <TagListItem>SEO</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Debra Fiscal', role: 'CEO de FamilyFund' }}
+  image={{ src: imageDebraFiscal }}
+>
+  Swid Studio es una agencia creativa que ayuda a marcas a crear contenido atractivo.
+</Blockquote>

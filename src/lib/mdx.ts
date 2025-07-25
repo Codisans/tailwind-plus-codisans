@@ -9,12 +9,16 @@ import * as businessUpgradeEn from '../app/[locale]/blog/your-business-is-held-t
 import * as businessUpgradeEs from '../app/[locale]/blog/your-business-is-held-together-by-caffeine-and-chaos-time-for-an-upgrade/page.es.mdx'
 
 // Import all case studies statically
-import * as familyFundEn from '../app/[locale]/work/family-fund/page.en.mdx'
-import * as familyFundEs from '../app/[locale]/work/family-fund/page.es.mdx'
-import * as phobiaEn from '../app/[locale]/work/phobia/page.en.mdx'
-import * as phobiaEs from '../app/[locale]/work/phobia/page.es.mdx'
-import * as unsealEn from '../app/[locale]/work/unseal/page.en.mdx'
-import * as unsealEs from '../app/[locale]/work/unseal/page.es.mdx'
+import * as keaiEn from '../app/[locale]/work/keai/page.en.mdx'
+import * as keaiEs from '../app/[locale]/work/keai/page.es.mdx'
+import * as laTorreAmbulanteEn from '../app/[locale]/work/la-torre-ambulante/page.en.mdx'
+import * as laTorreAmbulanteEs from '../app/[locale]/work/la-torre-ambulante/page.es.mdx'
+import * as dcv87En from '../app/[locale]/work/dcv87/page.en.mdx'
+import * as dcv87Es from '../app/[locale]/work/dcv87/page.es.mdx'
+import * as swidStudioEn from '../app/[locale]/work/swid-studio/page.en.mdx'
+import * as swidStudioEs from '../app/[locale]/work/swid-studio/page.es.mdx'
+import * as feliciHouseEn from '../app/[locale]/work/felici-house/page.en.mdx'
+import * as feliciHouseEs from '../app/[locale]/work/felici-house/page.es.mdx'
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
@@ -91,36 +95,51 @@ const blogPostRegistry = {
 const caseStudyRegistry = {
   en: [
     {
-      slug: 'family-fund',
-      module: familyFundEn,
-      metadata: (familyFundEn as any).caseStudy as CaseStudy,
+      slug: 'keai',
+      module: keaiEn,
+      metadata: (keaiEn as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'phobia',
-      module: phobiaEn,
-      metadata: (phobiaEn as any).caseStudy as CaseStudy,
+      slug: 'la-torre-ambulante',
+      module: laTorreAmbulanteEn,
+      metadata: (laTorreAmbulanteEn as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'unseal',
-      module: unsealEn,
-      metadata: (unsealEn as any).caseStudy as CaseStudy,
+      slug: 'dcv87',
+      module: dcv87En,
+      metadata: (dcv87En as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'swid-studio',
+      module: swidStudioEn,
+      metadata: (swidStudioEn as any).caseStudy as CaseStudy,
     },
   ],
   es: [
     {
-      slug: 'family-fund',
-      module: familyFundEs,
-      metadata: (familyFundEs as any).caseStudy as CaseStudy,
+      slug: 'keai',
+      module: keaiEs,
+      metadata: (keaiEs as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'phobia',
-      module: phobiaEs,
-      metadata: (phobiaEs as any).caseStudy as CaseStudy,
+      slug: 'la-torre-ambulante',
+      module: laTorreAmbulanteEs,
+      metadata: (laTorreAmbulanteEs as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'unseal',
-      module: unsealEs,
-      metadata: (unsealEs as any).caseStudy as CaseStudy,
+      slug: 'dcv87',
+      module: dcv87Es,
+      metadata: (dcv87Es as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'swid-studio',
+      module: swidStudioEs,
+      metadata: (swidStudioEs as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'felici-house',
+      module: feliciHouseEn,
+      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
     },
   ],
 }

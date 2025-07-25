@@ -44,10 +44,10 @@
   "HomePage": {
     "meta": {
       "title": "Codisans | Software conciente. Impacto estratégico.",
-      "description": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web."
+      "description": "¿Tus desarrolladores no entienden tu negocio? Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web."
     },
     "title": "Software conciente. Impacto estratégico.",
-    "intro": "¿Cansados de que tus desarrolladores no entienden tu negocio? Creamos soluciones de software inteligentes y escalables para startups y marcas que demandan más que un simple sitio web.",
+    "intro": "¿Tus desarrolladores no entienden tu negocio? Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web.",
     "pain-point": "Este es un texto sobre los puntos de dolor de los clientes. Esto genera curiosidad y hace que quieran saber más.",
     "services": {
       "eyebrow": "Servicios",

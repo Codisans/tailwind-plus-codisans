@@ -1,0 +1,47 @@
+import logo from '@/images/clients/family-fund/logomark-dark.svg'
+import imageHero from './hero.png'
+import imageAlicia from './alicia-swiderski.webp'
+
+export const caseStudy = {
+  client: 'Swid Studio',
+  title: 'Custom CMS for our creative partner',
+  description:
+    'Swid Studio is a creative studio that helps brands build their identity, by owning what makes them unique and staying true to their culture. Specialising in design, custom websites & strategy.',
+  summary: [
+    'Swid Studio is a creative studio that helps brands build their identity, by owning what makes them unique and staying true to their culture. Specialising in design, custom websites & strategy.',
+    'We developed a custom CMS to power their blog with and optimised their site to rank higher for the keywords “Gary Vee” and “Tony Robbins”.',
+  ],
+  logo,
+  image: { src: imageHero },
+  date: '2023-01',
+  service: 'Custom CMS',
+  testimonial: {
+    author: { name: 'Alicia Swiderski', role: 'Founder of Swid Studio' },
+    content:
+      'Working with Codisans has been a great experience, allowing us to bring our vision to life and create a website that truly represents our brand.',
+  },
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+
+Swid Studio is a creative studio that helps brands create engaging content.
+
+## What we did
+
+<TagList>
+  <TagListItem>Statamic CMS</TagListItem>
+  <TagListItem>Custom CMS</TagListItem>
+  <TagListItem>SEO</TagListItem>
+</TagList>
+
+<Blockquote
+  author={{ name: 'Alicia Swiderski', role: 'Co-founder of Swid Studio' }}
+  image={{ src: imageAlicia }}
+>
+  Working with Codisans has been a great experience, allowing us to bring our vision to life and create a website that truly represents our brand.
+</Blockquote>
