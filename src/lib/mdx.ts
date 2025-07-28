@@ -95,6 +95,11 @@ const blogPostRegistry = {
 const caseStudyRegistry = {
   en: [
     {
+      slug: 'swid-studio',
+      module: swidStudioEn,
+      metadata: (swidStudioEn as any).caseStudy as CaseStudy,
+    },
+    {
       slug: 'keai',
       module: keaiEn,
       metadata: (keaiEn as any).caseStudy as CaseStudy,
@@ -105,22 +110,22 @@ const caseStudyRegistry = {
       metadata: (laTorreAmbulanteEn as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'dcv87',
-      module: dcv87En,
-      metadata: (dcv87En as any).caseStudy as CaseStudy,
-    },
-    {
-      slug: 'swid-studio',
-      module: swidStudioEn,
-      metadata: (swidStudioEn as any).caseStudy as CaseStudy,
-    },
-    {
       slug: 'felici-house',
       module: feliciHouseEn,
       metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
     },
+    {
+      slug: 'dcv87',
+      module: dcv87En,
+      metadata: (dcv87En as any).caseStudy as CaseStudy,
+    },
   ],
   es: [
+    {
+      slug: 'swid-studio',
+      module: swidStudioEs,
+      metadata: (swidStudioEs as any).caseStudy as CaseStudy,
+    },
     {
       slug: 'keai',
       module: keaiEs,
@@ -132,19 +137,14 @@ const caseStudyRegistry = {
       metadata: (laTorreAmbulanteEs as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'dcv87',
-      module: dcv87Es,
-      metadata: (dcv87Es as any).caseStudy as CaseStudy,
-    },
-    {
-      slug: 'swid-studio',
-      module: swidStudioEs,
-      metadata: (swidStudioEs as any).caseStudy as CaseStudy,
-    },
-    {
       slug: 'felici-house',
       module: feliciHouseEs,
       metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'dcv87',
+      module: dcv87Es,
+      metadata: (dcv87Es as any).caseStudy as CaseStudy,
     },
   ],
 }
@@ -189,7 +189,7 @@ export function loadCaseStudies(locale: string = 'en'): Promise<Array<MDXEntry<C
     isLocalized: locale !== 'en',
   }))
   
-  return Promise.resolve(studies.sort((a, b) => b.date.localeCompare(a.date)))
+  return Promise.resolve(studies)
 }
 
 export async function loadCaseStudy(slug: string, locale: string = 'en'): Promise<{
