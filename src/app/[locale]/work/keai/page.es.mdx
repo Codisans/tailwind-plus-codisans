@@ -5,10 +5,9 @@ export const caseStudy = {
   client: 'Keai',
   title: 'Catálogo de eventos impulsado por IA',
   description:
-    'Keai es una plataforma que permite a los usuarios crear y gestionar eventos, y vender entradas a ellos.',
+    'Keai es una plataforma que permite a los usuarios encontrar eventos personalizados, y a los organizadores de eventos mostrar eventos a las personas adecuadas.',
   summary: [
-    'Keai es una plataforma que permite a los usuarios crear y gestionar eventos, y vender entradas a ellos.',
-    'Desarrollamos una plataforma personalizada para gestionar eventos y vender entradas.',
+    'Keai es una plataforma que permite a los usuarios encontrar eventos personalizados, y a los organizadores de eventos mostrar eventos a las personas adecuadas.',
   ],
   logo,
   image: { src: imageHero },
@@ -26,9 +25,20 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Resumen
+## El Desafío
+KEAI abordó un problema crítico en el descubrimiento cultural urbano: la información de eventos estaba dispersa en innumerables plataformas de redes sociales y sitios web, lo que hacía casi imposible que las personas encontraran experiencias alineadas con sus intereses. Las plataformas de eventos tradicionales fallaban debido al "síndrome de plataforma vacía": sin contenido, los usuarios no se involucrarían, y sin usuarios, los organizadores de eventos no contribuirían con contenido, creando un ciclo vicioso de abandono.
 
-Keai es una plataforma que permite a los usuarios crear y gestionar eventos, y vender entradas a ellos.
+## Arquitectura de Solución Impulsada por IA
+KEAI rompió este ciclo implementando un sofisticado sistema automatizado de adquisición de contenido y categorización inteligente. La plataforma desplegó tecnología de web scraping para monitorear continuamente plataformas de venta de entradas, recintos culturales y sitios web de eventos en Santiago, poblando automáticamente la base de datos con datos de eventos completos. Esto eliminó la dependencia de la creación manual de contenido mientras aseguraba que la plataforma se mantuviera consistentemente actualizada con contenido fresco y diverso.
+
+## Categorización Avanzada por IA y Personalización
+La plataforma implementó sistemas de IA duales para la organización inteligente de contenido. Un sistema de categorización basado en modelos de lenguaje analiza descripciones de eventos usando procesamiento de lenguaje natural para asignar automáticamente categorías y etiquetas apropiadas. Además, KEAI emplea tecnología de vector embedding que convierte las descripciones de eventos en representaciones matemáticas, permitiendo coincidencias de similitud semántica que identifican relaciones conceptuales entre eventos más allá de la simple coincidencia de palabras clave. Este enfoque permite al sistema reconocer que una "disco silenciosa en un museo" comparte ADN con categorías tanto de música electrónica como de arte cultural.
+
+## Motor de Recomendaciones Inteligente
+El sistema de recomendaciones de KEAI combina filtrado colaborativo con análisis semántico para entregar sugerencias de eventos personalizadas. La plataforma rastrea patrones de favoritos de usuarios para identificar grupos de comportamiento, mientras simultáneamente usa similitud vectorial para emparejar usuarios con eventos basándose en relaciones conceptuales más profundas en lugar de solo superposición categórica. Este enfoque dual permite recomendaciones que se sienten tanto basadas en datos como culturalmente intuitivas, sugiriendo experiencias que los usuarios podrían no haber descubierto a través de la navegación tradicional por categorías.
+
+## Resultados e Impacto
+Al aprovechar la automatización de IA, KEAI se lanzó exitosamente con una base de datos de eventos completamente poblada desde el primer día, proporcionando inmediatamente valor a los usuarios y atrayendo a organizadores de eventos para reclamar y gestionar sus listados. El sistema de categorización automatizada procesa miles de eventos con precisión consistente, mientras que el motor de recomendaciones inteligente crea experiencias de usuario cada vez más personalizadas que se vuelven más sofisticadas a medida que la plataforma aprende de las interacciones de usuarios y el paisaje cultural en evolución de Santiago.
 
 ## Lo que hicimos
 
