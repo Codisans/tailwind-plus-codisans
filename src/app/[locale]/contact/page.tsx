@@ -6,7 +6,7 @@ import { SocialMedia } from '@/components/SocialMedia'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
 import { Emails } from '@/components/Emails'
-import { ContactForm } from './ConactForm'
+import { ContactForm } from './ContactForm'
 
 export async function generateMetadata({
   params,
