@@ -3,12 +3,12 @@ import imageHero from './hero.png'
 
 export const caseStudy = {
   client: 'La Torre Ambulante',
-  title: 'Ajedrez, cervezas y música en vinilo',
+  title: 'Inscripciones automáticas de torneos para La Torre Ambulante con Shopify Hydrogen',
   description:
     'La Torre Ambulante es un club de ajedrez itinerante que se mueve por la ciudad organizando torneos de ajedrez sociales acompañados por sets de música en vinilo.',
   summary: [
     'La Torre Ambulante es un club de ajedrez itinerante que se mueve por la ciudad organizando torneos de ajedrez sociales acompañados por sets de música en vinilo.',
-    'Necesitaban más que una tienda en línea o sitio web, necesitaban una plataforma que pudiera manejar registros de eventos mientras recogía información de los jugadores de manera transparente.',
+    'Necesitaban más que un simple sitio web de e-commerce, necesitaban una plataforma que pudiera agilizar el registro de torneos, pagos y gestión de participantes.',
   ],
   logo,
   image: { src: imageHero },
@@ -26,11 +26,41 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Resumen
+## El Problema
+La Torre Ambulante, una comunidad de ajedrez en crecimiento, enfrentaba serias fricciones operacionales al gestionar las inscripciones de jugadores para sus populares torneos. A pesar del alto interés, su proceso de registro era caótico y propenso a errores.
 
-La Torre Ambulante es un club de ajedrez itinerante que se mueve por la ciudad organizando torneos de ajedrez sociales acompañados por sets de música en vinilo.
+Las inscripciones llegaban a través de DMs de Instagram — abrumando al organizador y llevando a jugadores perdidos.
 
-Necesitaban más que una tienda en línea o sitio web, necesitaban una plataforma que pudiera manejar registros de eventos mientras recogía información de los jugadores de manera transparente.
+Los pagos se realizaban a través de transferencias bancarias manuales, que eran difíciles de rastrear y a menudo estaban desconectadas de la información del jugador.
+
+Los errores de inscripción eran comunes, incluyendo registros perdidos y pagos mal emparejados.
+
+El proceso era tedioso, propenso a errores e imposible de escalar para eventos futuros.
+
+El cliente necesitaba un sistema que centralizara el registro, automatizara el pago y redujera el error humano — todo mientras preservaba su marca visual y ofrecía una experiencia pulida y profesional a los jugadores.
+
+## El Objetivo
+Construir una plataforma de registro de alto rendimiento y con marca que pudiera:
+
+- Reemplazar los DMs desordenados y el seguimiento manual con un flujo de inscripción centralizado y automatizado
+- Recopilar toda la información necesaria del jugador de una vez
+- Conectar la inscripción y el pago en una sola experiencia intuitiva
+- Funcionar en Shopify (por confiabilidad) pero evitar las limitaciones de los frontends basados en temas
+- Ser rápida, escalable y fácil de gestionar para el cliente sin habilidades técnicas
+
+## La Solución
+Diseñamos una plataforma de e-commerce headless personalizada usando Shopify Hydrogen, un framework basado en React que nos dio control total sobre la experiencia del usuario mientras mantenía el robusto backend de Shopify para el comercio.
+
+Características Clave Entregadas:
+
+- **Flujo de Inscripción Personalizado** - Los usuarios completaron un formulario con marca con toda la información necesaria: nombre, contacto, nivel de jugador y más — no más intercambios en Instagram.
+- **Integración Dinámica de Checkout** - Cada registro generó dinámicamente un "producto" personalizado de Shopify, permitiéndonos usar la API de Storefront para vincular la entrada del usuario directamente al checkout — sin romper el flujo.
+- **Control Total del Diseño** - Creamos una UI completamente personalizada alineada con la identidad visual del cliente, evitando las limitaciones de los temas estándar de Shopify.
+- **Rendimiento Primero** - El renderizado del lado del servidor de Hydrogen y las optimizaciones de rendimiento aseguraron una experiencia rápida y responsiva en todos los dispositivos — clave para usuarios móviles.
+- **Lógica de Backend Escalable** - El sistema fue construido de manera modular, permitiendo futuras configuraciones de torneos con cambios mínimos y actualizaciones de contenido fáciles por parte del cliente.
+- **Cero Errores de Registro** - Toda la información del jugador y el pago fueron capturados en un solo sistema, eliminando confusión y registros mal emparejados.
+
+Desarrollamos la plataforma para ser reutilizada en eventos futuros, lo que significa que el cliente ahora puede lanzar páginas de inscripción con confianza en solo horas.
 
 ## Lo que hicimos
 

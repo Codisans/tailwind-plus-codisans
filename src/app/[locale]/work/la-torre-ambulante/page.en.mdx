@@ -3,12 +3,12 @@ import imageHero from './hero.png'
 
 export const caseStudy = {
   client: 'La Torre Ambulante',
-  title: 'Chess club meets vinyl music',
+  title: 'Automating Tournament Sign-Ups for La Torre Ambulante with Shopify Hydrogen',
   description:
     'La Torre Ambulante is a roaming chess club that moves around the city organizing social chess tournaments accompanied by vinyl music sets.',
   summary: [
     'La Torre Ambulante is a roaming chess club that moves around the city organizing social chess tournaments accompanied by vinyl music sets.',
-    'They required more than a simple e-commerce store or website, they needed a platform that could handle event registrations while seemlessly collecting player information.',
+    'They required more than a simple e-commerce website, they needed a platform that could streamline tournament registration, payments, and participant management.',
   ],
   logo,
   image: { src: imageHero },
@@ -26,11 +26,41 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Overview
+## The Problem
+La Torre Ambulante, a growing chess community, faced serious operational friction managing player sign-ups for their popular tournaments. Despite high interest, their registration process was chaotic and prone to error.
 
-La Torre Ambulante is a roaming chess club that moves around the city organizing social chess tournaments accompanied by vinyl music sets.
+Registrations arrived via Instagram DMs — overwhelming the organizer and leading to missed players.
 
-They required more than a simple e-commerce store or website, they needed a platform that could handle event registrations while seemlessly collecting player information.
+Payments were made through manual bank transfers, which were hard to track and often disconnected from player information.
+
+Sign-up errors were common, including lost records and mismatched payments.
+
+The process was time-consuming, error-prone, and unscalable for future events.
+
+The client needed a system that would centralize registration, automate payment, and reduce human error — all while preserving their visual brand and delivering a polished, professional experience to players.
+
+## The Objective
+Build a high-performance, branded registration platform that would:
+
+- Replace messy DMs and manual tracking with a centralized, automated sign-up flow
+- Collect all necessary player info in one go
+- Connect sign-up and payment into a single, intuitive experience
+- Run on Shopify (for reliability) but avoid the limitations of theme-based frontends
+- Be fast, scalable, and easy for the client to manage without tech skills
+
+## The Solution
+We architected a custom headless e-commerce platform using Shopify Hydrogen, a React-based framework that gave us full control over the user experience while keeping Shopify’s robust backend for commerce.
+
+Key Features Delivered:
+
+- **Custom Sign-Up Workflow** - Users filled out a branded form with all necessary info: name, contact, player level, and more — no more back-and-forth on Instagram.
+- **Dynamic Checkout Integration** - Each registration dynamically generated a custom Shopify "product," allowing us to use the Storefront API to link user input directly to checkout — without breaking flow.
+- **Full Design Control** - We crafted a fully custom UI aligned with the client's visual identity, avoiding the limitations of standard Shopify themes.
+- **Performance First** - Hydrogen's server-side rendering and performance optimizations ensured a fast, responsive experience across devices — key for mobile-first users.
+- **Scalable Backend Logic** - The system was built modularly, allowing for future tournament setups with minimal changes and easy content updates by the client.
+- **Zero Registration Errors** - All player info and payment were captured in a single system, eliminating confusion and mismatched records.
+
+We developed the platform to be reused for future events, meaning the client can now launch sign-up pages with confidence in just hours.
 
 ## What we did
 
