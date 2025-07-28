@@ -1,6 +1,6 @@
 import logoLaravel from '@/images/logos/laravel-logotype.svg'
 import logoShopify from '@/images/logos/shopify-logotype.svg'
-import logoDeepSeek from '@/images/logos/deepseek-logotype.svg'
+import logoHuggingFace from '@/images/logos/hugging-face-logotype.svg'
 import logoOpenai from '@/images/logos/openai-logotype.svg'
 import logoGemini from '@/images/logos/gemini-logotype.svg'
 import logoNextjs from '@/images/logos/nextjs-logotype.svg'
@@ -35,9 +35,9 @@ const items = [
     link: 'https://openai.com/',
   },
   {
-    name: 'DeepSeek',
-    logo: logoDeepSeek,
-    link: 'https://deepseek.com/',
+    name: 'Hugging Face',
+    logo: logoHuggingFace,
+    link: 'https://huggingface.co/',
   },
   {
     name: 'Gemini',
