@@ -15,17 +15,17 @@ import { Link } from '@/i18n/navigation'
 
 const items = [
   {
-    name: 'React',
+    name: 'React JS',
     logo: logoReact,
     link: 'https://react.dev/',
   },
   {
-    name: 'Remix',
+    name: 'Remix JS',
     logo: logoRemix,
     link: 'https://remix.run/',
   },
   {
-    name: 'Next.js',
+    name: 'Next JS',
     logo: logoNextjs,
     link: 'https://nextjs.org/',
   },
@@ -55,7 +55,7 @@ const items = [
     link: 'https://www.shopify.com/cl/plus/solutions/headless-commerce',
   },
   {
-    name: 'Umbraco',
+    name: 'Umbraco CMS',
     logo: logoUmbraco,
     link: 'https://umbraco.com/',
   },
@@ -73,6 +73,9 @@ export const Technologies = ({
           className="group/stamp pointer-events-auto relative mt-8"
           key={item.name}
         >
+          <span className="absolute bottom-full left-1/2 w-max origin-bottom -translate-x-1/2 scale-0 rounded-full bg-zinc-900 px-2 text-sm whitespace-nowrap text-white transition-transform duration-150 ease-out group-hover/stamp:scale-100">
+            {item.name}
+          </span>
           <FadeIn className="overflow-hidden px-2 py-4 md:px-5">
             <Image
               className="size-10 object-contain transition duration-300 ease-out group-hover/stamp:!opacity-100 group-hover/stamp:brightness-100 group-hover/stamps:opacity-60 pointer-fine:brightness-0"
