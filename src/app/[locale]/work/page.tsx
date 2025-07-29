@@ -126,8 +126,9 @@ export default async function Work({
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
       >
-        We approached <em>Studio</em> because we loved their past work. They
-        delivered something remarkably similar in record time.
+        Codisans give us the technical confidence to design freely. They turn
+        our ideas into reality without compromise — it’s a seamless,
+        collaborative partnership.
       </Testimonial>
 
       <Clients />
