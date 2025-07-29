@@ -14,8 +14,8 @@ function Navigation() {
     {
       title: t('work'),
       links: [
+        { title: 'Swid Studio', href: '/work/swid-studio' },
         { title: 'Keai', href: '/work/keai' },
-        { title: "DCV'87", href: '/work/dcv87' },
         { title: 'La Torre Ambulante', href: '/work/la-torre-ambulante' },
         {
           title: (
