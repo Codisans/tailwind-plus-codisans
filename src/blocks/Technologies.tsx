@@ -15,6 +15,11 @@ import { Link } from '@/i18n/navigation'
 
 const items = [
   {
+    name: 'Laravel',
+    logo: logoLaravel,
+    link: 'https://laravel.com/',
+  },
+  {
     name: 'React JS',
     logo: logoReact,
     link: 'https://react.dev/',
@@ -43,11 +48,6 @@ const items = [
     name: 'Gemini',
     logo: logoGemini,
     link: 'https://gemini.google.com/',
-  },
-  {
-    name: 'Laravel PHP',
-    logo: logoLaravel,
-    link: 'https://laravel.com/',
   },
   {
     name: 'Shopify',

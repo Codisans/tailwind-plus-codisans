@@ -10,7 +10,7 @@
     "company": "Company",
     "connect": "Connect",
     "contact": "Contact",
-    "contact-cta": "Say hello",
+    "contact-cta": "Let's talk",
     "contact-form-title": "Work inquiries",
     "contact-invitation": "Let's work together",
     "contact-message": "Tell us about your project",
@@ -51,30 +51,30 @@
     "title": "Software built to deliver value, not just code.",
     "intro": "Codisans builds more than software. We create outcomes. With a transparent process and real strategic input.",
     "cta": "Let's build something together.",
-    "pain-point": "We help clients identify opportunities",
+    "pain-point": "We help you identify opportunities.",
     "services": {
-      "eyebrow": "Services",
-      "title": "We build smart, scalable software solutions.",
-      "summary": "Using the latest technologies, we build custom software solutions for startups and brands that demand more than just a website.",
+      "eyebrow": "Our Solutions",
+      "title": "We Engineer Growth Through Intelligent Software.",
+      "summary": "We build custom, scalable software for forward-thinking brands, delivering results beyond a simple website.",
       "web-development": {
         "title": "Web Development",
-        "description": "We build web applications that are tailored to your business needs. We use the latest technologies to ensure that your application is fast, secure, and easy to use."
+        "description": "We build powerful, tailor-made web applications engineered for performance and security. Our solutions are designed to streamline your operations, engage your users, and provide a seamless digital experience that sets you apart from the competition."
       },
       "ai-solutions": {
-        "title": "AI Solutions",
-        "description": "We build AI solutions that optimise business bottlenecks, allowing you stay lean and focused."
+        "title": "Intelligent Automation & AI",
+        "description": "Eliminate bottlenecks and enhance efficiency with our bespoke AI solutions. We identify opportunities to automate complex processes, enabling you to reduce operational costs, sharpen your focus, and unlock new levels of productivity through innovation."
       },
       "e-commerce": {
         "title": "E-Commerce",
-        "description": "We specialise in headless e-commerce solutions, allowing you to scale your business through composable commerce arquitecture."
+        "description": "We architect flexible, headless e-commerce solutions that empower you to scale without limits. Our composable approach allows for seamless integration of best-in-class tools, giving you the freedom to create unique customer journeys and adapt to market demands with agility."
       },
       "custom-content-management": {
-        "title": "Custom Content Management",
-        "description": "We build custom content management systems for clients that need more than just a website."
+        "title": "Content Management Systems (CMS)",
+        "description": "Take full command of your digital content with a custom-built CMS. Designed to fit your unique workflow, our bespoke systems provide the flexibility and control that off-the-shelf solutions lack, ensuring your team can manage and deploy content with greater speed and efficiency."
       }
     },
     "case-studies": {
-      "title": "We work with our clients to identify problems and deliver solutions.",
+      "title": "We help you identify problems and deliver solutions.",
       "summary": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
     },
     "technologies": {
@@ -84,7 +84,7 @@
   "AboutPage": {
     "meta": {
       "title": "Codisans | About Us",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
     },
     "eyebrow": "About Us",
     "title": "We're driven by passion and purpose.",
@@ -93,18 +93,18 @@
     "culture": {
       "eyebrow": "Culture",
       "title": "Culture",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do.",
+      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do.",
       "value-1": {
         "title": "Passion",
-        "description": "We are passionate about what we do. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
+        "description": "We are driven by a genuine passion for technology and innovation. This motivates us to constantly explore new ideas and refine our craft to deliver exceptional products."
       },
       "value-2": {
         "title": "Purpose",
-        "description": "We are driven by a shared purpose. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
+        "description": "We are united by a clear purpose: to solve meaningful challenges. We build solutions that are not only functional and beautiful but that deliver real-world value to our clients."
       },
       "value-3": {
         "title": "Collaboration",
-        "description": "We are collaborative in our approach. We work closely with our clients to understand their needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
+        "description": "We believe the best results come from close partnerships. We work hand-in-hand with you to understand your vision and goals, ensuring the final product is a perfect fit."
       }
     },
     "team": {
@@ -115,16 +115,16 @@
   "CulturePage": {
     "meta": {
       "title": "Codisans | Culture",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
     },
     "eyebrow": "Culture",
     "title": "Culture",
-    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+    "intro": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
   },
   "ProcessPage": {
     "meta": {
       "title": "Codisans | Our Process",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
     },
     "eyebrow": "Our Process",
     "title": "Our Process",
@@ -169,11 +169,11 @@
   "BlogPage": {
     "meta": {
       "title": "Codisans | Blog",
-      "description": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
     },
     "eyebrow": "Blog",
     "title": "Some of our takes.",
-    "intro": "We believe that our strength lies in our collaborative approach, which puts our clients at the center of everything we do."
+    "intro": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
   },
   "ContactPage": {
     "meta": {
