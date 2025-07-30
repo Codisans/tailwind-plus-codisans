@@ -12,6 +12,7 @@
     "contact": "Contact",
     "contact-cta": "Let's talk",
     "contact-form-title": "Work inquiries",
+    "contact-form-submit": "Let's talk",
     "contact-invitation": "Let's work together",
     "contact-message": "Tell us about your project",
     "contact-us": "Contact Us",
@@ -49,7 +50,7 @@
     },
     "eyebrow": "",
     "title": "Software built to deliver value, not just code.",
-    "intro": "Codisans builds more than software. We create outcomes. With a transparent process and real strategic input.",
+    "intro": "Codisans builds more than software. We create outcomes.",
     "cta": "Let's build something together.",
     "pain-point": "We help you identify opportunities.",
     "services": {
@@ -127,8 +128,8 @@
       "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
     },
     "eyebrow": "Our Process",
-    "title": "Our Process",
-    "intro": "During the rapidly changing times of AI, we're here to help you navigate the digital landscape. ",
+    "title": "A clear path from idea to launch.",
+    "intro": "We don’t do guesswork. Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way.",
     "cta": "Let's build something together.",
     "steps": {
       "discover": {
@@ -173,7 +174,7 @@
     },
     "eyebrow": "Blog",
     "title": "Some of our takes.",
-    "intro": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
+    "intro": "These are some of our honest opinions on the rapidly evolving tech landscape."
   },
   "ContactPage": {
     "meta": {
@@ -181,8 +182,9 @@
       "description": "Let's work together. We can't wait to hear from you."
     },
     "eyebrow": "Contact Us",
-    "title": "Let's work together.",
+    "title": "Let's work together",
     "intro": "We can't wait to hear from you.",
+    "form-submit": "Let's talk",
     "form-title": "Work inquiries"
   },
   "WorkPage": {

@@ -7,10 +7,11 @@
     "case-study": "Proyecto",
     "case-studies": "Proyectos",
     "company": "Empresa",
-    "connect": "Conectate",
+    "connect": "Conéctate",
     "contact": "Contacto",
-    "contact-cta": "Escribenos",
-    "contact-form-title": "Trabajemos juntos",
+    "contact-cta": "Escríbenos",
+    "contact-form-title": "Cotizaciones",
+    "contact-form-submit": "Hablemos",
     "contact-invitation": "Trabajemos juntos",
     "contact-message": "No podemos esperar a escuchar de ti.",
     "contact-us": "Contacto",
@@ -22,7 +23,7 @@
     "name": "Nombre",
     "our-process": "Proceso",
     "process": "Proceso",
-    "work": "Trabajo",
+    "work": "Proyectos",
     "our-work": "Proyectos",
     "phone": "Teléfono",
     "see-all": "Ver todos",
@@ -109,12 +110,13 @@
   "ContactPage": {
     "meta": {
       "title": "Codisans | Contacto",
-      "description": "Trabajemos juntos. No podemos esperar a escuchar de ti."
+      "description": "Trabajemos juntos. Queremos saber de ti."
     },
     "eyebrow": "Contacto",
     "title": "Trabajemos juntos.",
-    "intro": "No podemos esperar a escuchar de ti.",
-    "form-title": "Trabajemos juntos"
+    "intro": "Queremos saber de ti.",
+    "form-title": "Cotizaciones",
+    "form-submit": "Hablemos"
   },
   "BlogPage": {
     "meta": {

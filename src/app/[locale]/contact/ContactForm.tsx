@@ -51,7 +51,7 @@ export async function ContactForm({ invert = false }: { invert?: boolean }) {
         </div> */}
       </div>
       <Button type="submit" className="mt-10">
-        {t('contact-invitation')}
+        {t('contact-form-submit')}
       </Button>
     </form>
   )
