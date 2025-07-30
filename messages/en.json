@@ -153,16 +153,16 @@
       "title": "Balancing reliability and innovation",
       "description": "We strive to stay at the forefront of emerging trends and technologies, while completely ignoring them and forking that old Rails project we feel comfortable using. We stand by our core values to justify that decision.",
       "value-1": {
+        "title": "Transparent",
+        "description": "We believe great partnerships are built on trust and clarity. From day one, we communicate openly about scope, timelines, and trade-offs—no jargon, no hidden costs, no surprises. You’ll always know where things stand, what we’re working on, and what’s coming next."
+      },
+      "value-2": {
         "title": "Meticulous",
         "description": "We are meticulous in our approach to every project. We take the time to understand the client's needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
       },
-      "value-2": {
+      "value-3": {
         "title": "Collaborative",
         "description": "We are collaborative in our approach to every project. We work closely with the client to understand their needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
-      },
-      "value-3": {
-        "title": "Innovative",
-        "description": "We are innovative in our approach to every project. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
       }
     }
   },
