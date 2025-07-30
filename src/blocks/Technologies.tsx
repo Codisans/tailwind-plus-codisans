@@ -7,6 +7,7 @@ import logoNextjs from '@/images/logos/nextjs-logotype.svg'
 import logoReact from '@/images/logos/react-logotype.svg'
 import logoRemix from '@/images/logos/remix-logotype.svg'
 import logoUmbraco from '@/images/logos/umbraco-logotype.svg'
+import logoStatamic from '@/images/logos/statamic-logotype.svg'
 
 import { FadeIn } from '@/components/FadeIn'
 import Image from 'next/image'
@@ -59,6 +60,11 @@ const items = [
     logo: logoUmbraco,
     link: 'https://umbraco.com/',
   },
+  {
+    name: 'Statamic CMS',
+    logo: logoStatamic,
+    link: 'https://statamic.com/',
+  },
 ]
 
 export const Technologies = ({
@@ -78,7 +84,7 @@ export const Technologies = ({
           </span>
           <FadeIn className="overflow-hidden px-2 py-4 md:px-5">
             <Image
-              className="size-10 object-contain transition duration-300 ease-out group-hover/stamp:!opacity-100 group-hover/stamp:brightness-100 group-hover/stamps:opacity-60 pointer-fine:brightness-0"
+              className="size-10 object-contain transition duration-300 ease-out group-hover/stamp:!opacity-100 group-hover/stamp:grayscale-0 group-hover/stamps:opacity-60 pointer-fine:grayscale"
               src={item.logo}
               alt={item.name}
               unoptimized
