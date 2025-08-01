@@ -110,14 +110,14 @@ const caseStudyRegistry = {
       metadata: (laTorreAmbulanteEn as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'felici-house',
-      module: feliciHouseEn,
-      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
-    },
-    {
       slug: 'dcv87',
       module: dcv87En,
       metadata: (dcv87En as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'felici-house',
+      module: feliciHouseEn,
+      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
     },
   ],
   es: [
@@ -137,14 +137,14 @@ const caseStudyRegistry = {
       metadata: (laTorreAmbulanteEs as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'felici-house',
-      module: feliciHouseEs,
-      metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
-    },
-    {
       slug: 'dcv87',
       module: dcv87Es,
       metadata: (dcv87Es as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'felici-house',
+      module: feliciHouseEs,
+      metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
     },
   ],
 }
