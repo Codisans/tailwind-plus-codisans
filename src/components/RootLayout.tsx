@@ -8,7 +8,6 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Header, Navigation } from '@/components/Header'
 import { Emails } from './Emails'
-// import { SocialMedia } from '@/components/SocialMedia'
 
 export const RootLayoutContext = createContext<{
   logoHovered: boolean
@@ -101,12 +100,6 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pt-10 pb-16 sm:pt-16">
                   <Emails invert />
-                  {/* <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
-                    </h2>
-                    <SocialMedia className="mt-6" invert />
-                  </div> */}
                 </div>
               </Container>
             </div>

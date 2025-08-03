@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl'
 import { Container } from './Container'
 import { Button } from './Button'
 import clsx from 'clsx'
-import { Logo } from './Logo'
+import { Logomark, Logotype } from './Logo'
 import { RootLayoutContext } from './RootLayout'
 import { useContext } from 'react'
 
@@ -36,8 +36,9 @@ export function Header({
           onMouseEnter={() => setLogoHovered(true)}
           onMouseLeave={() => setLogoHovered(false)}
         >
-          <Logo
-            className="mb-1 h-6 sm:mb-2 sm:h-8"
+          <Logomark className="h-9 sm:hidden" invert={invert} />
+          <Logotype
+            className="mb-2 h-8 max-sm:hidden"
             invert={invert}
             filled={logoHovered}
           />

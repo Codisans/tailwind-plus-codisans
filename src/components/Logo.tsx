@@ -12,15 +12,40 @@ export function Logomark({
   let id = useId()
 
   return (
+    <svg
+      viewBox="0 0 75 64"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+      {...props}
+    >
+      <path
+        d="M75 0H46.5237C44.4389 0 42.6577 1.49869 42.3067 3.54818L38.0409 28.4518C37.6899 30.5013 35.9087 32 33.8239 32H9.09051C7.00577 32 5.22459 33.4987 4.87353 35.5482L0 64H28.4763C30.5611 64 32.3423 62.5013 32.6933 60.4518L36.9591 35.5482C37.3101 33.4987 39.0913 32 41.1761 32H65.9095C67.9942 32 69.7754 30.5013 70.1265 28.4518L75 0Z"
+        fill="black"
+      />
+    </svg>
+  )
+}
+
+export function Logotype({
+  invert = false,
+  filled = false,
+  ...props
+}: React.ComponentPropsWithoutRef<'svg'> & {
+  invert?: boolean
+  filled?: boolean
+}) {
+  let id = useId()
+  return (
     <svg viewBox="0 0 490 97" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         width="490"
         height="97"
         className={clsx(
-          'transition-all duration-300',
+          'transition-all duration-300 group-hover/logo:w-full',
           invert ? 'fill-white' : 'fill-theme-950',
-          filled ? 'w-full' : 'w-0 group-hover/logo:w-full',
+          filled ? 'w-full' : 'w-0',
         )}
       />
       <use
@@ -60,7 +85,7 @@ export function Logo({
       className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
     >
-      <Logomark
+      <Logotype
         preserveAspectRatio="xMinYMid meet"
         invert={invert}
         filled={filled}

@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { Logo } from '@/components/Logo'
+import { Logomark, Logotype } from '@/components/Logo'
 import { socialMediaProfiles } from '@/components/SocialMedia'
 import { useTranslations } from 'next-intl'
 
@@ -76,7 +76,8 @@ export function Footer() {
         <Navigation />
         <div className="mt-24 mb-20 flex flex-wrap items-end justify-between gap-x-6 gap-y-4 border-t border-theme-950/10 pt-12">
           <Link href="/" aria-label="Home">
-            <Logo className="h-8" fillOnHover />
+            <Logomark className="h-9 sm:hidden" />
+            <Logotype className="group/logo h-8 max-sm:hidden" />
           </Link>
           <p className="text-sm text-theme-700">
             © CODISANS SpA. {new Date().getFullYear()}
