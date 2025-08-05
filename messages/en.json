@@ -117,7 +117,7 @@
       "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
     },
     "eyebrow": "Our Process",
-    "title": "A clear path from idea to launch.",
+    "title": "How we approach projects.",
     "intro": "We don’t do guesswork. Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way.",
     "cta": "Let's build something together.",
     "steps": {
@@ -162,8 +162,9 @@
       "description": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
     },
     "eyebrow": "Our work",
-    "title": "Proven solutions for real-world problems.",
-    "intro": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we've been developing for the past decade."
+    "title": "Smart builds. Ready to grow.",
+    "intro": "We build high-performance platforms that make smart use of your time, tech, and budget. Designed to scale as you grow — no waste, no rebuilds.",
+    "listing-title": "Case studies"
   },
   "BlogPage": {
     "meta": {

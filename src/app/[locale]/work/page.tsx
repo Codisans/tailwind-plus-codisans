@@ -17,15 +17,17 @@ import { Clients } from '@/components/Clients'
 import { getTranslations } from 'next-intl/server'
 
 function CaseStudies({
+  title,
   caseStudies,
 }: {
+  title: string
   caseStudies: Array<MDXEntry<CaseStudy>>
 }) {
   return (
     <Container className="mt-40">
       <FadeIn>
         <h2 className="font-display text-2xl font-semibold text-theme-950">
-          Case studies
+          {title}
         </h2>
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
@@ -120,18 +122,7 @@ export default async function Work({
         <p>{t('intro')}</p>
       </PageIntro>
 
-      <CaseStudies caseStudies={caseStudies} />
-
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Mail Smirk', logo: logoMailSmirk }}
-      >
-        Codisans give us the technical confidence to design freely. They turn
-        our ideas into reality without compromise — it’s a seamless,
-        collaborative partnership.
-      </Testimonial>
-
-      <Clients />
+      <CaseStudies title={t('listing-title')} caseStudies={caseStudies} />
 
       <ContactSection />
     </RootLayout>

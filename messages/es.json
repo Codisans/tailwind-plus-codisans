@@ -14,7 +14,7 @@
     "contact-form-title": "Cotizaciones",
     "contact-form-submit": "Hablemos",
     "contact-invitation": "Trabajemos juntos",
-    "contact-message": "No podemos esperar a escuchar de ti.",
+    "contact-message": "Conversemos sobre tu proyecto",
     "contact-us": "Contacto",
     "email": "Correo electrónico",
     "emails-heading": "Correo electrónico",
@@ -117,8 +117,8 @@
       "description": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes."
     },
     "eyebrow": "Proceso",
-    "title": "Proceso",
-    "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes.",
+    "title": "Cómo abordamos proyectos",
+    "intro": "Nada de improvisar. Seguimos un proceso claro que minimiza riesgos, mejora la comunicación para entregar los mejores resultados.",
     "cta": "Construyamos algo juntos.",
     "steps": {
       "discover": {
@@ -161,9 +161,10 @@
       "title": "Codisans | Nuestro Trabajo",
       "description": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes."
     },
-    "eyebrow": "Nuestro trabajo",
-    "title": "Soluciones probadas para problemas del mundo real.",
-    "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
+    "eyebrow": "Proyectos",
+    "title": "Soluciones diseñadas para crecer",
+    "intro": "Desarrollamos plataformas de alto rendimiento que aprovechan bien tu tiempo, tecnología y presupuesto. Hechas para escalar a medida que creces — sin desperdicios ni partir de cero.",
+    "listing-title": "Proyectos"
   },
   "BlogPage": {
     "meta": {
