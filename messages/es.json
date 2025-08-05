@@ -47,33 +47,33 @@
       "title": "Codisans | Software conciente. Impacto estratégico.",
       "description": "¿Tus desarrolladores no entienden tu negocio? Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web."
     },
-    "title": "Software conciente. Impacto estratégico.",
-    "intro": "¿Tus desarrolladores no entienden tu negocio? Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web.",
-    "pain-point": "Este es un texto sobre los puntos de dolor de los clientes. Esto genera curiosidad y hace que quieran saber más.",
+    "title": "Software conciente que crea valor",
+    "intro": "Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web.",
+    "pain-point": "Somos dos desarrolladores apasionados por lo que hacemos, siempre buscando nuevos desafíos.",
     "services": {
       "eyebrow": "Servicios",
-      "title": "Nos especializamos en crear páginas de marketing de alta calidad.",
-      "summary": "Como siempre, las oportunidades que involucran darme dinero para reutilizar proyectos antiguos — podemos crear un número infinito de esos.",
+      "title": "Impulsamos crecimiento a través de software inteligente.",
+      "summary": "Specializing in web development, we build tailored software solutions that drive growth and efficiency.",
       "web-development": {
         "title": "Desarrollo Web",
-        "description": "Creamos sitios web y aplicaciones web personalizadas que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu sitio web sea rápido, seguro y fácil de usar."
+        "description": "Creamos aplicaciones web a medida, potentes y seguras. Nuestras soluciones optimizan tus operaciones, conectan con tus usuarios y ofrecen experiencias digitales fluidas que marcan la diferencia."
       },
       "ai-solutions": {
         "title": "Soluciones de IA",
-        "description": "Creamos soluciones de IA que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu solución de IA sea rápida, segura y fácil de usar."
+        "description": "Elimina cuellos de botella y mejora tu eficiencia con soluciones de IA hechas a medida. Identificamos oportunidades para automatizar procesos complejos, reducir costos y potenciar tu productividad con innovación real."
       },
       "e-commerce": {
         "title": "E-Commerce",
-        "description": "Estamos a la vanguardia del desarrollo de e-commerce moderno. Lo que significa principalmente agregar tu logo al template de Shopify que hemos estado usando durante los últimos seis años."
+        "description": "Desarrollamos plataformas de e-commerce headless, flexibles y escalables. Nuestro enfoque componible integra las mejores herramientas del mercado, permitiéndote crear experiencias únicas y adaptarte con agilidad."
       },
       "custom-content-management": {
         "title": "CMS Personalizados",
-        "description": "Creamos sistemas de gestión de contenido personalizados que se ajustan a las necesidades de tu negocio. Usamos las últimas tecnologías para asegurar que tu sistema de gestión de contenido sea rápido, seguro y fácil de usar."
+        "description": "Toma el control total de tu contenido con un CMS personalizado según tu flujo de trabajo. Nuestras soluciones entregan la flexibilidad y rapidez que los sistemas genéricos no pueden ofrecer, para que tu equipo avance sin fricciones."
       }
     },
     "case-studies": {
-      "title": "Soluciones probadas para problemas del mundo real.",
-      "summary": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
+      "title": "Te ayudamos a detectar problemas y encontrar soluciones.",
+      "summary": "Creemos en la eficiencia y en aprovechar al máximo nuestros recursos para ofrecer el mayor valor posible a nuestros clientes."
     }
   },
   "AboutPage": {

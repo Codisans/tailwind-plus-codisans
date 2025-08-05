@@ -52,26 +52,26 @@
     "title": "Software built to deliver value, not just code.",
     "intro": "Codisans builds more than software. We create outcomes.",
     "cta": "Let's build something together.",
-    "pain-point": "We help you identify opportunities.",
+    "pain-point": "We're two developers who are passionate about what we do, always looking for new challenges.",
     "services": {
       "eyebrow": "Our Solutions",
       "title": "We Engineer Growth Through Intelligent Software.",
-      "summary": "We build custom, scalable software for forward-thinking brands, delivering results beyond a simple website.",
+      "summary": "Specializing in web development, we build tailored software solutions that drive growth and efficiency.",
       "web-development": {
         "title": "Web Development",
-        "description": "We build powerful, tailor-made web applications engineered for performance and security. Our solutions are designed to streamline your operations, engage your users, and provide a seamless digital experience that sets you apart from the competition."
+        "description": "We build powerful, tailor-made web applications engineered for performance and security. Our solutions streamline operations, engage users, and deliver seamless digital experiences that set you apart."
       },
       "ai-solutions": {
         "title": "Intelligent Automation & AI",
-        "description": "Eliminate bottlenecks and enhance efficiency with our bespoke AI solutions. We identify opportunities to automate complex processes, enabling you to reduce operational costs, sharpen your focus, and unlock new levels of productivity through innovation."
+        "description": "Cut bottlenecks and boost efficiency with our bespoke AI solutions. We pinpoint opportunities to automate complex workflows, reduce costs, and unlock new levels of productivity through innovation."
       },
       "e-commerce": {
         "title": "E-Commerce",
-        "description": "We architect flexible, headless e-commerce solutions that empower you to scale without limits. Our composable approach allows for seamless integration of best-in-class tools, giving you the freedom to create unique customer journeys and adapt to market demands with agility."
+        "description": "We craft flexible, headless e-commerce platforms built to scale. Our composable approach integrates best-in-class tools, enabling unique customer journeys and agile adaptation to market demands."
       },
       "custom-content-management": {
         "title": "Content Management Systems (CMS)",
-        "description": "Take full command of your digital content with a custom-built CMS. Designed to fit your unique workflow, our bespoke systems provide the flexibility and control that off-the-shelf solutions lack, ensuring your team can manage and deploy content with greater speed and efficiency."
+        "description": "Gain full control of your content with a custom CMS built around your workflow. Our systems offer the flexibility and speed off-the-shelf solutions can’t match, empowering your team to move faster."
       }
     },
     "case-studies": {
