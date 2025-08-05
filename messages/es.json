@@ -6,6 +6,7 @@
     "budget": "Presupuesto",
     "case-study": "Proyecto",
     "case-studies": "Proyectos",
+    "case-studies-summary": "Construimos una variedad de soluciones web, desde páginas de aterrizaje simples hasta aplicaciones web complejas.",
     "company": "Empresa",
     "connect": "Conéctate",
     "contact": "Contacto",
@@ -74,6 +75,9 @@
     "case-studies": {
       "title": "Te ayudamos a detectar problemas y encontrar soluciones.",
       "summary": "Creemos en la eficiencia y en aprovechar al máximo nuestros recursos para ofrecer el mayor valor posible a nuestros clientes."
+    },
+    "technologies": {
+      "title": "Algunas de las tecnologías que nos gustan"
     }
   },
   "AboutPage": {
@@ -107,35 +111,6 @@
       "description": "Somos un equipo de personas apasionadas que están impulsadas por un propósito compartido. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
     }
   },
-  "ContactPage": {
-    "meta": {
-      "title": "Codisans | Contacto",
-      "description": "Trabajemos juntos. Queremos saber de ti."
-    },
-    "eyebrow": "Contacto",
-    "title": "Trabajemos juntos.",
-    "intro": "Queremos saber de ti.",
-    "form-title": "Cotizaciones",
-    "form-submit": "Hablemos"
-  },
-  "BlogPage": {
-    "meta": {
-      "title": "Codisans | Blog",
-      "description": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
-    },
-    "eyebrow": "Blog",
-    "title": "Algunas de nuestras perspectivas",
-    "intro": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
-  },
-  "WorkPage": {
-    "meta": {
-      "title": "Codisans | Nuestro Trabajo",
-      "description": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes."
-    },
-    "eyebrow": "Nuestro trabajo",
-    "title": "Soluciones probadas para problemas del mundo real.",
-    "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
-  },
   "ProcessPage": {
     "meta": {
       "title": "Codisans | Proceso",
@@ -144,6 +119,7 @@
     "eyebrow": "Proceso",
     "title": "Proceso",
     "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes.",
+    "cta": "Construyamos algo juntos.",
     "steps": {
       "discover": {
         "title": "Descubrir",
@@ -178,6 +154,35 @@
         "title": "Innovador",
         "description": "Nos esforzamos por ser innovadores en nuestro enfoque para cada proyecto. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
       }
-  }
+    }
+  },
+  "WorkPage": {
+    "meta": {
+      "title": "Codisans | Nuestro Trabajo",
+      "description": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes."
+    },
+    "eyebrow": "Nuestro trabajo",
+    "title": "Soluciones probadas para problemas del mundo real.",
+    "intro": "Creemos en la eficiencia y maximizar nuestros recursos para brindar el mejor valor a nuestros clientes. La forma principal en que lo hacemos es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década."
+  },
+  "BlogPage": {
+    "meta": {
+      "title": "Codisans | Blog",
+      "description": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
+    },
+    "eyebrow": "Blog",
+    "title": "Algunas de nuestras perspectivas",
+    "intro": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
+  },
+  "ContactPage": {
+    "meta": {
+      "title": "Codisans | Contacto",
+      "description": "Trabajemos juntos. Queremos saber de ti."
+    },
+    "eyebrow": "Contacto",
+    "title": "Trabajemos juntos.",
+    "intro": "Queremos saber de ti.",
+    "form-submit": "Hablemos",
+    "form-title": "Cotizaciones"
   }
 }

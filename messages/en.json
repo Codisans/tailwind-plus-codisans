@@ -48,10 +48,8 @@
       "title": "Software built to deliver value, not just code. | Codisans",
       "description": "Tired of developers not understanding your business? We build smart, scalable software solutions for startups and brands that need more than just a website."
     },
-    "eyebrow": "",
     "title": "Software built to deliver value, not just code.",
     "intro": "Codisans builds more than software. We create outcomes.",
-    "cta": "Let's build something together.",
     "pain-point": "We're two developers who are passionate about what we do, always looking for new challenges.",
     "services": {
       "eyebrow": "Our Solutions",
@@ -113,15 +111,6 @@
       "description": "We are a team of passionate individuals who are driven by a shared purpose. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
     }
   },
-  "CulturePage": {
-    "meta": {
-      "title": "Codisans | Culture",
-      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
-    },
-    "eyebrow": "Culture",
-    "title": "Culture",
-    "intro": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
-  },
   "ProcessPage": {
     "meta": {
       "title": "Codisans | Our Process",
@@ -167,6 +156,15 @@
       }
     }
   },
+  "WorkPage": {
+    "meta": {
+      "title": "Codisans | Our Work",
+      "description": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
+    },
+    "eyebrow": "Our work",
+    "title": "Proven solutions for real-world problems.",
+    "intro": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we've been developing for the past decade."
+  },
   "BlogPage": {
     "meta": {
       "title": "Codisans | Blog",
@@ -186,14 +184,5 @@
     "intro": "We can't wait to hear from you.",
     "form-submit": "Let's talk",
     "form-title": "Work inquiries"
-  },
-  "WorkPage": {
-    "meta": {
-      "title": "Codisans | Our Work",
-      "description": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
-    },
-    "eyebrow": "Our work",
-    "title": "Proven solutions for real-world problems.",
-    "intro": "We believe in efficiency and maximizing our resources to provide the best value to our clients. The primary way we do that is by re-using the same five projects we've been developing for the past decade."
   }
 }
