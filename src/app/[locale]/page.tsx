@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { ContactSection } from '@/components/ContactSection'
-import imageLaptop from '@/images/laptop.jpg'
+import heroImage from '@/images/web-dev-landscape.webp'
 import { RootLayout } from '@/components/RootLayout'
 import { Card, CardsBlock } from '../../blocks/CardsBlock'
 import { ListBlock } from '../../blocks/ListBlock'
@@ -65,7 +65,8 @@ export default async function Home({
         eyebrow={t('HomePage.services.eyebrow')}
         title={t('HomePage.services.title')}
         summary={t('HomePage.services.summary')}
-        image={imageLaptop}
+        image={heroImage}
+        grayscale={false}
         items={services}
       />
 

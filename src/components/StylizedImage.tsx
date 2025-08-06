@@ -25,8 +25,9 @@ type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 export function StylizedImage({
   shape = 0,
   className,
+  grayscale = true,
   ...props
-}: ImagePropsWithOptionalAlt & { shape?: 0 | 1 | 2 }) {
+}: ImagePropsWithOptionalAlt & { shape?: 0 | 1 | 2; grayscale?: boolean }) {
   let id = useId()
   let { width, height, path } = shapes[shape]
 
@@ -34,7 +35,8 @@ export function StylizedImage({
     <div
       className={clsx(
         className,
-        'aspect-719/680 relative flex w-full grayscale',
+        'relative flex aspect-719/680 w-full',
+        grayscale && 'grayscale',
       )}
     >
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
@@ -43,7 +45,7 @@ export function StylizedImage({
             <foreignObject width={width} height={height}>
               <Image
                 alt=""
-                className="bg-theme-100 w-full object-cover"
+                className="w-full bg-theme-100 object-cover"
                 style={{ aspectRatio: `${width} / ${height}` }}
                 {...props}
               />
