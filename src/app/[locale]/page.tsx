@@ -13,7 +13,7 @@ export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>
-}) {
+}): Promise<Metadata> {
   const { locale } = await params
 
   const t = await getTranslations({ locale, namespace: 'HomePage' })
@@ -65,8 +65,8 @@ export default async function Home({
         eyebrow={t('HomePage.services.eyebrow')}
         title={t('HomePage.services.title')}
         summary={t('HomePage.services.summary')}
-        // image={heroImage}
-        video="/hero-loop.mp4"
+        image={heroImage}
+        // video="/hero-loop.mp4"
         grayscale={false}
         items={services}
       />
