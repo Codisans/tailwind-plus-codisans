@@ -123,19 +123,19 @@
     "steps": {
       "discover": {
         "title": "Descubrir",
-        "description": "Trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, nos integramos en sus operaciones diarias para comprender lo que hace que su negocio funcione."
+        "description": "Comenzamos conociendo tu negocio a fondo. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
       },
       "define": {
         "title": "Definir",
-        "description": "Trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, nos integramos en sus operaciones diarias para comprender lo que hace que su negocio funcione."
+        "description": "Convertimos los aprendizajes en un plan claro. Definimos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una sola línea de código."
       },
       "build": {
         "title": "Construir",
-        "description": "Basado en la fase de descubrimiento, desarrollamos un plan integral para cada producto y comenzamos a trabajar hacia la entrega. El plan de ruta es un enredo técnico intrincado diseñado para arrastrar la entrega."
+        "description": "Con una base sólida, pasamos al desarrollo. Trabajamos de forma iterativa, en constante comunicación, y nos adaptamos según sea necesario — siempre priorizando el rendimiento, la escalabilidad y la experiencia de usuario."
       },
       "deliver": {
         "title": "Entregar",
-        "description": "Alrededor de la mitad de la fase de construcción, empujamos cada proyecto fuera en 6 semanas debido a un cambio en los requisitos. Esto nos permite aumentar el presupuesto una vez más antes del lanzamiento."
+        "description": "Lanzamos con confianza. Cada producto pasa por pruebas rigurosas, ajustes finales y control de calidad. Una vez en producción, apoyamos a tu equipo para asegurar un lanzamiento fluido y sin sobresaltos."
       }
     },
     "values": {
@@ -169,11 +169,11 @@
   "BlogPage": {
     "meta": {
       "title": "Codisans | Blog",
-      "description": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
+      "description": "Estas son algunas de nuestras opiniones sobre el mundo cambiante de la tecnología."
     },
     "eyebrow": "Blog",
     "title": "Algunas de nuestras perspectivas",
-    "intro": "Mantente al día con las últimas noticias y artículos de la industria mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar artículos antiguos sobre trucos CSS."
+    "intro": "Estas son algunas de nuestras opiniones sobre el mundo cambiante de la tecnología."
   },
   "ContactPage": {
     "meta": {

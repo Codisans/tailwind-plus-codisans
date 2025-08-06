@@ -123,19 +123,19 @@
     "steps": {
       "discover": {
         "title": "Discover",
-        "description": "We work closely with our clients to understand their needs and goals, embedding ourselves in their every day operations to understand what makes their business tick."
+        "description": "We start by getting to know your business inside and out. Through workshops, research, and direct collaboration, we uncover what your users need and where your biggest opportunities lie."
       },
       "define": {
         "title": "Define",
-        "description": "We work closely with our clients to understand their needs and goals, embedding ourselves in their every day operations to understand what makes their business tick."
+        "description": "Together, we turn insights into a clear plan. We map out key features, user flows, and technical requirements so everyone’s aligned before a single line of code is written."
       },
       "build": {
         "title": "Build",
-        "description": "Based off of the discovery phase, we develop a comprehensive roadmap for each product and start working towards delivery. The roadmap is an intricately tangled mess of technical nonsense designed to drag the delivery."
+        "description": "With a solid foundation in place, we move into development. We build iteratively, stay in constant communication, and adapt as needed—always keeping performance, scalability, and user experience front and center."
       },
       "deliver": {
         "title": "Deliver",
-        "description": "About halfway through the Build phase, we push each project out by 6 weeks due to a change in requirements. This allows us to increase the budget a final time before launch."
+        "description": "We launch with confidence. Every product goes through rigorous testing, polish, and QA. Once live, we support your team to ensure a smooth rollout and a strong start."
       }
     },
     "values": {
