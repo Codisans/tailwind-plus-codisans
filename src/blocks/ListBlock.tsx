@@ -3,6 +3,7 @@ import { FadeIn } from '@/components/FadeIn'
 import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
+import { StylizedVideo } from '@/components/StylizedVideo'
 import { StaticImageData } from 'next/image'
 
 type ListBlockProps = {
@@ -10,6 +11,7 @@ type ListBlockProps = {
   title: string
   summary?: string
   image?: StaticImageData
+  video?: string
   items?: {
     title: string
     description: string
@@ -22,6 +24,7 @@ export const ListBlock = ({
   title,
   summary,
   image,
+  video,
   items,
   grayscale = true,
 }: ListBlockProps) => {
@@ -45,6 +48,11 @@ export const ListBlock = ({
                   sizes="(min-width: 1024px) 41rem, 31rem"
                   className="justify-center lg:justify-end"
                 />
+              </FadeIn>
+            )}
+            {video && (
+              <FadeIn className="w-135 flex-none lg:w-180">
+                <StylizedVideo src={video} grayscale={grayscale} />
               </FadeIn>
             )}
           </div>

@@ -65,7 +65,8 @@ export default async function Home({
         eyebrow={t('HomePage.services.eyebrow')}
         title={t('HomePage.services.title')}
         summary={t('HomePage.services.summary')}
-        image={heroImage}
+        // image={heroImage}
+        video="/hero-loop.mp4"
         grayscale={false}
         items={services}
       />
