@@ -10,11 +10,11 @@
     "company": "Empresa",
     "connect": "Conéctate",
     "contact": "Contacto",
-    "contact-cta": "Escríbenos",
+    "contact-cta": "Hablemos",
     "contact-form-title": "Cotizaciones",
     "contact-form-submit": "Hablemos",
     "contact-invitation": "Trabajemos juntos",
-    "contact-message": "Conversemos sobre tu proyecto",
+    "contact-message": "Cuéntanos de tu proyecto",
     "contact-us": "Contacto",
     "email": "Correo electrónico",
     "emails-heading": "Correo electrónico",
@@ -48,20 +48,20 @@
       "title": "Codisans | Software conciente. Impacto estratégico.",
       "description": "¿Tus desarrolladores no entienden tu negocio? Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web."
     },
-    "title": "Software conciente que crea valor",
-    "intro": "Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web.",
-    "pain-point": "Somos dos desarrolladores apasionados por lo que hacemos, siempre buscando nuevos desafíos.",
+    "title": "Software que aporta valor, no solo código.",
+    "intro": "Codisans no solo desarrolla software. Creamos resultados.",
+    "pain-point": "Somos un equipo de desarrolladores apasionados, siempre buscando nuevos desafíos.",
     "services": {
       "eyebrow": "Servicios",
       "title": "Impulsamos crecimiento a través de software inteligente.",
-      "summary": "Specializing in web development, we build tailored software solutions that drive growth and efficiency.",
+      "summary": "Especialistas en desarrollo web, creamos soluciones personalizadas que impulsan el crecimiento y la eficiencia.",
       "web-development": {
         "title": "Desarrollo Web",
         "description": "Creamos aplicaciones web a medida, potentes y seguras. Nuestras soluciones optimizan tus operaciones, conectan con tus usuarios y ofrecen experiencias digitales fluidas que marcan la diferencia."
       },
       "ai-solutions": {
         "title": "Soluciones de IA",
-        "description": "Elimina cuellos de botella y mejora tu eficiencia con soluciones de IA hechas a medida. Identificamos oportunidades para automatizar procesos complejos, reducir costos y potenciar tu productividad con innovación real."
+        "description": "Elimina cuellos de botella y mejora la eficiencia con nuestras soluciones de IA personalizadas. Detectamos oportunidades para automatizar flujos complejos, reducir costos y llevar tu productividad a otro nivel mediante la innovación."
       },
       "e-commerce": {
         "title": "E-Commerce",
@@ -86,24 +86,24 @@
       "description": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos."
     },
     "eyebrow": "Sobre nosotros",
-    "title": "Codisans fue creado de la creencia compartida: el software de calidad es tanto diseñado como desarrollado.",
-    "intro": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos.",
+    "title": "Impulsados por la pasión y el propósito.",
+    "intro": "Nacidos de la ambición y una visión compartida, estamos aquí para generar un impacto.",
     "technologies-title": "Algunas de las tecnologías que nos gustan",
     "culture": {
       "eyebrow": "Cultura",
       "title": "Cultura",
       "description": "Creemos que nuestra fortaleza radica en nuestra enfoque colaborativo, que pone a nuestros clientes en el centro de todo lo que hacemos.",
       "value-1": {
-        "title": "Meticuloso",
-        "description": "Nos esforzamos por ser meticulosos en nuestro enfoque para cada proyecto. Tomamos el tiempo para entender las necesidades y objetivos del cliente, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+        "title": "Pasión",
+        "description": "Nos impulsa una pasión genuina por la tecnología y la innovación. Esto nos motiva a explorar constantemente nuevas ideas y a perfeccionar nuestro oficio para ofrecer productos excepcionales."
       },
       "value-2": {
-        "title": "Colaborativo",
-        "description": "Nos esforzamos por ser colaborativos en nuestro enfoque para cada proyecto. Trabajamos estrechamente con el cliente para entender sus necesidades y objetivos, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+        "title": "Propósito",
+        "description": "Nos une un propósito claro: resolver desafíos significativos. Creamos soluciones que no solo son funcionales y estéticas, sino que aportan un valor real a nuestros clientes."
       },
       "value-3": {
-        "title": "Innovador",
-        "description": "Nos esforzamos por ser innovadores en nuestro enfoque para cada proyecto. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
+        "title": "Colaboración",
+        "description": "Creemos que los mejores resultados provienen de asociaciones estrechas. Trabajamos codo a codo contigo para comprender tu visión y tus objetivos, asegurando un producto final excelente."
       }
     },
     "team": {
@@ -118,7 +118,7 @@
     },
     "eyebrow": "Proceso",
     "title": "Cómo abordamos proyectos",
-    "intro": "Nada de improvisar. Seguimos un proceso claro que minimiza riesgos, mejora la comunicación para entregar los mejores resultados.",
+    "intro": "Nada de improvisar. Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados.",
     "cta": "Construyamos algo juntos.",
     "steps": {
       "discover": {
@@ -139,20 +139,20 @@
       }
     },
     "values": {
-      "eyebrow": "Valores",
-      "title": "Balanceando confiabilidad e innovación",
-      "description": "Nos esforzamos por mantenernos en la vanguardia de las tendencias y tecnologías emergentes, mientras completamente ignoramos y bifurcamos ese viejo proyecto Rails con el que nos sentimos cómodos. Nos mantenemos fieles a nuestros valores para justificar esa decisión.",
+      "eyebrow": "Nuestra promesa",
+      "title": "Tenemos un código.",
+      "description": "En cada fase de nuestro trabajo, puedes contar con tres promesas clave que garantizan resultados excepcionales, juntos.",
       "value-1": {
-        "title": "Meticuloso",
-        "description": "Nos esforzamos por ser meticulosos en nuestro enfoque para cada proyecto. Tomamos el tiempo para entender las necesidades y objetivos del cliente, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+        "title": "Transparencia",
+        "description": "Creemos que las grandes alianzas se basan en la confianza y la claridad. Desde el primer día, hablamos con franqueza sobre el alcance, los plazos y las decisiones clave — sin costos ocultos, sin sorpresas y sin jerga técnica."
       },
       "value-2": {
-        "title": "Colaborativo",
-        "description": "Nos esforzamos por ser colaborativos en nuestro enfoque para cada proyecto. Trabajamos estrechamente con el cliente para entender sus necesidades y objetivos, y trabajamos incansablemente para entregar un producto que no solo es funcional, sino también hermoso y fácil de usar."
+        "title": "Detallistas",
+        "description": "Cuidamos cada proyecto al detalle. Nos tomamos el tiempo para entender tus necesidades y objetivos, y trabajamos a fondo para entregar un producto funcional, bello y fácil de usar."
       },
       "value-3": {
-        "title": "Innovador",
-        "description": "Nos esforzamos por ser innovadores en nuestro enfoque para cada proyecto. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
+        "title": "Colaborativos",
+        "description": "Creemos que las mejores soluciones nacen del trabajo en equipo. Involucramos al cliente en cada paso del proceso, fomentando una comunicación fluida y decisiones compartidas para lograr resultados alineados y duraderos."
       }
     }
   },
