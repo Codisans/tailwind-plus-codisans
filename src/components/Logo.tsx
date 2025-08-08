@@ -37,11 +37,11 @@ export function Logotype({
 }) {
   let id = useId()
   return (
-    <svg viewBox="0 0 491 97" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 491 98" aria-hidden="true" {...props}>
       <rect
         clipPath={`url(#${id}-clip)`}
         width="491"
-        height="97"
+        height="98"
         className={clsx(
           'transition-all duration-300 group-hover/logo:w-full',
           invert ? 'fill-white' : 'fill-theme-950',
@@ -80,7 +80,7 @@ export function Logo({
 }) {
   return (
     <svg
-      viewBox="0 0 491 97"
+      viewBox="0 0 491 98"
       aria-hidden="true"
       className={clsx(fillOnHover && 'group/logo', className)}
       {...props}
