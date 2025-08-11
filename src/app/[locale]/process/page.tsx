@@ -94,6 +94,7 @@ function Section({
           <FadeIn className="w-120 flex-none lg:w-130">
             <StylizedImage
               {...image}
+              grayscale={false}
               sizes="(min-width: 1024px) 41rem, 31rem"
               className="justify-center lg:justify-end lg:group-even/section:justify-start"
             />
