@@ -114,11 +114,11 @@
   "ProcessPage": {
     "meta": {
       "title": "Codisans | Proceso",
-      "description": "Nada de improvisar. Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados."
+      "description": "Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados."
     },
     "eyebrow": "Proceso",
     "title": "Cómo abordamos proyectos",
-    "intro": "Nada de improvisar. Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados.",
+    "intro": "Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados.",
     "cta": "Construyamos algo juntos.",
     "steps": {
       "discover": {

@@ -114,11 +114,11 @@
   "ProcessPage": {
     "meta": {
       "title": "Codisans | Our Process",
-      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
+      "description": "Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way."
     },
     "eyebrow": "Our Process",
     "title": "How we approach projects.",
-    "intro": "We don’t do guesswork. Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way.",
+    "intro": "Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way.",
     "cta": "Let's build something together.",
     "steps": {
       "discover": {
@@ -159,7 +159,7 @@
   "WorkPage": {
     "meta": {
       "title": "Codisans | Our Work",
-      "description": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
+      "description": "Smart builds. Ready to grow. We believe in efficiency and maximizing our resources to provide the best value to our clients."
     },
     "eyebrow": "Our work",
     "title": "Smart builds. Ready to grow.",
@@ -169,7 +169,7 @@
   "BlogPage": {
     "meta": {
       "title": "Codisans | Blog",
-      "description": "Our strength lies in our collaborative approach, which puts you at the center of everything we do."
+      "description": "Some of our takes. These are some of our honest opinions on the rapidly evolving tech landscape."
     },
     "eyebrow": "Blog",
     "title": "Some of our takes.",
