@@ -36,7 +36,7 @@ export const CardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
                     <Image
                       src={card.image}
                       alt={card.title}
-                      className="h-16 w-16"
+                      className="h-auto w-16"
                       unoptimized
                     />
                   </Link>
