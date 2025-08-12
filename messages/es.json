@@ -1,5 +1,6 @@
 {
   "Global": {
+    "locale": "es-CL",
     "about": "Nosotros",
     "about-us": "Nosotros",
     "blog": "Blog",
@@ -27,6 +28,7 @@
     "work": "Proyectos",
     "our-work": "Proyectos",
     "phone": "Teléfono",
+    "read-case-study": "Leer más",
     "see-all": "Ver todos",
     "services": "Servicios",
     "services-title": "Nos especializamos en crear páginas de marketing de alta calidad.",

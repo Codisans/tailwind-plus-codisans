@@ -12,13 +12,14 @@ import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
 
-function CaseStudies({
+async function CaseStudies({
   title,
   caseStudies,
 }: {
   title: string
   caseStudies: Array<MDXEntry<CaseStudy>>
 }) {
+  const t = await getTranslations('Global')
   return (
     <Container className="mt-40">
       <FadeIn>
@@ -49,7 +50,7 @@ function CaseStudies({
                     </p>
                     <p className="text-sm text-theme-950 lg:mt-2">
                       <time dateTime={caseStudy.date}>
-                        {formatDate(caseStudy.date)}
+                        {formatDate(caseStudy.date, t('locale'))}
                       </time>
                     </p>
                   </div>
@@ -68,7 +69,7 @@ function CaseStudies({
                       href={caseStudy.href}
                       aria-label={`Read case study: ${caseStudy.client}`}
                     >
-                      Read case study
+                      {t('read-case-study')}
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
