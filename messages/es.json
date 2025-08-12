@@ -122,11 +122,11 @@
     "steps": {
       "discover": {
         "title": "Descubrir",
-        "description": "Comenzamos conociendo tu negocio a fondo. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
+        "description": "Comenzamos conociendo tu negocio en profundidad. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
       },
       "define": {
         "title": "Definir",
-        "description": "Convertimos los aprendizajes en un plan claro. Definimos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una sola línea de código."
+        "description": "Convertimos los aprendizajes en un plan claro. Definimos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una línea de código."
       },
       "build": {
         "title": "Construir",
@@ -181,7 +181,7 @@
     },
     "eyebrow": "Contacto",
     "title": "Trabajemos juntos.",
-    "intro": "Queremos saber de ti.",
+    "intro": "Queremos saber de tu proyecto.",
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
   }
