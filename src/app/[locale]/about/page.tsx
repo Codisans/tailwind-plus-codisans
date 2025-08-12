@@ -8,19 +8,6 @@ import { TeamBlock } from '@/blocks/TeamBlock'
 import { getTranslations } from 'next-intl/server'
 import { Technologies } from '@/blocks/Technologies'
 
-const team = [
-  {
-    name: 'Nicolas Canala',
-    role: 'Co-Founder / Backend Lead',
-    image: { src: imageNicolasCanala },
-  },
-  {
-    name: 'Sebastian Strand',
-    role: 'Co-Founder / Frontend Lead',
-    image: { src: imageSebastianStrand },
-  },
-]
-
 export async function generateMetadata({
   params,
 }: {
@@ -39,6 +26,7 @@ export async function generateMetadata({
 export default async function About() {
   // let blogArticles = (await loadArticles()).slice(0, 2)
   const t = await getTranslations('AboutPage')
+  const tGlobal = await getTranslations('Global')
 
   const cultureValues = [
     {
@@ -52,6 +40,19 @@ export default async function About() {
     {
       heading: t('culture.value-3.title'),
       description: t('culture.value-3.description'),
+    },
+  ]
+
+  const team = [
+    {
+      name: tGlobal('nicolas.name'),
+      role: tGlobal('nicolas.role'),
+      image: { src: imageNicolasCanala },
+    },
+    {
+      name: tGlobal('sebastian.name'),
+      role: tGlobal('sebastian.role'),
+      image: { src: imageSebastianStrand },
     },
   ]
 
@@ -69,7 +70,7 @@ export default async function About() {
         invert={true}
       />
 
-      <TeamBlock title="Team" team={team} />
+      <TeamBlock title={t('team.title')} team={team} />
 
       <Technologies title={t('technologies-title')} />
       <ContactSection />
