@@ -78,7 +78,9 @@ export default async function Home({
           type: t('Global.case-study'),
           date: caseStudy.date,
           title: caseStudy.title,
-          image: caseStudy.image?.src as string,
+          image:
+            (caseStudy.thumbnail?.src as string) ??
+            (caseStudy.image?.src as string),
           description: caseStudy.description,
           link: caseStudy.href,
         }))}

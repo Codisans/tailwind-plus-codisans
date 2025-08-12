@@ -1,19 +1,15 @@
 import Image from 'next/image'
 import { Link } from '@/i18n/navigation'
-
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
-import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
-import { Testimonial } from '@/components/Testimonial'
-import logoMailSmirk from '@/images/clients/mail-smirk/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
-import { Clients } from '@/components/Clients'
 import { getTranslations } from 'next-intl/server'
 
 function CaseStudies({
