@@ -13,8 +13,8 @@ import * as keaiEn from '../app/[locale]/work/keai/page.en.mdx'
 import * as keaiEs from '../app/[locale]/work/keai/page.es.mdx'
 import * as laTorreAmbulanteEn from '../app/[locale]/work/la-torre-ambulante/page.en.mdx'
 import * as laTorreAmbulanteEs from '../app/[locale]/work/la-torre-ambulante/page.es.mdx'
-import * as dcv87En from '../app/[locale]/work/dcv87/page.en.mdx'
-import * as dcv87Es from '../app/[locale]/work/dcv87/page.es.mdx'
+// import * as dcv87En from '../app/[locale]/work/dcv87/page.en.mdx'
+// import * as dcv87Es from '../app/[locale]/work/dcv87/page.es.mdx'
 import * as swidStudioEn from '../app/[locale]/work/swid-studio/page.en.mdx'
 import * as swidStudioEs from '../app/[locale]/work/swid-studio/page.es.mdx'
 import * as feliciHouseEn from '../app/[locale]/work/felici-house/page.en.mdx'
@@ -110,11 +110,11 @@ const caseStudyRegistry = {
       module: laTorreAmbulanteEn,
       metadata: (laTorreAmbulanteEn as any).caseStudy as CaseStudy,
     },
-    {
-      slug: 'dcv87',
-      module: dcv87En,
-      metadata: (dcv87En as any).caseStudy as CaseStudy,
-    },
+    // {
+    //   slug: 'dcv87',
+    //   module: dcv87En,
+    //   metadata: (dcv87En as any).caseStudy as CaseStudy,
+    // },
     {
       slug: 'felici-house',
       module: feliciHouseEn,
@@ -137,11 +137,11 @@ const caseStudyRegistry = {
       module: laTorreAmbulanteEs,
       metadata: (laTorreAmbulanteEs as any).caseStudy as CaseStudy,
     },
-    {
-      slug: 'dcv87',
-      module: dcv87Es,
-      metadata: (dcv87Es as any).caseStudy as CaseStudy,
-    },
+    // {
+    //   slug: 'dcv87',
+    //   module: dcv87Es,
+    //   metadata: (dcv87Es as any).caseStudy as CaseStudy,
+    // },
     {
       slug: 'felici-house',
       module: feliciHouseEs,
