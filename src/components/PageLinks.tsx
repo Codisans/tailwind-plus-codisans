@@ -7,6 +7,7 @@ import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { GridPattern } from '@/components/GridPattern'
 import { SectionIntro } from '@/components/SectionIntro'
 import { formatDate } from '@/lib/formatDate'
+import { useTranslations } from 'next-intl'
 
 function ArrowIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -27,29 +28,31 @@ interface Page {
   description: string
 }
 
-function PageLink({ page }: { page: Page }) {
+function PageLink({ page, locale = 'en' }: { page: Page; locale: string }) {
+  const t = useTranslations('Global')
+
   return (
     <article key={page.href}>
       <Border
         position="left"
         className="relative flex flex-col items-start pl-8"
       >
-        <h3 className="text-theme-950 mt-6 text-base font-semibold">
+        <h3 className="mt-6 text-base font-semibold text-theme-950">
           {page.title}
         </h3>
         <time
           dateTime={page.date}
-          className="text-theme-600 order-first text-sm"
+          className="order-first text-sm text-theme-600"
         >
-          {formatDate(page.date)}
+          {formatDate(page.date, locale)}
         </time>
-        <p className="text-theme-600 mt-2.5 text-base">{page.description}</p>
+        <p className="mt-2.5 text-base text-theme-600">{page.description}</p>
         <Link
           href={page.href}
-          className="text-theme-950 hover:text-theme-700 mt-6 flex gap-x-3 text-base font-semibold transition"
+          className="mt-6 flex gap-x-3 text-base font-semibold text-theme-950 transition hover:text-theme-700"
           aria-label={`Read more: ${page.title}`}
         >
-          Read more
+          {t('read-more')}
           <ArrowIcon className="w-6 flex-none fill-current" />
           <span className="absolute inset-0" />
         </Link>
@@ -63,17 +66,19 @@ export function PageLinks({
   pages,
   intro,
   className,
+  locale = 'en',
 }: {
   title: string
   pages: Array<Page>
   intro?: string
   className?: string
+  locale?: string
 }) {
   return (
     <div className={clsx('relative pt-24 sm:pt-32 lg:pt-40', className)}>
-      <div className="rounded-t-4xl bg-linear-to-b from-theme-50 absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden">
+      <div className="absolute inset-x-0 top-0 -z-10 h-[884px] overflow-hidden rounded-t-4xl bg-linear-to-b from-theme-50">
         <GridPattern
-          className="mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-100 stroke-theme-950/5 absolute inset-0 h-full w-full"
+          className="absolute inset-0 h-full w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-100 stroke-theme-950/5"
           yOffset={-270}
         />
       </div>
@@ -86,7 +91,7 @@ export function PageLinks({
         <FadeInStagger className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
           {pages.map((page) => (
             <FadeIn key={page.href}>
-              <PageLink page={page} />
+              <PageLink page={page} locale={locale} />
             </FadeIn>
           ))}
         </FadeInStagger>

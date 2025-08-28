@@ -9,8 +9,8 @@ export function formatDate(dateString: string, locale: string = 'en-US') {
     timeZone: 'UTC',
   })
 
-  // Capitalize month name for Chilean Spanish locale
-  if (locale === 'es-CL') {
+  // Capitalize month name for Spanish locales
+  if (locale.startsWith('es')) {
     formattedDate = formattedDate.replace(/^(\w)/, (match) => match.toUpperCase())
   }
 
