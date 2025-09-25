@@ -28,7 +28,7 @@ export default async function CaseStudyWrapper({
     <RootLayout>
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <PageIntro eyebrow="Case Study" title={caseStudy.title} centered>
+          <PageIntro eyebrow={t('case-study')} title={caseStudy.title} centered>
             <p>{caseStudy.description}</p>
           </PageIntro>
 
