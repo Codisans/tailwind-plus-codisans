@@ -1,3 +1,4 @@
+import { Badge } from '@/components/Badge'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
@@ -30,6 +31,20 @@ export default async function CaseStudyWrapper({
         <header>
           <PageIntro eyebrow={t('case-study')} title={caseStudy.title} centered>
             <p>{caseStudy.description}</p>
+            {caseStudy.url && (
+              <a
+                href={caseStudy.url}
+                className="relative z-10 mt-4 block"
+                target="_blank"
+              >
+                <Badge color="teal">
+                  {caseStudy.url.replace('https://', '')}
+                </Badge>
+              </a>
+              // <a className="mx-auto mt-8 block w-max rounded-full bg-theme-100 px-4 py-1.5 text-base text-theme-600">
+              //   {caseStudy.url}
+              // </a>
+            )}
           </PageIntro>
 
           <FadeIn>
