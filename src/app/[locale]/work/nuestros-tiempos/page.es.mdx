@@ -1,0 +1,156 @@
+import logo from './nt-logo.svg'
+import cover from './cover.webp'
+
+export const caseStudy = {
+  client: 'Codisans',
+  title: 'Nuestros Tiempos — Cómo Codisans Construyó una Plataforma de Inteligencia de Noticias con IA',
+  description:
+    'Nuestros Tiempos es una plataforma de noticias que usa IA para analizar artículos de noticias y proporcionar insights sobre las noticias.',
+  summary: [
+    'Nuestros Tiempos es una plataforma de noticias que usa IA para analizar artículos de noticias y proporcionar insights sobre las noticias.',
+  ],
+  logo,
+  image: { src: cover },
+  date: '2023-10',
+  service: 'Internal R&D',
+  url: 'https://www.nuestrostiempos.cl',
+}
+
+export const metadata = {
+  title: `Caso de Estudio ${caseStudy.client}`,
+  description: caseStudy.description,
+}
+
+## Resumen
+<TagList>
+  <TagListItem>Machine Learning</TagListItem>
+  <TagListItem>Embeddings</TagListItem>
+  <TagListItem>Plataforma de Noticias IA</TagListItem>
+  <TagListItem>Base de Datos Vectorial</TagListItem>
+  <TagListItem>Procesamiento en Tiempo Real</TagListItem>
+</TagList>
+
+## Visión: Tecnología para Entender la Complejidad Informativa
+
+El ecosistema mediático chileno es intenso, diverso y fragmentado. Codisans se propuso resolver la fragmentación con ingeniería, no con opinión.
+
+La meta:
+
+**Diseñar un sistema inteligente capaz de recolectar, limpiar y analizar semánticamente el panorama informativo chileno en tiempo real.**
+
+## Arquitectura del Sistema
+
+Nuestros Tiempos se construyó como una plataforma full-stack impulsada por IA, con capas bien definidas de scraping, análisis vectorial y visualización.
+
+### 🧩 Stack Principal
+
+| Capa | Tecnologías | Propósito |
+|------|-------------|-----------|
+| Frontend | React 19 + TypeScript + Inertia.js + Tailwind v4 + Vite | SPA reactiva para dashboards y visualizaciones en vivo |
+| Backend | Laravel 12 (PHP 8.2) + Filament | Orquesta scraping, embeddings y APIs de datos |
+| Base de Datos | LibSQL (Extensión Vectorial) + SQLite | Almacenamiento híbrido para datos estructurados y vectorizados |
+| Capa IA | Ollama + Modelo BGE-M3 | Genera embeddings vectoriales densos para similitud semántica |
+| Motor de Scraping | Puppeteer (modo stealth) | Evade defensas anti-bot, extrae texto limpio de artículos |
+| Infraestructura | Supervisor + Colas Laravel + Vite SSR | Maneja concurrencia, trabajos en segundo plano y renderizado del servidor |
+
+## Captura y Procesamiento
+
+El sistema recopila contenido de 16 medios nacionales, con configuraciones personalizadas y mecanismos de rotación de agente y tiempos de espera.
+
+Cada medio tiene una capa de configuración personalizada, definiendo selectores CSS únicos, reglas de exclusión y tasas de rastreo. El stack stealth de Puppeteer fue mejorado con rotación de user-agent, throttling de requests y reintentos adaptativos para asegurar scraping confiable sin violar directivas robots.txt.
+
+Los Pipelines de Procesamiento Selectivo sanean HTML, remueven anuncios, normalizan codificación de caracteres y extraen metadatos. Cada artículo es entonces encolado para generación de embeddings y almacenado en la base de datos vectorial.
+
+El resultado es un flujo robusto de datos limpios, normalizados y prontos para análisis vectorial.
+
+## Inteligencia Artificial y Embeddings
+
+La búsqueda tradicional por palabras clave falla en detectar relaciones conceptuales entre artículos — ej., "reforma habitacional" y "planificación urbana." Para resolver esto, Codisans integró el Modelo BGE-M3 de Ollama, un modelo de embeddings multilingüe capaz de capturar similitud semántica en texto en español.
+
+- Para cada artículo procesado, el sistema computa un embedding denso de 768 dimensiones.
+- Estos vectores son indexados en el almacenamiento vectorial de LibSQL, permitiendo consultas de similitud por coseno para encontrar artículos temáticamente relacionados.
+
+**Ejemplo:**
+
+Cuando un medio reporta "Negociaciones de Reforma Tributaria" y otro cubre "Debate del Pacto Fiscal," el motor de IA los agrupa bajo una colección — incluso sin palabras clave compartidas.
+
+Mediante el modelo BGE-M3, cada artículo se transforma en un vector semántico que representa su significado.
+La base vectorial LibSQL permite consultas de similitud por coseno para agrupar automáticamente artículos relacionados, creando colecciones inteligentes que muestran cómo distintos medios abordan el mismo tema.
+
+Este clustering no supervisado permite a Nuestros Tiempos auto-generar "colecciones inteligentes" que reflejan cómo los medios chilenos enmarcan temas complejos de manera diferente.
+
+## Rendimiento y Escalabilidad
+
+La escalabilidad era crítica. El backend fue optimizado para procesamiento concurrente usando Colas de Laravel y workers de Supervisor, asegurando que múltiples scrapers pudieran ejecutarse en paralelo sin bloquear respuestas de API.
+
+El backend admite procesamiento concurrente y colas independientes para scraping, embeddings y clustering.
+
+Optimizaciones implementadas:
+
+- **Indexación de Base de Datos:** Índices compuestos para recuperación rápida de metadatos de artículos.
+- **Lógica de Rate-Limiting:** Intervalos de rastreo cortés por dominio aplicados.
+- **Aislamiento de Colas:** Colas separadas para tareas de scraping, embedding y clustering.
+- **Capa de Cacheo:** Cacheo en memoria para consultas vectoriales de alta frecuencia.
+- **Renderizado del Lado del Servidor:** Implementado vía Vite SSR para SEO y vistas previas compartibles.
+
+La arquitectura completa fue desplegada con recargas de tiempo de inactividad cero vía Laravel Forge e integración systemd.
+
+## Interfaz y Visualización
+
+El frontend sirve no solo como visor de noticias sino también como panel de control en tiempo real para el sistema.
+Construido en React 19 con TypeScript, el dashboard muestra progreso de scraping en vivo, salidas de clustering vectorial y métricas de similitud generadas por IA.
+
+El panel React muestra métricas en vivo, progreso de scraping y gráficos de similitud.
+
+Los usuarios pueden visualizar:
+
+- Embeddings de artículos en proyección multidimensional.
+- Gráficos de relaciones entre fuentes.
+- Evolución temporal de clusters (ej., cómo diferentes medios cubren el mismo evento a lo largo de días).
+
+Esta capa no solo visualiza datos: explica cómo la IA toma decisiones, reforzando la confianza del usuario.
+
+Esta transparencia refuerza la misión de Nuestros Tiempos de "confianza a través de visibilidad."
+
+## Ética y Cumplimiento
+
+Desde el inicio, Codisans integró protocolos de scraping ético — respetando límites de tasa, incluyendo atribución de fuente y omitiendo republicación de texto completo.
+Cada colección enlaza de vuelta a su medio original, manteniendo tanto cumplimiento como credibilidad.
+
+Codisans integró mecanismos de respeto a robots.txt, citación automática y atribución de fuente.
+No se republica contenido completo: se contextualiza y se enlaza.
+
+Esta atención a la responsabilidad legal y moral distingue a Codisans de scrapers genéricos: Nuestros Tiempos fue diseñado no meramente para recopilar datos, sino para respetar y elevar el ecosistema periodístico chileno.
+
+## Resultados Técnicos
+
+| Categoría | Resultado |
+|-----------|-----------|
+| Fuentes Integradas | 16 medios a través de TV, radio y digital |
+| Embeddings Generados | >50,000 vectores semánticos |
+| Latencia de Búsqueda de Similitud | < 200 ms promedio |
+| Trabajos Concurrentes | 30+ hilos de scraping paralelos |
+| Build Frontend | SPA React 19 type-safe con SSR |
+| Despliegue | Integración continua vía Laravel Forge |
+| Cumplimiento Ético | 100% adherencia a robots.txt + atribución de fuente |
+
+## Conclusión
+
+Más allá de la agregación de noticias, Nuestros Tiempos es un blueprint para análisis inteligente de contenido.
+Demuestra cómo la IA, bases de datos vectoriales y diseño full-stack moderno pueden converger para hacer ecosistemas textuales a gran escala tanto explorables como transparentes.
+
+Nuestros Tiempos demuestra cómo la IA y la ingeniería web moderna pueden servir a la transparencia informativa.
+
+Para Codisans, este proyecto validó un patrón repetible:
+
+**🧠 IA + Ingeniería Web + Diseño Ético = Sistemas que crean claridad a escala.**
+
+Para Codisans, el proyecto representa una muestra de dominio técnico aplicado con responsabilidad: sistemas que piensan, pero también respetan.
+
+Esta misma arquitectura puede ser adaptada para:
+
+- Dashboards de inteligencia corporativa (monitoreo de marca o sentimiento).
+- Portales de investigación académica (clustering automatizado de literatura).
+- Herramientas de transparencia mediática en otros mercados.
+
+**IA + Ingeniería + Ética = Claridad a Escala**

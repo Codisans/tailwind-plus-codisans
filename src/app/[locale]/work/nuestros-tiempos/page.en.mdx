@@ -1,0 +1,142 @@
+import logo from './nt-logo.svg'
+import cover from './cover.webp'
+
+export const caseStudy = {
+  client: 'Codisans',
+  title: 'Building Nuestros Tiempos — How Codisans Engineered an AI-Driven News Intelligence Platform',
+  description:
+    'Nuestros Tiempos is a news platform that uses AI to analyze news articles and provide insights on the news.',
+  summary: [
+    'Nuestros Tiempos is a news platform that uses AI to analyze news articles and provide insights on the news.',
+  ],
+  logo,
+  image: { src: cover },
+  date: '2023-10',
+  service: 'Internal R&D',
+  url: 'https://www.nuestrostiempos.cl',
+}
+
+export const metadata = {
+  title: `${caseStudy.client} Case Study`,
+  description: caseStudy.description,
+}
+
+## Overview
+<TagList>
+  <TagListItem>Machine Learning</TagListItem>
+  <TagListItem>Embeddings</TagListItem>
+  <TagListItem>AI News Platform</TagListItem>
+  <TagListItem>Vector Database</TagListItem>
+  <TagListItem>Real-time Processing</TagListItem>
+</TagList>
+
+## Vision: Using Technology to Decode Information Complexity
+
+Chile's media ecosystem is one of the most active in Latin America — yet fragmented, politicized, and difficult to analyze at scale. Codisans saw an opportunity to address this fragmentation not through editorial control, but through engineering precision.
+
+The mission behind Nuestros Tiempos was clear:
+
+**Build an intelligent system capable of collecting, cleaning, and semantically analyzing Chile's entire digital news landscape — in real time.**
+
+This required solving three technical challenges simultaneously:
+
+- Multi-source scraping across heterogeneous websites with strict anti-bot protections.
+- AI-based semantic similarity, to connect related articles without manual tagging.
+- Real-time orchestration, to manage concurrent scraping, processing, and clustering at scale.
+
+## System Architecture Overview
+
+Nuestros Tiempos was designed as a full-stack AI platform built on a foundation of modern open-source technologies.
+
+### 🧩 Core Stack
+
+| Layer | Technologies | Purpose |
+|-------|-------------|---------|
+| Frontend | React 19 + TypeScript + Inertia.js + Tailwind v4 + Vite | Reactive SPA for live dashboards and visualizations |
+| Backend | Laravel 12 (PHP 8.2) + Filament | Orchestrates scraping, embedding, and data APIs |
+| Database | LibSQL (Vector Extension) + SQLite | Hybrid storage for structured and vectorized data |
+| AI Layer | Ollama + BGE-M3 Model | Generates dense vector embeddings for semantic similarity |
+| Scraping Engine | Puppeteer (stealth mode) | Bypasses anti-bot defenses, extracts clean article text |
+| Infrastructure | Supervisor + Laravel Queues + Vite SSR | Handles concurrency, background jobs, and server rendering |
+
+## Data Collection: Multi-Platform, Resilient Scraping
+
+The platform ingests data from 16 major Chilean news outlets — from Emol and CNN Chile to CIPER and El Mostrador.
+
+Each outlet has a custom configuration layer, defining unique CSS selectors, exclusion rules, and crawl rates. The Puppeteer stealth stack was enhanced with user-agent rotation, request throttling, and adaptive retries to ensure reliable scraping without violating robots.txt directives.
+
+Selective Processing Pipelines sanitize HTML, remove ads, normalize character encoding, and extract metadata. Each article is then queued for embedding generation and stored in the vector database.
+
+## AI Engine: Semantic Understanding through Vector Embeddings
+
+Traditional keyword search fails to detect conceptual relationships between articles — e.g., "housing reform" and "urban planning." To solve this, Codisans integrated Ollama's BGE-M3 Model, a multilingual embedding model capable of capturing semantic similarity in Spanish-language text.
+
+- For every processed article, the system computes a dense 768-dimension embedding.
+- These vectors are indexed in LibSQL's vector storage, allowing cosine similarity queries to find thematically related articles.
+
+**Example:**
+
+When one outlet reports "Tax Reform Negotiations" and another covers "Fiscal Pact Debate," the AI engine clusters them under one collection — even with zero shared keywords.
+
+This unsupervised clustering enables Nuestros Tiempos to auto-generate "intelligent collections" that reflect how Chilean media frames complex issues differently.
+
+## Performance & Orchestration
+
+Scalability was critical. The backend was optimized for concurrent processing using Laravel Queues and Supervisor workers, ensuring multiple scrapers could run in parallel without blocking API responses.
+
+Performance enhancements include:
+
+- **Database Indexing:** Composite indexes for fast retrieval of article metadata.
+- **Rate-Limiting Logic:** Enforced polite crawling intervals per domain.
+- **Queue Isolation:** Separate queues for scraping, embedding, and clustering tasks.
+- **Caching Layer:** In-memory caching for high-frequency vector queries.
+- **Server-Side Rendering:** Implemented via Vite SSR for SEO and shareable previews.
+
+The entire architecture was deployed with zero-downtime reloads via Laravel Forge and systemd integration.
+
+## Frontend: Interactive AI Dashboard
+
+The frontend serves not only as a news viewer but also as a real-time control panel for the system.
+Built in React 19 with TypeScript, the dashboard displays live scraping progress, vector clustering outputs, and AI-generated similarity metrics.
+
+Users can visualize:
+
+- Article embeddings in multi-dimensional projection.
+- Cross-source relationship graphs.
+- Time-based evolution of clusters (e.g., how different outlets cover the same event over days).
+
+This transparency reinforces Nuestros Tiempos' mission of "trust through visibility."
+
+## Ethical and Legal Engineering
+
+From inception, Codisans integrated ethical scraping protocols — respecting rate limits, including source attribution, and omitting full-text republication.
+Each collection links back to its original media outlet, maintaining both compliance and credibility.
+
+This attention to legal and moral responsibility sets Codisans apart from generic scrapers: Nuestros Tiempos was engineered not merely to gather data, but to respect and elevate Chile's journalistic ecosystem.
+
+## Key Technical Achievements
+
+| Category | Result |
+|----------|--------|
+| Sources Integrated | 16 news outlets across TV, radio, and digital |
+| Embeddings Generated | >50,000 semantic vectors |
+| Similarity Search Latency | < 200 ms average |
+| Concurrent Jobs | 30+ parallel scraping threads |
+| Frontend Build | Type-safe React 19 SPA with SSR |
+| Deployment | Continuous integration via Laravel Forge |
+| Ethics Compliance | 100% adherence to robots.txt + source attribution |
+
+## Why It Matters
+
+Beyond news aggregation, Nuestros Tiempos is a blueprint for intelligent content analysis.
+It demonstrates how AI, vector databases, and modern full-stack design can converge to make large-scale textual ecosystems both explorable and transparent.
+
+For Codisans, this project validated a repeatable pattern:
+
+**🧠 AI + Web Engineering + Ethical Design = Systems that create clarity at scale.**
+
+This same architecture can be adapted for:
+
+- Corporate intelligence dashboards (monitoring brand or sentiment).
+- Academic research portals (automated literature clustering).
+- Media transparency tools in other markets.

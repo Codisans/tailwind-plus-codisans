@@ -19,6 +19,8 @@ import * as swidStudioEn from '../app/[locale]/work/swid-studio/page.en.mdx'
 import * as swidStudioEs from '../app/[locale]/work/swid-studio/page.es.mdx'
 import * as feliciHouseEn from '../app/[locale]/work/felici-house/page.en.mdx'
 import * as feliciHouseEs from '../app/[locale]/work/felici-house/page.es.mdx'
+import * as nuestrosTiemposEn from '../app/[locale]/work/nuestros-tiempos/page.en.mdx'
+import * as nuestrosTiemposEs from '../app/[locale]/work/nuestros-tiempos/page.es.mdx'
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
@@ -52,6 +54,7 @@ export interface CaseStudy {
     }
     content: string
   }
+  url?: string
 }
 
 // Static blog post registry
@@ -106,6 +109,11 @@ const caseStudyRegistry = {
       metadata: (keaiEn as any).caseStudy as CaseStudy,
     },
     {
+      slug: 'nuestros-tiempos',
+      module: nuestrosTiemposEn,
+      metadata: (nuestrosTiemposEn as any).caseStudy as CaseStudy,
+    },
+    {
       slug: 'la-torre-ambulante',
       module: laTorreAmbulanteEn,
       metadata: (laTorreAmbulanteEn as any).caseStudy as CaseStudy,
@@ -131,6 +139,11 @@ const caseStudyRegistry = {
       slug: 'keai',
       module: keaiEs,
       metadata: (keaiEs as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'nuestros-tiempos',
+      module: nuestrosTiemposEs,
+      metadata: (nuestrosTiemposEs as any).caseStudy as CaseStudy,
     },
     {
       slug: 'la-torre-ambulante',
