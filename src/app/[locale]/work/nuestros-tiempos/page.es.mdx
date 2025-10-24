@@ -4,11 +4,11 @@ import Blockquote from '@/components/Blockquote'
 
 export const caseStudy = {
   client: 'Codisans',
-  title: 'Estudio de Caso: Nuestros Tiempos — Descifrando la Complejidad de las Noticias en Chile con IA',
+  title: 'Nuestros Tiempos — Descifrando la Complejidad de las Noticias en Chile con IA',
   description:
-    'Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas. Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas USD 6 al mes.',
+    'Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas. Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas $6 al mes.',
   summary: [
-    'Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas. Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas USD 6 al mes.',
+    'Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas. Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas $6 al mes.',
   ],
   logo,
   image: { src: cover },
@@ -35,9 +35,7 @@ export const metadata = {
 
 Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas.
 
-Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas USD 6 al mes.
-
-Este proyecto ejemplifica la capacidad de Codisans para transformar conceptos avanzados de IA en sistemas eficientes, reales y listos para producción.
+Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas $6 al mes.
 
 ## El Problema: Navegar entre la Información y la Desinformación
 
@@ -53,7 +51,7 @@ Nuestros Tiempos enfrenta este desafío al identificar automáticamente las dife
 
 - Desarrollar un sistema totalmente automatizado de agrupamiento de noticias por similitud semántica.
 - Lograr agrupaciones de alta calidad sin supervisión y con recursos mínimos.
-- Ejecutar todo el sistema en un VPS pequeño por menos de USD 6 al mes.
+- Ejecutar todo el sistema en un VPS pequeño por menos de $6 al mes.
 - Construir una experiencia de usuario moderna y receptiva que comunique claramente los resultados de la IA.
 
 ## Visión
@@ -71,7 +69,7 @@ En lugar de depender de grandes y costosas arquitecturas de lenguaje, el proyect
 | 1. Embeddings | Model2Vec (embeddings estáticos) | Generar representaciones semánticas de los artículos. |
 | 2. Reducción de Dimensionalidad | UMAP | Comprimir los embeddings preservando su estructura. |
 | 3. Agrupamiento (Clustering) | HDBSCAN | Detectar grupos densos que representen narrativas temáticas. |
-| 4. Resumen (en desarrollo) | transformers.js | Generar resúmenes legibles por humanos para cada clúster. |
+| 4. Resumen | Transformers.js | Generar resúmenes legibles por humanos para cada clúster, directamente en el navegador del usuario. |
 
 Todos los modelos se ejecutan en CPU — sin necesidad de GPU — demostrando que **la creatividad en ML supera la potencia de hardware**.
 
@@ -80,14 +78,14 @@ Todos los modelos se ejecutan en CPU — sin necesidad de GPU — demostrando qu
 - **Model2Vec**: liviano, determinista y rápido para embeddings estáticos.
 - **UMAP**: conserva la proximidad semántica en baja dimensionalidad, clave para la claridad.
 - **HDBSCAN**: detecta automáticamente densidades variables — ideal para datos desbalanceados como las noticias.
-- **transformers.js** (próximamente): permitirá generar resúmenes explicativos en el navegador.
+- **Transformers.js**: permite generar resúmenes explicativos en el navegador.
 
 En conjunto, conforman un pipeline NLP no supervisado, elegante y eficiente en recursos.
 
 ## Pipeline
 
 1. **Limpieza y Normalización de Datos** – Extracción de texto desde 16 medios chilenos (Emol, CNN Chile, Cooperativa, T13, entre otros).
-2. **Vectorización** – Cada artículo se convierte en un vector de 768 dimensiones utilizando un modelo estático derivado de EmbeddingGemma de Google mediante Model2Vec.
+2. **Vectorización** – Cada artículo se convierte en un vector de 768 dimensiones utilizando un modelo estático derivado de EmbeddingGemma de Google DeepMind mediante Model2Vec.
 3. **Reducción de Dimensionalidad** – Aplicación de UMAP para revelar relaciones topológicas significativas.
 4. **Clustering** – Uso de HDBSCAN para detectar agrupaciones naturales sin parámetros predefinidos.
 5. **Filtrado y Validación** – Eliminación de valores atípicos y refinamiento de clústeres.
@@ -99,7 +97,7 @@ Todos los datos se almacenan en SQLite y LibSQL (para vectores), utilizando SQLi
 
 - Pipeline 100% automatizado  
 - Sin etiquetado ni supervisión manual  
-- Clústeres coherentes y legibles  
+- Clusteres coherentes y legibles  
 - Búsqueda de texto completo nativa, sin servicios externos  
 - Desplegado en un VPS pequeño con un costo de $6/mes  
 
