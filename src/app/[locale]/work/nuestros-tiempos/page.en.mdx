@@ -64,10 +64,10 @@ Rather than relying on large, expensive LLM pipelines, this project proves how t
 
 | Step | Technique | Purpose |
 |------|-----------|---------|
-| 1. Embeddings | Model2Vec (static embeddings) | Generate semantic representations of news articles. |
-| 2. Dimensionality Reduction | UMAP | Compress embeddings while preserving structure. |
-| 3. Clustering | HDBSCAN | Discover dense clusters representing thematic narratives. |
-| 4. Summarization | Transformers.js | Generate human-readable summaries of each cluster, directly on the user's browser. |
+| 1. Embeddings | [Model2Vec](https://minish.ai/packages/model2vec/introduction) (static embeddings) | Generate semantic representations of news articles. |
+| 2. Dimensionality Reduction | [UMAP](https://umap-learn.readthedocs.io/en/latest/) | Compress embeddings while preserving structure. |
+| 3. Clustering | [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html) | Discover dense clusters representing thematic narratives. |
+| 4. Summarization | [Transformers.js](https://huggingface.co/docs/transformers.js/en/index) | Generate human-readable summaries of each cluster, directly on the user's browser. |
 
 All models run on CPU — no GPU dependency — showing that **ML creativity > hardware power**.
 

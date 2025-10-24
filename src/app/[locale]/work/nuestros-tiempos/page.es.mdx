@@ -66,10 +66,10 @@ En lugar de depender de grandes y costosas arquitecturas de lenguaje, el proyect
 
 | Etapa | Técnica | Propósito |
 |-------|---------|-----------|
-| 1. Embeddings | Model2Vec (embeddings estáticos) | Generar representaciones semánticas de los artículos. |
-| 2. Reducción de Dimensionalidad | UMAP | Comprimir los embeddings preservando su estructura. |
-| 3. Agrupamiento (Clustering) | HDBSCAN | Detectar grupos densos que representen narrativas temáticas. |
-| 4. Resumen | Transformers.js | Generar resúmenes legibles por humanos para cada clúster, directamente en el navegador del usuario. |
+| 1. Embeddings | [Model2Vec](https://minish.ai/packages/model2vec/introduction) (embeddings estáticos) | Generar representaciones semánticas de los artículos. |
+| 2. Reducción de Dimensionalidad | [UMAP](https://umap-learn.readthedocs.io/en/latest/) | Comprimir los embeddings preservando su estructura. |
+| 3. Agrupamiento (Clustering) | [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html) | Detectar grupos densos que representen narrativas temáticas. |
+| 4. Resumen | [Transformers.js](https://huggingface.co/docs/transformers.js/en/index) | Generar resúmenes legibles por humanos para cada clúster, directamente en el navegador del usuario. |
 
 Todos los modelos se ejecutan en CPU — sin necesidad de GPU — demostrando que **la creatividad en ML supera la potencia de hardware**.
 
