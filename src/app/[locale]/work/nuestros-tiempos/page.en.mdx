@@ -1,13 +1,14 @@
 import logo from './nt-logo.svg'
 import cover from './cover.webp'
+import Blockquote from '@/components/Blockquote'
 
 export const caseStudy = {
   client: 'Codisans',
-  title: 'Building Nuestros Tiempos — How Codisans Engineered an AI-Driven News Intelligence Platform',
+  title: "Case Study: Nuestros Tiempos — Decoding Chile's News Complexity with AI",
   description:
-    'Nuestros Tiempos leverages AI to analyze Chile’s fast-moving media ecosystem — helping readers, journalists, and analysts uncover relationships and trends hidden within thousands of news stories.',
+    'Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just USD 6/month.',
   summary: [
-    'Nuestros Tiempos leverages AI to analyze Chile’s fast-moving media ecosystem — helping readers, journalists, and analysts uncover relationships and trends hidden within thousands of news stories.',
+    'Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just USD 6/month.',
   ],
   logo,
   image: { src: cover },
@@ -21,137 +22,109 @@ export const metadata = {
   description: caseStudy.description,
 }
 
-## Overview
+## Tech Stack Highlights
 <TagList>
-  <TagListItem>Machine Learning</TagListItem>
-  <TagListItem>Embeddings</TagListItem>
-  <TagListItem>AI News Platform</TagListItem>
-  <TagListItem>Vector Database</TagListItem>
-  <TagListItem>Real-time Processing</TagListItem>
+  <TagListItem>Laravel</TagListItem>
+  <TagListItem>React</TagListItem>
+  <TagListItem>LibSQL + SQLite</TagListItem>
+  <TagListItem>Model2Vec</TagListItem>
+  <TagListItem>UMAP + HDBSCAN</TagListItem>
 </TagList>
 
-## Vision: Decoding Chile’s News Complexity with AI
+## Overview
 
-Chile's media ecosystem is one of the most active in Latin America — yet fragmented, politicized, and difficult to analyze at scale. Codisans saw an opportunity to address this fragmentation not through editorial control, but through engineering precision.
+Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just USD 6/month.
 
-The mission behind Nuestros Tiempos was clear:
+This project exemplifies Codisans' ability to turn advanced AI concepts into real-world, efficient, and production-ready systems.
 
-**Build an intelligent system capable of collecting, cleaning, and semantically analyzing Chile's entire digital news landscape — in real time.**
+## The Problem: Navigating Information & Misinformation
 
-This required solving three technical challenges simultaneously:
+In today's information landscape, people are overwhelmed by volume and bias.
 
-- Multi-source scraping across heterogeneous sources.
-- AI-based semantic similarity, to connect related articles without manual tagging.
-- Real-time orchestration, to manage concurrent scraping, processing, and clustering at scale.
+Chileans, like audiences everywhere, face an invisible problem: news fragmentation.
 
-## System Architecture Overview
+Each outlet presents partial narratives, making it hard to understand the complete picture.
 
-Nuestros Tiempos was designed as a full-stack AI platform built on a foundation of modern open-source technologies.
+Nuestros Tiempos tackles this by automatically identifying different narratives around the same news event, allowing users to explore multiple perspectives in one place — a key step toward reducing misinformation and polarization.
 
-### 🧩 Core Stack
+## Objectives
 
-| Layer | Technologies | Purpose |
-|-------|-------------|---------|
-| Frontend | React 19 + TypeScript + Inertia.js + Tailwind v4 + Vite | Reactive SPA for live dashboards and visualizations |
-| Backend | Laravel 12 (PHP 8.4) + FilamentPHP | Orchestrates scraping, embedding, and data APIs |
-| Database | SQLite (Primary) + LibSQL (Vector) | Hybrid storage for structured and vectorized data |
-| Semantic Layer | Model2Vec + EmbeddingGemma | Generates dense, static vector embeddings for semantic similarity |
-| Microservice | FastAPI + UMAP + HDBSCAN | Reduces vector dimensionality and performs unsupervised clustering |
-| Scraping Engine | Puppeteer (stealth mode) | Bypasses anti-bot defenses, extracts clean article text |
-| Infrastructure | Supervisor + Laravel Queues + Vite SSR | Handles concurrency, background jobs, and server rendering |
+- Develop a fully automated news clustering system to group semantically similar articles.
+- Achieve high-quality clustering with zero supervision and minimal resources.
+- Run the entire system on a tiny VPS for less than $6/month.
+- Build a modern, responsive UX that presents AI insights clearly to users.
 
-## Data Collection: Multi-Platform, Resilient Scraping
+## Vision
 
-The platform ingests data from 16 major Chilean news outlets — from Emol and CNN Chile to CIPER and El Mostrador.
+**"Decoding Chile's News Complexity with AI"**
 
-Each outlet has a custom configuration layer, defining unique CSS selectors, exclusion rules, and crawl rates. The Puppeteer stealth stack was enhanced with user-agent rotation, request throttling, and adaptive retries to ensure reliable scraping without violating robots.txt directives.
+Nuestros Tiempos represents Codisans' vision for applied AI: accessible, ethical, and efficient.
 
-Selective Processing Pipelines sanitize HTML, remove ads, normalize character encoding, and extract metadata. Each article is then queued for embedding generation and stored in the vector database.
+Rather than relying on large, expensive LLM pipelines, this project proves how traditional yet powerful ML techniques — when combined creatively — can deliver meaningful impact.
 
-## AI Engine: Unsupervised Semantic Clustering
+## Machine Learning Models & Approach
 
-At the core of Nuestros Tiempos lies an unsupervised machine learning pipeline that organizes thousands of Chilean news articles into meaningful clusters, without any manual labels or supervision.
+| Step | Technique | Purpose |
+|------|-----------|---------|
+| 1. Embeddings | Model2Vec (static embeddings) | Generate semantic representations of news articles. |
+| 2. Dimensionality Reduction | UMAP | Compress embeddings while preserving structure. |
+| 3. Clustering | HDBSCAN | Discover dense clusters representing thematic narratives. |
+| 4. Summarization (Planned) | transformers.js | Generate human-readable summaries of each cluster. |
 
-The platform uses static vector embeddings distilled from sentence-transformer models. These are precomputed representations generated by Model2Vec, a distillation layer on top of EmbeddingGemma, DeepMind’s multilingual text embedding model.
-This design enables efficient offline processing of dense 768-dimensional vectors that capture the conceptual structure of Spanish-language text.
+All models run on CPU — no GPU dependency — showing that **ML creativity > hardware power**.
 
-**Workflow Overview**
+### Why These Models?
 
-Each article follows this transformation pipeline:
+- **Model2Vec**: lightweight, deterministic, and fast for static embeddings.
+- **UMAP**: maintains semantic proximity in lower dimensions, critical for clarity.
+- **HDBSCAN**: automatically detects cluster density — perfect for uneven, real-world data like news.
+- **transformers.js** (upcoming): integrates client-side summarization for explainable AI.
 
-1. Embedding Generation:
-  Raw text is encoded into a dense 768-dimensional vector using [Model2Vec](https://minish.ai/packages/model2vec/introduction)'s static models.
+Together, these form an elegant, resource-efficient unsupervised NLP pipeline.
 
-2. Dimensionality Reduction:
-   The embeddings are passed through [UMAP](https://umap-learn.readthedocs.io/en/latest/) in a dedicated Python service.
-   UMAP reduces dimensionality while preserving local and global relationships — making clusters both interpretable and visually separable.
+## Pipeline
 
-3. Unsupervised Clustering:
-  The reduced vectors are then grouped using [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html), a density-based algorithm capable of discovering clusters and marking outliers, revealing thematic structures in the national news landscape.
+1. **Data Cleaning & Normalization** – Text extracted from 16 major Chilean outlets (Emol, CNN Chile, Cooperativa, T13, etc.)
+2. **Vectorization** – Each article is converted into a 768-dimensional vector using a static model distilled from Google's EmbeddingGemma with Model2vec.
+3. **Dimensionality Reduction** – Reduced using UMAP to reveal meaningful topological relationships.
+4. **Clustering** – Applied HDBSCAN to detect natural groupings without preset parameters.
+5. **Filtering & Validation** – Outliers removed, clusters refined.
+6. **Collection Generation** – Articles grouped into readable "collections" of narratives.
 
-**Example:**
+All data is stored in SQLite and LibSQL (for vectors), using native SQLite FTS5 for full-text search — no external search services needed.
 
-When one outlet reports "Tax Reform Negotiations" and another covers "Fiscal Pact Debate," the AI engine clusters them under one collection — even with zero shared keywords.
+## Results
 
-This unsupervised clustering enables Nuestros Tiempos to auto-generate "intelligent collections" that reflect how Chilean media frames complex issues differently.
+- 100% automated pipeline  
+- No manual labeling or supervision  
+- Human-readable, coherent clusters  
+- Native full-text search without extra services  
+- Deployed on a small VPS with a cost of $6/month  
 
-## Performance & Orchestration
+## Challenges & Solutions
 
-Scalability was critical. The backend was optimized for concurrent processing using Laravel Queues and Supervisor workers, ensuring multiple scrapers could run in parallel without blocking API responses.
+| Challenge | Codisans' Solution |
+|-----------|-------------------|
+| Resource constraints | Smart use of static embeddings + UMAP + HDBSCAN on CPU |
+| Cluster accuracy | Fine-tuned HDBSCAN parameters (min_samples, min_cluster_size) |
+| Search relevance | Native SQLite FTS5 implementation for scalable local search |
+| UX complexity | Minimalist UI with dynamic clustering visualization |
 
-Performance enhancements include:
+## Conclusions & Learnings
 
-- **Database Indexing:** Composite indexes for fast retrieval of article metadata.
-- **Rate-Limiting Logic:** Enforced polite crawling intervals per domain.
-- **Queue Isolation:** Separate queues for scraping, embedding, and clustering tasks.
-- **Caching Layer:** In-memory caching for high-frequency vector queries.
-- **Server-Side Rendering:** Implemented via Vite SSR for SEO and shareable previews.
+- Even static embedding models can produce surprisingly strong results when combined thoughtfully.
+- UMAP and HDBSCAN parameters significantly affect cluster quality — hyperparameter tuning is key.
+- Clean input data dramatically improves unsupervised outcomes.
+- Minimalist architectures can achieve maximum insight per dollar.
 
-The entire architecture was deployed with zero-downtime reloads via Laravel Forge and systemd integration.
+**Nuestros Tiempos is a testament to Codisans' philosophy:**  
+*AI should be useful, understandable, and efficient — not just impressive.*
 
-## Frontend: Interactive AI Dashboard
+## What could we achieve with more resources?
 
-The frontend serves not only as a news viewer but also as a real-time control panel for the system.
-Built in React 19 with TypeScript, the dashboard displays live scraping progress, vector clustering outputs, and AI-generated similarity metrics.
+- Sentence-transformers for contextual embeddings
+- Transformer-based summaries per cluster
+- Larger-scale reclustering
+- Quality assurance via transformer-based QA models
 
-Users can visualize:
-
-- Article embeddings in multi-dimensional projection.
-- Cross-source relationship graphs.
-- Time-based evolution of clusters (e.g., how different outlets cover the same event over days).
-
-This transparency reinforces Nuestros Tiempos' mission of "trust through visibility."
-
-## Ethical and Legal Engineering
-
-From inception, Codisans integrated ethical scraping protocols — respecting rate limits, including source attribution, and omitting full-text republication.
-Each collection links back to its original media outlet, maintaining both compliance and credibility.
-
-This attention to legal and moral responsibility sets Codisans apart from generic scrapers: Nuestros Tiempos was engineered not merely to gather data, but to respect and elevate Chile's journalistic ecosystem.
-
-## Key Technical Achievements
-
-| Category | Result |
-|----------|--------|
-| Sources Integrated | 16 news outlets across TV, radio, and digital |
-| Embeddings Generated | >50,000 semantic vectors |
-| Similarity Search Latency | < 200 ms average |
-| Concurrent Jobs | 30+ parallel scraping threads |
-| Frontend Build | Type-safe React 19 SPA with SSR |
-| Deployment | Continuous integration via Laravel Forge |
-| Ethics Compliance | 100% adherence to robots.txt + source attribution |
-
-## Why It Matters
-
-Beyond news aggregation, Nuestros Tiempos is a blueprint for intelligent content analysis.
-It demonstrates how AI, vector databases, and modern full-stack design can converge to make large-scale textual ecosystems both explorable and transparent.
-
-For Codisans, this project validated a repeatable pattern:
-
-**🧠 AI + Web Engineering + Ethical Design = Systems that create clarity at scale.**
-
-This same architecture can be adapted for:
-
-- Corporate intelligence dashboards (monitoring brand or sentiment).
-- Academic research portals (automated literature clustering).
-- Media transparency tools in other markets.
+This could elevate Nuestros Tiempos from a research project to a full-fledged media intelligence platform.
