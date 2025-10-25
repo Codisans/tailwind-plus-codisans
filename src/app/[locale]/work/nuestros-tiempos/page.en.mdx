@@ -4,7 +4,7 @@ import Blockquote from '@/components/Blockquote'
 
 export const caseStudy = {
   client: 'Codisans',
-  title: "Case Study: Nuestros Tiempos — Decoding Chile's News Complexity with AI",
+  title: "Nuestros Tiempos — Decoding Chile's News Complexity with AI",
   description:
     'Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. It explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision.',
   summary: [
@@ -33,9 +33,7 @@ export const metadata = {
 
 ## Overview
 
-Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just USD 6/month.
-
-This project exemplifies Codisans' ability to turn advanced AI concepts into real-world, efficient, and production-ready systems.
+Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just $6/month.
 
 ## The Problem: Navigating Information & Misinformation
 
@@ -66,26 +64,26 @@ Rather than relying on large, expensive LLM pipelines, this project proves how t
 
 | Step | Technique | Purpose |
 |------|-----------|---------|
-| 1. Embeddings | Model2Vec (static embeddings) | Generate semantic representations of news articles. |
-| 2. Dimensionality Reduction | UMAP | Compress embeddings while preserving structure. |
-| 3. Clustering | HDBSCAN | Discover dense clusters representing thematic narratives. |
-| 4. Summarization (Planned) | transformers.js | Generate human-readable summaries of each cluster. |
+| 1. Embeddings | [Model2Vec](https://minish.ai/packages/model2vec/introduction) (static embeddings) | Generate semantic representations of news articles. |
+| 2. Dimensionality Reduction | [UMAP](https://umap-learn.readthedocs.io/en/latest/) | Compress embeddings while preserving structure. |
+| 3. Clustering | [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html) | Discover dense clusters representing thematic narratives. |
+| 4. Summarization | [Transformers.js](https://huggingface.co/docs/transformers.js/en/index) | Generate human-readable summaries of each cluster, directly on the user's browser. |
 
 All models run on CPU — no GPU dependency — showing that **ML creativity > hardware power**.
 
-### Why These Models?
+### Why These Technologies?
 
 - **Model2Vec**: lightweight, deterministic, and fast for static embeddings.
 - **UMAP**: maintains semantic proximity in lower dimensions, critical for clarity.
 - **HDBSCAN**: automatically detects cluster density — perfect for uneven, real-world data like news.
-- **transformers.js** (upcoming): integrates client-side summarization for explainable AI.
+- **Transformers.js**: integrates client-side summarization for explainable AI.
 
 Together, these form an elegant, resource-efficient unsupervised NLP pipeline.
 
 ## Pipeline
 
 1. **Data Cleaning & Normalization** – Text extracted from 16 major Chilean outlets (Emol, CNN Chile, Cooperativa, T13, etc.)
-2. **Vectorization** – Each article is converted into a 768-dimensional vector using a static model distilled from Google's EmbeddingGemma with Model2vec.
+2. **Vectorization** – Each article is converted into a 768-dimensional vector using a static model distilled from Google DeepMind's EmbeddingGemma with Model2vec.
 3. **Dimensionality Reduction** – Reduced using UMAP to reveal meaningful topological relationships.
 4. **Clustering** – Applied HDBSCAN to detect natural groupings without preset parameters.
 5. **Filtering & Validation** – Outliers removed, clusters refined.
