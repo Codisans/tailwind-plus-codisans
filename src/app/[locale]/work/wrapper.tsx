@@ -25,8 +25,87 @@ export default async function CaseStudyWrapper({
     .filter(({ metadata }) => metadata.title !== caseStudy.title)
     .slice(0, 2)
 
+  // Generate structured data for rich snippets
+  const slug = caseStudy.href.split('/').pop()
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    '@id': `https://codisans.com${caseStudy.href}`,
+    headline: caseStudy.title,
+    description: caseStudy.description,
+    image: caseStudy.image?.src
+      ? `https://codisans.com${caseStudy.image.src}`
+      : undefined,
+    datePublished: caseStudy.date,
+    dateModified: caseStudy.date,
+    author: {
+      '@type': 'Organization',
+      name: 'Codisans',
+      url: 'https://codisans.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://codisans.com/images/logos/codisans-logo.svg',
+      },
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Codisans',
+      url: 'https://codisans.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://codisans.com/images/logos/codisans-logo.svg',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://codisans.com${caseStudy.href}`,
+    },
+    articleSection: 'Case Studies',
+    keywords: [
+      caseStudy.client,
+      caseStudy.service,
+      'case study',
+      'web development',
+    ].join(', '),
+    about: {
+      '@type': 'Thing',
+      name: caseStudy.client,
+      description: caseStudy.description,
+    },
+    mentions: caseStudy.url
+      ? {
+          '@type': 'WebSite',
+          name: caseStudy.client,
+          url: caseStudy.url,
+        }
+      : undefined,
+    ...(caseStudy.testimonial && {
+      review: {
+        '@type': 'Review',
+        reviewBody: caseStudy.testimonial.content,
+        author: {
+          '@type': 'Person',
+          name: caseStudy.testimonial.author.name,
+          jobTitle: caseStudy.testimonial.author.role,
+        },
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5',
+        },
+      },
+    }),
+  }
+
   return (
     <RootLayout>
+      {/* Structured Data for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData),
+        }}
+      />
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
           <PageIntro eyebrow={t('case-study')} title={caseStudy.title} centered>
