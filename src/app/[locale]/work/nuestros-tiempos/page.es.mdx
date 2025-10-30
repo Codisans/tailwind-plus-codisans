@@ -3,8 +3,8 @@ import cover from './cover.webp'
 import Blockquote from '@/components/Blockquote'
 
 export const caseStudy = {
-  client: 'Codisans',
-  title: 'Nuestros Tiempos — Descifrando la Complejidad de las Noticias en Chile con IA',
+  client: 'Nuestros Tiempos',
+  title: 'Nuestros Tiempos — Navegando la Complejidad de las Noticias en Chile con IA',
   description:
     'Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas. Explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana.',
   summary: [
@@ -35,7 +35,7 @@ export const metadata = {
 
 Nuestros Tiempos es una plataforma de agregación de noticias impulsada por inteligencia artificial, diseñada para analizar las narrativas mediáticas chilenas.
 
-Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas $6 al mes.
+Desarrollada por Codisans, explora cómo el aprendizaje no supervisado y los embeddings vectoriales pueden descubrir patrones entre miles de artículos periodísticos — de forma automática, sin supervisión humana y ejecutándose en un servidor que cuesta apenas $4 al mes.
 
 ## El Problema: Navegar entre la Información y la Desinformación
 
@@ -51,7 +51,7 @@ Nuestros Tiempos enfrenta este desafío al identificar automáticamente las dife
 
 - Desarrollar un sistema totalmente automatizado de agrupamiento de noticias por similitud semántica.
 - Lograr agrupaciones de alta calidad sin supervisión y con recursos mínimos.
-- Ejecutar todo el sistema en un VPS pequeño por menos de $6 al mes.
+- Ejecutar todo el sistema en un VPS pequeño por menos de $4 al mes.
 - Construir una experiencia de usuario moderna y receptiva que comunique claramente los resultados de la IA.
 
 ## Visión
@@ -69,7 +69,6 @@ En lugar de depender de grandes y costosas arquitecturas de lenguaje, el proyect
 | 1. Embeddings | [Model2Vec](https://minish.ai/packages/model2vec/introduction) (embeddings estáticos) | Generar representaciones semánticas de los artículos. |
 | 2. Reducción de Dimensionalidad | [UMAP](https://umap-learn.readthedocs.io/en/latest/) | Comprimir los embeddings preservando su estructura. |
 | 3. Agrupamiento (Clustering) | [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html) | Detectar grupos densos que representen narrativas temáticas. |
-| 4. Resumen | [Transformers.js](https://huggingface.co/docs/transformers.js/en/index) | Generar resúmenes legibles por humanos para cada clúster, directamente en el navegador del usuario. |
 
 Todos los modelos se ejecutan en CPU — sin necesidad de GPU — demostrando que **la creatividad en ML supera la potencia de hardware**.
 
@@ -78,7 +77,6 @@ Todos los modelos se ejecutan en CPU — sin necesidad de GPU — demostrando qu
 - **Model2Vec**: liviano, determinista y rápido para embeddings estáticos.
 - **UMAP**: conserva la proximidad semántica en baja dimensionalidad, clave para la claridad.
 - **HDBSCAN**: detecta automáticamente densidades variables — ideal para datos desbalanceados como las noticias.
-- **Transformers.js**: permite generar resúmenes explicativos en el navegador.
 
 En conjunto, conforman un pipeline NLP no supervisado, elegante y eficiente en recursos.
 
@@ -99,7 +97,7 @@ Todos los datos se almacenan en SQLite y LibSQL (para vectores), utilizando SQLi
 - Sin etiquetado ni supervisión manual  
 - Clusteres coherentes y legibles  
 - Búsqueda de texto completo nativa, sin servicios externos  
-- Desplegado en un VPS pequeño con un costo de $6/mes  
+- Desplegado en un VPS pequeño con un costo de $4/mes  
 
 ## Desafíos y Soluciones
 
@@ -122,7 +120,7 @@ Todos los datos se almacenan en SQLite y LibSQL (para vectores), utilizando SQLi
 
 ## ¿Qué podríamos lograr con más recursos?
 
-- Sentence-transformers para embeddings contextuales
+- Mejores embeddings usando Sentence-transformers para embeddings contextuales
 - Resúmenes automáticos por clúster mediante transformadores
 - Reagrupamientos a gran escala
 - Verificación de calidad usando modelos QA basados en transformadores

@@ -3,7 +3,7 @@ import cover from './cover.webp'
 import Blockquote from '@/components/Blockquote'
 
 export const caseStudy = {
-  client: 'Codisans',
+  client: 'Nuestros Tiempos',
   title: "Nuestros Tiempos — Decoding Chile's News Complexity with AI",
   description:
     'Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. It explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision.',
@@ -33,7 +33,7 @@ export const metadata = {
 
 ## Overview
 
-Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just $6/month.
+Nuestros Tiempos is an AI-powered news aggregation platform designed to analyze Chilean news narratives. Built by Codisans, it explores how unsupervised learning and vector embeddings can uncover patterns across thousands of news articles — automatically, without supervision, and on a server that costs just $4/month.
 
 ## The Problem: Navigating Information & Misinformation
 
@@ -67,7 +67,6 @@ Rather than relying on large, expensive LLM pipelines, this project proves how t
 | 1. Embeddings | [Model2Vec](https://minish.ai/packages/model2vec/introduction) (static embeddings) | Generate semantic representations of news articles. |
 | 2. Dimensionality Reduction | [UMAP](https://umap-learn.readthedocs.io/en/latest/) | Compress embeddings while preserving structure. |
 | 3. Clustering | [HDBSCAN](https://hdbscan.readthedocs.io/en/latest/how_hdbscan_works.html) | Discover dense clusters representing thematic narratives. |
-| 4. Summarization | [Transformers.js](https://huggingface.co/docs/transformers.js/en/index) | Generate human-readable summaries of each cluster, directly on the user's browser. |
 
 All models run on CPU — no GPU dependency — showing that **ML creativity > hardware power**.
 
@@ -76,7 +75,6 @@ All models run on CPU — no GPU dependency — showing that **ML creativity > h
 - **Model2Vec**: lightweight, deterministic, and fast for static embeddings.
 - **UMAP**: maintains semantic proximity in lower dimensions, critical for clarity.
 - **HDBSCAN**: automatically detects cluster density — perfect for uneven, real-world data like news.
-- **Transformers.js**: integrates client-side summarization for explainable AI.
 
 Together, these form an elegant, resource-efficient unsupervised NLP pipeline.
 
@@ -97,7 +95,7 @@ All data is stored in SQLite and LibSQL (for vectors), using native SQLite FTS5 
 - No manual labeling or supervision  
 - Human-readable, coherent clusters  
 - Native full-text search without extra services  
-- Deployed on a small VPS with a cost of $6/month  
+- Deployed on a small VPS with a cost of $4/month  
 
 ## Challenges & Solutions
 
@@ -120,7 +118,7 @@ All data is stored in SQLite and LibSQL (for vectors), using native SQLite FTS5 
 
 ## What could we achieve with more resources?
 
-- Sentence-transformers for contextual embeddings
+- Better embeddings by using Sentence-transformers for contextual embeddings
 - Transformer-based summaries per cluster
 - Larger-scale reclustering
 - Quality assurance via transformer-based QA models
