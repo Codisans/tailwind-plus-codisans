@@ -35,7 +35,7 @@ export async function generateMetadata({
   }
 
   const { metadata } = caseStudy
-  const title = `${metadata.client} Case Study | ${metadata.title}`
+  const title = `${metadata.title} | Codisans`
   const description = metadata.description
   const url = `https://codisans.com/${locale}/work/${slug}`
   const imageUrl = metadata.image?.src
