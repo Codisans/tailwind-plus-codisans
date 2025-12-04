@@ -21,10 +21,16 @@ import * as feliciHouseEn from '../app/[locale]/work/felici-house/page.en.mdx'
 import * as feliciHouseEs from '../app/[locale]/work/felici-house/page.es.mdx'
 import * as nuestrosTiemposEn from '../app/[locale]/work/nuestros-tiempos/page.en.mdx'
 import * as nuestrosTiemposEs from '../app/[locale]/work/nuestros-tiempos/page.es.mdx'
+import * as sundayChapterEn from '../app/[locale]/work/sunday-chapter/page.en.mdx'
+import * as sundayChapterEs from '../app/[locale]/work/sunday-chapter/page.es.mdx'
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
-export type MDXEntry<T> = T & { href: string; metadata: T; isLocalized?: boolean }
+export type MDXEntry<T> = T & {
+  href: string
+  metadata: T
+  isLocalized?: boolean
+}
 
 export interface Article {
   date: string
@@ -66,7 +72,7 @@ const blogPostRegistry = {
       metadata: (yourGpuEn as any).article as Article,
     },
     {
-      slug: 'the-new-digital-darwinism', 
+      slug: 'the-new-digital-darwinism',
       module: digitalDarwinismEn,
       metadata: (digitalDarwinismEn as any).article as Article,
     },
@@ -84,7 +90,7 @@ const blogPostRegistry = {
     },
     {
       slug: 'the-new-digital-darwinism',
-      module: digitalDarwinismEs, 
+      module: digitalDarwinismEs,
       metadata: (digitalDarwinismEs as any).article as Article,
     },
     {
@@ -128,6 +134,11 @@ const caseStudyRegistry = {
       module: feliciHouseEn,
       metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
     },
+    {
+      slug: 'sunday-chapter',
+      module: sundayChapterEn,
+      metadata: (sundayChapterEn as any).caseStudy as CaseStudy,
+    },
   ],
   es: [
     {
@@ -160,65 +171,88 @@ const caseStudyRegistry = {
       module: feliciHouseEs,
       metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
     },
+    {
+      slug: 'sunday-chapter',
+      module: sundayChapterEs,
+      metadata: (sundayChapterEs as any).caseStudy as CaseStudy,
+    },
   ],
 }
 
-export function loadArticles(locale: string = 'en'): Promise<Array<MDXEntry<Article>>> {
-  const posts = blogPostRegistry[locale as keyof typeof blogPostRegistry] || blogPostRegistry.en
-  
-  const articles = posts.map(post => ({
+export function loadArticles(
+  locale: string = 'en',
+): Promise<Array<MDXEntry<Article>>> {
+  const posts =
+    blogPostRegistry[locale as keyof typeof blogPostRegistry] ||
+    blogPostRegistry.en
+
+  const articles = posts.map((post) => ({
     ...post.metadata,
     metadata: post.metadata,
     href: `/blog/${post.slug}`,
     isLocalized: locale !== 'en',
   }))
-  
+
   return Promise.resolve(articles.sort((a, b) => b.date.localeCompare(a.date)))
 }
 
-export async function loadArticle(slug: string, locale: string = 'en'): Promise<{
+export async function loadArticle(
+  slug: string,
+  locale: string = 'en',
+): Promise<{
   component: any
   metadata: Article
 } | null> {
-  const posts = blogPostRegistry[locale as keyof typeof blogPostRegistry] || blogPostRegistry.en
-  const post = posts.find(p => p.slug === slug)
-  
+  const posts =
+    blogPostRegistry[locale as keyof typeof blogPostRegistry] ||
+    blogPostRegistry.en
+  const post = posts.find((p) => p.slug === slug)
+
   if (!post) {
     return null
   }
-  
+
   return {
     component: post.module,
-    metadata: post.metadata
+    metadata: post.metadata,
   }
 }
 
-export function loadCaseStudies(locale: string = 'en'): Promise<Array<MDXEntry<CaseStudy>>> {
-  const caseStudies = caseStudyRegistry[locale as keyof typeof caseStudyRegistry] || caseStudyRegistry.en
-  
-  const studies = caseStudies.map(study => ({
+export function loadCaseStudies(
+  locale: string = 'en',
+): Promise<Array<MDXEntry<CaseStudy>>> {
+  const caseStudies =
+    caseStudyRegistry[locale as keyof typeof caseStudyRegistry] ||
+    caseStudyRegistry.en
+
+  const studies = caseStudies.map((study) => ({
     ...study.metadata,
     metadata: study.metadata,
     href: `/work/${study.slug}`,
     isLocalized: locale !== 'en',
   }))
-  
+
   return Promise.resolve(studies)
 }
 
-export async function loadCaseStudy(slug: string, locale: string = 'en'): Promise<{
+export async function loadCaseStudy(
+  slug: string,
+  locale: string = 'en',
+): Promise<{
   component: any
   metadata: CaseStudy
 } | null> {
-  const caseStudies = caseStudyRegistry[locale as keyof typeof caseStudyRegistry] || caseStudyRegistry.en
-  const study = caseStudies.find(s => s.slug === slug)
-  
+  const caseStudies =
+    caseStudyRegistry[locale as keyof typeof caseStudyRegistry] ||
+    caseStudyRegistry.en
+  const study = caseStudies.find((s) => s.slug === slug)
+
   if (!study) {
     return null
   }
-  
+
   return {
     component: study.module,
-    metadata: study.metadata
+    metadata: study.metadata,
   }
 }
