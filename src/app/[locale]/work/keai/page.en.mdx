@@ -28,17 +28,71 @@ export const metadata = {
   <TagListItem>AI Automation</TagListItem>
 </TagList>
 
-## The Challenge
-KEAI addressed a critical problem in urban cultural discovery: event information was scattered across countless social media platforms and websites, making it nearly impossible for people to find experiences aligned with their interests. Traditional event platforms failed due to the "empty platform syndrome"—without content, users wouldn't engage, and without users, event organizers wouldn't contribute content, creating a vicious cycle of abandonment.
+## The Problem: The "Needle in a Haystack"
 
-## AI-Driven Solution Architecture
-KEAI broke this cycle by implementing a sophisticated automated content acquisition and intelligent categorization system. The platform deployed web scraping technology to continuously monitor ticketing platforms, cultural venues, and event websites across Santiago, automatically populating the database with comprehensive event data. This eliminated the dependency on manual content creation while ensuring the platform remained consistently updated with fresh, diverse content.
+In a vibrant city like Santiago, there is never a shortage of things to do. From underground concerts and theater performances to food festivals and art exhibits, the city is alive. Yet, for the average person, finding these events is frustratingly difficult.
 
-## Advanced AI Categorization and Personalization
-The platform implemented dual AI systems for intelligent content organization. A language model-based categorization system analyzes event descriptions using natural language processing to automatically assign appropriate categories and tags. Additionally, KEAI employs vector embedding technology that converts event descriptions into mathematical representations, enabling semantic similarity matching that identifies conceptual relationships between events beyond simple keyword matching. This approach allows the system to recognize that a "silent disco in a museum" shares DNA with both electronic music and cultural art categories.
+Currently, event discovery is fragmented and inefficient:
 
-## Intelligent Recommendation Engine
-KEAI's recommendation system combines collaborative filtering with semantic analysis to deliver personalized event suggestions. The platform tracks user favorite patterns to identify behavioral clusters, while simultaneously using vector similarity to match users with events based on deeper conceptual relationships rather than just categorical overlap. This dual approach enables recommendations that feel both data-driven and culturally intuitive, suggesting experiences users might not have discovered through traditional category browsing.
+1.  **The "Instagram Noise":** Most promoters rely heavily on Instagram. While great for visuals, Instagram is terrible for search. Events are often just images (flyers) with no searchable text, buried in stories that disappear after 24 hours. Trying to find "live jazz tonight" on Instagram is like trying to find a specific book in a library where all the books are thrown in a pile on the floor.
+2.  **Platform Fragmentation:** To get a complete picture, a user would need to check half a dozen different ticketing sites (PuntoTicket, Ticketmaster, Passline, etc.) individually.
 
-## Results and Impact
-By leveraging AI automation, KEAI successfully launched with a fully-populated event database from day one, immediately providing value to users and attracting event organizers to claim and manage their listings. The automated categorization system processes thousands of events with consistent accuracy, while the intelligent recommendation engine creates increasingly personalized user experiences that grow more sophisticated as the platform learns from user interactions and Santiago's evolving cultural landscape.
+People end up missing out on experiences simply because they didn't know they were happening.
+
+## The Solution: KEAI
+
+Codisans built **KEAI**, a centralized event discovery platform that cuts through the noise. KEAI aggregates events from all major ticketing platforms and uses advanced Artificial Intelligence to understand, categorize, and recommend them to users.
+
+Instead of doom-scrolling through flyers, users get a personalized feed of events that match their specific tastes, time, and location.
+
+## Technology: Turning Chaos into Order
+
+To make this possible, Codisans leveraged cutting-edge technology to automate the heavy lifting. Here is how we solved the key technical challenges:
+
+### 1. The "Universal Translator" (Automated Data Standardization)
+
+**The Challenge:** Event platforms speak different languages. One sends data as a "Gig" with a "Start Time," another as a "Performance" with a "Door Open" time. Merging these directly would create chaos.
+**The Tech:** _RSS Feeds & Data Normalization_
+
+Instead of manually checking websites, Keai plugs directly into the information streams (RSS feeds) of major ticket providers.
+
+- We ingest raw data streams from multiple sources instantly.
+- Because every source formats their data differently, we built an intelligent processing layer that acts as a "universal translator."
+- It automatically reformats and restructures incoming events—standardizing dates, prices, and locations—so that every event in the Keai database follows the same strict quality standard, regardless of where it came from.
+
+### 2. The "Smart Librarian" (AI Embeddings & Recommendations)
+
+**The Challenge:** Traditional search is dumb. If you search for "funny," a standard database won't show you "Stand-up Comedy" unless that exact word is in the description.
+**The Tech:** _Vector Embeddings (Google Gemini) & LibSQL_
+
+KEAI uses **Embeddings**, a way of translating text (event descriptions) into a list of numbers (vectors) that represent _meaning_.
+
+- **Analogy:** Think of a librarian who knows that if you like "The Beatles," you will probably enjoy a "60s British Invasion Tribute," even if the words don't match. The librarian understands the _vibe_ and _context_.
+- We use **Google Gemini** to read every event and convert it into these "meaning vectors."
+- When a user interacts with events (likes, views), we calculate their "taste vector." We then measure the distance between the user's taste and upcoming events to recommend the perfect match.
+
+### 3. The "Auto-Organizer" (Generative AI Categorization)
+
+**The Challenge:** Raw data from the web is messy. One site might call it a "Gig," another a "Concert," and another "Live Music."
+**The Tech:** _Generative AI (LLMs)_
+
+We employ Generative AI as an intelligent editor. Before an event hits the feed, an AI reviews the raw data:
+
+- It standardizes the format (fixing dates, addresses, and prices).
+- It assigns standard categories (e.g., "Music," "Theater," "Nightlife").
+- It generates relevant tags automatically.
+
+This ensures that when a user filters by "Music," they catch everything, regardless of how the original ticket site labeled it.
+
+### 4. The Experience (Modern Web Tech)
+
+**The Tech:** _Laravel, React, Inertia.js, & Mapbox_
+
+To deliver this data to users, we built a lightning-fast web application.
+
+- **Interactive Maps:** Users can see events happening around them on a map (powered by Mapbox/Leaflet), filtering by radius (e.g., "Events within 2km of me").
+- **Seamless Browsing:** Using Inertia.js allows the site to feel like a native mobile app—instant page loads and smooth transitions—while running on the robust Laravel framework.
+
+## Conclusion
+
+With KEAI, Codisans didn't just build a website; we built an intelligent engine that understands the city's pulse. By combining automated data collection with the semantic understanding of AI, we transformed a fragmented, noisy landscape into a clear, personalized path to discovery.
