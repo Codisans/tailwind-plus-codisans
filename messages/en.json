@@ -3,7 +3,7 @@
     "locale": "en-US",
     "about": "About",
     "about-us": "About Us",
-    "blog": "Blog", 
+    "blog": "Blog",
     "budget": "Budget",
     "case-study": "Case study",
     "case-studies": "Case studies",
@@ -55,32 +55,32 @@
       "title": "Software built to deliver value, not just code. | Codisans",
       "description": "Tired of developers not understanding your business? We build smart, scalable software solutions for startups and brands that need more than just a website."
     },
-    "title": "Software built to deliver value, not just code.",
-    "intro": "We build smart, scalable software solutions to help your business grow.",
-    "pain-point": "We're a team of passionate professionals, motivated by new challenges and collaboration.",
+    "title": "Partners in Your Digital Journey.",
+    "intro": "Solid digital products, built by a team invested in your growth.",
+    "pain-point": "We are more than a development agency; we are your strategic allies. We combine technical excellence with business insight to unlock new opportunities for your organization.",
     "services": {
       "eyebrow": "Our Solutions",
-      "title": "We Engineer Growth Through Intelligent Software.",
-      "summary": "Specializing in web development, we build tailored software solutions that drive growth and efficiency.",
+      "title": "Engineering Growth, Together.",
+      "summary": "We specialize in high-impact web development and software solutions. By aligning our technology with your business goals, we create digital products that don't just work—they drive revenue and efficiency.",
       "web-development": {
         "title": "Web Development",
-        "description": "We build powerful, tailor-made web applications engineered for performance and security. Our solutions streamline operations, engage users, and deliver seamless digital experiences that set you apart."
+        "description": "We build the digital foundation your business needs to grow. Our tailor-made applications are engineered for security and performance, delivering seamless experiences that convert users into loyal customers."
       },
       "ai-solutions": {
-        "title": "Intelligent Automation & AI",
-        "description": "Cut bottlenecks and boost efficiency with our bespoke AI solutions. We pinpoint opportunities to automate complex workflows, reduce costs, and unlock new levels of productivity through innovation."
+        "title": "Automation & AI",
+        "description": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration."
       },
       "e-commerce": {
         "title": "E-Commerce",
-        "description": "We craft flexible, headless e-commerce platforms built to scale. Our composable approach integrates best-in-class tools, enabling unique customer journeys and agile adaptation to market demands."
+        "description": "We craft headless commerce platforms designed to grow with you. Using a composable approach, we integrate best-in-class tools to create agile, customer-centric shopping journeys that adapt to market shifts."
       },
       "custom-content-management": {
         "title": "Content Management Systems (CMS)",
-        "description": "Gain full control of your content with a custom CMS built around your workflow. Our systems offer the flexibility and speed off-the-shelf solutions can’t match, empowering your team to move faster."
+        "description": "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match."
       }
     },
     "case-studies": {
-      "title": "We help you identify problems and deliver solutions.",
+      "title": "Our client partnerships achieve lasting, meaningful results:",
       "summary": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
     }
   },

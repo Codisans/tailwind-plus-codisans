@@ -16,7 +16,7 @@ export type Card = {
 
 export type CardsBlockProps = {
   title: string
-  summary: string
+  summary?: string
   cards: Card[]
 }
 export const CardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
