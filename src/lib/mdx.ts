@@ -220,12 +220,17 @@ export async function loadArticle(
 
 export function loadCaseStudies(
   locale: string = 'en',
+  slugs?: string[],
 ): Promise<Array<MDXEntry<CaseStudy>>> {
   const caseStudies =
     caseStudyRegistry[locale as keyof typeof caseStudyRegistry] ||
     caseStudyRegistry.en
 
-  const studies = caseStudies.map((study) => ({
+  const filteredStudies = slugs
+    ? caseStudies.filter((study) => slugs.includes(study.slug))
+    : caseStudies
+
+  const studies = filteredStudies.map((study) => ({
     ...study.metadata,
     metadata: study.metadata,
     href: `/work/${study.slug}`,

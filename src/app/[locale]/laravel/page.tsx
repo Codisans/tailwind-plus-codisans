@@ -33,7 +33,12 @@ export default async function Laravel({
   params: { locale: string }
 }) {
   const t = await getTranslations('LaravelPage')
-  const caseStudies = await loadCaseStudies(locale)
+  const tGlobal = await getTranslations('Global')
+  const caseStudies = await loadCaseStudies(locale, [
+    'keai',
+    'nuestros-tiempos',
+    'swid-studio',
+  ])
 
   const services = [
     {
@@ -126,7 +131,7 @@ export default async function Laravel({
         title={t('case-studies.title')}
         // summary={t('HomePage.case-studies.summary')}
         cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('Global.case-study'),
+          type: tGlobal('case-study'),
           date: caseStudy.date,
           title: caseStudy.title,
           image:
