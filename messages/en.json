@@ -189,5 +189,51 @@
     "intro": "We can't wait to hear from you.",
     "form-submit": "Let's talk",
     "form-title": "Work inquiries"
+  },
+  "LaravelPage": {
+    "meta": {
+      "title": "Codisans | Laravel",
+      "description": "Desarrollamos plataformas de alto rendimiento que aprovechan bien tus recursos, tecnología y presupuesto. Hechas para escalar a medida que creces — sin desperdicios ni partir de cero."
+    },
+    "eyebrow": "Laravel",
+    "title": "Custom Laravel Solutions",
+    "intro": "We build Laravel applications that power real businesses: internal tools, customer platforms, APIs, and more. Fast delivery, clean architecture, built to scale with you.",
+    "listing-title": "Proyectos",
+    "what": {
+      "title": "What is Laravel?",
+      "description": "Laravel is a powerful open-source PHP framework for building full-stack web applications. It comes with robust built-in tools while giving developers complete freedom to customize and extend. Whether you need a headless API or a fully integrated platform, Laravel handles complexity without getting in your way."
+    },
+    "reasons": {
+      "title": "Why Laravel?",
+      "summary": "Laravel is updated weekly with new features and bug fixes. Furthermore, Laravel is flexible, allowing code to be reused across projects. This allows new projects to be completed faster. Combined with its high code quality, this makes Laravel a preferred platform for major players like Spotify, KIA, and Sprout Social.",
+      "future-proof": {
+        "title": "Future Proof",
+        "description": "Laravel scales from simple web apps to complex enterprise systems. High performance, easy configuration, and fast setup out of the box."
+      },
+      "open-source": {
+        "title": "Open Source",
+        "description": "Backed by a massive community with weekly updates and thousands of packages. No vendor lock-in, ever."
+      },
+      "efficient": {
+        "title": "Efficient",
+        "description": "Built-in tools and community packages mean less time reinventing the wheel and faster time to launch."
+      },
+      "safety": {
+        "title": "Safe",
+        "description": "Regular security updates and built-in audit tools keep vulnerabilities in check."
+      }
+    },
+    "statamic": {
+      "title": "Statamic CMS",
+      "description": "Statamic is a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
+    },
+    "case-studies": {
+      "title": "Our Laravel projects",
+      "description": "Explore real-world examples of Laravel in action. Discover how Laravel has been used to build scalable and secure applications for various industries."
+    },
+    "specialists": {
+      "title": "Laravel Specialists ",
+      "description": "We've spent years building custom websites, platforms, and APIs with Laravel. We know the framework inside and out, from rapid prototyping to production-ready systems. If you're looking for a team that can deliver solid, scalable Laravel applications, we're ready to build with you."
+    }
   }
 }
