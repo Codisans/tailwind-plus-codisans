@@ -55,32 +55,32 @@
       "title": "Codisans | Software conciente. Impacto estratégico.",
       "description": "¿Tus desarrolladores no entienden tu negocio? Creamos software inteligente y escalable para startups y marcas que necesitan más que un sitio web."
     },
-    "title": "Software que aporta valor, no solo código.",
-    "intro": "Creamos software inteligente y escalable para hacer crecer tu negocio.",
+    "title": "Partners en tu Camino Digital.",
+    "intro": "Productos digitales sólidos, creados por un equipo comprometido con tu crecimiento.",
     "pain-point": "Somos un equipo de profesionales apasionados, motivados por nuevos desafíos y colaboración.",
     "services": {
       "eyebrow": "Servicios",
-      "title": "Impulsamos crecimiento a través de software inteligente.",
-      "summary": "Especialistas en desarrollo web, creamos soluciones personalizadas que impulsan el crecimiento y la eficiencia.",
+      "title": "Impulsando el crecimiento, juntos.",
+      "summary": "Nos especializamos en desarrollo web y soluciones de software de alto impacto. Al alinear la tecnología con tus objetivos de negocio, creamos productos digitales que no solo funcionan: impulsan ingresos y eficiencia.",
       "web-development": {
         "title": "Desarrollo Web",
-        "description": "Creamos aplicaciones web a medida, potentes y seguras. Nuestras soluciones optimizan tus operaciones, conectan con tus usuarios y ofrecen experiencias digitales fluidas que marcan la diferencia."
+        "description": "Construimos la base digital que tu negocio necesita para crecer. Nuestras aplicaciones a medida están diseñadas para ofrecer seguridad y rendimiento, brindando experiencias fluidas que convierten usuarios en clientes leales."
       },
       "ai-solutions": {
         "title": "Soluciones de IA",
-        "description": "Elimina cuellos de botella y mejora la eficiencia con nuestras soluciones de IA personalizadas. Detectamos oportunidades para automatizar flujos complejos, reducir costos y llevar tu productividad a otro nivel mediante la innovación."
+        "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa."
       },
       "e-commerce": {
         "title": "E-Commerce",
-        "description": "Desarrollamos plataformas de e-commerce headless, flexibles y escalables. Nuestro enfoque componible integra las mejores herramientas del mercado, permitiéndote crear experiencias únicas y adaptarte con agilidad."
+        "description": "Diseñamos plataformas de comercio headless pensadas para escalar contigo. Mediante un enfoque componible, integramos herramientas líderes para crear experiencias de compra ágiles y centradas en el cliente, capaces de adaptarse a los cambios del mercado."
       },
       "custom-content-management": {
         "title": "CMS Personalizados",
-        "description": "Toma el control total de tu contenido con un CMS personalizado según tu flujo de trabajo. Nuestras soluciones entregan la flexibilidad y rapidez que los sistemas genéricos no pueden ofrecer, para que tu equipo avance sin fricciones."
+        "description": "Toma el control de tu narrativa. Creamos sistemas de gestión de contenido personalizados según tu flujo de trabajo, dando a tu equipo de marketing la velocidad y flexibilidad que las soluciones genéricas no pueden ofrecer."
       }
     },
     "case-studies": {
-      "title": "Te ayudamos a detectar problemas y encontrar soluciones.",
+      "title": "Nuestras colaboraciones generan resultados duraderos y significativos:",
       "summary": "Creemos en la eficiencia y en aprovechar al máximo nuestros recursos para ofrecer el mayor valor posible a nuestros clientes."
     }
   },
@@ -189,5 +189,51 @@
     "intro": "Queremos saber de tu proyecto.",
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
+  },
+  "LaravelPage": {
+    "meta": {
+      "title": "Codisans | Laravel",
+      "description": "Desarrollamos plataformas de alto rendimiento que aprovechan bien tus recursos, tecnología y presupuesto. Hechas para escalar a medida que creces — sin desperdicios ni partir de cero."
+    },
+    "eyebrow": "Laravel",
+    "title": "Soluciones Laravel a la Medida",
+    "intro": "Creamos aplicaciones Laravel que impulsan negocios reales: herramientas internas, plataformas para clientes, APIs y más. Entrega rápida, arquitectura limpia, listas para escalar contigo.",
+    "listing-title": "Proyectos",
+    "what": {
+      "title": "¿Qué es Laravel?",
+      "description": "Laravel es un poderoso framework PHP de código abierto para crear aplicaciones web full-stack. Incluye herramientas robustas integradas y da a los desarrolladores libertad total para personalizar y extender. Ya sea que necesites una API headless o una plataforma completamente integrada, Laravel maneja la complejidad sin sudar."
+    },
+    "reasons": {
+      "title": "¿Por qué Laravel?",
+      "summary": "Laravel se actualiza semanalmente con nuevas funcionalidades y correcciones. Además, su flexibilidad permite reutilizar código entre proyectos, lo que acelera el desarrollo de nuevos productos. Combinado con su alta calidad de código, esto hace que Laravel sea la plataforma preferida de grandes empresas como Spotify, KIA y Sprout Social.",
+      "future-proof": {
+        "title": "A Prueba de Futuro",
+        "description": "Laravel escala desde aplicaciones web simples hasta sistemas empresariales complejos. Alto rendimiento, configuración sencilla y arranque rápido desde el inicio."
+      },
+      "open-source": {
+        "title": "Código Abierto",
+        "description": "Respaldado por una comunidad enorme con actualizaciones semanales y miles de paquetes. Sin dependencia de un solo proveedor, nunca."
+      },
+      "efficient": {
+        "title": "Eficiente",
+        "description": "Las herramientas integradas y los paquetes de la comunidad significan menos tiempo reinventando la rueda y más velocidad para lanzar."
+      },
+      "safety": {
+        "title": "Seguro",
+        "description": "Actualizaciones de seguridad regulares y herramientas de auditoría integradas mantienen las vulnerabilidades bajo control."
+      }
+    },
+    "statamic": {
+      "title": "Statamic CMS",
+      "description": "Statamic es un sistema de gestión de contenido flexible construido sobre Laravel. Simplifica la creación y administración de sitios web personalizados, mientras da a los desarrolladores control total bajo el capó. Perfecto para sitios con mucho contenido que aún necesitan el poder de un desarrollo a la medida."
+    },
+    "case-studies": {
+      "title": "Nuestros proyectos Laravel",
+      "description": "Explora ejemplos reales de Laravel en acción. Descubre cómo hemos usado Laravel para crear aplicaciones escalables y seguras en diversas industrias."
+    },
+    "specialists": {
+      "title": "Especialistas en Laravel",
+      "description": "Llevamos años creando sitios web, plataformas y APIs con Laravel. Conocemos el framework de pies a cabeza, desde prototipos rápidos hasta sistemas listos para producción. Si buscas un equipo que pueda entregar aplicaciones Laravel sólidas y escalables, estamos listos para construir contigo."
+    }
   }
 }

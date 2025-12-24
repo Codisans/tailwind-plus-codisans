@@ -55,25 +55,15 @@ export default async function Home({
     <RootLayout>
       <PageHeader title={t('HomePage.title')} summary={t('HomePage.intro')} />
 
-      <div className="mt-24 rounded-4xl bg-theme-950 py-20 text-white sm:mt-32 sm:py-32 lg:mt-56">
+      {/*<div className="mt-24 rounded-4xl bg-theme-950 py-20 text-white sm:mt-32 sm:py-32 lg:mt-56">
         <Container className="!max-w-4xl text-center font-display text-3xl font-medium tracking-tight sm:text-4xl">
           {t('HomePage.pain-point')}
         </Container>
-      </div>
-
-      <ListBlock
-        eyebrow={t('HomePage.services.eyebrow')}
-        title={t('HomePage.services.title')}
-        summary={t('HomePage.services.summary')}
-        image={heroImage}
-        // video="/hero-loop.mp4"
-        grayscale={false}
-        items={services}
-      />
+      </div>*/}
 
       <CardsBlock
         title={t('HomePage.case-studies.title')}
-        summary={t('HomePage.case-studies.summary')}
+        // summary={t('HomePage.case-studies.summary')}
         cards={caseStudies.map<Card>((caseStudy) => ({
           type: t('Global.case-study'),
           date: caseStudy.date,
@@ -84,6 +74,16 @@ export default async function Home({
           description: caseStudy.description,
           link: caseStudy.href,
         }))}
+      />
+
+      <ListBlock
+        eyebrow={t('HomePage.services.eyebrow')}
+        title={t('HomePage.services.title')}
+        summary={t('HomePage.services.summary')}
+        image={heroImage}
+        // video="/hero-loop.mp4"
+        grayscale={false}
+        items={services}
       />
 
       <ContactSection />
