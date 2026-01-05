@@ -1,5 +1,5 @@
 import { Badge } from '@/components/Badge'
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
@@ -182,7 +182,7 @@ export default async function CaseStudyWrapper({
         />
       )}
 
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

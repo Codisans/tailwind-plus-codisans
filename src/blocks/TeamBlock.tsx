@@ -11,29 +11,29 @@ export const TeamBlock = ({
   team: { name: string; role: string; image: { src: StaticImageData } }[]
 }) => {
   return (
-    <Container className="mt-24 sm:mt-32 lg:mt-40">
+    <Container className="mt-24">
       <Border as={FadeIn} />
       <div className="grid grid-cols-1 gap-6 pt-12 sm:pt-16 lg:grid-cols-4 xl:gap-8">
         <FadeIn>
-          <h2 className="font-display text-theme-950 text-2xl font-semibold">
+          <h2 className="font-display text-2xl font-semibold text-theme-950">
             {title}
           </h2>
         </FadeIn>
         <div className="lg:col-span-3">
           <ul
             role="list"
-            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-8"
+            className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-8"
           >
             {team.map((person) => (
               <li key={person.name}>
                 <FadeIn>
-                  <div className="bg-theme-100 group relative overflow-hidden rounded-3xl">
+                  <div className="group relative overflow-hidden rounded-3xl bg-theme-100">
                     <Image
                       {...person.image}
                       alt={person.name}
-                      className="h-96 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
+                      className="h-80 w-full object-cover grayscale transition duration-500 motion-safe:group-hover:scale-105"
                     />
-                    <div className="bg-linear-to-t absolute inset-0 flex flex-col justify-end from-black to-black/0 to-40% p-6">
+                    <div className="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black to-black/0 to-40% p-6">
                       <p className="font-display text-base/6 font-semibold tracking-wide text-white">
                         {person.name}
                       </p>

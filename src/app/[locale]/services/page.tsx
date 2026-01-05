@@ -12,6 +12,13 @@ import buildImage from '@/images/build.webp'
 import deliverImage from '@/images/deliver.webp'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
+import { CardsBlock } from '@/blocks/CardsBlock'
+import shopifyLogo from '@/images/logos/shopify-logotype.svg'
+import laravelLogo from '@/images/logos/laravel-logotype.svg'
+import statamicLogo from '@/images/logos/statamic-logotype.svg'
+import geminiLogo from '@/images/logos/gemini-logotype.svg'
+import aiLogo from '@/images/logos/ai-icon.svg'
+import { StickyListBlock } from '@/blocks/StickyListBlock'
 
 export async function generateMetadata({
   params,
@@ -28,48 +35,83 @@ export async function generateMetadata({
   }
 }
 
-export default async function Process() {
+export default async function Services() {
   const t = await getTranslations('ProcessPage')
   return (
     <RootLayout>
-      <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
+      <PageIntro eyebrow={'Services'} title={'Experts in web solutions'}>
         <p>{t('intro')}</p>
       </PageIntro>
 
-      <div className="mt-24 space-y-24 [counter-reset:section] sm:mt-32 sm:space-y-32 lg:mt-40 lg:space-y-40">
-        <Section
-          title={t('steps.discover.title')}
-          image={{ src: discoverImage, shape: 1 }}
-        >
-          <div className="space-y-6 text-base text-theme-600">
-            <p>{t('steps.discover.description')}</p>
-          </div>
-        </Section>
-        <Section
-          title={t('steps.define.title')}
-          image={{ src: defineImage, shape: 1 }}
-        >
-          <div className="space-y-6 text-base text-theme-600">
-            <p>{t('steps.define.description')}</p>
-          </div>
-        </Section>
-        <Section
-          title={t('steps.build.title')}
-          image={{ src: buildImage, shape: 1 }}
-        >
-          <div className="space-y-6 text-base text-theme-600">
-            <p>{t('steps.build.description')}</p>
-          </div>
-        </Section>
-        <Section
-          title={t('steps.deliver.title')}
-          image={{ src: deliverImage, shape: 1 }}
-        >
-          <div className="space-y-6 text-base text-theme-600">
-            <p>{t('steps.deliver.description')}</p>
-          </div>
-        </Section>
-      </div>
+      <CardsBlock
+        // title={t('HomePage.case-studies.title')}
+        // summary={t('HomePage.case-studies.summary')}
+        cards={[
+          {
+            type: 'E-Commerce',
+            date: 'Shopify',
+            title: 'Custom Storefronts',
+            image: shopifyLogo,
+            description: 'Need more than a standard e-commerce website?',
+            link: '/services/e-commerce',
+          },
+          {
+            type: 'Software Development',
+            date: 'Laravel',
+            title: 'Software Built to Grow',
+            image: laravelLogo,
+            description:
+              'We build the digital foundation your business needs to grow. Our tailor-made applications are engineered for security and performance, delivering seamless experiences.',
+            link: '/services/software-development',
+          },
+          {
+            type: 'CMS Websites',
+            date: 'Statamic',
+            title: 'Bespoke Websites',
+            image: statamicLogo,
+            description:
+              "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match.",
+            link: '/services/cms-websites',
+          },
+          {
+            type: 'Artificial Intelligence',
+            date: '',
+            title: 'Automation & AI Integrations',
+            image: aiLogo,
+            description:
+              'We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration.',
+            link: '/services/ai-automation',
+          },
+        ]}
+      />
+
+      <StickyListBlock
+        eyebrow={'Our Process'}
+        title={'We continuously refine our processes to garantee results'}
+        description={t('intro')}
+        items={[
+          {
+            title: t('steps.discover.title'),
+            description: t('steps.discover.description'),
+            image: discoverImage,
+          },
+          {
+            title: t('steps.define.title'),
+            description: t('steps.define.description'),
+            image: defineImage,
+          },
+          {
+            title: t('steps.build.title'),
+            description: t('steps.build.description'),
+            image: buildImage,
+          },
+          {
+            title: t('steps.deliver.title'),
+            description: t('steps.deliver.description'),
+            image: deliverImage,
+          },
+        ]}
+      />
 
       <Values t={t} />
 

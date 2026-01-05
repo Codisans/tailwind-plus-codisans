@@ -93,11 +93,11 @@ export function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">{t('our-work')}</NavigationItem>
         <NavigationItem href="/about">{t('about')}</NavigationItem>
+        <NavigationItem href="/services">{t('services')}</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">{t('our-process')}</NavigationItem>
+        <NavigationItem href="/work">{t('work')}</NavigationItem>
         <NavigationItem href="/blog">{t('blog')}</NavigationItem>
       </NavigationRow>
     </nav>

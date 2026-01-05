@@ -1,4 +1,4 @@
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { PageIntro } from '@/components/PageIntro'
 import imageNicolasCanala from '@/images/team/nico-profile.jpg'
 import imageSebastianStrand from '@/images/team/sebastian-profile.png'
@@ -56,6 +56,32 @@ export default async function About() {
     },
   ]
 
+  const design = [
+    {
+      name: 'Alicia Swiderski',
+      role: 'Founder',
+      image: { src: imageNicolasCanala },
+    },
+    {
+      name: 'Isabella Strand',
+      role: 'Co-Founder',
+      image: { src: imageSebastianStrand },
+    },
+  ]
+
+  const marketing = [
+    {
+      name: tGlobal('nicolas.name'),
+      role: tGlobal('nicolas.role'),
+      image: { src: imageNicolasCanala },
+    },
+    {
+      name: tGlobal('sebastian.name'),
+      role: tGlobal('sebastian.role'),
+      image: { src: imageSebastianStrand },
+    },
+  ]
+
   return (
     <RootLayout>
       <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
@@ -71,9 +97,11 @@ export default async function About() {
       />
 
       <TeamBlock title={t('team.title')} team={team} />
+      <TeamBlock title={'Digital Marketing Partners'} team={team} />
+      <TeamBlock title={'Design Partners'} team={team} />
 
       <Technologies title={t('technologies-title')} />
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

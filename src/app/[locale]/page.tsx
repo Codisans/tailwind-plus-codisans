@@ -1,6 +1,6 @@
 import { type Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import heroImage from '@/images/web-dev-landscape.webp'
 import { RootLayout } from '@/components/RootLayout'
 import { Card, CardsBlock } from '../../blocks/CardsBlock'
@@ -8,6 +8,7 @@ import { ListBlock } from '../../blocks/ListBlock'
 import { PageHeader } from '../../blocks/PageHeader'
 import { loadCaseStudies } from '@/lib/mdx'
 import { Container } from '@/components/Container'
+import { CardListBlock } from '@/blocks/CardListBlock'
 
 export async function generateMetadata({
   params,
@@ -34,20 +35,26 @@ export default async function Home({
 
   const services = [
     {
-      title: t('HomePage.services.web-development.title'),
-      description: t('HomePage.services.web-development.description'),
+      title: t('components.service-cards.web-development.title'),
+      description: t('components.service-cards.web-development.description'),
+      href: '/services/software-development',
     },
     {
-      title: t('HomePage.services.ai-solutions.title'),
-      description: t('HomePage.services.ai-solutions.description'),
+      title: t('components.service-cards.e-commerce.title'),
+      description: t('components.service-cards.e-commerce.description'),
+      href: '/services/e-commerce',
     },
     {
-      title: t('HomePage.services.e-commerce.title'),
-      description: t('HomePage.services.e-commerce.description'),
+      title: t('components.service-cards.ai-solutions.title'),
+      description: t('components.service-cards.ai-solutions.description'),
+      href: '/services/ai-automation',
     },
     {
-      title: t('HomePage.services.custom-content-management.title'),
-      description: t('HomePage.services.custom-content-management.description'),
+      title: t('components.service-cards.custom-content-management.title'),
+      description: t(
+        'components.service-cards.custom-content-management.description',
+      ),
+      href: '/services/cms-websites',
     },
   ]
 
@@ -55,11 +62,22 @@ export default async function Home({
     <RootLayout>
       <PageHeader title={t('HomePage.title')} summary={t('HomePage.intro')} />
 
-      {/*<div className="mt-24 rounded-4xl bg-theme-950 py-20 text-white sm:mt-32 sm:py-32 lg:mt-56">
+      <div className="mt-24 rounded-4xl bg-zinc-100 py-20 ring ring-zinc-100 sm:mt-32 sm:py-32 lg:mt-56">
         <Container className="!max-w-4xl text-center font-display text-3xl font-medium tracking-tight sm:text-4xl">
-          {t('HomePage.pain-point')}
+          {/* {t('HomePage.pain-point')} */}
+          Software Development stuff / Shopify / Laravel (Do the ideal clients
+          know what these are?)
         </Container>
-      </div>*/}
+      </div>
+
+      <CardListBlock
+        eyebrow={t('components.service-cards.eyebrow')}
+        title={t('components.service-cards.title')}
+        summary={t('components.service-cards.summary')}
+        image={heroImage}
+        // video="/hero-loop.mp4"
+        items={services}
+      />
 
       <CardsBlock
         title={t('HomePage.case-studies.title')}
@@ -76,17 +94,7 @@ export default async function Home({
         }))}
       />
 
-      <ListBlock
-        eyebrow={t('HomePage.services.eyebrow')}
-        title={t('HomePage.services.title')}
-        summary={t('HomePage.services.summary')}
-        image={heroImage}
-        // video="/hero-loop.mp4"
-        grayscale={false}
-        items={services}
-      />
-
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }
