@@ -30,7 +30,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className="h-full bg-theme-950 text-base text-theme-950 antialiased"
+      className="h-full bg-theme-950 text-base text-theme-950 antialiased [&:has(*.snap-center)]:lg:snap-y [&:has(*.snap-center)]:lg:snap-proximity"
     >
       <head>
         <link

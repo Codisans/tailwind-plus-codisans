@@ -125,37 +125,30 @@ export function StickyListBlock({
             </div>
           </div>
           <div>
-            <div className="lg:sticky lg:top-0 lg:h-screen lg:overflow-hidden">
-              <div
-                className="flex flex-col duration-500 ease-in-out max-lg:gap-y-12 lg:transition-transform"
-                style={{
-                  transform: `translateY(-${activeIndex * 25}%)`,
-                }}
-              >
-                {items.map((item, index) => (
-                  <div
-                    key={item.title}
-                    className="flex gap-y-4 max-lg:flex-col lg:h-screen lg:items-center"
-                  >
-                    <ImageMask className="max-w-xs max-sm:self-end sm:ml-40 lg:hidden">
-                      <Image
-                        src={item.image}
-                        sizes="(min-width: 1024px) 41rem, 31rem"
-                        alt={item.title}
-                        className="aspect-719/680 w-full object-cover"
-                      />
-                    </ImageMask>
-                    <FadeIn className="max-w-md">
-                      <div>
-                        <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                          {item.title}
-                        </h2>
-                        <p className="mt-6">{item.description}</p>
-                      </div>
-                    </FadeIn>
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-col max-lg:gap-y-12">
+              {items.map((item, index) => (
+                <div
+                  key={item.title}
+                  className="flex snap-center gap-y-4 max-lg:flex-col lg:h-screen lg:items-center"
+                >
+                  <ImageMask className="max-w-xs max-sm:self-end sm:ml-40 lg:hidden">
+                    <Image
+                      src={item.image}
+                      sizes="(min-width: 1024px) 41rem, 31rem"
+                      alt={item.title}
+                      className="aspect-719/680 w-full object-cover"
+                    />
+                  </ImageMask>
+                  <FadeIn className="max-w-md">
+                    <div>
+                      <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
+                        {item.title}
+                      </h2>
+                      <p className="mt-6">{item.description}</p>
+                    </div>
+                  </FadeIn>
+                </div>
+              ))}
             </div>
           </div>
         </div>
