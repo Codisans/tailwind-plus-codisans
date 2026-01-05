@@ -2,6 +2,7 @@ import { type Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import heroImage from '@/images/web-dev-landscape.webp'
+import plantImage from '@/images/plant.png'
 import { RootLayout } from '@/components/RootLayout'
 import { Card, CardsBlock } from '../../blocks/CardsBlock'
 import { ListBlock } from '../../blocks/ListBlock'
@@ -9,6 +10,7 @@ import { PageHeader } from '../../blocks/PageHeader'
 import { loadCaseStudies } from '@/lib/mdx'
 import { Container } from '@/components/Container'
 import { CardListBlock } from '@/blocks/CardListBlock'
+import { HeroCardsBlock } from '@/blocks/HeroCardsBlock'
 
 export async function generateMetadata({
   params,
@@ -60,27 +62,23 @@ export default async function Home({
 
   return (
     <RootLayout>
-      <PageHeader title={t('HomePage.title')} summary={t('HomePage.intro')} />
-
-      <div className="mt-24 rounded-4xl bg-zinc-100 py-20 ring ring-zinc-100 sm:mt-32 sm:py-32 lg:mt-56">
-        <Container className="!max-w-4xl text-center font-display text-3xl font-medium tracking-tight sm:text-4xl">
-          {/* {t('HomePage.pain-point')} */}
-          Software Development stuff / Shopify / Laravel (Do the ideal clients
-          know what these are?)
-        </Container>
-      </div>
-
-      <CardListBlock
-        eyebrow={t('components.service-cards.eyebrow')}
-        title={t('components.service-cards.title')}
-        summary={t('components.service-cards.summary')}
-        image={heroImage}
-        // video="/hero-loop.mp4"
-        items={services}
+      <HeroCardsBlock
+        title={t('HomePage.title')}
+        summary={t('HomePage.case-studies.title')}
+        cards={caseStudies.map<Card>((caseStudy) => ({
+          type: t('Global.case-study'),
+          date: caseStudy.date,
+          title: caseStudy.title,
+          image:
+            (caseStudy.thumbnail?.src as string) ??
+            (caseStudy.image?.src as string),
+          description: caseStudy.description,
+          link: caseStudy.href,
+        }))}
       />
 
-      <CardsBlock
-        title={t('HomePage.case-studies.title')}
+      {/* <CardsBlock
+        // title={t('HomePage.case-studies.title')}
         // summary={t('HomePage.case-studies.summary')}
         cards={caseStudies.map<Card>((caseStudy) => ({
           type: t('Global.case-study'),
@@ -92,6 +90,15 @@ export default async function Home({
           description: caseStudy.description,
           link: caseStudy.href,
         }))}
+      /> */}
+
+      <CardListBlock
+        eyebrow={t('components.service-cards.eyebrow')}
+        title={t('components.service-cards.title')}
+        summary={t('components.service-cards.summary')}
+        image={plantImage}
+        // video="/hero-loop.mp4"
+        items={services}
       />
 
       <ContactBlock />

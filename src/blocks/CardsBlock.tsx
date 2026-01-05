@@ -44,7 +44,7 @@ export const CardsBlock = ({
         >
           {cards.map((card, index) => (
             <FadeIn key={index} className="flex">
-              <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 sm:p-8">
+              <article className="relative flex w-full flex-col rounded-3xl bg-white p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 sm:p-8">
                 <h3>
                   <Link href={card.link}>
                     <span className="absolute inset-0 rounded-3xl" />
