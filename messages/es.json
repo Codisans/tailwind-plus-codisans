@@ -64,51 +64,6 @@
       "description": "Somos un equipo de personas apasionadas que están impulsadas por un propósito compartido. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
     }
   },
-  "ProcessPage": {
-    "meta": {
-      "title": "Codisans | Proceso",
-      "description": "Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados."
-    },
-    "eyebrow": "Proceso",
-    "title": "Cómo abordamos proyectos",
-    "intro": "Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados.",
-    "cta": "Construyamos algo juntos.",
-    "steps": {
-      "discover": {
-        "title": "Descubrir",
-        "description": "Comenzamos conociendo tu negocio en profundidad. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
-      },
-      "define": {
-        "title": "Definir",
-        "description": "Convertimos los aprendizajes en un plan claro. Definimos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una línea de código."
-      },
-      "build": {
-        "title": "Construir",
-        "description": "Con una base sólida, pasamos al desarrollo. Trabajamos de forma iterativa, en constante comunicación, y nos adaptamos según sea necesario — siempre priorizando el rendimiento, la escalabilidad y la experiencia de usuario."
-      },
-      "deliver": {
-        "title": "Entregar",
-        "description": "Lanzamos con confianza. Cada producto pasa por pruebas rigurosas, ajustes finales y control de calidad. Una vez en producción, apoyamos a tu equipo para asegurar un lanzamiento fluido y sin sobresaltos."
-      }
-    },
-    "values": {
-      "eyebrow": "Nuestra promesa",
-      "title": "Tenemos un código.",
-      "description": "En cada fase de nuestro trabajo, puedes contar con tres promesas clave que garantizan resultados excepcionales, juntos.",
-      "value-1": {
-        "title": "Transparencia",
-        "description": "Creemos que las grandes alianzas se basan en la confianza y la claridad. Desde el primer día, hablamos con franqueza sobre el alcance, los plazos y las decisiones clave — sin costos ocultos, sin sorpresas y sin jerga técnica."
-      },
-      "value-2": {
-        "title": "Detallistas",
-        "description": "Cuidamos cada proyecto al detalle. Nos tomamos el tiempo para entender tus necesidades y objetivos, y trabajamos a fondo para entregar un producto funcional, bello y fácil de usar."
-      },
-      "value-3": {
-        "title": "Colaborativos",
-        "description": "Creemos que las mejores soluciones nacen del trabajo en equipo. Involucramos al cliente en cada paso del proceso, fomentando una comunicación fluida y decisiones compartidas para lograr resultados alineados y duraderos."
-      }
-    }
-  },
   "WorkPage": {
     "meta": {
       "title": "Codisans | Nuestro Trabajo",
@@ -189,25 +144,71 @@
     "cta": "Servicios",
     "software-development": {
       "title": "Desarrollo de Software",
+      "description": "Construimos la base digital que tu negocio necesita para crecer. Nuestras aplicaciones a medida están diseñadas para ofrecer seguridad y rendimiento, brindando experiencias fluidas que convierten usuarios en clientes leales.",
       "tag": "Desarrollo de Software"
     },
     "e-commerce": {
       "title": "E-Commerce",
+      "description": "Diseñamos plataformas de comercio headless pensadas para escalar contigo. Mediante un enfoque componible, integramos herramientas líderes para crear experiencias de compra ágiles y centradas en el cliente, capaces de adaptarse a los cambios del mercado.",
       "tag": "E-Commerce"
     },
     "ai-automation": {
       "title": "Automatización & IA",
+      "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa.",
       "tag": "Automatización & IA"
     },
     "custom-cms": {
       "title": "Sitios Web Personalizados",
+      "description": "Toma el control de tu narrativa. Creamos sistemas de gestión de contenido personalizados según tu flujo de trabajo, dando a tu equipo de marketing la velocidad y flexibilidad que las soluciones genéricas no pueden ofrecer.",
       "tag": "Sitio Web"
     },
-    "tags": {
-      "software-development": "Desarrollo de Software",
-      "e-commerce": "E-Commerce",
-      "ai-automation": "Automatización & IA",
-      "custom-cms": "Sitio Web"
+    "blocks": {
+      "page-intro": {
+        "eyebrow": "Servicios",
+        "title": "Impulsando el crecimiento, juntos.",
+        "description": "Nos especializamos en desarrollo web y soluciones de software de alto impacto. Al alinear la tecnología con tus objetivos de negocio, creamos productos digitales que no solo funcionan: impulsan ingresos y eficiencia."
+      },
+      "cards-block": {},
+      "sticky-list-block": {
+        "eyebrow": "Proceso",
+        "heading": "Refinamos constantemente nuestro proceso para garantizar resultados",
+        "description": "Cada proyecto sigue un proceso claro y estructurado diseñado para reducir riesgos, aumentar claridad y entregar resultados. Desde el descubrimiento hasta la entrega, nos mantenemos alineados y transparentes en cada paso del proceso.",
+        "items": {
+          "item-1": {
+            "heading": "1. Descubrir",
+            "description": "Comenzamos conociendo tu negocio en profundidad. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
+          },
+          "item-2": {
+            "heading": "2. Definir",
+            "description": "Juntos, convertimos los aprendizajes en un plan claro. Mapeamos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una línea de código."
+          },
+          "item-3": {
+            "heading": "3. Construir",
+            "description": "Con una base sólida, pasamos al desarrollo. Trabajamos de forma iterativa, en constante comunicación, y nos adaptamos según sea necesario — siempre priorizando el rendimiento, la escalabilidad y la experiencia de usuario."
+          },
+          "item-4": {
+            "heading": "4. Entregar",
+            "description": "Lanzamos con confianza. Cada producto pasa por pruebas rigurosas, ajustes finales y control de calidad. Una vez en producción, apoyamos a tu equipo para asegurar un lanzamiento fluido y sin sobresaltos."
+          }
+        }
+      },
+      "three-column-text": {
+        "eyebrow": "Nuestra promesa",
+        "heading": "Tenemos un código.",
+        "description": "En cada fase de nuestro trabajo, puedes contar con tres promesas clave que garantizan resultados excepcionales, juntos.",
+        "item-1": {
+          "heading": "Transparencia",
+          "description": "Creemos que las grandes alianzas se basan en la confianza y la claridad. Desde el primer día, hablamos con franqueza sobre el alcance, los plazos y las decisiones clave — sin costos ocultos, sin sorpresas y sin jerga técnica."
+        },
+        "item-2": {
+          "heading": "Detallistas",
+          "description": "Cuidamos cada proyecto al detalle. Nos tomamos el tiempo para entender tus necesidades y objetivos, y trabajamos a fondo para entregar un producto funcional, bello y fácil de usar."
+        },
+        "item-3": {
+          "heading": "Colaborativos",
+          "description": "Creemos que las mejores soluciones nacen del trabajo en equipo. Involucramos al cliente en cada paso del proceso, fomentando una comunicación fluida y decisiones compartidas para lograr resultados alineados y duraderos."
+        }
+      }
     }
   },
   "global": {

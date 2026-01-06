@@ -11,16 +11,16 @@ import { motion, AnimatePresence, useScroll } from 'framer-motion'
 
 export function StickyListBlock({
   eyebrow,
-  title,
+  heading,
   description,
   items,
   className,
 }: {
   eyebrow: string
-  title: string
+  heading: string
   description: string
   items: {
-    title: string
+    heading: string
     description: string
     image: StaticImageData
   }[]
@@ -92,7 +92,7 @@ export function StickyListBlock({
 
   return (
     <>
-      <SectionIntro className="mt-24" eyebrow={eyebrow} title={title}>
+      <SectionIntro className="mt-24" eyebrow={eyebrow} title={heading}>
         <p>{description}</p>
       </SectionIntro>
       <Container>
@@ -115,7 +115,7 @@ export function StickyListBlock({
                         key={i}
                         src={item.image}
                         sizes="(min-width: 1024px) 41rem, 31rem"
-                        alt={item.title}
+                        alt={item.heading}
                         className="aspect-719/680 w-full object-cover"
                       />
                     ))}
@@ -126,23 +126,23 @@ export function StickyListBlock({
           </div>
           <div>
             <div className="flex flex-col max-lg:gap-y-12">
-              {items.map((item, index) => (
+              {items.map((item) => (
                 <div
-                  key={item.title}
+                  key={item.heading}
                   className="flex snap-center gap-y-4 max-lg:flex-col lg:h-screen lg:items-center"
                 >
                   <ImageMask className="max-w-xs max-sm:self-end sm:ml-40 lg:hidden">
                     <Image
                       src={item.image}
                       sizes="(min-width: 1024px) 41rem, 31rem"
-                      alt={item.title}
+                      alt={item.heading}
                       className="aspect-719/680 w-full object-cover"
                     />
                   </ImageMask>
                   <FadeIn className="max-w-md">
                     <div>
                       <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                        {item.title}
+                        {item.heading}
                       </h2>
                       <p className="mt-6">{item.description}</p>
                     </div>
