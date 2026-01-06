@@ -41,74 +41,74 @@ export default async function Shopify({
       <ServiceHeader
         service="e-commerce"
         title="Custom Shopify Storefronts Built for Performance, Scalability & Conversions"
-        summary="At Codisans, we design and develop custom Shopify storefronts for businesses that need speed, flexibility, and a scalable foundation to support long-term growth."
+        summary="We build headless Shopify storefronts using Hydrogen and modern frameworks — engineered for speed, built for scale, and optimized to turn browsers into buyers. Get the performance of custom development with the reliability of the world's leading commerce platform."
       />
 
       <PromoListBlock
         eyebrow={'Beyond Templates'}
-        title={'Why You Need a Custom Storefront'}
+        title={'Why Custom Storefronts Outperform Standard Themes'}
         description={
-          'Standard Shopify themes are ideal for getting started, but they are not built for complex business needs or sustained growth.'
+          'Shopify themes help you launch quickly, but scaling brands need more than templates. Custom storefronts give you the flexibility to innovate, the performance to compete, and the foundation to grow without technical debt.'
         }
         items={[
           {
-            heading: 'Tailored Customer Experience',
+            heading: 'Lightning-Fast Performance That Converts',
             description:
-              'Design unique user journeys, product flows, and interactions that match your brand and customer behavior — not the constraints of a template.',
+              'Our custom storefronts load in under 50 milliseconds, delivering blazing-fast experiences that improve SEO rankings, mobile performance, and directly impact your bottom line.',
           },
           {
-            heading: 'Higher Performance & Faster Load Times',
+            heading: 'Unique Brand Experiences, Zero Compromises',
             description:
-              'Custom storefronts are built for speed, improving mobile performance, SEO rankings, and conversion rates.',
+              'Break free from template constraints. Design sophisticated product flows, interactive features, and customer journeys that align perfectly with your brand and business model.',
           },
           {
-            heading: 'Scalability Without Replatforming',
+            heading: 'Built to Scale Without Rebuilding',
             description:
-              'Add new features, markets, and integrations as your business grows, without rebuilding your store from scratch.',
+              'Expand into new markets, add complex features, and integrate advanced functionality as you grow—all without expensive replatforming or technical limitations.',
           },
           {
-            heading: 'Reduced Dependency on Apps',
+            heading: 'Lower TCO, Higher Control',
             description:
-              'Replace costly third-party apps with custom logic, lowering long-term operational costs and improving reliability.',
+              'Replace expensive app subscriptions with custom-built logic. Reduce monthly overhead, eliminate app conflicts, and maintain full control over your store capabilities.',
           },
           {
-            heading: 'Full Control Over Business Logic',
+            heading: 'Advanced Commerce Logic, Simplified',
             description:
-              'Implement complex product configurations, pricing rules, and workflows tailored to your business model.',
+              'Handle complex pricing rules, B2B workflows, subscription models, and custom checkout experiences that standard themes simply cannot support.',
           },
         ]}
         invert={true}
       />
 
       <ListBlock
-        eyebrow="Why use Shopify?"
-        title="Enterprise-Grade E-commerce Without Enterprise Complexity"
-        summary="Shopify provides a robust, secure, and scalable backend trusted by millions of businesses worldwide."
+        eyebrow="Why Shopify?"
+        title="The Most Trusted Commerce Platform, Customized for Your Business"
+        summary="We build on Shopify because it offers enterprise-grade infrastructure with the flexibility of custom development."
         items={[
           {
-            heading: 'Best-in-Class Checkout & Payments',
+            heading: 'Best-in-Class Checkout That Converts',
             description:
-              'Some more info about this reason. Some more info about this reason. Some more info about this reason.',
+              'Shopify Checkout converts 15% higher than other platforms and reaches 150M+ high-intent Shop Pay users.',
           },
           {
-            heading: 'Scalable & Reliable Infrastructure',
+            heading: 'Rock-Solid Infrastructure That Scales',
             description:
-              'Some more info about this reason. Some more info about this reason. Some more info about this reason.',
+              'Handle traffic spikes, product launches, and viral moments without breaking a sweat. Shopify infrastructure powers $1 trillion+ in global sales and is built to support your growth from day one.',
           },
           {
-            heading: 'Powerful APIs & Ecosystem',
+            heading: 'Powerful APIs & Developer Ecosystem',
             description:
-              'Some more info about this reason. Some more info about this reason. Some more info about this reason.',
+              'Access 13,000+ commerce apps and robust APIs that let us build exactly what you need. From advanced analytics to custom fulfillment workflows—if you can imagine it, we can build it.',
           },
           {
-            heading: 'Continuous Platform Innovation',
+            heading: 'Continuous Innovation & AI-Powered Tools',
             description:
-              'Shopify evolves constantly, giving your business access to new features without costly upgrades.',
+              'Benefit from Shopify nonstop platform improvements—150+ new features every 6 months. Get AI-powered content generation, smart recommendations, and cutting-edge commerce tools without additional development.',
           },
           {
-            heading: 'Global Commerce Ready',
+            heading: 'Built for Global Commerce',
             description:
-              'Multi-currency, multi-language, and international market support built into the platform.',
+              'Launch internationally with confidence. Multi-currency pricing, localized experiences, international shipping optimization, and compliance tools are built into the platform.',
           },
         ]}
         image={heroImage}
@@ -116,8 +116,8 @@ export default async function Shopify({
 
       <CaseStudyCardsBlock
         eyebrow="Our Work"
-        title="Real Results."
-        summary="We’ve helped growing brands transform their e-commerce platforms into high-performance sales channels using Shopify Hydrogen and composable architectures."
+        title="From Good Stores to Great Sales Engines"
+        summary="We've partnered with ambitious brands to build custom Shopify storefronts that reflect your brand and drive business growth through superior performance, user experience, and conversion optimization."
         cards={caseStudies.map<CaseStudyCard>((caseStudy) => ({
           service: caseStudy.service?.[0],
           date: caseStudy.date,
@@ -131,9 +131,9 @@ export default async function Shopify({
       />
 
       <ContactBlock
-        heading="Your Shopify Partners"
-        description="We understand the importance of a storefront that generates conversions. If you want a reliable business model, we're here to help."
-        cta="Get in touch"
+        heading="Ready to Build a Storefront That Performs?"
+        description="Whether you're scaling beyond your current theme, launching a new brand, or rebuilding for performance — we'll help you leverage Shopify with a custom storefront that drives real business results."
+        cta="Start your project"
       />
     </RootLayout>
   )
