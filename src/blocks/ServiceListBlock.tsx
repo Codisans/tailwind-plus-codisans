@@ -120,8 +120,9 @@ export const ServiceListBlock = ({
                 role="list"
                 className="flex flex-col gap-8 text-base text-theme-600 lg:pl-4"
               >
-                {items?.map((item) => (
+                {items?.map((item, index) => (
                   <li
+                    key={index}
                     className={clsx(
                       'group/card relative flex w-full',
                       item.service,
