@@ -1,18 +1,18 @@
 import { RootLayout } from '@/components/RootLayout'
 import { ListBlock } from '@/blocks/ListBlock'
-import laravelLogo from '@/images/logos/laravel-logotype.svg'
 import statamicLogo from '@/images/logos/statamic-logotype.svg'
-import chillDude from '@/images/web-dev-landscape.webp'
+import statamicScreenshot from '@/images/statamic-screenshot.png'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { PageIntro } from '@/components/PageIntro'
 import { getTranslations } from 'next-intl/server'
-import { Card, CardsBlock } from '@/blocks/CardsBlock'
 import { loadCaseStudies } from '@/lib/mdx'
-import { SectionIntro } from '@/components/SectionIntro'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import Image from 'next/image'
 import { ServiceHeader } from '@/blocks/ServiceHeader'
+import {
+  CaseStudyCard,
+  CaseStudyCardsBlock,
+} from '@/blocks/CaseStudyCardsBlock'
 
 export async function generateMetadata({
   params,
@@ -42,49 +42,38 @@ export default async function Statamic({
   ])
 
   return (
-    <RootLayout>
+    <RootLayout className="custom-cms">
       <ServiceHeader
         service="custom-cms"
-        title="Statamic CMS: Modern Content Management"
-        summary="Statamic is a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
+        title="Bespoke CMS Websites Tailored to your Brand."
+        summary="We build our CMS websites with Statamic - a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
       />
 
-      <div className="mt-24 sm:mt-32 lg:mt-40">
+      <div className="mt-16 sm:-mb-8 lg:mt-24">
         <Container>
-          <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20">
-            <FadeIn className="mx-auto w-40 flex-none lg:w-64">
+          <div className="flex flex-col items-center justify-center gap-y-8 sm:flex-row sm:gap-x-8 xl:gap-x-20">
+            <FadeIn className="w-40 flex-none">
               <Image
                 alt="Laravel Logo"
-                src={laravelLogo}
+                src={statamicLogo}
                 className="w-full object-cover"
               />
             </FadeIn>
-
-            <div className="mt-12 lg:mt-0 lg:w-148 lg:flex-none">
-              <FadeIn className="max-w-md">
-                <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                  {'Statamic CMS: Modern Content Management'}
-                </h2>
-
-                <div className="mt-6 space-y-6 text-base text-theme-600">
-                  <p>
-                    Statamic is a flexible content management system built on
-                    Laravel. It makes creating and managing custom websites
-                    simple, while giving developers full control under the hood.
-                    Perfect for content-heavy sites that still need the power of
-                    a custom build.
-                  </p>
-                </div>
-              </FadeIn>
-            </div>
+            <FadeIn className="max-w-md max-sm:text-center">
+              <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
+                {'The answer to your frustrating CMS problems.'}
+              </h2>
+            </FadeIn>
           </div>
         </Container>
       </div>
 
       <ListBlock
-        title={'Why Statamic?'}
-        // summary={t('reasons.summary')}
-        image={chillDude}
+        title={'Why choose Statamic?'}
+        summary={
+          'Statamic supports your entire team with an award-winning user experience, a kind-hearted community, and all the power of Laravel at your fingertips.'
+        }
+        image={statamicScreenshot}
         items={[
           {
             heading: 'Editor Friendly UX',
@@ -104,11 +93,11 @@ export default async function Statamic({
         ]}
       />
 
-      <CardsBlock
+      <CaseStudyCardsBlock
         title={'Some of our CMS Case Studies'}
         // summary={t('HomePage.case-studies.summary')}
-        cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('Global.case-study'),
+        cards={caseStudies.map<CaseStudyCard>((caseStudy) => ({
+          service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
           image:

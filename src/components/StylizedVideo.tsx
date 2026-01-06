@@ -31,20 +31,13 @@ export function StylizedVideo({
   src,
   shape = 0,
   className,
-  grayscale = true,
   poster,
 }: StylizedVideoProps) {
   let id = useId()
   let { width, height, path } = shapes[shape]
 
   return (
-    <div
-      className={clsx(
-        className,
-        'relative flex aspect-719/680 w-full',
-        grayscale && 'grayscale',
-      )}
-    >
+    <div className={clsx(className, 'relative flex aspect-719/680 w-full')}>
       <svg viewBox={`0 0 ${width} ${height}`} fill="none" className="h-full">
         <g clipPath={`url(#${id}-clip)`} className="group">
           <foreignObject width={width} height={height}>
@@ -52,7 +45,7 @@ export function StylizedVideo({
               src={src}
               poster={poster}
               autoPlay
-              loop
+              // loop
               muted
               playsInline
               className="h-full w-full bg-theme-100 object-cover"

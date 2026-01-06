@@ -23,6 +23,7 @@ import * as nuestrosTiemposEn from '../app/[locale]/work/nuestros-tiempos/page.e
 import * as nuestrosTiemposEs from '../app/[locale]/work/nuestros-tiempos/page.es.mdx'
 import * as sundayChapterEn from '../app/[locale]/work/sunday-chapter/page.en.mdx'
 import * as sundayChapterEs from '../app/[locale]/work/sunday-chapter/page.es.mdx'
+import { ServiceSlug } from './types'
 
 type ImagePropsWithOptionalAlt = Omit<ImageProps, 'alt'> & { alt?: string }
 
@@ -52,7 +53,7 @@ export interface CaseStudy {
   logo: ImageProps['src']
   thumbnail: ImagePropsWithOptionalAlt
   image: ImagePropsWithOptionalAlt
-  service: Array<"web-development" | "e-commerce" | "ai-automation" | "custom-cms">
+  service: ServiceSlug[]
   testimonial: {
     author: {
       name: string

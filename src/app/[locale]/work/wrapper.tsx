@@ -109,7 +109,11 @@ export default async function CaseStudyWrapper({
       />
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <PageIntro eyebrow={t('case-study')} title={caseStudy.title} centered>
+          <PageIntro
+            eyebrow={t('global.case-study')}
+            title={caseStudy.title}
+            centered
+          >
             <p>{caseStudy.description}</p>
             {caseStudy.url && (
               <a
@@ -144,7 +148,7 @@ export default async function CaseStudyWrapper({
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
                       <dt className="font-semibold">{t('Global.service')}</dt>
-                      <dd>{t(`services.${caseStudy.service}.tag`)}</dd>
+                      <dd>{t(`services.${caseStudy.service?.[0]}.tag`)}</dd>
                     </div>
                   </dl>
                 </div>

@@ -43,7 +43,7 @@ export default async function Automation({
   ])
 
   return (
-    <RootLayout>
+    <RootLayout className="ai-automation">
       <ServiceHeader
         service="ai-automation"
         title="Intelligent Automation & AI Solutions"

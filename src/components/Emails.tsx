@@ -15,7 +15,7 @@ function Email({
   return (
     <div key={email}>
       <dt
-        className={`font-semibold ${invert ? 'text-white' : 'text-theme-950'}`}
+        className={`font-semibold ${invert ? 'text-white' : 'text-neutral-950'}`}
       >
         {name}
       </dt>
@@ -23,7 +23,7 @@ function Email({
         <Link
           href={`mailto:${email}`}
           target="_blank"
-          className={`${invert ? 'text-theme-400 hover:text-white' : 'text-theme-600 hover:text-theme-950'}`}
+          className={`${invert ? 'text-neutral-400 hover:text-white' : 'text-neutral-600 hover:text-neutral-950'}`}
         >
           {email}
         </Link>
@@ -41,7 +41,7 @@ export function Emails({
   return (
     <div {...props}>
       <h2
-        className={`font-display text-base font-semibold ${invert ? 'text-white' : 'text-theme-950'}`}
+        className={`font-display text-base font-semibold ${invert ? 'text-white' : 'text-neutral-950'}`}
       >
         {t('emails-heading')}
       </h2>

@@ -1,23 +1,14 @@
-import { Border } from '@/components/Border'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { PageIntro } from '@/components/PageIntro'
-import { SocialMedia } from '@/components/SocialMedia'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
-import { Emails } from '@/components/Emails'
-import { Card, CardsBlock } from '@/blocks/CardsBlock'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { ListBlock } from '@/blocks/ListBlock'
-import heroImage from '@/images/web-dev-landscape.webp'
+import heroImage from '@/images/shopify-screenshot.png'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import { loadCaseStudies } from '@/lib/mdx'
 import {
   CaseStudyCard,
   CaseStudyCardsBlock,
 } from '@/blocks/CaseStudyCardsBlock'
-import { ServiceTag } from '@/components/ServiceTag'
-import clsx from 'clsx'
 import { ServiceHeader } from '@/blocks/ServiceHeader'
 
 export async function generateMetadata({
@@ -46,7 +37,7 @@ export default async function Shopify({
   ])
 
   return (
-    <RootLayout>
+    <RootLayout className="e-commerce">
       <ServiceHeader
         service="e-commerce"
         title="Custom Shopify Storefronts Built for Performance, Scalability & Conversions"

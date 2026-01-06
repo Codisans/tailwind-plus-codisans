@@ -38,7 +38,7 @@ export const ListBlock = ({
       >
         {summary && <p className="mb-16">{summary}</p>}
       </SectionIntro>
-      <Container>
+      <Container className="overflow-hidden">
         <div
           className={clsx(
             'lg:flex lg:items-center lg:justify-end',
@@ -56,7 +56,7 @@ export const ListBlock = ({
                 <StylizedImage
                   grayscale={false}
                   src={image}
-                  shape={invert ? 0 : 1}
+                  shape={0}
                   sizes="(min-width: 1024px) 41rem, 31rem"
                   className={clsx(
                     'justify-center',

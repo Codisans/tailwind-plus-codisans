@@ -1,17 +1,16 @@
 import { RootLayout } from '@/components/RootLayout'
 import { ListBlock } from '@/blocks/ListBlock'
 import laravelLogo from '@/images/logos/laravel-logotype.svg'
-import statamicLogo from '@/images/logos/statamic-logotype.svg'
-import chillDude from '@/images/web-dev-landscape.webp'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
-import { PageIntro } from '@/components/PageIntro'
 import { getTranslations } from 'next-intl/server'
-import { Card, CardsBlock } from '@/blocks/CardsBlock'
 import { loadCaseStudies } from '@/lib/mdx'
 import { SectionIntro } from '@/components/SectionIntro'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import Image from 'next/image'
+import { ServiceHeader } from '@/blocks/ServiceHeader'
+import { CaseStudyCardsBlock } from '@/blocks/CaseStudyCardsBlock'
+import { CaseStudyCard } from '@/blocks/HeroCardsBlock'
 
 export async function generateMetadata({
   params,
@@ -33,7 +32,6 @@ export default async function Laravel({
   params: { locale: string }
 }) {
   const t = await getTranslations('LaravelPage')
-  const tGlobal = await getTranslations('Global')
   const caseStudies = await loadCaseStudies(locale, [
     'keai',
     'nuestros-tiempos',
@@ -59,19 +57,31 @@ export default async function Laravel({
   ]
 
   return (
-    <RootLayout>
-      <PageIntro eyebrow={'Software Development'} title={t('title')}>
-        <p>{t('intro')}</p>
-      </PageIntro>
+    <RootLayout className="software-development">
+      <ServiceHeader
+        service="software-development"
+        title={t('title')}
+        summary={t('intro')}
+      />
 
       <div className="mt-24 sm:mt-32 lg:mt-40">
         <Container>
           <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20">
-            <FadeIn className="mx-auto w-40 flex-none lg:w-64">
+            {/* <FadeIn className="mx-auto w-40 flex-none lg:w-64">
               <Image
                 alt="Laravel Logo"
                 src={laravelLogo}
                 className="w-full object-cover"
+              />
+            </FadeIn> */}
+            <FadeIn className="w-full overflow-hidden rounded-3xl ring-1 ring-neutral-950/5">
+              <video
+                src="/laravel-video.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full bg-theme-100 object-cover"
               />
             </FadeIn>
 
@@ -93,7 +103,7 @@ export default async function Laravel({
       <ListBlock
         title={t('reasons.title')}
         // summary={t('reasons.summary')}
-        image={chillDude}
+        video="/laravel-clip-v2.webm"
         invert
         items={services}
       />
@@ -129,11 +139,11 @@ export default async function Laravel({
         <p>Add logos of platforms built on laravel for extra credibility</p>
       </Container> */}
 
-      <CardsBlock
+      <CaseStudyCardsBlock
         title={t('case-studies.title')}
         // summary={t('HomePage.case-studies.summary')}
-        cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('Global.case-study'),
+        cards={caseStudies.map<CaseStudyCard>((caseStudy) => ({
+          service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
           image:

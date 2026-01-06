@@ -1,8 +1,11 @@
+import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { ServiceTag } from '@/components/ServiceTag'
+import { TextLink } from '@/components/TextLink'
+import { getTranslations } from 'next-intl/server'
 
-export function ServiceHeader({
+export async function ServiceHeader({
   service,
   title,
   summary,
@@ -11,9 +14,13 @@ export function ServiceHeader({
   title: string
   summary: string
 }) {
+  const t = await getTranslations()
   return (
     <Container className={'mt-24 text-center sm:mt-32 lg:mt-40'}>
       <FadeIn>
+        <div className="flex justify-start">
+          <TextLink href="/services">← {t('global.services')}</TextLink>
+        </div>
         <h1>
           <ServiceTag service={service} />
 
