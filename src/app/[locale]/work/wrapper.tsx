@@ -1,15 +1,17 @@
-import { Badge } from '@/components/Badge'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/components/MDXComponents'
 import { PageIntro } from '@/components/PageIntro'
-import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { getTranslations } from 'next-intl/server'
 import { ServiceTag } from '@/components/ServiceTag'
+import {
+  CaseStudyCard,
+  CaseStudyCardsBlock,
+} from '@/blocks/CaseStudyCardsBlock'
 
 export default async function CaseStudyWrapper({
   caseStudy,
@@ -177,14 +179,20 @@ export default async function CaseStudyWrapper({
       </article>
 
       {moreCaseStudies.length > 0 && (
-        <PageLinks
-          className="mt-24 sm:mt-32 lg:mt-40"
-          title={t('Global.more-case-studies')}
-          pages={moreCaseStudies}
-          locale={locale}
+        <CaseStudyCardsBlock
+          title={t('global.more-case-studies')}
+          cards={moreCaseStudies.map<CaseStudyCard>((caseStudy) => ({
+            service: caseStudy.service?.[0],
+            date: caseStudy.date,
+            title: caseStudy.title,
+            image:
+              (caseStudy.thumbnail?.src as string) ??
+              (caseStudy.image?.src as string),
+            description: caseStudy.description,
+            link: caseStudy.href,
+          }))}
         />
       )}
-
       <ContactBlock />
     </RootLayout>
   )
