@@ -102,7 +102,7 @@ export default async function Home({
         </p>
         <div className="flex gap-x-4 gap-y-2">
           <Button className="mt-6" href="/about">
-            About us
+            About
           </Button>
           <Button className="mt-6" href="/services">
             Services

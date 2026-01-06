@@ -12,6 +12,13 @@ import { ListBlock } from '@/blocks/ListBlock'
 import heroImage from '@/images/web-dev-landscape.webp'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import { loadCaseStudies } from '@/lib/mdx'
+import {
+  CaseStudyCard,
+  CaseStudyCardsBlock,
+} from '@/blocks/CaseStudyCardsBlock'
+import { ServiceTag } from '@/components/ServiceTag'
+import clsx from 'clsx'
+import { ServiceHeader } from '@/blocks/ServiceHeader'
 
 export async function generateMetadata({
   params,
@@ -40,18 +47,11 @@ export default async function Shopify({
 
   return (
     <RootLayout>
-      <PageIntro
-        eyebrow={'E-commerce Solutions'}
-        title={
-          'Custom Shopify Storefronts Built for Performance, Scalability & Conversions'
-        }
-      >
-        <p>
-          At Codisans, we design and develop custom Shopify storefronts for
-          businesses that need speed, flexibility, and a scalable foundation to
-          support long-term growth.
-        </p>
-      </PageIntro>
+      <ServiceHeader
+        service="e-commerce"
+        title="Custom Shopify Storefronts Built for Performance, Scalability & Conversions"
+        summary="At Codisans, we design and develop custom Shopify storefronts for businesses that need speed, flexibility, and a scalable foundation to support long-term growth."
+      />
 
       <PromoListBlock
         eyebrow={'Beyond Templates'}
@@ -95,27 +95,27 @@ export default async function Shopify({
         summary="Shopify provides a robust, secure, and scalable backend trusted by millions of businesses worldwide."
         items={[
           {
-            title: 'Best-in-Class Checkout & Payments',
+            heading: 'Best-in-Class Checkout & Payments',
             description:
               'Some more info about this reason. Some more info about this reason. Some more info about this reason.',
           },
           {
-            title: 'Scalable & Reliable Infrastructure',
+            heading: 'Scalable & Reliable Infrastructure',
             description:
               'Some more info about this reason. Some more info about this reason. Some more info about this reason.',
           },
           {
-            title: 'Powerful APIs & Ecosystem',
+            heading: 'Powerful APIs & Ecosystem',
             description:
               'Some more info about this reason. Some more info about this reason. Some more info about this reason.',
           },
           {
-            title: 'Continuous Platform Innovation',
+            heading: 'Continuous Platform Innovation',
             description:
               'Shopify evolves constantly, giving your business access to new features without costly upgrades.',
           },
           {
-            title: 'Global Commerce Ready',
+            heading: 'Global Commerce Ready',
             description:
               'Multi-currency, multi-language, and international market support built into the platform.',
           },
@@ -123,12 +123,12 @@ export default async function Shopify({
         image={heroImage}
       />
 
-      <CardsBlock
+      <CaseStudyCardsBlock
         eyebrow="Our Work"
         title="Real Results."
         summary="We’ve helped growing brands transform their e-commerce platforms into high-performance sales channels using Shopify Hydrogen and composable architectures."
-        cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('Global.case-study'),
+        cards={caseStudies.map<CaseStudyCard>((caseStudy) => ({
+          service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
           image:

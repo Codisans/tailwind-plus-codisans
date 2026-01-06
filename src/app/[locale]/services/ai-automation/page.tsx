@@ -15,6 +15,7 @@ import Image from 'next/image'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import chillDude from '@/images/web-dev-landscape.webp'
 import laravelLogo from '@/images/logos/laravel-logotype.svg'
+import { ServiceHeader } from '@/blocks/ServiceHeader'
 
 export async function generateMetadata({
   params,
@@ -37,95 +38,48 @@ export default async function Automation({
 }) {
   const t = await getTranslations('ContactPage')
   const caseStudies = await loadCaseStudies(locale, [
-    'swid-studio',
-    'felici-house',
-    'sunday-chapter',
+    'nuestros-tiempos',
+    'keai',
   ])
 
   return (
     <RootLayout>
-      <PageIntro
-        eyebrow={'Automation & AI'}
-        title={'Intelligent Automation & AI Solutions'}
-      >
-        <p>
-          We partner with you to identify high-value opportunities for
-          automation. Our bespoke AI solutions remove bottlenecks and reduce
-          costs, freeing your team to focus on innovation rather than
-          administration.
-        </p>
-      </PageIntro>
-
-      <div className="mt-24 sm:mt-32 lg:mt-40">
-        <Container>
-          <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20">
-            <FadeIn className="mx-auto w-40 flex-none lg:w-64">
-              <Image
-                alt="Laravel Logo"
-                src={laravelLogo}
-                className="w-full object-cover"
-              />
-            </FadeIn>
-
-            <div className="mt-12 lg:mt-0 lg:w-148 lg:flex-none">
-              <FadeIn className="max-w-md">
-                <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                  {'Statamic CMS: Modern Content Management'}
-                </h2>
-
-                <div className="mt-6 space-y-6 text-base text-theme-600">
-                  <p>
-                    Statamic is a flexible content management system built on
-                    Laravel. It makes creating and managing custom websites
-                    simple, while giving developers full control under the hood.
-                    Perfect for content-heavy sites that still need the power of
-                    a custom build.
-                  </p>
-                </div>
-              </FadeIn>
-            </div>
-          </div>
-        </Container>
-      </div>
-
-      <ListBlock
-        title={'Why Statamic?'}
-        // summary={t('reasons.summary')}
-        image={chillDude}
-        grayscale={false}
-        // items={services}
+      <ServiceHeader
+        service="ai-automation"
+        title="Intelligent Automation & AI Solutions"
+        summary="We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration."
       />
 
-      {/* <div className="mt-24 sm:mt-32 lg:mt-40">
-        <Container>
-          <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20">
-            <div className="mt-12 lg:mt-0 lg:w-148 lg:flex-none">
-              <FadeIn className="max-w-md">
-                <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                  {t('statamic.title')}
-                </h2>
-
-                <div className="mt-6 space-y-6 text-base text-theme-600">
-                  <p>{t('statamic.description')}</p>
-                </div>
-              </FadeIn>
-            </div>
-
-            <FadeIn className="w-120 flex-none lg:w-130">
-              <Image
-                alt="Statamic Logo"
-                src={statamicLogo}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="object-cover"
-              />
-            </FadeIn>
-          </div>
-        </Container>
-      </div> */}
-
-      {/* <Container className="mt-20 text-2xl">
-        <p>Add logos of platforms built on laravel for extra credibility</p>
-      </Container> */}
+      <PromoListBlock
+        eyebrow={'Beyond Templates'}
+        title={'How can AI help your business?'}
+        description={
+          'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.'
+        }
+        items={[
+          {
+            heading: 'Automate repetitive tasks & Reduce Costs',
+            description:
+              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+          },
+          {
+            heading: 'Improve decision-making',
+            description:
+              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+          },
+          {
+            heading: 'Enhance customer experiences',
+            description:
+              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+          },
+          {
+            heading: 'Streamline operations',
+            description:
+              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+          },
+        ]}
+        invert={true}
+      />
 
       <CardsBlock
         title={'Some of our CMS Case Studies'}

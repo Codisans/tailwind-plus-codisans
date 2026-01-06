@@ -12,6 +12,7 @@ import { loadCaseStudies } from '@/lib/mdx'
 import { SectionIntro } from '@/components/SectionIntro'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import Image from 'next/image'
+import { ServiceHeader } from '@/blocks/ServiceHeader'
 
 export async function generateMetadata({
   params,
@@ -42,13 +43,11 @@ export default async function Statamic({
 
   return (
     <RootLayout>
-      <PageIntro eyebrow={'CMS Websites'} title={'Bespoke Websites'}>
-        <p>
-          Take control of your narrative. We build custom Content Management
-          Systems around your specific workflow, giving your marketing team the
-          speed and flexibility off-the-shelf solutions can't match.
-        </p>
-      </PageIntro>
+      <ServiceHeader
+        service="custom-cms"
+        title="Statamic CMS: Modern Content Management"
+        summary="Statamic is a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
+      />
 
       <div className="mt-24 sm:mt-32 lg:mt-40">
         <Container>
@@ -86,40 +85,24 @@ export default async function Statamic({
         title={'Why Statamic?'}
         // summary={t('reasons.summary')}
         image={chillDude}
-        grayscale={false}
-        // items={services}
+        items={[
+          {
+            heading: 'Editor Friendly UX',
+            description:
+              'Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework.',
+          },
+          {
+            heading: 'Flexible & Scalable',
+            description:
+              'Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework.',
+          },
+          {
+            heading: 'Powerful APIs & Ecosystem',
+            description:
+              'Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework.',
+          },
+        ]}
       />
-
-      {/* <div className="mt-24 sm:mt-32 lg:mt-40">
-        <Container>
-          <div className="lg:flex lg:items-center lg:justify-end lg:gap-x-8 xl:gap-x-20">
-            <div className="mt-12 lg:mt-0 lg:w-148 lg:flex-none">
-              <FadeIn className="max-w-md">
-                <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                  {t('statamic.title')}
-                </h2>
-
-                <div className="mt-6 space-y-6 text-base text-theme-600">
-                  <p>{t('statamic.description')}</p>
-                </div>
-              </FadeIn>
-            </div>
-
-            <FadeIn className="w-120 flex-none lg:w-130">
-              <Image
-                alt="Statamic Logo"
-                src={statamicLogo}
-                sizes="(min-width: 1024px) 41rem, 31rem"
-                className="object-cover"
-              />
-            </FadeIn>
-          </div>
-        </Container>
-      </div> */}
-
-      {/* <Container className="mt-20 text-2xl">
-        <p>Add logos of platforms built on laravel for extra credibility</p>
-      </Container> */}
 
       <CardsBlock
         title={'Some of our CMS Case Studies'}
@@ -135,13 +118,6 @@ export default async function Statamic({
           link: caseStudy.href,
         }))}
       />
-
-      {/* <SectionIntro
-        title={t('specialists.title')}
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>{t('specialists.description')}</p>
-      </SectionIntro> */}
 
       <ContactBlock cta="Let's build" />
     </RootLayout>

@@ -41,19 +41,19 @@ export default async function Laravel({
 
   const services = [
     {
-      title: t('reasons.future-proof.title'),
+      heading: t('reasons.future-proof.title'),
       description: t('reasons.future-proof.description'),
     },
     {
-      title: t('reasons.open-source.title'),
+      heading: t('reasons.open-source.title'),
       description: t('reasons.open-source.description'),
     },
     {
-      title: t('reasons.efficient.title'),
+      heading: t('reasons.efficient.title'),
       description: t('reasons.efficient.description'),
     },
     {
-      title: t('reasons.safety.title'),
+      heading: t('reasons.safety.title'),
       description: t('reasons.safety.description'),
     },
   ]
@@ -94,7 +94,7 @@ export default async function Laravel({
         title={t('reasons.title')}
         // summary={t('reasons.summary')}
         image={chillDude}
-        grayscale={false}
+        invert
         items={services}
       />
 

@@ -9,6 +9,7 @@ import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { getTranslations } from 'next-intl/server'
+import { ServiceTag } from '@/components/ServiceTag'
 
 export default async function CaseStudyWrapper({
   caseStudy,
@@ -116,13 +117,11 @@ export default async function CaseStudyWrapper({
                 className="relative z-10 mt-4 block"
                 target="_blank"
               >
-                <Badge color="teal">
-                  {caseStudy.url.replace('https://', '')}
-                </Badge>
+                <ServiceTag
+                  service={caseStudy.service[0]}
+                  label={caseStudy.url.replace('https://', '')}
+                />
               </a>
-              // <a className="mx-auto mt-8 block w-max rounded-full bg-theme-100 px-4 py-1.5 text-base text-theme-600">
-              //   {caseStudy.url}
-              // </a>
             )}
           </PageIntro>
 

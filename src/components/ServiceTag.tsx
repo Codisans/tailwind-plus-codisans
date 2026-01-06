@@ -1,8 +1,14 @@
 import { Badge } from './Badge'
 import { getTranslations } from 'next-intl/server'
 
-export const ServiceTag = async ({ service }: { service: string }) => {
-  const t = await getTranslations('services.tags')
+export const ServiceTag = async ({
+  service,
+  label,
+}: {
+  service: string
+  label?: string
+}) => {
+  const t = await getTranslations('services')
 
   const getServiceColor = (service: string) => {
     switch (service) {
@@ -14,7 +20,13 @@ export const ServiceTag = async ({ service }: { service: string }) => {
         return 'blue'
       case 'custom-cms':
         return 'yellow'
+      default:
+        return 'zinc'
     }
   }
-  return <Badge color={getServiceColor(service)}>{t(`${service}`)}</Badge>
+  return (
+    <Badge color={getServiceColor(service)}>
+      {label ?? t(`${service}.tag`)}
+    </Badge>
+  )
 }

@@ -1,0 +1,92 @@
+import { type CaseStudy, type MDXEntry } from '@/lib/mdx'
+import { Container } from '@/components/Container'
+import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { Link } from '@/i18n/navigation'
+import Image from 'next/image'
+import { SectionIntro } from '@/components/SectionIntro'
+import { ServiceTag } from '@/components/ServiceTag'
+
+export type CaseStudyCard = {
+  service?: string
+  title: string
+  link: string
+  date?: string
+  image: string
+  description: string
+}
+
+export type CaseStudyCardsBlockProps = {
+  eyebrow?: string
+  title?: string
+  summary?: string
+  cards: CaseStudyCard[]
+}
+export const CaseStudyCardsBlock = ({
+  eyebrow,
+  title,
+  summary,
+  cards,
+}: CaseStudyCardsBlockProps) => {
+  return (
+    <>
+      {title && (
+        <SectionIntro
+          eyebrow={eyebrow}
+          title={title}
+          className="mt-24 sm:mt-32 lg:mt-40"
+        >
+          {summary && <p>{summary}</p>}
+        </SectionIntro>
+      )}
+
+      <Container className="mt-16">
+        <FadeInStagger
+          className={`grid grid-cols-1 gap-8 ${cards.length % 2 == 1 ? 'lg:grid-cols-3' : 'lg:grid-cols-2'}`}
+        >
+          {cards.map((card, index) => (
+            <FadeIn key={index} className="flex">
+              <article className="relative flex w-full flex-col rounded-3xl bg-white p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 sm:p-8">
+                <h3>
+                  <Link href={card.link}>
+                    <span className="absolute inset-0 rounded-3xl" />
+                    <Image
+                      src={card.image}
+                      alt={card.title}
+                      className="h-auto w-16"
+                      width={240}
+                      height={240}
+                      unoptimized
+                    />
+                  </Link>
+                </h3>
+                <p className="mt-6 flex gap-x-2 text-sm text-theme-950">
+                  {card.date && (
+                    <>
+                      <time
+                        dateTime={card.date.split('-')[0]}
+                        className="font-semibold"
+                      >
+                        {card.date.split('-')[0]}
+                      </time>
+                      <span className="text-theme-300" aria-hidden="true">
+                        /
+                      </span>
+                    </>
+                  )}
+
+                  {card.service && <ServiceTag service={card.service} />}
+                </p>
+                <p className="mt-6 font-display text-2xl font-semibold text-theme-950">
+                  {card.title}
+                </p>
+                <p className="mt-4 text-base text-theme-600">
+                  {card.description}
+                </p>
+              </article>
+            </FadeIn>
+          ))}
+        </FadeInStagger>
+      </Container>
+    </>
+  )
+}

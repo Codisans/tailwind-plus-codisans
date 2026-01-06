@@ -264,11 +264,35 @@
     }
   },
   "services": {
+    "cta": "Services",
+    "software-development": {
+      "title": "Software Development",
+      "tag": "Software Development"
+    },
+    "e-commerce": {
+      "title": "E-Commerce",
+      "tag": "E-Commerce"
+    },
+    "ai-automation": {
+      "title": "Automation & AI",
+      "tag": "Automation & AI"
+    },
+    "custom-cms": {
+      "title": "Custom CMS Websites",
+      "tag": "CMS Website"
+    },
     "tags": {
       "software-development": "Software Development",
       "e-commerce": "E-Commerce",
       "ai-automation": "Automation & AI",
       "custom-cms": "CMS Website"
     }
+  },
+  "global": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "blog": "Blog",
+    "contact": "Contact"
   }
 }

@@ -237,11 +237,35 @@
     }
   },
   "services": {
+    "cta": "Servicios",
+    "software-development": {
+      "title": "Desarrollo de Software",
+      "tag": "Desarrollo de Software"
+    },
+    "e-commerce": {
+      "title": "E-Commerce",
+      "tag": "E-Commerce"
+    },
+    "ai-automation": {
+      "title": "Automatización & IA",
+      "tag": "Automatización & IA"
+    },
+    "custom-cms": {
+      "title": "Sitios Web Personalizados",
+      "tag": "Sitio Web"
+    },
     "tags": {
       "software-development": "Desarrollo de Software",
       "e-commerce": "E-Commerce",
       "ai-automation": "Automatización & IA",
       "custom-cms": "Sitio Web"
     }
+  },
+  "global": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "blog": "Blog",
+    "contact": "Contact"
   }
 }
