@@ -6,11 +6,12 @@ import { SocialMedia } from '@/components/SocialMedia'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
 import { Emails } from '@/components/Emails'
-import { CardsBlock } from '@/blocks/CardsBlock'
+import { Card, CardsBlock } from '@/blocks/CardsBlock'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { ListBlock } from '@/blocks/ListBlock'
 import heroImage from '@/images/web-dev-landscape.webp'
 import { ContactBlock } from '@/blocks/ContactBlock'
+import { loadCaseStudies } from '@/lib/mdx'
 
 export async function generateMetadata({
   params,
@@ -26,8 +27,16 @@ export async function generateMetadata({
     description: t('meta.description'),
   }
 }
-export default async function Shopify() {
+export default async function Shopify({
+  params: { locale },
+}: {
+  params: { locale: string }
+}) {
   const t = await getTranslations('ContactPage')
+  const caseStudies = await loadCaseStudies(locale, [
+    'dcv87',
+    'la-torre-ambulante',
+  ])
 
   return (
     <RootLayout>
@@ -118,16 +127,16 @@ export default async function Shopify() {
         eyebrow="Our Work"
         title="Real Results."
         summary="We’ve helped growing brands transform their e-commerce platforms into high-performance sales channels using Shopify Hydrogen and composable architectures."
-        cards={[
-          {
-            type: t('Global.case-study'),
-            date: 'undefined',
-            title: 'title',
-            image: '/favicon.svg',
-            description: 'description',
-            link: 'link',
-          },
-        ]}
+        cards={caseStudies.map<Card>((caseStudy) => ({
+          type: t('Global.case-study'),
+          date: caseStudy.date,
+          title: caseStudy.title,
+          image:
+            (caseStudy.thumbnail?.src as string) ??
+            (caseStudy.image?.src as string),
+          description: caseStudy.description,
+          link: caseStudy.href,
+        }))}
       />
 
       <ContactBlock

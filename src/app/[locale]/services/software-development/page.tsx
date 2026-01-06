@@ -34,11 +34,10 @@ export default async function Laravel({
 }) {
   const t = await getTranslations('LaravelPage')
   const tGlobal = await getTranslations('Global')
-  // const caseStudies = await loadCaseStudies(locale, [
-  //   'keai',
-  //   'nuestros-tiempos',
-  //   'swid-studio',
-  // ])
+  const caseStudies = await loadCaseStudies(locale, [
+    'keai',
+    'nuestros-tiempos',
+  ])
 
   const services = [
     {
@@ -126,14 +125,23 @@ export default async function Laravel({
         </Container>
       </div> */}
 
-      <Container className="mt-20 text-2xl">
+      {/* <Container className="mt-20 text-2xl">
         <p>Add logos of platforms built on laravel for extra credibility</p>
-      </Container>
+      </Container> */}
 
       <CardsBlock
         title={t('case-studies.title')}
         // summary={t('HomePage.case-studies.summary')}
-        cards={[]}
+        cards={caseStudies.map<Card>((caseStudy) => ({
+          type: t('Global.case-study'),
+          date: caseStudy.date,
+          title: caseStudy.title,
+          image:
+            (caseStudy.thumbnail?.src as string) ??
+            (caseStudy.image?.src as string),
+          description: caseStudy.description,
+          link: caseStudy.href,
+        }))}
       />
 
       <SectionIntro

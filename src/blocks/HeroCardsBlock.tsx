@@ -1,15 +1,11 @@
-'use client'
-
-import { type CaseStudy, type MDXEntry } from '@/lib/mdx'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
+import { ServiceTag } from '@/components/ServiceTag'
 import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
-import useEmblaCarousel from 'embla-carousel-react'
-import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 
-export type Card = {
-  type?: string
+export type CaseStudyCard = {
+  service?: string
   title: string
   link: string
   date?: string
@@ -21,7 +17,7 @@ export type CardsBlockProps = {
   eyebrow?: string
   title?: string
   summary?: string
-  cards: Card[]
+  cards: CaseStudyCard[]
 }
 export const HeroCardsBlock = ({
   eyebrow,
@@ -29,10 +25,6 @@ export const HeroCardsBlock = ({
   summary,
   cards,
 }: CardsBlockProps) => {
-  const [emblaRef] = useEmblaCarousel({ dragFree: true }, [
-    WheelGesturesPlugin(),
-  ])
-
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
@@ -46,61 +38,49 @@ export const HeroCardsBlock = ({
 
       <div className="mt-16 w-full overflow-hidden py-px md:mt-20">
         <Container>
-          <FadeInStagger>
-            <div ref={emblaRef} className="w-full overflow-visible">
-              <div className="flex flex-nowrap gap-6 sm:gap-8">
-                {cards.map((card, index) => (
-                  <div
-                    key={index}
-                    className="min-w-80 [flex:0_0_50%] md:min-w-lg"
+          <FadeInStagger className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8">
+            {cards.slice(0, 4).map((card, index) => (
+              <FadeIn className="col-span-1" key={index}>
+                <article className="relative flex w-full flex-col gap-6 rounded-3xl bg-white p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 sm:p-8 xl:flex-row">
+                  <Link
+                    className="absolute inset-0 rounded-3xl"
+                    href={card.link}
                   >
-                    <FadeIn>
-                      <article className="relative flex w-full gap-6 rounded-3xl bg-white p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 max-md:flex-col sm:p-8">
-                        <Link
-                          className="absolute inset-0 rounded-3xl"
-                          href={card.link}
-                        >
-                          <span className="sr-only">{card.title}</span>
-                        </Link>
-                        <Image
-                          src={card.image}
-                          alt={card.title}
-                          className="h-auto w-64"
-                          width={420}
-                          height={420}
-                          unoptimized
-                        />
-                        <div className="flex flex-col">
-                          <p className="flex gap-x-2 text-sm text-theme-950">
-                            {card.date && (
-                              <>
-                                <time
-                                  dateTime={card.date.split('-')[0]}
-                                  className="font-semibold"
-                                >
-                                  {card.date.split('-')[0]}
-                                </time>
-                                <span
-                                  className="text-theme-300"
-                                  aria-hidden="true"
-                                >
-                                  /
-                                </span>
-                              </>
-                            )}
+                    <span className="sr-only">{card.title}</span>
+                  </Link>
+                  <Image
+                    src={card.image}
+                    alt={card.title}
+                    className="h-auto w-64"
+                    width={420}
+                    height={420}
+                    unoptimized
+                  />
+                  <div className="flex flex-col">
+                    <p className="flex gap-x-2 text-sm text-theme-950">
+                      {card.date && (
+                        <>
+                          <time
+                            dateTime={card.date.split('-')[0]}
+                            className="font-semibold"
+                          >
+                            {card.date.split('-')[0]}
+                          </time>
+                          <span className="text-theme-300" aria-hidden="true">
+                            /
+                          </span>
+                        </>
+                      )}
 
-                            {card.type && <span>{card.type}</span>}
-                          </p>
-                          <h3 className="mt-4 font-display text-2xl font-semibold text-theme-950">
-                            {card.title}
-                          </h3>
-                        </div>
-                      </article>
-                    </FadeIn>
+                      {card.service && <ServiceTag service={card.service} />}
+                    </p>
+                    <h3 className="mt-4 font-display text-2xl font-semibold text-theme-950">
+                      {card.title}
+                    </h3>
                   </div>
-                ))}
-              </div>
-            </div>
+                </article>
+              </FadeIn>
+            ))}
           </FadeInStagger>
         </Container>
       </div>

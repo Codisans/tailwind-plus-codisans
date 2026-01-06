@@ -47,12 +47,12 @@ export async function generateMetadata({
     description,
     keywords: [
       metadata.client,
-      metadata.service,
+      metadata.service?.join(', '),
       'case study',
       'web development',
       'software development',
       'Codisans',
-      ...(metadata.service?.split(',').map((s) => s.trim()) || []),
+      ...(metadata.service?.map((service) => service.trim()) || []),
     ],
     authors: [{ name: 'Codisans' }],
     creator: 'Codisans',
@@ -75,7 +75,7 @@ export async function generateMetadata({
       publishedTime: metadata.date,
       authors: ['Codisans'],
       section: 'Case Studies',
-      tags: [metadata.client, metadata.service, 'case study'],
+      tags: [metadata.client, metadata.service?.join(', '), 'case study'],
       images: [
         {
           url: imageUrl,

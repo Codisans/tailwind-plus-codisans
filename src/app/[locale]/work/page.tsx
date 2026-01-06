@@ -46,7 +46,7 @@ async function CaseStudies({
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                     <p className="text-sm tracking-tight text-theme-950 after:ml-4 after:font-semibold after:text-theme-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                      {caseStudy.service}
+                      {caseStudy.service?.join(', ')}
                     </p>
                     <p className="text-sm text-theme-950 lg:mt-2">
                       <time dateTime={caseStudy.date}>

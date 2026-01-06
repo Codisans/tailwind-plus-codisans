@@ -13,8 +13,8 @@ import * as keaiEn from '../app/[locale]/work/keai/page.en.mdx'
 import * as keaiEs from '../app/[locale]/work/keai/page.es.mdx'
 import * as laTorreAmbulanteEn from '../app/[locale]/work/la-torre-ambulante/page.en.mdx'
 import * as laTorreAmbulanteEs from '../app/[locale]/work/la-torre-ambulante/page.es.mdx'
-// import * as dcv87En from '../app/[locale]/work/dcv87/page.en.mdx'
-// import * as dcv87Es from '../app/[locale]/work/dcv87/page.es.mdx'
+import * as dcv87En from '../app/[locale]/work/dcv87/page.en.mdx'
+import * as dcv87Es from '../app/[locale]/work/dcv87/page.es.mdx'
 import * as swidStudioEn from '../app/[locale]/work/swid-studio/page.en.mdx'
 import * as swidStudioEs from '../app/[locale]/work/swid-studio/page.es.mdx'
 import * as feliciHouseEn from '../app/[locale]/work/felici-house/page.en.mdx'
@@ -52,7 +52,7 @@ export interface CaseStudy {
   logo: ImageProps['src']
   thumbnail: ImagePropsWithOptionalAlt
   image: ImagePropsWithOptionalAlt
-  service: string
+  service: Array<"web-development" | "e-commerce" | "ai-automation" | "custom-cms">
   testimonial: {
     author: {
       name: string
@@ -115,29 +115,29 @@ const caseStudyRegistry = {
       metadata: (keaiEn as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'nuestros-tiempos',
-      module: nuestrosTiemposEn,
-      metadata: (nuestrosTiemposEn as any).caseStudy as CaseStudy,
-    },
-    {
       slug: 'la-torre-ambulante',
       module: laTorreAmbulanteEn,
       metadata: (laTorreAmbulanteEn as any).caseStudy as CaseStudy,
     },
-    // {
-    //   slug: 'dcv87',
-    //   module: dcv87En,
-    //   metadata: (dcv87En as any).caseStudy as CaseStudy,
-    // },
     {
-      slug: 'felici-house',
-      module: feliciHouseEn,
-      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
+      slug: 'dcv87',
+      module: dcv87En,
+      metadata: (dcv87En as any).caseStudy as CaseStudy,
     },
     {
       slug: 'sunday-chapter',
       module: sundayChapterEn,
       metadata: (sundayChapterEn as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'nuestros-tiempos',
+      module: nuestrosTiemposEn,
+      metadata: (nuestrosTiemposEn as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'felici-house',
+      module: feliciHouseEn,
+      metadata: (feliciHouseEn as any).caseStudy as CaseStudy,
     },
   ],
   es: [
@@ -152,29 +152,29 @@ const caseStudyRegistry = {
       metadata: (keaiEs as any).caseStudy as CaseStudy,
     },
     {
-      slug: 'nuestros-tiempos',
-      module: nuestrosTiemposEs,
-      metadata: (nuestrosTiemposEs as any).caseStudy as CaseStudy,
-    },
-    {
       slug: 'la-torre-ambulante',
       module: laTorreAmbulanteEs,
       metadata: (laTorreAmbulanteEs as any).caseStudy as CaseStudy,
     },
-    // {
-    //   slug: 'dcv87',
-    //   module: dcv87Es,
-    //   metadata: (dcv87Es as any).caseStudy as CaseStudy,
-    // },
     {
-      slug: 'felici-house',
-      module: feliciHouseEs,
-      metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
+      slug: 'dcv87',
+      module: dcv87Es,
+      metadata: (dcv87Es as any).caseStudy as CaseStudy,
     },
     {
       slug: 'sunday-chapter',
       module: sundayChapterEs,
       metadata: (sundayChapterEs as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'nuestros-tiempos',
+      module: nuestrosTiemposEs,
+      metadata: (nuestrosTiemposEs as any).caseStudy as CaseStudy,
+    },
+    {
+      slug: 'felici-house',
+      module: feliciHouseEs,
+      metadata: (feliciHouseEs as any).caseStudy as CaseStudy,
     },
   ],
 }
@@ -220,19 +220,24 @@ export async function loadArticle(
 
 export function loadCaseStudies(
   locale: string = 'en',
+  slugs: string[] = [],
 ): Promise<Array<MDXEntry<CaseStudy>>> {
   const caseStudies =
     caseStudyRegistry[locale as keyof typeof caseStudyRegistry] ||
     caseStudyRegistry.en
 
-  const studies = caseStudies.map((study) => ({
+  const studies = slugs.length > 0 
+    ? caseStudies.filter((study) => slugs.includes(study.slug)).sort((a, b) => slugs.indexOf(a.slug) - slugs.indexOf(b.slug))
+    : caseStudies
+
+  const data =studies.map((study) => ({
     ...study.metadata,
     metadata: study.metadata,
     href: `/work/${study.slug}`,
     isLocalized: locale !== 'en',
   }))
 
-  return Promise.resolve(studies)
+  return Promise.resolve(data)
 }
 
 export async function loadCaseStudy(

@@ -74,9 +74,9 @@ export default async function Services() {
             link: '/services/cms-websites',
           },
           {
-            type: 'Artificial Intelligence',
+            type: 'Automation & AI',
             date: '',
-            title: 'Automation & AI Integrations',
+            title: 'Intelligent Automation & AI Solutions',
             image: aiLogo,
             description:
               'We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration.',
