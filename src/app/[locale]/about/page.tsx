@@ -26,7 +26,7 @@ export async function generateMetadata({
 export default async function About() {
   // let blogArticles = (await loadArticles()).slice(0, 2)
   const t = await getTranslations('AboutPage')
-  const tGlobal = await getTranslations('Global')
+  const tGlobal = await getTranslations('global')
 
   const cultureValues = [
     {

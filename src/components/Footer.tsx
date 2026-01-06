@@ -8,7 +8,7 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 import { useTranslations } from 'next-intl'
 
 function Navigation() {
-  const t = useTranslations('Global')
+  const t = useTranslations('global')
 
   const navigation = [
     {

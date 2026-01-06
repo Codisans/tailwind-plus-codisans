@@ -36,7 +36,7 @@ export function Emails({
   invert = false,
   ...props
 }: React.ComponentPropsWithoutRef<'div'> & { invert?: boolean }) {
-  const t = useTranslations('Global')
+  const t = useTranslations('global')
 
   return (
     <div {...props}>

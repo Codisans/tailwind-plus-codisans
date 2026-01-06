@@ -34,7 +34,7 @@ export default async function Statamic({
   params: { locale: string }
 }) {
   const t = await getTranslations('LaravelPage')
-  const tGlobal = await getTranslations('Global')
+  const tGlobal = await getTranslations('global')
   const caseStudies = await loadCaseStudies(locale, [
     'swid-studio',
     'felici-house',

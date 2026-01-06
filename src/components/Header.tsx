@@ -25,7 +25,7 @@ export function Header({
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!
   const pathname = usePathname()
-  const t = useTranslations('Global')
+  const t = useTranslations('global')
 
   return (
     <Container>
@@ -89,7 +89,7 @@ export function Header({
 }
 
 export function Navigation() {
-  const t = useTranslations('Global')
+  const t = useTranslations('global')
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>

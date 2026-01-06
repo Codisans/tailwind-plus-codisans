@@ -13,7 +13,7 @@ export async function ContactBlock({
   description?: string
   cta?: string
 }) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations('global')
 
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">

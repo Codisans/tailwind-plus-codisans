@@ -19,7 +19,7 @@ async function CaseStudies({
   title: string
   caseStudies: Array<MDXEntry<CaseStudy>>
 }) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations('global')
   return (
     <Container className="mt-40">
       <FadeIn>

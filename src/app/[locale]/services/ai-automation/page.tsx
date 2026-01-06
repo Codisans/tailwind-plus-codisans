@@ -85,7 +85,7 @@ export default async function Automation({
         title={'Some of our CMS Case Studies'}
         // summary={t('HomePage.case-studies.summary')}
         cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('Global.case-study'),
+          type: t('global.case-study'),
           date: caseStudy.date,
           title: caseStudy.title,
           image:

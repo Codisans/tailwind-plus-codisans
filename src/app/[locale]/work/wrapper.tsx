@@ -137,11 +137,11 @@ export default async function CaseStudyWrapper({
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-theme-950 sm:mx-0 sm:grid-cols-3">
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('Global.client')}</dt>
+                      <dt className="font-semibold">{t('global.client')}</dt>
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('Global.year')}</dt>
+                      <dt className="font-semibold">{t('global.year')}</dt>
                       <dd>
                         <time dateTime={caseStudy.date.split('-')[0]}>
                           {caseStudy.date.split('-')[0]}
@@ -149,7 +149,7 @@ export default async function CaseStudyWrapper({
                       </dd>
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('Global.service')}</dt>
+                      <dt className="font-semibold">{t('global.service')}</dt>
                       <dd>{t(`services.${caseStudy.service?.[0]}.tag`)}</dd>
                     </div>
                   </dl>
