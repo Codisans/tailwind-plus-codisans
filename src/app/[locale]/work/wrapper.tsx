@@ -20,7 +20,7 @@ export default async function CaseStudyWrapper({
   children: React.ReactNode
   locale?: string
 }) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations()
   let allCaseStudies = await loadCaseStudies(locale)
   let moreCaseStudies = allCaseStudies
     .filter(({ metadata }) => metadata.title !== caseStudy.title)
@@ -131,11 +131,11 @@ export default async function CaseStudyWrapper({
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-theme-950 sm:mx-0 sm:grid-cols-3">
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('client')}</dt>
+                      <dt className="font-semibold">{t('Global.client')}</dt>
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('year')}</dt>
+                      <dt className="font-semibold">{t('Global.year')}</dt>
                       <dd>
                         <time dateTime={caseStudy.date.split('-')[0]}>
                           {caseStudy.date.split('-')[0]}
@@ -143,8 +143,8 @@ export default async function CaseStudyWrapper({
                       </dd>
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('service')}</dt>
-                      <dd>{caseStudy.service}</dd>
+                      <dt className="font-semibold">{t('Global.service')}</dt>
+                      <dd>{t(`services.${caseStudy.service}.tag`)}</dd>
                     </div>
                   </dl>
                 </div>
@@ -175,7 +175,7 @@ export default async function CaseStudyWrapper({
       {moreCaseStudies.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
-          title={t('more-case-studies')}
+          title={t('Global.more-case-studies')}
           pages={moreCaseStudies}
           locale={locale}
         />
