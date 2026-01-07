@@ -164,30 +164,30 @@
       "description": "We build bespoke CMS websites with Statamic - a flexible content management system built on Laravel. Perfect for content-heavy sites that need the power of a custom build."
     },
     "header": {
-      "title": "Bespoke CMS Websites Tailored to your Brand.",
-      "summary": "We build our CMS websites with Statamic - a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
+      "title": "Websites that grow with you, powered by your story.",
+      "summary": "Your CMS should work for you, not the other way around. That's why we build with Statamic — a flexible platform that gives your team complete control over content while we handle the technical complexity. You focus on telling your brand's story; we make sure the technology never gets in your way."
     },
     "statamic": {
-      "heading": "The answer to your frustrating CMS problems."
+      "heading": "A CMS that gets out of your way"
     },
     "reasons": {
       "title": "Why choose Statamic?",
-      "summary": "Statamic supports your entire team with an award-winning user experience, a kind-hearted community, and all the power of Laravel at your fingertips.",
+      "summary": "Your team deserves tools that make their work easier, not harder. Statamic combines an intuitive experience your team will love with the robust capabilities your business needs to scale.",
       "editor-friendly": {
         "heading": "Editor Friendly UX",
-        "description": "Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework."
+        "description": "Your content team shouldn't need a developer to make updates. We craft interfaces that match how you actually work, so your team can move faster and stay in their creative flow."
       },
       "flexible": {
         "heading": "Flexible & Scalable",
-        "description": "Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework."
+        "description": "We build for where you are today and where you'll be tomorrow. As your content needs evolve, your site adapts seamlessly — no costly rebuilds or compromises."
       },
       "powerful": {
         "heading": "Powerful APIs & Ecosystem",
-        "description": "Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework."
+        "description": "Your website is part of a larger ecosystem. We ensure everything talks to each other smoothly — your CRM, analytics, marketing tools, and whatever comes next."
       }
     },
     "case-studies": {
-      "title": "Some of our CMS Case Studies"
+      "title": "We've helped brands like yours tell their stories online"
     },
     "contact": {
       "cta": "Let's build"
