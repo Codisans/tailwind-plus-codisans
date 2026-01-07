@@ -29,7 +29,8 @@ export async function ContactForm({ invert = false }: { invert?: boolean }) {
           name="phone"
           autoComplete="tel"
         />
-        <TextInput label={t('message')} name="message" />
+        <TextareaInput label={t('message')} name="message" />
+
         {/* <div className="border border-theme-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
           <fieldset>
             <legend
@@ -75,6 +76,30 @@ function TextInput({
       <label
         htmlFor={id}
         className="pointer-events-none absolute top-1/2 left-6 -mt-3 origin-left text-base/6 text-theme-500 transition-all duration-200 peer-not-placeholder-shown:-translate-y-4 peer-not-placeholder-shown:scale-75 peer-not-placeholder-shown:font-semibold peer-not-placeholder-shown:text-theme-950 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-theme-950"
+      >
+        {label}
+      </label>
+    </div>
+  )
+}
+
+function TextareaInput({
+  label,
+  ...props
+}: React.ComponentPropsWithoutRef<'textarea'> & { label: string }) {
+  let id = useId()
+
+  return (
+    <div className="group relative z-0 transition-all before:absolute before:inset-x-1 before:top-px before:h-12 before:bg-white focus-within:z-10">
+      <textarea
+        id={id}
+        {...props}
+        placeholder=" "
+        className="peer block min-h-40 w-full border border-theme-300 bg-transparent px-6 pt-12 pb-4 text-base/6 text-theme-950 ring-4 ring-transparent transition group-first:rounded-t-2xl group-last:rounded-b-2xl focus:border-theme-950 focus:ring-theme-950/5 focus:outline-hidden"
+      />
+      <label
+        htmlFor={id}
+        className="pointer-events-none absolute top-12 left-6 -mt-3 origin-left bg-white text-base/6 text-theme-500 transition-all duration-200 peer-not-placeholder-shown:-translate-y-4 peer-not-placeholder-shown:scale-75 peer-not-placeholder-shown:font-semibold peer-not-placeholder-shown:text-theme-950 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:font-semibold peer-focus:text-theme-950"
       >
         {label}
       </label>
