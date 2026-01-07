@@ -72,13 +72,6 @@ export default async function Automation({
         }))}
       />
 
-      {/* <SectionIntro
-        title={t('specialists.title')}
-        className="mt-24 sm:mt-32 lg:mt-40"
-      >
-        <p>{t('specialists.description')}</p>
-      </SectionIntro> */}
-
       <ContactBlock cta={t('contact.cta')} />
     </RootLayout>
   )
