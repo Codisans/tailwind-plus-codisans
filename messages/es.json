@@ -171,31 +171,25 @@
     },
     "header": {
       "title": "Automatización Inteligente & Soluciones de IA",
-      "summary": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa."
+      "summary": "Te ayudamos a encontrar las oportunidades de automatización correctas para tu negocio — las que realmente marcan una diferencia. Sin exageraciones, sin complejidad. Solo soluciones inteligentes que liberan a tu equipo para hacer lo que mejor saben."
     },
     "benefits": {
-      "eyebrow": "Más Allá de las Plantillas",
-      "title": "¿Cómo puede la IA ayudar a tu negocio?",
-      "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva.",
+      "title": "Impacto real para tu negocio",
       "automate": {
-        "heading": "Automatiza tareas repetitivas y reduce costos",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
-      },
-      "decisions": {
-        "heading": "Mejora la toma de decisiones",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+        "heading": "Menos tareas rutinarias, más impacto",
+        "description": "Deja de ahogarte en tareas rutinarias. Identificamos las tareas repetitivas que agotan la energía de tu equipo y las reemplazamos con automatización inteligente."
       },
       "customer": {
-        "heading": "Potencia la experiencia del cliente",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+        "heading": "Mejores experiencias para tus clientes",
+        "description": "Dales a tus clientes la experiencia que merecen. Te ayudamos a entregar interacciones más rápidas y personalizadas que construyen relaciones duraderas."
       },
       "operations": {
-        "heading": "Optimiza las operaciones",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+        "heading": "Operaciones que fluyen sin problemas",
+        "description": "Tu negocio debería funcionar como una máquina bien engrasada. Encontramos los puntos de fricción y los eliminamos con automatización inteligente y cuidadosa."
       }
     },
     "case-studies": {
-      "title": "Algunos de nuestros Proyectos de IA y Automatización"
+      "title": "Hemos ayudado a equipos como el tuyo a trabajar de manera más inteligente"
     },
     "contact": {
       "cta": "Construyamos juntos"
