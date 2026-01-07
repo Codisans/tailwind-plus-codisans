@@ -94,6 +94,43 @@
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
   },
+  "AutomationPage": {
+    "meta": {
+      "title": "Codisans | Automatización & Soluciones de IA",
+      "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación."
+    },
+    "header": {
+      "title": "Automatización Inteligente & Soluciones de IA",
+      "summary": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa."
+    },
+    "benefits": {
+      "eyebrow": "Más Allá de las Plantillas",
+      "title": "¿Cómo puede la IA ayudar a tu negocio?",
+      "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva.",
+      "automate": {
+        "heading": "Automatiza tareas repetitivas y reduce costos",
+        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+      },
+      "decisions": {
+        "heading": "Mejora la toma de decisiones",
+        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+      },
+      "customer": {
+        "heading": "Potencia la experiencia del cliente",
+        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+      },
+      "operations": {
+        "heading": "Optimiza las operaciones",
+        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+      }
+    },
+    "case-studies": {
+      "title": "Algunos de nuestros Proyectos de IA y Automatización"
+    },
+    "contact": {
+      "cta": "Construyamos juntos"
+    }
+  },
   "CmsWebsitesPage": {
     "meta": {
       "title": "Codisans | Sitios Web CMS Personalizados",

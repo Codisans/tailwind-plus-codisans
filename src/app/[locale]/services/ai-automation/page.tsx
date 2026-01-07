@@ -36,7 +36,7 @@ export default async function Automation({
 }: {
   params: { locale: string }
 }) {
-  const t = await getTranslations('ContactPage')
+  const t = await getTranslations('AutomationPage')
   const caseStudies = await loadCaseStudies(locale, [
     'nuestros-tiempos',
     'keai',
@@ -46,46 +46,39 @@ export default async function Automation({
     <RootLayout className="ai-automation">
       <ServiceHeader
         service="ai-automation"
-        title="Intelligent Automation & AI Solutions"
-        summary="We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration."
+        title={t('header.title')}
+        summary={t('header.summary')}
       />
 
       <PromoListBlock
-        eyebrow={'Beyond Templates'}
-        title={'How can AI help your business?'}
-        description={
-          'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.'
-        }
+        eyebrow={t('benefits.eyebrow')}
+        title={t('benefits.title')}
+        description={t('benefits.description')}
         items={[
           {
-            heading: 'Automate repetitive tasks & Reduce Costs',
-            description:
-              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+            heading: t('benefits.automate.heading'),
+            description: t('benefits.automate.description'),
           },
           {
-            heading: 'Improve decision-making',
-            description:
-              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+            heading: t('benefits.decisions.heading'),
+            description: t('benefits.decisions.description'),
           },
           {
-            heading: 'Enhance customer experiences',
-            description:
-              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+            heading: t('benefits.customer.heading'),
+            description: t('benefits.customer.description'),
           },
           {
-            heading: 'Streamline operations',
-            description:
-              'AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.',
+            heading: t('benefits.operations.heading'),
+            description: t('benefits.operations.description'),
           },
         ]}
         invert={true}
       />
 
       <CardsBlock
-        title={'Some of our CMS Case Studies'}
-        // summary={t('HomePage.case-studies.summary')}
+        title={t('case-studies.title')}
         cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('global.case-study'),
+          type: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
           image:
@@ -103,7 +96,7 @@ export default async function Automation({
         <p>{t('specialists.description')}</p>
       </SectionIntro> */}
 
-      <ContactBlock cta="Let's build" />
+      <ContactBlock cta={t('contact.cta')} />
     </RootLayout>
   )
 }

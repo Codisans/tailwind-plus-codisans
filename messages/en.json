@@ -121,6 +121,43 @@
     "form-submit": "Let's talk",
     "form-title": "Work inquiries"
   },
+  "AutomationPage": {
+    "meta": {
+      "title": "Codisans | Automation & AI Solutions",
+      "description": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation."
+    },
+    "header": {
+      "title": "Intelligent Automation & AI Solutions",
+      "summary": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration."
+    },
+    "benefits": {
+      "eyebrow": "Beyond Templates",
+      "title": "How can AI help your business?",
+      "description": "AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge.",
+      "automate": {
+        "heading": "Automate repetitive tasks & Reduce Costs",
+        "description": "AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge."
+      },
+      "decisions": {
+        "heading": "Improve decision-making",
+        "description": "AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge."
+      },
+      "customer": {
+        "heading": "Enhance customer experiences",
+        "description": "AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge."
+      },
+      "operations": {
+        "heading": "Streamline operations",
+        "description": "AI can automate repetitive tasks, improve decision-making, and enhance customer experiences. By leveraging AI, businesses can streamline operations, reduce costs, and gain a competitive edge."
+      }
+    },
+    "case-studies": {
+      "title": "Some of our AI & Automation Projects"
+    },
+    "contact": {
+      "cta": "Let's build"
+    }
+  },
   "CmsWebsitesPage": {
     "meta": {
       "title": "Codisans | Custom CMS Websites",
