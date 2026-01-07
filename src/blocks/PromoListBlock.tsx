@@ -11,9 +11,9 @@ export const PromoListBlock = ({
   items,
   invert,
 }: {
-  eyebrow: string
+  eyebrow?: string
   title: string
-  description: string
+  description?: string
   items: { heading: string; description: string }[]
   invert: boolean
 }) => {
@@ -24,7 +24,7 @@ export const PromoListBlock = ({
         invert ? 'mt-24 bg-theme-950 sm:mt-32 lg:mt-40' : '',
       )}
     >
-      <SectionIntro eyebrow={eyebrow} title={title} invert={invert}>
+      <SectionIntro {...(eyebrow && { eyebrow })} title={title} invert={invert}>
         {description && <p>{description}</p>}
       </SectionIntro>
       {items && (
