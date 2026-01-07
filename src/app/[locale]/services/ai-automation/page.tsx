@@ -51,17 +51,11 @@ export default async function Automation({
       />
 
       <PromoListBlock
-        eyebrow={t('benefits.eyebrow')}
         title={t('benefits.title')}
-        description={t('benefits.description')}
         items={[
           {
             heading: t('benefits.automate.heading'),
             description: t('benefits.automate.description'),
-          },
-          {
-            heading: t('benefits.decisions.heading'),
-            description: t('benefits.decisions.description'),
           },
           {
             heading: t('benefits.customer.heading'),

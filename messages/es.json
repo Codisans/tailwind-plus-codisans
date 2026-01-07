@@ -171,31 +171,25 @@
     },
     "header": {
       "title": "Automatización Inteligente & Soluciones de IA",
-      "summary": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa."
+      "summary": "Te ayudamos a encontrar las oportunidades de automatización correctas para tu negocio — las que realmente marcan una diferencia. Sin exageraciones, sin complejidad. Solo soluciones inteligentes que liberan a tu equipo para hacer lo que mejor saben."
     },
     "benefits": {
-      "eyebrow": "Más Allá de las Plantillas",
-      "title": "¿Cómo puede la IA ayudar a tu negocio?",
-      "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva.",
+      "title": "Impacto real para tu negocio",
       "automate": {
-        "heading": "Automatiza tareas repetitivas y reduce costos",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
-      },
-      "decisions": {
-        "heading": "Mejora la toma de decisiones",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+        "heading": "Menos tareas rutinarias, más impacto",
+        "description": "Deja de ahogarte en tareas rutinarias. Identificamos las tareas repetitivas que agotan la energía de tu equipo y las reemplazamos con automatización inteligente."
       },
       "customer": {
-        "heading": "Potencia la experiencia del cliente",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+        "heading": "Mejores experiencias para tus clientes",
+        "description": "Dales a tus clientes la experiencia que merecen. Te ayudamos a entregar interacciones más rápidas y personalizadas que construyen relaciones duraderas."
       },
       "operations": {
-        "heading": "Optimiza las operaciones",
-        "description": "La IA puede automatizar tareas repetitivas, mejorar la toma de decisiones y potenciar la experiencia del cliente. Al aprovechar la IA, las empresas pueden optimizar operaciones, reducir costos y obtener una ventaja competitiva."
+        "heading": "Operaciones que fluyen sin problemas",
+        "description": "Tu negocio debería funcionar como una máquina bien engrasada. Encontramos los puntos de fricción y los eliminamos con automatización inteligente y cuidadosa."
       }
     },
     "case-studies": {
-      "title": "Algunos de nuestros Proyectos de IA y Automatización"
+      "title": "Hemos ayudado a equipos como el tuyo a trabajar de manera más inteligente"
     },
     "contact": {
       "cta": "Construyamos juntos"
@@ -207,30 +201,30 @@
       "description": "Construimos sitios web CMS a medida con Statamic - un sistema de gestión de contenido flexible basado en Laravel. Perfecto para sitios con mucho contenido que necesitan el poder de una construcción personalizada."
     },
     "header": {
-      "title": "Sitios Web CMS a Medida para tu Marca.",
-      "summary": "Construimos nuestros sitios web CMS con Statamic - un sistema de gestión de contenido flexible basado en Laravel. Hace que crear y gestionar sitios web personalizados sea simple, mientras da a los desarrolladores control total. Perfecto para sitios con mucho contenido que aún necesitan el poder de una construcción personalizada."
+      "title": "Sitios web que crecen contigo, impulsados por tu historia.",
+      "summary": "Tu CMS debería trabajar para ti, no al revés. Por eso construimos con Statamic — una plataforma flexible que le da a tu equipo control total sobre el contenido mientras nosotros manejamos la complejidad técnica. Tú te enfocas en contar la historia de tu marca; nosotros nos aseguramos de que la tecnología nunca se interponga en tu camino."
     },
     "statamic": {
-      "heading": "La respuesta a tus problemas frustrantes de CMS."
+      "heading": "Un CMS que no te limita"
     },
     "reasons": {
       "title": "¿Por qué elegir Statamic?",
-      "summary": "Statamic apoya a todo tu equipo con una experiencia de usuario premiada, una comunidad amigable, y todo el poder de Laravel a tu alcance.",
+      "summary": "Tu equipo merece herramientas que faciliten su trabajo, no que lo hagan más difícil. Statamic combina una experiencia intuitiva que tu equipo amará con las capacidades robustas que tu negocio necesita para crecer.",
       "editor-friendly": {
         "heading": "UX Amigable para Editores",
-        "description": "Statamic está construido sobre Laravel, dándote el poder de un CMS personalizado sin la complejidad de un framework full-stack."
+        "description": "Tu equipo de contenido no debería necesitar un desarrollador para hacer actualizaciones. Creamos interfaces que coinciden con la forma en que realmente trabajas, para que tu equipo pueda avanzar más rápido y mantenerse en su flujo creativo."
       },
       "flexible": {
         "heading": "Flexible y Escalable",
-        "description": "Statamic está construido sobre Laravel, dándote el poder de un CMS personalizado sin la complejidad de un framework full-stack."
+        "description": "Construimos para donde estás hoy y donde estarás mañana. A medida que tus necesidades de contenido evolucionan, tu sitio se adapta sin problemas — sin reconstrucciones costosas ni compromisos."
       },
       "powerful": {
         "heading": "APIs Potentes y Ecosistema",
-        "description": "Statamic está construido sobre Laravel, dándote el poder de un CMS personalizado sin la complejidad de un framework full-stack."
+        "description": "Tu sitio web es parte de un ecosistema más grande. Nos aseguramos de que todo se comunique sin problemas — tu CRM, analytics, herramientas de marketing y lo que venga después."
       }
     },
     "case-studies": {
-      "title": "Algunos de nuestros Proyectos CMS"
+      "title": "Hemos ayudado a marcas como la tuya a contar sus historias online"
     },
     "contact": {
       "cta": "Construyamos juntos"
@@ -242,47 +236,51 @@
       "description": "Desarrollamos plataformas de alto rendimiento que aprovechan bien tus recursos, tecnología y presupuesto. Hechas para escalar a medida que creces — sin desperdicios ni partir de cero."
     },
     "eyebrow": "Laravel",
-    "title": "Custom Laravel Solutions",
-    "intro": "We build Laravel applications that power real businesses: internal tools, customer platforms, APIs, and more. Fast delivery, clean architecture, built to scale with you.",
+    "title": "Soluciones Laravel Personalizadas",
+    "intro": "Construimos aplicaciones Laravel que impulsan negocios reales: herramientas internas, plataformas para clientes, APIs y más. Entrega rápida, arquitectura limpia, construido para escalar contigo.",
     "listing-title": "Proyectos",
     "what": {
-      "title": "What is Laravel?",
-      "description": "Laravel is a powerful open-source PHP framework for building full-stack web applications. It comes with robust built-in tools while giving developers complete freedom to customize and extend. Whether you need a headless API or a fully integrated platform, Laravel handles complexity without getting in your way."
+      "title": "¿Qué es Laravel?",
+      "description": "Laravel es un framework PHP de código abierto potente para construir aplicaciones web completas. Viene con herramientas integradas robustas mientras da a los desarrolladores libertad total para personalizar y extender. Ya sea que necesites una API headless o una plataforma completamente integrada, Laravel maneja la complejidad sin estorbarte."
     },
     "reasons": {
-      "title": "Why Laravel?",
-      "summary": "Laravel is updated weekly with new features and bug fixes. Furthermore, Laravel is flexible, allowing code to be reused across projects. This allows new projects to be completed faster. Combined with its high code quality, this makes Laravel a preferred platform for major players like Spotify, KIA, and Sprout Social.",
+      "title": "¿Por qué Laravel?",
+      "summary": "Laravel se actualiza semanalmente con nuevas funciones y correcciones de errores. Además, Laravel es flexible, permitiendo que el código se reutilice entre proyectos. Esto permite completar nuevos proyectos más rápido. Combinado con su alta calidad de código, esto hace de Laravel una plataforma preferida para grandes como Spotify, KIA y Sprout Social.",
       "future-proof": {
-        "title": "Future Proof",
-        "description": "Laravel scales from simple web apps to complex enterprise systems. High performance, easy configuration, and fast setup out of the box."
+        "title": "A Prueba de Futuro",
+        "description": "Laravel escala desde aplicaciones web simples hasta sistemas empresariales complejos. Alto rendimiento, configuración fácil y configuración rápida desde el principio."
       },
       "open-source": {
-        "title": "Open Source",
-        "description": "Backed by a massive community with weekly updates and thousands of packages. No vendor lock-in, ever."
+        "title": "Código Abierto",
+        "description": "Respaldado por una comunidad masiva con actualizaciones semanales y miles de paquetes. Sin bloqueo de proveedor, nunca."
       },
       "efficient": {
-        "title": "Efficient",
-        "description": "Built-in tools and community packages mean less time reinventing the wheel and faster time to launch."
+        "title": "Eficiente",
+        "description": "Las herramientas integradas y paquetes de la comunidad significan menos tiempo reinventando la rueda y un tiempo de lanzamiento más rápido."
       },
       "safety": {
-        "title": "Safe",
-        "description": "Regular security updates and built-in audit tools keep vulnerabilities in check."
+        "title": "Seguro",
+        "description": "Actualizaciones de seguridad regulares y herramientas de auditoría integradas mantienen las vulnerabilidades bajo control."
       }
     },
     "statamic": {
-      "title": "Statamic CMS",
-      "description": "Statamic is a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
+      "title": "CMS Statamic",
+      "description": "Statamic es un sistema de gestión de contenido flexible construido sobre Laravel. Hace que crear y gestionar sitios web personalizados sea simple, mientras da a los desarrolladores control total bajo el capó. Perfecto para sitios con mucho contenido que aún necesitan el poder de una construcción personalizada."
     },
     "case-studies": {
-      "title": "Our Laravel projects",
-      "description": "Explore real-world examples of Laravel in action. Discover how Laravel has been used to build scalable and secure applications for various industries."
+      "title": "Nuestros Proyectos Laravel",
+      "description": "Explora ejemplos del mundo real de Laravel en acción. Descubre cómo se ha usado Laravel para construir aplicaciones escalables y seguras para diversas industrias."
     },
     "specialists": {
-      "title": "Laravel Specialists ",
-      "description": "We've spent years building custom websites, platforms, and APIs with Laravel. We know the framework inside and out, from rapid prototyping to production-ready systems. If you're looking for a team that can deliver solid, scalable Laravel applications, we're ready to build with you."
+      "title": "Especialistas en Laravel",
+      "description": "Hemos pasado años construyendo sitios web, plataformas y APIs personalizados con Laravel. Conocemos el framework por dentro y por fuera, desde prototipos rápidos hasta sistemas listos para producción. Si estás buscando un equipo que pueda entregar aplicaciones Laravel sólidas y escalables, estamos listos para construir contigo."
     }
   },
   "services": {
+    "meta": {
+      "title": "Servicios | Codisans",
+      "description": "Desde desarrollo de software personalizado y tiendas Shopify hasta automatización con IA y sitios CMS: construimos productos digitales que crecen con tu negocio. Transparentes, colaborativos y diseñados para escalar juntos."
+    },
     "cta": "Servicios",
     "software-development": {
       "title": "Desarrollo de Software",
