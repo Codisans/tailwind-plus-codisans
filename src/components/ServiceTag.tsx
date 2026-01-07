@@ -18,7 +18,7 @@ export const ServiceTag = async ({
         return 'green'
       case 'ai-automation':
         return 'blue'
-      case 'custom-cms':
+      case 'cms-websites':
         return 'yellow'
       default:
         return 'zinc'

@@ -61,11 +61,11 @@ export default async function Services() {
             link: '/services/software-development',
           },
           {
-            type: t('custom-cms.tag'),
+            type: t('cms-websites.tag'),
             date: 'Statamic',
-            title: t('custom-cms.title'),
+            title: t('cms-websites.title'),
             image: statamicLogo,
-            description: t('custom-cms.description'),
+            description: t('cms-websites.description'),
             link: '/services/cms-websites',
           },
           {

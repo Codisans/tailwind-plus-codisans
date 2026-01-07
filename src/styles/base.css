@@ -6,7 +6,7 @@
   src: url('../fonts/Uni-Sans-Book.woff2') format('woff2');
 }
 
-.theme--yellow, .custom-cms {
+.theme--yellow, .cms-websites {
   --color-theme-400: var(--color-yellow-400);
 }
 
@@ -35,7 +35,7 @@
     fill: var(--color-blue-200);
   }
 
-  &:has(*.custom-cms:hover) svg path {
+  &:has(*.cms-websites:hover) svg path {
     fill: var(--color-yellow-200);
   }
 }

@@ -1,31 +1,4 @@
 {
-  "components": {
-    "service-cards": {
-      "eyebrow": "Our Solutions",
-      "title": "Engineering Growth, Together.",
-      "summary": "We specialize in developing taylor-made software solutions. By aligning our technology with your business goals, we create digital products that create tangible value.",
-      "web-development": {
-        "title": "Software Development",
-        "description": "We build the digital foundation your business needs to grow. Our tailor-made applications are engineered for security and performance, delivering seamless experiences that convert users into loyal customers.",
-        "href": "/"
-      },
-      "e-commerce": {
-        "title": "E-Commerce",
-        "description": "We craft headless commerce platforms designed to grow with you. Using a composable approach, we integrate best-in-class tools to create agile, customer-centric shopping journeys that adapt to market shifts.",
-        "href": "/shopify"
-      },
-      "ai-solutions": {
-        "title": "Automation & AI",
-        "description": "Cut bottlenecks and boost efficiency with our bespoke AI solutions. We pinpoint opportunities to automate complex workflows, reduce costs, and unlock new levels of productivity through innovation.",
-        "href": "/"
-      },
-      "custom-content-management": {
-        "title": "Content Management Systems (CMS)",
-        "description": "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match.",
-        "href": "/"
-      }
-    }
-  },
   "HomePage": {
     "meta": {
       "title": "Software built to deliver value, not just code. | Codisans",
@@ -34,24 +7,24 @@
     "title": "Partners in Your Digital Journey.",
     "intro": "We deliver digital solutions that add real world value, as and when you need it.",
     "pain-point": "We are more than a development agency; we are your strategic allies. We combine technical excellence with business insight to unlock new opportunities for your organization.",
-    "services": {
+    "service-list": {
       "eyebrow": "Our Solutions",
       "title": "Engineering Growth, Together.",
-      "summary": "We specialize in high-impact web development and software solutions. By aligning our technology with your business goals, we create digital products that don't just work—they drive revenue and efficiency.",
-      "web-development": {
-        "title": "Web Development",
+      "summary": "We specialize in developing taylor-made software solutions. By aligning our technology with your business goals, we create digital products that create tangible value.",
+      "software-development": {
+        "title": "Software Development",
         "description": "We build the digital foundation your business needs to grow. Our tailor-made applications are engineered for security and performance, delivering seamless experiences that convert users into loyal customers."
-      },
-      "ai-solutions": {
-        "title": "Automation & AI",
-        "description": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration."
       },
       "e-commerce": {
         "title": "E-Commerce",
         "description": "We craft headless commerce platforms designed to grow with you. Using a composable approach, we integrate best-in-class tools to create agile, customer-centric shopping journeys that adapt to market shifts."
       },
-      "custom-content-management": {
-        "title": "Content Management Systems (CMS)",
+      "ai-automation": {
+        "title": "Automation & AI",
+        "description": "Cut bottlenecks and boost efficiency with our bespoke AI solutions. We pinpoint opportunities to automate complex workflows, reduce costs, and unlock new levels of productivity through innovation."
+      },
+      "cms-websites": {
+        "title": "Custom CMS Websites",
         "description": "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match."
       }
     },
@@ -315,7 +288,7 @@
       "tag": "Software Development"
     },
     "e-commerce": {
-      "title": "E-Commerce",
+      "title": "Custom E-Commerce Storefronts",
       "description": "We craft headless commerce platforms designed to grow with you. Using a composable approach, we integrate best-in-class tools to create agile, customer-centric shopping journeys that adapt to market shifts.",
       "tag": "E-Commerce"
     },
@@ -324,8 +297,8 @@
       "description": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration.",
       "tag": "Automation & AI"
     },
-    "custom-cms": {
-      "title": "Custom CMS Websites",
+    "cms-websites": {
+      "title": "Bespoke CMS Websites",
       "description": "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match.",
       "tag": "CMS Website"
     },
