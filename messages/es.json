@@ -94,6 +94,76 @@
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
   },
+  "EcommercePage": {
+    "meta": {
+      "title": "Codisans | Tiendas Shopify Personalizadas",
+      "description": "Construimos tiendas Shopify headless con Hydrogen y frameworks modernos — diseñadas para velocidad, escalabilidad y optimizadas para convertir visitantes en compradores."
+    },
+    "header": {
+      "title": "Tiendas Shopify Personalizadas para Rendimiento, Escalabilidad y Conversiones",
+      "summary": "Construimos tiendas Shopify headless con Hydrogen y frameworks modernos — diseñadas para velocidad, escalabilidad y optimizadas para convertir visitantes en compradores. Obtén el rendimiento del desarrollo personalizado con la confiabilidad de la plataforma de comercio líder mundial."
+    },
+    "benefits": {
+      "eyebrow": "Más Allá de las Plantillas",
+      "title": "Por qué las Tiendas Personalizadas Superan los Temas Estándar",
+      "description": "Los temas de Shopify te ayudan a lanzar rápidamente, pero las marcas en crecimiento necesitan más que plantillas. Las tiendas personalizadas te dan la flexibilidad para innovar, el rendimiento para competir y la base para crecer sin deuda técnica.",
+      "performance": {
+        "heading": "Rendimiento Ultra Rápido que Convierte",
+        "description": "Nuestras tiendas personalizadas cargan en menos de 50 milisegundos, ofreciendo experiencias ultrarrápidas que mejoran el SEO, el rendimiento móvil e impactan directamente en tus resultados."
+      },
+      "brand": {
+        "heading": "Experiencias de Marca Únicas, Sin Compromisos",
+        "description": "Libérate de las restricciones de plantillas. Diseña flujos de productos sofisticados, funciones interactivas y recorridos de cliente que se alinean perfectamente con tu marca y modelo de negocio."
+      },
+      "scale": {
+        "heading": "Construido para Escalar sin Reconstruir",
+        "description": "Expándete a nuevos mercados, agrega funciones complejas e integra funcionalidades avanzadas a medida que creces — todo sin costosas migraciones o limitaciones técnicas."
+      },
+      "tco": {
+        "heading": "Menor TCO, Mayor Control",
+        "description": "Reemplaza costosas suscripciones de apps con lógica personalizada. Reduce gastos mensuales, elimina conflictos entre apps y mantén control total sobre las capacidades de tu tienda."
+      },
+      "commerce": {
+        "heading": "Lógica de Comercio Avanzada, Simplificada",
+        "description": "Maneja reglas de precios complejas, flujos B2B, modelos de suscripción y experiencias de checkout personalizadas que los temas estándar simplemente no pueden soportar."
+      }
+    },
+    "why-shopify": {
+      "eyebrow": "¿Por qué Shopify?",
+      "title": "La Plataforma de Comercio Más Confiable, Personalizada para tu Negocio",
+      "summary": "Construimos en Shopify porque ofrece infraestructura de nivel empresarial con la flexibilidad del desarrollo personalizado.",
+      "checkout": {
+        "heading": "El Mejor Checkout que Convierte",
+        "description": "El Checkout de Shopify convierte 15% más que otras plataformas y alcanza más de 150M de usuarios de Shop Pay con alta intención de compra."
+      },
+      "infrastructure": {
+        "heading": "Infraestructura Sólida que Escala",
+        "description": "Maneja picos de tráfico, lanzamientos de productos y momentos virales sin problemas. La infraestructura de Shopify potencia más de $1 billón en ventas globales y está construida para soportar tu crecimiento desde el día uno."
+      },
+      "apis": {
+        "heading": "APIs Potentes y Ecosistema de Desarrolladores",
+        "description": "Accede a más de 13,000 apps de comercio y APIs robustas que nos permiten construir exactamente lo que necesitas. Desde analíticas avanzadas hasta flujos de fulfillment personalizados — si puedes imaginarlo, podemos construirlo."
+      },
+      "innovation": {
+        "heading": "Innovación Continua y Herramientas con IA",
+        "description": "Benefíciate de las mejoras constantes de Shopify — más de 150 nuevas funciones cada 6 meses. Obtén generación de contenido con IA, recomendaciones inteligentes y herramientas de comercio de vanguardia sin desarrollo adicional."
+      },
+      "global": {
+        "heading": "Construido para el Comercio Global",
+        "description": "Lanza internacionalmente con confianza. Precios multi-moneda, experiencias localizadas, optimización de envíos internacionales y herramientas de cumplimiento están integradas en la plataforma."
+      }
+    },
+    "case-studies": {
+      "eyebrow": "Nuestro Trabajo",
+      "title": "De Buenas Tiendas a Máquinas de Ventas",
+      "summary": "Nos hemos asociado con marcas ambiciosas para construir tiendas Shopify personalizadas que reflejan tu marca e impulsan el crecimiento del negocio a través de rendimiento superior, experiencia de usuario y optimización de conversiones."
+    },
+    "contact": {
+      "heading": "¿Listo para Construir una Tienda que Rinda?",
+      "description": "Ya sea que estés escalando más allá de tu tema actual, lanzando una nueva marca o reconstruyendo para rendimiento — te ayudaremos a aprovechar Shopify con una tienda personalizada que genere resultados reales.",
+      "cta": "Inicia tu proyecto"
+    }
+  },
   "AutomationPage": {
     "meta": {
       "title": "Codisans | Automatización & Soluciones de IA",
