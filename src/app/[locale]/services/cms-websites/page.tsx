@@ -20,7 +20,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params
-  const t = await getTranslations({ locale, namespace: 'LaravelPage' })
+  const t = await getTranslations({ locale, namespace: 'CmsWebsitesPage' })
 
   return {
     title: t('meta.title'),
@@ -33,8 +33,7 @@ export default async function Statamic({
 }: {
   params: { locale: string }
 }) {
-  const t = await getTranslations('LaravelPage')
-  const tGlobal = await getTranslations('global')
+  const t = await getTranslations('CmsWebsitesPage')
   const caseStudies = await loadCaseStudies(locale, [
     'swid-studio',
     'felici-house',
@@ -45,8 +44,8 @@ export default async function Statamic({
     <RootLayout className="custom-cms">
       <ServiceHeader
         service="custom-cms"
-        title="Bespoke CMS Websites Tailored to your Brand."
-        summary="We build our CMS websites with Statamic - a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
+        title={t('header.title')}
+        summary={t('header.summary')}
       />
 
       <div className="mt-16 sm:-mb-8 lg:mt-24">
@@ -61,7 +60,7 @@ export default async function Statamic({
             </FadeIn>
             <FadeIn className="max-w-md max-sm:text-center">
               <h2 className="mt-2 font-display text-3xl font-medium tracking-tight text-theme-950 sm:text-4xl">
-                {'The answer to your frustrating CMS problems.'}
+                {t('statamic.heading')}
               </h2>
             </FadeIn>
           </div>
@@ -69,33 +68,27 @@ export default async function Statamic({
       </div>
 
       <ListBlock
-        title={'Why choose Statamic?'}
-        summary={
-          'Statamic supports your entire team with an award-winning user experience, a kind-hearted community, and all the power of Laravel at your fingertips.'
-        }
+        title={t('reasons.title')}
+        summary={t('reasons.summary')}
         image={statamicScreenshot}
         items={[
           {
-            heading: 'Editor Friendly UX',
-            description:
-              'Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework.',
+            heading: t('reasons.editor-friendly.heading'),
+            description: t('reasons.editor-friendly.description'),
           },
           {
-            heading: 'Flexible & Scalable',
-            description:
-              'Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework.',
+            heading: t('reasons.flexible.heading'),
+            description: t('reasons.flexible.description'),
           },
           {
-            heading: 'Powerful APIs & Ecosystem',
-            description:
-              'Statamic is built on Laravel, giving you the power of a custom CMS without the complexity of a full-stack framework.',
+            heading: t('reasons.powerful.heading'),
+            description: t('reasons.powerful.description'),
           },
         ]}
       />
 
       <CaseStudyCardsBlock
-        title={'Some of our CMS Case Studies'}
-        // summary={t('HomePage.case-studies.summary')}
+        title={t('case-studies.title')}
         cards={caseStudies.map<CaseStudyCard>((caseStudy) => ({
           service: caseStudy.service?.[0],
           date: caseStudy.date,
@@ -108,7 +101,7 @@ export default async function Statamic({
         }))}
       />
 
-      <ContactBlock cta="Let's build" />
+      <ContactBlock cta={t('contact.cta')} />
     </RootLayout>
   )
 }

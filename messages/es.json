@@ -94,6 +94,41 @@
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
   },
+  "CmsWebsitesPage": {
+    "meta": {
+      "title": "Codisans | Sitios Web CMS Personalizados",
+      "description": "Construimos sitios web CMS a medida con Statamic - un sistema de gestión de contenido flexible basado en Laravel. Perfecto para sitios con mucho contenido que necesitan el poder de una construcción personalizada."
+    },
+    "header": {
+      "title": "Sitios Web CMS a Medida para tu Marca.",
+      "summary": "Construimos nuestros sitios web CMS con Statamic - un sistema de gestión de contenido flexible basado en Laravel. Hace que crear y gestionar sitios web personalizados sea simple, mientras da a los desarrolladores control total. Perfecto para sitios con mucho contenido que aún necesitan el poder de una construcción personalizada."
+    },
+    "statamic": {
+      "heading": "La respuesta a tus problemas frustrantes de CMS."
+    },
+    "reasons": {
+      "title": "¿Por qué elegir Statamic?",
+      "summary": "Statamic apoya a todo tu equipo con una experiencia de usuario premiada, una comunidad amigable, y todo el poder de Laravel a tu alcance.",
+      "editor-friendly": {
+        "heading": "UX Amigable para Editores",
+        "description": "Statamic está construido sobre Laravel, dándote el poder de un CMS personalizado sin la complejidad de un framework full-stack."
+      },
+      "flexible": {
+        "heading": "Flexible y Escalable",
+        "description": "Statamic está construido sobre Laravel, dándote el poder de un CMS personalizado sin la complejidad de un framework full-stack."
+      },
+      "powerful": {
+        "heading": "APIs Potentes y Ecosistema",
+        "description": "Statamic está construido sobre Laravel, dándote el poder de un CMS personalizado sin la complejidad de un framework full-stack."
+      }
+    },
+    "case-studies": {
+      "title": "Algunos de nuestros Proyectos CMS"
+    },
+    "contact": {
+      "cta": "Construyamos juntos"
+    }
+  },
   "LaravelPage": {
     "meta": {
       "title": "Codisans | Laravel",
