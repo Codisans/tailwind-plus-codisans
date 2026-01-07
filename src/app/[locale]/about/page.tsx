@@ -2,6 +2,9 @@ import { ContactBlock } from '@/blocks/ContactBlock'
 import { PageIntro } from '@/components/PageIntro'
 import imageNicolasCanala from '@/images/team/nico-profile.jpg'
 import imageSebastianStrand from '@/images/team/sebastian-profile.png'
+import imageAliciaSwiderski from '@/images/team/alicia-profile.webp'
+import imageIsabellaStrand from '@/images/team/bella-profile.webp'
+import imageGeorgieProcter from '@/images/team/georgie-profile.webp'
 import { RootLayout } from '@/components/RootLayout'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { TeamBlock } from '@/blocks/TeamBlock'
@@ -59,26 +62,18 @@ export default async function About() {
   const design = [
     {
       name: 'Alicia Swiderski',
-      role: 'Founder',
-      image: { src: imageNicolasCanala },
+      role: 'Co-Founder, Director',
+      image: { src: imageAliciaSwiderski },
     },
     {
       name: 'Isabella Strand',
-      role: 'Co-Founder',
-      image: { src: imageSebastianStrand },
-    },
-  ]
-
-  const marketing = [
-    {
-      name: tGlobal('nicolas.name'),
-      role: tGlobal('nicolas.role'),
-      image: { src: imageNicolasCanala },
+      role: 'Co-Founder, Creative Director',
+      image: { src: imageIsabellaStrand },
     },
     {
-      name: tGlobal('sebastian.name'),
-      role: tGlobal('sebastian.role'),
-      image: { src: imageSebastianStrand },
+      name: 'Georgie Procter',
+      role: 'Communications Specialist',
+      image: { src: imageGeorgieProcter },
     },
   ]
 
@@ -97,8 +92,7 @@ export default async function About() {
       />
 
       <TeamBlock title={t('team.title')} team={team} />
-      <TeamBlock title={'Digital Marketing Partners'} team={team} />
-      <TeamBlock title={'Design Partners'} team={team} />
+      <TeamBlock title={'Digital Design Partners: Swid Studio'} team={design} />
 
       <Technologies title={t('technologies-title')} />
       <ContactBlock />
