@@ -304,6 +304,10 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Services | Codisans",
+      "description": "From custom software development and Shopify storefronts to AI automation and CMS websites — we build digital products that grow with your business. Transparent, collaborative, and built to scale together."
+    },
     "cta": "Services",
     "software-development": {
       "title": "Software Development",
