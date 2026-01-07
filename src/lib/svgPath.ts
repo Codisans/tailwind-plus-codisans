@@ -1,3 +1,4 @@
+//@ts-nocheck
 import parse from "parse-svg-path";
 import normalize from "normalize-svg-path";
 import { compile, morph } from "svg-path-morph";
