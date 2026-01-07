@@ -22,40 +22,20 @@
   --color-theme-400: var(--color-red-400);
 }
 
-.default-plant {
-    filter: grayscale(80%) hue-rotate(0deg);
-}
-
-.red-plant {
-  filter: grayscale(10%) hue-rotate(265deg);
-}
-
-.green-plant {
-  filter: grayscale(10%) hue-rotate(0deg);
-}
-
-.blue-plant {
-  filter: grayscale(10%) hue-rotate(145deg);
-}
-
-.yellow-plant {
-  filter: grayscale(10%) hue-rotate(325deg);
-}
-
 .service-hover-effect {
-  &:has(*.e-commerce:hover) .green-plant {
-    opacity: 1;
+  &:has(*.e-commerce:hover) svg path {
+    fill: var(--color-green-200);
   }
 
-  &:has(*.software-development:hover) .red-plant {
-    opacity: 1;
+  &:has(*.software-development:hover) svg path {
+    fill: var(--color-red-200);
   }
 
-  &:has(*.ai-automation:hover) .blue-plant {
-    opacity: 1;
+  &:has(*.ai-automation:hover) svg path {
+    fill: var(--color-blue-200);
   }
 
-  &:has(*.custom-cms:hover) .yellow-plant {
-    opacity: 1;
+  &:has(*.custom-cms:hover) svg path {
+    fill: var(--color-yellow-200);
   }
 }
