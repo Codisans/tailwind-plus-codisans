@@ -18,6 +18,7 @@
   --color-theme-200: var(--color-neutral-200);
   --color-theme-100: var(--color-neutral-100);
   --color-theme-50: var(--color-neutral-50);
+  --color-theme-shadow: var(--color-neutral-950);
   /* --color-white: var(--color-white); */
 
   --text-*: initial;

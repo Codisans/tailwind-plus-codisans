@@ -41,7 +41,7 @@ export async function SocialMedia({
 }: {
   invert?: boolean
 } & React.ComponentPropsWithoutRef<'div'>) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations('global')
   return (
     <div {...props}>
       <h2 className="font-display text-base font-semibold text-theme-950">

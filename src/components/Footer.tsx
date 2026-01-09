@@ -8,7 +8,7 @@ import { socialMediaProfiles } from '@/components/SocialMedia'
 import { useTranslations } from 'next-intl'
 
 function Navigation() {
-  const t = useTranslations('Global')
+  const t = useTranslations('global')
 
   const navigation = [
     {
@@ -31,7 +31,7 @@ function Navigation() {
       title: t('company'),
       links: [
         { title: t('about'), href: '/about' },
-        { title: t('process'), href: '/process' },
+        { title: t('services'), href: '/services' },
         { title: t('blog'), href: '/blog' },
         { title: t('contact'), href: '/contact' },
       ],

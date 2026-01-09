@@ -3,7 +3,7 @@ import { Button } from '@/components/Button'
 import { getTranslations } from 'next-intl/server'
 
 export async function ContactForm({ invert = false }: { invert?: boolean }) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations('global')
 
   return (
     <form className={`${invert ? 'text-white' : 'text-theme-950'}`}>

@@ -3,7 +3,7 @@ import { Link } from '@/i18n/navigation'
 import { Blockquote } from '@/components/Blockquote'
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
@@ -19,7 +19,7 @@ async function CaseStudies({
   title: string
   caseStudies: Array<MDXEntry<CaseStudy>>
 }) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations('global')
   return (
     <Container className="mt-40">
       <FadeIn>
@@ -46,7 +46,7 @@ async function CaseStudies({
                   </div>
                   <div className="mt-1 flex gap-x-4 sm:mt-0 lg:block">
                     <p className="text-sm tracking-tight text-theme-950 after:ml-4 after:font-semibold after:text-theme-300 after:content-['/'] lg:mt-2 lg:after:hidden">
-                      {caseStudy.service}
+                      {caseStudy.service?.join(', ')}
                     </p>
                     <p className="text-sm text-theme-950 lg:mt-2">
                       <time dateTime={caseStudy.date}>
@@ -121,7 +121,7 @@ export default async function Work({
 
       <CaseStudies title={t('listing-title')} caseStudies={caseStudies} />
 
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

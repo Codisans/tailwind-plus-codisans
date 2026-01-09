@@ -1,7 +1,10 @@
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { PageIntro } from '@/components/PageIntro'
 import imageNicolasCanala from '@/images/team/nico-profile.jpg'
 import imageSebastianStrand from '@/images/team/sebastian-profile.png'
+import imageAliciaSwiderski from '@/images/team/alicia-profile.webp'
+import imageIsabellaStrand from '@/images/team/bella-profile.webp'
+import imageGeorgieProcter from '@/images/team/georgie-profile.webp'
 import { RootLayout } from '@/components/RootLayout'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { TeamBlock } from '@/blocks/TeamBlock'
@@ -26,7 +29,7 @@ export async function generateMetadata({
 export default async function About() {
   // let blogArticles = (await loadArticles()).slice(0, 2)
   const t = await getTranslations('AboutPage')
-  const tGlobal = await getTranslations('Global')
+  const tGlobal = await getTranslations('global')
 
   const cultureValues = [
     {
@@ -56,6 +59,24 @@ export default async function About() {
     },
   ]
 
+  const design = [
+    {
+      name: 'Alicia Swiderski',
+      role: 'Co-Founder, Director',
+      image: { src: imageAliciaSwiderski },
+    },
+    {
+      name: 'Isabella Strand',
+      role: 'Co-Founder, Creative Director',
+      image: { src: imageIsabellaStrand },
+    },
+    {
+      name: 'Georgie Procter',
+      role: 'Communications Specialist',
+      image: { src: imageGeorgieProcter },
+    },
+  ]
+
   return (
     <RootLayout>
       <PageIntro eyebrow={t('eyebrow')} title={t('title')}>
@@ -71,9 +92,10 @@ export default async function About() {
       />
 
       <TeamBlock title={t('team.title')} team={team} />
+      <TeamBlock title={'Digital Design Partners: Swid Studio'} team={design} />
 
       <Technologies title={t('technologies-title')} />
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

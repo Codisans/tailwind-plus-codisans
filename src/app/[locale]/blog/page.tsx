@@ -4,7 +4,7 @@ import { Link } from '@/i18n/navigation'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
@@ -87,7 +87,7 @@ export default async function Blog({
         </div>
       </Container>
 
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

@@ -45,15 +45,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    keywords: [
-      metadata.client,
-      metadata.service,
-      'case study',
-      'web development',
-      'software development',
-      'Codisans',
-      ...(metadata.service?.split(',').map((s) => s.trim()) || []),
-    ],
+    keywords: [metadata.client, ...metadata.service, 'Codisans'],
     authors: [{ name: 'Codisans' }],
     creator: 'Codisans',
     publisher: 'Codisans',
@@ -75,7 +67,7 @@ export async function generateMetadata({
       publishedTime: metadata.date,
       authors: ['Codisans'],
       section: 'Case Studies',
-      tags: [metadata.client, metadata.service, 'case study'],
+      tags: [metadata.client, ...metadata.service, 'case study'],
       images: [
         {
           url: imageUrl,
@@ -118,7 +110,7 @@ export async function generateMetadata({
       'article:author': 'Codisans',
       'article:publisher': 'https://codisans.com',
       'article:section': 'Case Studies',
-      'article:tag': [metadata.client, metadata.service].join(','),
+      'article:tag': [metadata.client, ...metadata.service].join(','),
       'business:contact_data:locality': 'Santiago',
       'business:contact_data:region': 'Chile',
       'business:contact_data:country_name': 'Chile',

@@ -1,53 +1,29 @@
 {
-  "Global": {
-    "locale": "en-US",
-    "about": "About",
-    "about-us": "About Us",
-    "blog": "Blog",
-    "budget": "Budget",
-    "case-study": "Case study",
-    "case-studies": "Case studies",
-    "case-studies-summary": "We build a variety of web solutions, from simple landing pages to complex web applications.",
-    "client": "Client",
-    "company": "Company",
-    "connect": "Connect",
-    "contact": "Contact",
-    "contact-cta": "Let's talk",
-    "contact-form-title": "Work inquiries",
-    "contact-form-submit": "Let's talk",
-    "contact-invitation": "Let's work together",
-    "contact-message": "Tell us about your project",
-    "contact-us": "Contact Us",
-    "email": "Email",
-    "emails-heading": "Email us",
-    "follow-us": "Follow us",
-    "message": "Message",
-    "more-than": "More than",
-    "more-case-studies": "More case studies",
-    "name": "Name",
-    "our-process": "Our Process",
-    "process": "Process",
-    "work": "Work",
-    "our-work": "Our Work",
-    "phone": "Phone",
-    "read-more": "Read more",
-    "read-case-study": "Read case study",
-    "see-all": "See all",
-    "service": "Service",
-    "services": "Services",
-    "services-title": "We specialise in crafting beautiful, high quality marketing pages.",
-    "services-summary": "As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those.",
-    "submit": "Let's work together",
-    "technologies": "Technologies",
-    "technologies-title": "Some of the technologies we enjoy working with",
-    "year": "Year",
-    "nicolas": {
-      "name": "Nicolas Canala",
-      "role": "Co-founder / Backend Lead"
-    },
-    "sebastian": {
-      "name": "Sebastian Strand",
-      "role": "Co-founder / Frontend Lead"
+  "components": {
+    "service-cards": {
+      "eyebrow": "Our Solutions",
+      "title": "Engineering Growth, Together.",
+      "summary": "We specialize in developing taylor-made software solutions. By aligning our technology with your business goals, we create digital products that create tangible value.",
+      "web-development": {
+        "title": "Software Development",
+        "description": "We build the digital foundation your business needs to grow. Our tailor-made applications are engineered for security and performance, delivering seamless experiences that convert users into loyal customers.",
+        "href": "/"
+      },
+      "e-commerce": {
+        "title": "E-Commerce",
+        "description": "We craft headless commerce platforms designed to grow with you. Using a composable approach, we integrate best-in-class tools to create agile, customer-centric shopping journeys that adapt to market shifts.",
+        "href": "/shopify"
+      },
+      "ai-solutions": {
+        "title": "Automation & AI",
+        "description": "Cut bottlenecks and boost efficiency with our bespoke AI solutions. We pinpoint opportunities to automate complex workflows, reduce costs, and unlock new levels of productivity through innovation.",
+        "href": "/"
+      },
+      "custom-content-management": {
+        "title": "Content Management Systems (CMS)",
+        "description": "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match.",
+        "href": "/"
+      }
     }
   },
   "HomePage": {
@@ -56,7 +32,7 @@
       "description": "Tired of developers not understanding your business? We build smart, scalable software solutions for startups and brands that need more than just a website."
     },
     "title": "Partners in Your Digital Journey.",
-    "intro": "Solid digital products, built by a team invested in your growth.",
+    "intro": "We deliver digital solutions that add real world value, as and when you need it.",
     "pain-point": "We are more than a development agency; we are your strategic allies. We combine technical excellence with business insight to unlock new opportunities for your organization.",
     "services": {
       "eyebrow": "Our Solutions",
@@ -115,51 +91,6 @@
       "description": "We are a team of passionate individuals who are driven by a shared purpose. We are not afraid to try new things, and we are not afraid to fail. We are always looking for new ways to improve our products and services."
     }
   },
-  "ProcessPage": {
-    "meta": {
-      "title": "Codisans | Our Process",
-      "description": "Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way."
-    },
-    "eyebrow": "Our Process",
-    "title": "How we approach projects.",
-    "intro": "Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way.",
-    "cta": "Let's build something together.",
-    "steps": {
-      "discover": {
-        "title": "Discover",
-        "description": "We start by getting to know your business inside and out. Through workshops, research, and direct collaboration, we uncover what your users need and where your biggest opportunities lie."
-      },
-      "define": {
-        "title": "Define",
-        "description": "Together, we turn insights into a clear plan. We map out key features, user flows, and technical requirements so everyone’s aligned before a single line of code is written."
-      },
-      "build": {
-        "title": "Build",
-        "description": "With a solid foundation in place, we move into development. We build iteratively, stay in constant communication, and adapt as needed—always keeping performance, scalability, and user experience front and center."
-      },
-      "deliver": {
-        "title": "Deliver",
-        "description": "We launch with confidence. Every product goes through rigorous testing, polish, and QA. Once live, we support your team to ensure a smooth rollout and a strong start."
-      }
-    },
-    "values": {
-      "eyebrow": "Our promise",
-      "title": "We have a code.",
-      "description": "Across every phase of our work, you can depend on three core promises that ensure we deliver exceptional results, together.",
-      "value-1": {
-        "title": "Transparent",
-        "description": "We believe great partnerships are built on trust and clarity. From day one, we communicate openly about scope, timelines, trade-offs, no hidden costs or surprises, while avoiding technical jargons."
-      },
-      "value-2": {
-        "title": "Meticulous",
-        "description": "We are meticulous in our approach to every project. We take the time to understand the client's needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
-      },
-      "value-3": {
-        "title": "Collaborative",
-        "description": "We are collaborative in our approach to every project. We work closely with the client to understand their needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
-      }
-    }
-  },
   "WorkPage": {
     "meta": {
       "title": "Codisans | Our Work",
@@ -189,6 +120,142 @@
     "intro": "We can't wait to hear from you.",
     "form-submit": "Let's talk",
     "form-title": "Work inquiries"
+  },
+  "EcommercePage": {
+    "meta": {
+      "title": "Codisans | Custom Shopify Storefronts",
+      "description": "We build headless Shopify storefronts using Hydrogen and modern frameworks — engineered for speed, built for scale, and optimized to turn browsers into buyers."
+    },
+    "header": {
+      "title": "Custom Shopify Storefronts Built for Performance, Scalability & Conversions",
+      "summary": "We build headless Shopify storefronts using Hydrogen and modern frameworks — engineered for speed, built for scale, and optimized to turn browsers into buyers. Get the performance of custom development with the reliability of the world's leading commerce platform."
+    },
+    "benefits": {
+      "eyebrow": "Beyond Templates",
+      "title": "Why Custom Storefronts Outperform Standard Themes",
+      "description": "Shopify themes help you launch quickly, but scaling brands need more than templates. Custom storefronts give you the flexibility to innovate, the performance to compete, and the foundation to grow without technical debt.",
+      "performance": {
+        "heading": "Lightning-Fast Performance That Converts",
+        "description": "Our custom storefronts load in under 50 milliseconds, delivering blazing-fast experiences that improve SEO rankings, mobile performance, and directly impact your bottom line."
+      },
+      "brand": {
+        "heading": "Unique Brand Experiences, Zero Compromises",
+        "description": "Break free from template constraints. Design sophisticated product flows, interactive features, and customer journeys that align perfectly with your brand and business model."
+      },
+      "scale": {
+        "heading": "Built to Scale Without Rebuilding",
+        "description": "Expand into new markets, add complex features, and integrate advanced functionality as you grow—all without expensive replatforming or technical limitations."
+      },
+      "tco": {
+        "heading": "Lower TCO, Higher Control",
+        "description": "Replace expensive app subscriptions with custom-built logic. Reduce monthly overhead, eliminate app conflicts, and maintain full control over your store capabilities."
+      },
+      "commerce": {
+        "heading": "Advanced Commerce Logic, Simplified",
+        "description": "Handle complex pricing rules, B2B workflows, subscription models, and custom checkout experiences that standard themes simply cannot support."
+      }
+    },
+    "why-shopify": {
+      "eyebrow": "Why Shopify?",
+      "title": "The Most Trusted Commerce Platform, Customized for Your Business",
+      "summary": "We build on Shopify because it offers enterprise-grade infrastructure with the flexibility of custom development.",
+      "checkout": {
+        "heading": "Best-in-Class Checkout That Converts",
+        "description": "Shopify Checkout converts 15% higher than other platforms and reaches 150M+ high-intent Shop Pay users."
+      },
+      "infrastructure": {
+        "heading": "Rock-Solid Infrastructure That Scales",
+        "description": "Handle traffic spikes, product launches, and viral moments without breaking a sweat. Shopify infrastructure powers $1 trillion+ in global sales and is built to support your growth from day one."
+      },
+      "apis": {
+        "heading": "Powerful APIs & Developer Ecosystem",
+        "description": "Access 13,000+ commerce apps and robust APIs that let us build exactly what you need. From advanced analytics to custom fulfillment workflows—if you can imagine it, we can build it."
+      },
+      "innovation": {
+        "heading": "Continuous Innovation & AI-Powered Tools",
+        "description": "Benefit from Shopify nonstop platform improvements—150+ new features every 6 months. Get AI-powered content generation, smart recommendations, and cutting-edge commerce tools without additional development."
+      },
+      "global": {
+        "heading": "Built for Global Commerce",
+        "description": "Launch internationally with confidence. Multi-currency pricing, localized experiences, international shipping optimization, and compliance tools are built into the platform."
+      }
+    },
+    "case-studies": {
+      "eyebrow": "Our Work",
+      "title": "From Good Stores to Great Sales Engines",
+      "summary": "We've partnered with ambitious brands to build custom Shopify storefronts that reflect your brand and drive business growth through superior performance, user experience, and conversion optimization."
+    },
+    "contact": {
+      "heading": "Ready to Build a Storefront That Performs?",
+      "description": "Whether you're scaling beyond your current theme, launching a new brand, or rebuilding for performance — we'll help you leverage Shopify with a custom storefront that drives real business results.",
+      "cta": "Start your project"
+    }
+  },
+  "AutomationPage": {
+    "meta": {
+      "title": "Codisans | Automation & AI Solutions",
+      "description": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation."
+    },
+    "header": {
+      "title": "Intelligent Automation & AI Solutions",
+      "summary": "We help you find the right automation opportunities for your business — the ones that actually make a difference. No hype, no complexity. Just smart solutions that free your team to do what they do best."
+    },
+    "benefits": {
+      "title": "Real impact for your business",
+      "automate": {
+        "heading": "Less busywork, more impact",
+        "description": "Stop drowning in busywork. We identify repetitive tasks that drain your team's energy and replace them with intelligent automation."
+      },
+      "customer": {
+        "heading": "Better experiences for your customers",
+        "description": "Give your customers the experience they deserve. We help you deliver faster, more personalized interactions that build lasting relationships."
+      },
+      "operations": {
+        "heading": "Operations that run smoothly",
+        "description": "Your business should run like a well-oiled machine. We find the friction points and smooth them out with smart, thoughtful automation."
+      }
+    },
+    "case-studies": {
+      "title": "We've helped teams like yours work smarter"
+    },
+    "contact": {
+      "cta": "Let's build"
+    }
+  },
+  "CmsWebsitesPage": {
+    "meta": {
+      "title": "Codisans | Custom CMS Websites",
+      "description": "We build bespoke CMS websites with Statamic - a flexible content management system built on Laravel. Perfect for content-heavy sites that need the power of a custom build."
+    },
+    "header": {
+      "title": "Websites that grow with you, powered by your story.",
+      "summary": "Your CMS should work for you, not the other way around. That's why we build with Statamic — a flexible platform that gives your team complete control over content while we handle the technical complexity. You focus on telling your brand's story; we make sure the technology never gets in your way."
+    },
+    "statamic": {
+      "heading": "A CMS that gets out of your way"
+    },
+    "reasons": {
+      "title": "Why choose Statamic?",
+      "summary": "Your team deserves tools that make their work easier, not harder. Statamic combines an intuitive experience your team will love with the robust capabilities your business needs to scale.",
+      "editor-friendly": {
+        "heading": "Editor Friendly UX",
+        "description": "Your content team shouldn't need a developer to make updates. We craft interfaces that match how you actually work, so your team can move faster and stay in their creative flow."
+      },
+      "flexible": {
+        "heading": "Flexible & Scalable",
+        "description": "We build for where you are today and where you'll be tomorrow. As your content needs evolve, your site adapts seamlessly — no costly rebuilds or compromises."
+      },
+      "powerful": {
+        "heading": "Powerful APIs & Ecosystem",
+        "description": "Your website is part of a larger ecosystem. We ensure everything talks to each other smoothly — your CRM, analytics, marketing tools, and whatever comes next."
+      }
+    },
+    "case-studies": {
+      "title": "We've helped brands like yours tell their stories online"
+    },
+    "contact": {
+      "cta": "Let's build"
+    }
   },
   "LaravelPage": {
     "meta": {
@@ -228,12 +295,138 @@
       "description": "Statamic is a flexible content management system built on Laravel. It makes creating and managing custom websites simple, while giving developers full control under the hood. Perfect for content-heavy sites that still need the power of a custom build."
     },
     "case-studies": {
-      "title": "Our Laravel projects",
+      "title": "Our Laravel Case Studies",
       "description": "Explore real-world examples of Laravel in action. Discover how Laravel has been used to build scalable and secure applications for various industries."
     },
     "specialists": {
       "title": "Laravel Specialists ",
       "description": "We've spent years building custom websites, platforms, and APIs with Laravel. We know the framework inside and out, from rapid prototyping to production-ready systems. If you're looking for a team that can deliver solid, scalable Laravel applications, we're ready to build with you."
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services | Codisans",
+      "description": "From custom software development and Shopify storefronts to AI automation and CMS websites — we build digital products that grow with your business. Transparent, collaborative, and built to scale together."
+    },
+    "cta": "Services",
+    "software-development": {
+      "title": "Software Development",
+      "description": "We build the digital foundation your business needs to grow. Our tailor-made applications are engineered for security and performance, delivering seamless experiences that convert users into loyal customers.",
+      "tag": "Software Development"
+    },
+    "e-commerce": {
+      "title": "E-Commerce",
+      "description": "We craft headless commerce platforms designed to grow with you. Using a composable approach, we integrate best-in-class tools to create agile, customer-centric shopping journeys that adapt to market shifts.",
+      "tag": "E-Commerce"
+    },
+    "ai-automation": {
+      "title": "Automation & AI",
+      "description": "We partner with you to identify high-value opportunities for automation. Our bespoke AI solutions remove bottlenecks and reduce costs, freeing your team to focus on innovation rather than administration.",
+      "tag": "Automation & AI"
+    },
+    "custom-cms": {
+      "title": "Custom CMS Websites",
+      "description": "Take control of your narrative. We build custom Content Management Systems around your specific workflow, giving your marketing team the speed and flexibility off-the-shelf solutions can't match.",
+      "tag": "CMS Website"
+    },
+    "blocks": {
+      "page-intro": {
+        "eyebrow": "Services",
+        "title": "Experts in web solutions",
+        "description": "We specialize in developing taylor-made software solutions. By aligning our technology with your business goals, we create digital products that create tangible value."
+      },
+      "cards-block": {},
+      "sticky-list-block": {
+        "eyebrow": "Our Process",
+        "heading": "We continuously refine our processes to garantee results",
+        "description": "Every project follows a clear, structured process designed to reduce risk, increase clarity, and deliver results. From discovery to deployment, we stay aligned and transparent every step of the way.",
+        "items": {
+          "item-1": {
+            "heading": "1. Discover",
+            "description": "We start by getting to know your business inside and out. Through workshops, research, and direct collaboration, we uncover what your users need and where your biggest opportunities lie."
+          },
+          "item-2": {
+            "heading": "2. Define",
+            "description": "Together, we turn insights into a clear plan. We map out key features, user flows, and technical requirements so everyone’s aligned before a single line of code is written."
+          },
+          "item-3": {
+            "heading": "3. Build",
+            "description": "With a solid foundation in place, we move into development. We build iteratively, stay in constant communication, and adapt as needed—always keeping performance, scalability, and user experience front and center."
+          },
+          "item-4": {
+            "heading": "4. Deliver",
+            "description": "We launch with confidence. Every product goes through rigorous testing, polish, and QA. Once live, we support your team to ensure a smooth rollout and a strong start."
+          }
+        }
+      },
+      "three-column-text": {
+        "eyebrow": "Our promise",
+        "heading": "We have a code.",
+        "description": "Across every phase of our work, you can depend on three core promises that ensure we deliver exceptional results, together.",
+        "item-1": {
+          "heading": "Transparent",
+          "description": "We believe great partnerships are built on trust and clarity. From day one, we communicate openly about scope, timelines, trade-offs, no hidden costs or surprises, while avoiding technical jargons."
+        },
+        "item-2": {
+          "heading": "Meticulous",
+          "description": "We are meticulous in our approach to every project. We take the time to understand the client's needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
+        },
+        "item-3": {
+          "heading": "Collaborative",
+          "description": "We are collaborative in our approach to every project. We work closely with the client to understand their needs and goals, and we work tirelessly to deliver a product that is not only functional, but also beautiful and easy to use."
+        }
+      }
+    }
+  },
+  "global": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "blog": "Blog",
+    "contact": "Contact",
+    "case-study": "Case study",
+    "more-case-studies": "More case studies",
+    "locale": "en-US",
+    "about-us": "About Us",
+    "budget": "Budget",
+    "case-studies": "Case studies",
+    "case-studies-summary": "We build a variety of web solutions, from simple landing pages to complex web applications.",
+    "client": "Client",
+    "company": "Company",
+    "connect": "Connect",
+    "contact-cta": "Let's talk",
+    "contact-form-title": "Work inquiries",
+    "contact-form-submit": "Let's talk",
+    "contact-invitation": "Let's work together",
+    "contact-message": "Tell us about your project",
+    "contact-us": "Contact Us",
+    "email": "Email",
+    "emails-heading": "Email us",
+    "follow-us": "Follow us",
+    "message": "Message",
+    "more-than": "More than",
+    "name": "Name",
+    "our-process": "Our Process",
+    "process": "Process",
+    "our-work": "Our Work",
+    "phone": "Phone",
+    "read-more": "Read more",
+    "read-case-study": "Read case study",
+    "see-all": "See all",
+    "service": "Service",
+    "services-title": "We specialise in crafting beautiful, high quality marketing pages.",
+    "services-summary": "As long as those opportunities involve giving us money to re-purpose old projects — we can come up with an endless number of those.",
+    "submit": "Let's work together",
+    "technologies": "Technologies",
+    "technologies-title": "Some of the technologies we enjoy working with",
+    "year": "Year",
+    "nicolas": {
+      "name": "Nicolas Canala",
+      "role": "Co-founder / Backend Lead"
+    },
+    "sebastian": {
+      "name": "Sebastian Strand",
+      "role": "Co-founder / Frontend Lead"
     }
   }
 }

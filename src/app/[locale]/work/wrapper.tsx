@@ -1,14 +1,17 @@
-import { Badge } from '@/components/Badge'
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/components/MDXComponents'
 import { PageIntro } from '@/components/PageIntro'
-import { PageLinks } from '@/components/PageLinks'
 import { RootLayout } from '@/components/RootLayout'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import { getTranslations } from 'next-intl/server'
+import { ServiceTag } from '@/components/ServiceTag'
+import {
+  CaseStudyCard,
+  CaseStudyCardsBlock,
+} from '@/blocks/CaseStudyCardsBlock'
 
 export default async function CaseStudyWrapper({
   caseStudy,
@@ -19,7 +22,7 @@ export default async function CaseStudyWrapper({
   children: React.ReactNode
   locale?: string
 }) {
-  const t = await getTranslations('Global')
+  const t = await getTranslations()
   let allCaseStudies = await loadCaseStudies(locale)
   let moreCaseStudies = allCaseStudies
     .filter(({ metadata }) => metadata.title !== caseStudy.title)
@@ -108,7 +111,11 @@ export default async function CaseStudyWrapper({
       />
       <article className="mt-24 sm:mt-32 lg:mt-40">
         <header>
-          <PageIntro eyebrow={t('case-study')} title={caseStudy.title} centered>
+          <PageIntro
+            eyebrow={t('global.case-study')}
+            title={caseStudy.title}
+            centered
+          >
             <p>{caseStudy.description}</p>
             {caseStudy.url && (
               <a
@@ -116,13 +123,11 @@ export default async function CaseStudyWrapper({
                 className="relative z-10 mt-4 block"
                 target="_blank"
               >
-                <Badge color="teal">
-                  {caseStudy.url.replace('https://', '')}
-                </Badge>
+                <ServiceTag
+                  service={caseStudy.service[0]}
+                  label={caseStudy.url.replace('https://', '')}
+                />
               </a>
-              // <a className="mx-auto mt-8 block w-max rounded-full bg-theme-100 px-4 py-1.5 text-base text-theme-600">
-              //   {caseStudy.url}
-              // </a>
             )}
           </PageIntro>
 
@@ -132,11 +137,11 @@ export default async function CaseStudyWrapper({
                 <div className="mx-auto max-w-5xl">
                   <dl className="-mx-6 grid grid-cols-1 text-sm text-theme-950 sm:mx-0 sm:grid-cols-3">
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('client')}</dt>
+                      <dt className="font-semibold">{t('global.client')}</dt>
                       <dd>{caseStudy.client}</dd>
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('year')}</dt>
+                      <dt className="font-semibold">{t('global.year')}</dt>
                       <dd>
                         <time dateTime={caseStudy.date.split('-')[0]}>
                           {caseStudy.date.split('-')[0]}
@@ -144,8 +149,8 @@ export default async function CaseStudyWrapper({
                       </dd>
                     </div>
                     <div className="border-t border-theme-200 px-6 py-4 first:border-t-0 sm:border-t-0 sm:border-l">
-                      <dt className="font-semibold">{t('service')}</dt>
-                      <dd>{caseStudy.service}</dd>
+                      <dt className="font-semibold">{t('global.service')}</dt>
+                      <dd>{t(`services.${caseStudy.service?.[0]}.tag`)}</dd>
                     </div>
                   </dl>
                 </div>
@@ -174,15 +179,21 @@ export default async function CaseStudyWrapper({
       </article>
 
       {moreCaseStudies.length > 0 && (
-        <PageLinks
-          className="mt-24 sm:mt-32 lg:mt-40"
-          title={t('more-case-studies')}
-          pages={moreCaseStudies}
-          locale={locale}
+        <CaseStudyCardsBlock
+          title={t('global.more-case-studies')}
+          cards={moreCaseStudies.map<CaseStudyCard>((caseStudy) => ({
+            service: caseStudy.service?.[0],
+            date: caseStudy.date,
+            title: caseStudy.title,
+            image:
+              (caseStudy.thumbnail?.src as string) ??
+              (caseStudy.image?.src as string),
+            description: caseStudy.description,
+            link: caseStudy.href,
+          }))}
         />
       )}
-
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

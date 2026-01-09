@@ -1,55 +1,4 @@
 {
-  "Global": {
-    "locale": "es-CL",
-    "about": "Nosotros",
-    "about-us": "Nosotros",
-    "blog": "Blog",
-    "budget": "Presupuesto",
-    "case-study": "Proyecto",
-    "case-studies": "Proyectos",
-    "case-studies-summary": "Construimos una variedad de soluciones web, desde páginas de aterrizaje simples hasta aplicaciones web complejas.",
-    "client": "Cliente",
-    "company": "Empresa",
-    "connect": "Conéctate",
-    "contact": "Contacto",
-    "contact-cta": "Hablemos",
-    "contact-form-title": "Cotizaciones",
-    "contact-form-submit": "Hablemos",
-    "contact-invitation": "Trabajemos juntos",
-    "contact-message": "Cuéntanos de tu proyecto",
-    "contact-us": "Contacto",
-    "email": "Correo electrónico",
-    "emails-heading": "Correo electrónico",
-    "follow-us": "Síguenos",
-    "message": "Mensaje",
-    "more-than": "Más de",
-    "more-case-studies": "Más proyectos",
-    "name": "Nombre",
-    "our-process": "Proceso",
-    "process": "Proceso",
-    "work": "Proyectos",
-    "our-work": "Proyectos",
-    "phone": "Teléfono",
-    "read-more": "Leer más",
-    "read-case-study": "Leer proyecto",
-    "see-all": "Ver todos",
-    "service": "Servicio",
-    "services": "Servicios",
-    "services-title": "Nos especializamos en crear páginas de marketing de alta calidad.",
-    "services-summary": "Como siempre, las oportunidades que involucran darme dinero para reutilizar proyectos antiguos — podemos crear un número infinito de esos.",
-    "submit": "Trabajemos juntos",
-    "technologies": "Tecnologías",
-    "technologies-title": "Algunas de las tecnologías con las que trabajamos",
-    "year": "Año",
-    "nicolas": {
-      "name": "Nicolas Canala",
-      "role": "Co-fundador / Ingeniero Backend"
-    },
-    "sebastian": {
-      "name": "Sebastian Strand",
-      "role": "Co-fundador / Ingeniero Frontend"
-    }
-  },
   "HomePage": {
     "meta": {
       "title": "Codisans | Software conciente. Impacto estratégico.",
@@ -115,51 +64,6 @@
       "description": "Somos un equipo de personas apasionadas que están impulsadas por un propósito compartido. No tenemos miedo de probar nuevas cosas, y no tenemos miedo de fallar. Siempre estamos buscando nuevas formas de mejorar nuestros productos y servicios."
     }
   },
-  "ProcessPage": {
-    "meta": {
-      "title": "Codisans | Proceso",
-      "description": "Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados."
-    },
-    "eyebrow": "Proceso",
-    "title": "Cómo abordamos proyectos",
-    "intro": "Seguimos un proceso claro que minimiza riesgos y mejora la comunicación para entregar los mejores resultados.",
-    "cta": "Construyamos algo juntos.",
-    "steps": {
-      "discover": {
-        "title": "Descubrir",
-        "description": "Comenzamos conociendo tu negocio en profundidad. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
-      },
-      "define": {
-        "title": "Definir",
-        "description": "Convertimos los aprendizajes en un plan claro. Definimos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una línea de código."
-      },
-      "build": {
-        "title": "Construir",
-        "description": "Con una base sólida, pasamos al desarrollo. Trabajamos de forma iterativa, en constante comunicación, y nos adaptamos según sea necesario — siempre priorizando el rendimiento, la escalabilidad y la experiencia de usuario."
-      },
-      "deliver": {
-        "title": "Entregar",
-        "description": "Lanzamos con confianza. Cada producto pasa por pruebas rigurosas, ajustes finales y control de calidad. Una vez en producción, apoyamos a tu equipo para asegurar un lanzamiento fluido y sin sobresaltos."
-      }
-    },
-    "values": {
-      "eyebrow": "Nuestra promesa",
-      "title": "Tenemos un código.",
-      "description": "En cada fase de nuestro trabajo, puedes contar con tres promesas clave que garantizan resultados excepcionales, juntos.",
-      "value-1": {
-        "title": "Transparencia",
-        "description": "Creemos que las grandes alianzas se basan en la confianza y la claridad. Desde el primer día, hablamos con franqueza sobre el alcance, los plazos y las decisiones clave — sin costos ocultos, sin sorpresas y sin jerga técnica."
-      },
-      "value-2": {
-        "title": "Detallistas",
-        "description": "Cuidamos cada proyecto al detalle. Nos tomamos el tiempo para entender tus necesidades y objetivos, y trabajamos a fondo para entregar un producto funcional, bello y fácil de usar."
-      },
-      "value-3": {
-        "title": "Colaborativos",
-        "description": "Creemos que las mejores soluciones nacen del trabajo en equipo. Involucramos al cliente en cada paso del proceso, fomentando una comunicación fluida y decisiones compartidas para lograr resultados alineados y duraderos."
-      }
-    }
-  },
   "WorkPage": {
     "meta": {
       "title": "Codisans | Nuestro Trabajo",
@@ -190,33 +94,169 @@
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
   },
+  "EcommercePage": {
+    "meta": {
+      "title": "Codisans | Tiendas Shopify Personalizadas",
+      "description": "Construimos tiendas Shopify headless con Hydrogen y frameworks modernos — diseñadas para velocidad, escalabilidad y optimizadas para convertir visitantes en compradores."
+    },
+    "header": {
+      "title": "Tiendas Shopify Personalizadas para Rendimiento, Escalabilidad y Conversiones",
+      "summary": "Construimos tiendas Shopify headless con Hydrogen y frameworks modernos — diseñadas para velocidad, escalabilidad y optimizadas para convertir visitantes en compradores. Obtén el rendimiento del desarrollo personalizado con la confiabilidad de la plataforma de comercio líder mundial."
+    },
+    "benefits": {
+      "eyebrow": "Más Allá de las Plantillas",
+      "title": "Por qué las Tiendas Personalizadas Superan los Temas Estándar",
+      "description": "Los temas de Shopify te ayudan a lanzar rápidamente, pero las marcas en crecimiento necesitan más que plantillas. Las tiendas personalizadas te dan la flexibilidad para innovar, el rendimiento para competir y la base para crecer sin deuda técnica.",
+      "performance": {
+        "heading": "Rendimiento Ultra Rápido que Convierte",
+        "description": "Nuestras tiendas personalizadas cargan en menos de 50 milisegundos, ofreciendo experiencias ultrarrápidas que mejoran el SEO, el rendimiento móvil e impactan directamente en tus resultados."
+      },
+      "brand": {
+        "heading": "Experiencias de Marca Únicas, Sin Compromisos",
+        "description": "Libérate de las restricciones de plantillas. Diseña flujos de productos sofisticados, funciones interactivas y recorridos de cliente que se alinean perfectamente con tu marca y modelo de negocio."
+      },
+      "scale": {
+        "heading": "Construido para Escalar sin Reconstruir",
+        "description": "Expándete a nuevos mercados, agrega funciones complejas e integra funcionalidades avanzadas a medida que creces — todo sin costosas migraciones o limitaciones técnicas."
+      },
+      "tco": {
+        "heading": "Menor TCO, Mayor Control",
+        "description": "Reemplaza costosas suscripciones de apps con lógica personalizada. Reduce gastos mensuales, elimina conflictos entre apps y mantén control total sobre las capacidades de tu tienda."
+      },
+      "commerce": {
+        "heading": "Lógica de Comercio Avanzada, Simplificada",
+        "description": "Maneja reglas de precios complejas, flujos B2B, modelos de suscripción y experiencias de checkout personalizadas que los temas estándar simplemente no pueden soportar."
+      }
+    },
+    "why-shopify": {
+      "eyebrow": "¿Por qué Shopify?",
+      "title": "La Plataforma de Comercio Más Confiable, Personalizada para tu Negocio",
+      "summary": "Construimos en Shopify porque ofrece infraestructura de nivel empresarial con la flexibilidad del desarrollo personalizado.",
+      "checkout": {
+        "heading": "El Mejor Checkout que Convierte",
+        "description": "El Checkout de Shopify convierte 15% más que otras plataformas y alcanza más de 150M de usuarios de Shop Pay con alta intención de compra."
+      },
+      "infrastructure": {
+        "heading": "Infraestructura Sólida que Escala",
+        "description": "Maneja picos de tráfico, lanzamientos de productos y momentos virales sin problemas. La infraestructura de Shopify potencia más de $1 billón en ventas globales y está construida para soportar tu crecimiento desde el día uno."
+      },
+      "apis": {
+        "heading": "APIs Potentes y Ecosistema de Desarrolladores",
+        "description": "Accede a más de 13,000 apps de comercio y APIs robustas que nos permiten construir exactamente lo que necesitas. Desde analíticas avanzadas hasta flujos de fulfillment personalizados — si puedes imaginarlo, podemos construirlo."
+      },
+      "innovation": {
+        "heading": "Innovación Continua y Herramientas con IA",
+        "description": "Benefíciate de las mejoras constantes de Shopify — más de 150 nuevas funciones cada 6 meses. Obtén generación de contenido con IA, recomendaciones inteligentes y herramientas de comercio de vanguardia sin desarrollo adicional."
+      },
+      "global": {
+        "heading": "Construido para el Comercio Global",
+        "description": "Lanza internacionalmente con confianza. Precios multi-moneda, experiencias localizadas, optimización de envíos internacionales y herramientas de cumplimiento están integradas en la plataforma."
+      }
+    },
+    "case-studies": {
+      "eyebrow": "Nuestro Trabajo",
+      "title": "De Buenas Tiendas a Máquinas de Ventas",
+      "summary": "Nos hemos asociado con marcas ambiciosas para construir tiendas Shopify personalizadas que reflejan tu marca e impulsan el crecimiento del negocio a través de rendimiento superior, experiencia de usuario y optimización de conversiones."
+    },
+    "contact": {
+      "heading": "¿Listo para Construir una Tienda que Rinda?",
+      "description": "Ya sea que estés escalando más allá de tu tema actual, lanzando una nueva marca o reconstruyendo para rendimiento — te ayudaremos a aprovechar Shopify con una tienda personalizada que genere resultados reales.",
+      "cta": "Inicia tu proyecto"
+    }
+  },
+  "AutomationPage": {
+    "meta": {
+      "title": "Codisans | Automatización & Soluciones de IA",
+      "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación."
+    },
+    "header": {
+      "title": "Automatización Inteligente & Soluciones de IA",
+      "summary": "Te ayudamos a encontrar las oportunidades de automatización correctas para tu negocio — las que realmente marcan una diferencia. Sin exageraciones, sin complejidad. Solo soluciones inteligentes que liberan a tu equipo para hacer lo que mejor saben."
+    },
+    "benefits": {
+      "title": "Impacto real para tu negocio",
+      "automate": {
+        "heading": "Menos tareas rutinarias, más impacto",
+        "description": "Deja de ahogarte en tareas rutinarias. Identificamos las tareas repetitivas que agotan la energía de tu equipo y las reemplazamos con automatización inteligente."
+      },
+      "customer": {
+        "heading": "Mejores experiencias para tus clientes",
+        "description": "Dales a tus clientes la experiencia que merecen. Te ayudamos a entregar interacciones más rápidas y personalizadas que construyen relaciones duraderas."
+      },
+      "operations": {
+        "heading": "Operaciones que fluyen sin problemas",
+        "description": "Tu negocio debería funcionar como una máquina bien engrasada. Encontramos los puntos de fricción y los eliminamos con automatización inteligente y cuidadosa."
+      }
+    },
+    "case-studies": {
+      "title": "Hemos ayudado a equipos como el tuyo a trabajar de manera más inteligente"
+    },
+    "contact": {
+      "cta": "Construyamos juntos"
+    }
+  },
+  "CmsWebsitesPage": {
+    "meta": {
+      "title": "Codisans | Sitios Web CMS Personalizados",
+      "description": "Construimos sitios web CMS a medida con Statamic - un sistema de gestión de contenido flexible basado en Laravel. Perfecto para sitios con mucho contenido que necesitan el poder de una construcción personalizada."
+    },
+    "header": {
+      "title": "Sitios web que crecen contigo, impulsados por tu historia.",
+      "summary": "Tu CMS debería trabajar para ti, no al revés. Por eso construimos con Statamic — una plataforma flexible que le da a tu equipo control total sobre el contenido mientras nosotros manejamos la complejidad técnica. Tú te enfocas en contar la historia de tu marca; nosotros nos aseguramos de que la tecnología nunca se interponga en tu camino."
+    },
+    "statamic": {
+      "heading": "Un CMS que no te limita"
+    },
+    "reasons": {
+      "title": "¿Por qué elegir Statamic?",
+      "summary": "Tu equipo merece herramientas que faciliten su trabajo, no que lo hagan más difícil. Statamic combina una experiencia intuitiva que tu equipo amará con las capacidades robustas que tu negocio necesita para crecer.",
+      "editor-friendly": {
+        "heading": "UX Amigable para Editores",
+        "description": "Tu equipo de contenido no debería necesitar un desarrollador para hacer actualizaciones. Creamos interfaces que coinciden con la forma en que realmente trabajas, para que tu equipo pueda avanzar más rápido y mantenerse en su flujo creativo."
+      },
+      "flexible": {
+        "heading": "Flexible y Escalable",
+        "description": "Construimos para donde estás hoy y donde estarás mañana. A medida que tus necesidades de contenido evolucionan, tu sitio se adapta sin problemas — sin reconstrucciones costosas ni compromisos."
+      },
+      "powerful": {
+        "heading": "APIs Potentes y Ecosistema",
+        "description": "Tu sitio web es parte de un ecosistema más grande. Nos aseguramos de que todo se comunique sin problemas — tu CRM, analytics, herramientas de marketing y lo que venga después."
+      }
+    },
+    "case-studies": {
+      "title": "Hemos ayudado a marcas como la tuya a contar sus historias online"
+    },
+    "contact": {
+      "cta": "Construyamos juntos"
+    }
+  },
   "LaravelPage": {
     "meta": {
       "title": "Codisans | Laravel",
       "description": "Desarrollamos plataformas de alto rendimiento que aprovechan bien tus recursos, tecnología y presupuesto. Hechas para escalar a medida que creces — sin desperdicios ni partir de cero."
     },
     "eyebrow": "Laravel",
-    "title": "Soluciones Laravel a la Medida",
-    "intro": "Creamos aplicaciones Laravel que impulsan negocios reales: herramientas internas, plataformas para clientes, APIs y más. Entrega rápida, arquitectura limpia, listas para escalar contigo.",
+    "title": "Soluciones Laravel Personalizadas",
+    "intro": "Construimos aplicaciones Laravel que impulsan negocios reales: herramientas internas, plataformas para clientes, APIs y más. Entrega rápida, arquitectura limpia, construido para escalar contigo.",
     "listing-title": "Proyectos",
     "what": {
       "title": "¿Qué es Laravel?",
-      "description": "Laravel es un poderoso framework PHP de código abierto para crear aplicaciones web full-stack. Incluye herramientas robustas integradas y da a los desarrolladores libertad total para personalizar y extender. Ya sea que necesites una API headless o una plataforma completamente integrada, Laravel maneja la complejidad sin sudar."
+      "description": "Laravel es un framework PHP de código abierto potente para construir aplicaciones web completas. Viene con herramientas integradas robustas mientras da a los desarrolladores libertad total para personalizar y extender. Ya sea que necesites una API headless o una plataforma completamente integrada, Laravel maneja la complejidad sin estorbarte."
     },
     "reasons": {
       "title": "¿Por qué Laravel?",
-      "summary": "Laravel se actualiza semanalmente con nuevas funcionalidades y correcciones. Además, su flexibilidad permite reutilizar código entre proyectos, lo que acelera el desarrollo de nuevos productos. Combinado con su alta calidad de código, esto hace que Laravel sea la plataforma preferida de grandes empresas como Spotify, KIA y Sprout Social.",
+      "summary": "Laravel se actualiza semanalmente con nuevas funciones y correcciones de errores. Además, Laravel es flexible, permitiendo que el código se reutilice entre proyectos. Esto permite completar nuevos proyectos más rápido. Combinado con su alta calidad de código, esto hace de Laravel una plataforma preferida para grandes como Spotify, KIA y Sprout Social.",
       "future-proof": {
         "title": "A Prueba de Futuro",
-        "description": "Laravel escala desde aplicaciones web simples hasta sistemas empresariales complejos. Alto rendimiento, configuración sencilla y arranque rápido desde el inicio."
+        "description": "Laravel escala desde aplicaciones web simples hasta sistemas empresariales complejos. Alto rendimiento, configuración fácil y configuración rápida desde el principio."
       },
       "open-source": {
         "title": "Código Abierto",
-        "description": "Respaldado por una comunidad enorme con actualizaciones semanales y miles de paquetes. Sin dependencia de un solo proveedor, nunca."
+        "description": "Respaldado por una comunidad masiva con actualizaciones semanales y miles de paquetes. Sin bloqueo de proveedor, nunca."
       },
       "efficient": {
         "title": "Eficiente",
-        "description": "Las herramientas integradas y los paquetes de la comunidad significan menos tiempo reinventando la rueda y más velocidad para lanzar."
+        "description": "Las herramientas integradas y paquetes de la comunidad significan menos tiempo reinventando la rueda y un tiempo de lanzamiento más rápido."
       },
       "safety": {
         "title": "Seguro",
@@ -224,16 +264,142 @@
       }
     },
     "statamic": {
-      "title": "Statamic CMS",
-      "description": "Statamic es un sistema de gestión de contenido flexible construido sobre Laravel. Simplifica la creación y administración de sitios web personalizados, mientras da a los desarrolladores control total bajo el capó. Perfecto para sitios con mucho contenido que aún necesitan el poder de un desarrollo a la medida."
+      "title": "CMS Statamic",
+      "description": "Statamic es un sistema de gestión de contenido flexible construido sobre Laravel. Hace que crear y gestionar sitios web personalizados sea simple, mientras da a los desarrolladores control total bajo el capó. Perfecto para sitios con mucho contenido que aún necesitan el poder de una construcción personalizada."
     },
     "case-studies": {
-      "title": "Nuestros proyectos Laravel",
-      "description": "Explora ejemplos reales de Laravel en acción. Descubre cómo hemos usado Laravel para crear aplicaciones escalables y seguras en diversas industrias."
+      "title": "Nuestros Proyectos Laravel",
+      "description": "Explora ejemplos del mundo real de Laravel en acción. Descubre cómo se ha usado Laravel para construir aplicaciones escalables y seguras para diversas industrias."
     },
     "specialists": {
       "title": "Especialistas en Laravel",
-      "description": "Llevamos años creando sitios web, plataformas y APIs con Laravel. Conocemos el framework de pies a cabeza, desde prototipos rápidos hasta sistemas listos para producción. Si buscas un equipo que pueda entregar aplicaciones Laravel sólidas y escalables, estamos listos para construir contigo."
+      "description": "Hemos pasado años construyendo sitios web, plataformas y APIs personalizados con Laravel. Conocemos el framework por dentro y por fuera, desde prototipos rápidos hasta sistemas listos para producción. Si estás buscando un equipo que pueda entregar aplicaciones Laravel sólidas y escalables, estamos listos para construir contigo."
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Servicios | Codisans",
+      "description": "Desde desarrollo de software personalizado y tiendas Shopify hasta automatización con IA y sitios CMS: construimos productos digitales que crecen con tu negocio. Transparentes, colaborativos y diseñados para escalar juntos."
+    },
+    "cta": "Servicios",
+    "software-development": {
+      "title": "Desarrollo de Software",
+      "description": "Construimos la base digital que tu negocio necesita para crecer. Nuestras aplicaciones a medida están diseñadas para ofrecer seguridad y rendimiento, brindando experiencias fluidas que convierten usuarios en clientes leales.",
+      "tag": "Desarrollo de Software"
+    },
+    "e-commerce": {
+      "title": "E-Commerce",
+      "description": "Diseñamos plataformas de comercio headless pensadas para escalar contigo. Mediante un enfoque componible, integramos herramientas líderes para crear experiencias de compra ágiles y centradas en el cliente, capaces de adaptarse a los cambios del mercado.",
+      "tag": "E-Commerce"
+    },
+    "ai-automation": {
+      "title": "Automatización & IA",
+      "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa.",
+      "tag": "Automatización & IA"
+    },
+    "custom-cms": {
+      "title": "Sitios Web Personalizados",
+      "description": "Toma el control de tu narrativa. Creamos sistemas de gestión de contenido personalizados según tu flujo de trabajo, dando a tu equipo de marketing la velocidad y flexibilidad que las soluciones genéricas no pueden ofrecer.",
+      "tag": "Sitio Web"
+    },
+    "blocks": {
+      "page-intro": {
+        "eyebrow": "Servicios",
+        "title": "Impulsando el crecimiento, juntos.",
+        "description": "Nos especializamos en desarrollo web y soluciones de software de alto impacto. Al alinear la tecnología con tus objetivos de negocio, creamos productos digitales que no solo funcionan: impulsan ingresos y eficiencia."
+      },
+      "cards-block": {},
+      "sticky-list-block": {
+        "eyebrow": "Proceso",
+        "heading": "Refinamos constantemente nuestro proceso para garantizar resultados",
+        "description": "Cada proyecto sigue un proceso claro y estructurado diseñado para reducir riesgos, aumentar claridad y entregar resultados. Desde el descubrimiento hasta la entrega, nos mantenemos alineados y transparentes en cada paso del proceso.",
+        "items": {
+          "item-1": {
+            "heading": "1. Descubrir",
+            "description": "Comenzamos conociendo tu negocio en profundidad. A través de workshops, investigación y colaboración directa, identificamos qué necesitan tus usuarios y dónde están tus mayores oportunidades."
+          },
+          "item-2": {
+            "heading": "2. Definir",
+            "description": "Juntos, convertimos los aprendizajes en un plan claro. Mapeamos funcionalidades clave, flujos de usuario y requerimientos técnicos para que todo el equipo esté alineado antes de escribir una línea de código."
+          },
+          "item-3": {
+            "heading": "3. Construir",
+            "description": "Con una base sólida, pasamos al desarrollo. Trabajamos de forma iterativa, en constante comunicación, y nos adaptamos según sea necesario — siempre priorizando el rendimiento, la escalabilidad y la experiencia de usuario."
+          },
+          "item-4": {
+            "heading": "4. Entregar",
+            "description": "Lanzamos con confianza. Cada producto pasa por pruebas rigurosas, ajustes finales y control de calidad. Una vez en producción, apoyamos a tu equipo para asegurar un lanzamiento fluido y sin sobresaltos."
+          }
+        }
+      },
+      "three-column-text": {
+        "eyebrow": "Nuestra promesa",
+        "heading": "Tenemos un código.",
+        "description": "En cada fase de nuestro trabajo, puedes contar con tres promesas clave que garantizan resultados excepcionales, juntos.",
+        "item-1": {
+          "heading": "Transparencia",
+          "description": "Creemos que las grandes alianzas se basan en la confianza y la claridad. Desde el primer día, hablamos con franqueza sobre el alcance, los plazos y las decisiones clave — sin costos ocultos, sin sorpresas y sin jerga técnica."
+        },
+        "item-2": {
+          "heading": "Detallistas",
+          "description": "Cuidamos cada proyecto al detalle. Nos tomamos el tiempo para entender tus necesidades y objetivos, y trabajamos a fondo para entregar un producto funcional, bello y fácil de usar."
+        },
+        "item-3": {
+          "heading": "Colaborativos",
+          "description": "Creemos que las mejores soluciones nacen del trabajo en equipo. Involucramos al cliente en cada paso del proceso, fomentando una comunicación fluida y decisiones compartidas para lograr resultados alineados y duraderos."
+        }
+      }
+    }
+  },
+  "global": {
+    "about": "About",
+    "services": "Services",
+    "work": "Work",
+    "blog": "Blog",
+    "contact": "Contact",
+    "case-study": "Proyecto",
+    "more-case-studies": "Más proyectos",
+    "locale": "es-CL",
+    "about-us": "Nosotros",
+    "budget": "Presupuesto",
+    "case-studies": "Proyectos",
+    "case-studies-summary": "Construimos una variedad de soluciones web, desde páginas de aterrizaje simples hasta aplicaciones web complejas.",
+    "client": "Cliente",
+    "company": "Empresa",
+    "connect": "Conéctate",
+    "contact-cta": "Hablemos",
+    "contact-form-title": "Cotizaciones",
+    "contact-form-submit": "Hablemos",
+    "contact-invitation": "Trabajemos juntos",
+    "contact-message": "Cuéntanos de tu proyecto",
+    "contact-us": "Contacto",
+    "email": "Correo electrónico",
+    "emails-heading": "Correo electrónico",
+    "follow-us": "Síguenos",
+    "message": "Mensaje",
+    "more-than": "Más de",
+    "name": "Nombre",
+    "our-process": "Proceso",
+    "process": "Proceso",
+    "our-work": "Proyectos",
+    "phone": "Teléfono",
+    "read-more": "Leer más",
+    "read-case-study": "Leer proyecto",
+    "see-all": "Ver todos",
+    "service": "Servicio",
+    "services-title": "Nos especializamos en crear páginas de marketing de alta calidad.",
+    "services-summary": "Como siempre, las oportunidades que involucran darme dinero para reutilizar proyectos antiguos — podemos crear un número infinito de esos.",
+    "submit": "Trabajemos juntos",
+    "technologies": "Tecnologías",
+    "technologies-title": "Algunas de las tecnologías con las que trabajamos",
+    "year": "Año",
+    "nicolas": {
+      "name": "Nicolas Canala",
+      "role": "Co-fundador / Ingeniero Backend"
+    },
+    "sebastian": {
+      "name": "Sebastian Strand",
+      "role": "Co-fundador / Ingeniero Frontend"
     }
   }
 }

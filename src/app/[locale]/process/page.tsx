@@ -1,4 +1,4 @@
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { GridList, GridListItem } from '@/components/GridList'
@@ -73,7 +73,7 @@ export default async function Process() {
 
       <Values t={t} />
 
-      <ContactSection />
+      <ContactBlock />
     </RootLayout>
   )
 }

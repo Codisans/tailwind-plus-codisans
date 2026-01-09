@@ -8,13 +8,18 @@ import { Footer } from '@/components/Footer'
 import { GridPattern } from '@/components/GridPattern'
 import { Header, Navigation } from '@/components/Header'
 import { Emails } from './Emails'
+import clsx from 'clsx'
 
 export const RootLayoutContext = createContext<{
   logoHovered: boolean
   setLogoHovered: React.Dispatch<React.SetStateAction<boolean>>
 } | null>(null)
 
-function RootLayoutInner({ children }: { children: React.ReactNode }) {
+function RootLayoutInner({
+  children,
+  ...props
+}: { children: React.ReactNode } & React.ComponentPropsWithoutRef<'div'>) {
+  const { className } = props
   let panelId = useId()
   let [expanded, setExpanded] = useState(false)
   let [isTransitioning, setIsTransitioning] = useState(false)
@@ -110,14 +115,14 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
       <motion.div
         layout
         style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
-        className="relative flex flex-auto overflow-hidden bg-white pt-14"
+        className={clsx('relative flex flex-auto bg-white pt-14', className)}
       >
         <motion.div
           layout
           className="relative isolate flex w-full flex-col pt-9"
         >
           <GridPattern
-            className="stroke-theme-accent-950/10 absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-accent/5"
+            className="absolute inset-x-0 -top-14 -z-10 h-[1000px] w-full mask-[linear-gradient(to_bottom_left,white_40%,transparent_50%)] fill-theme-400/5 stroke-neutral-400/10"
             yOffset={-96}
             interactive
           />
@@ -131,13 +136,18 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
   )
 }
 
-export function RootLayout({ children }: { children: React.ReactNode }) {
+export function RootLayout({
+  children,
+  ...props
+}: { children: React.ReactNode } & React.ComponentPropsWithoutRef<'div'>) {
   let pathname = usePathname()
   let [logoHovered, setLogoHovered] = useState(false)
 
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
-      <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
+      <RootLayoutInner key={pathname} {...props}>
+        {children}
+      </RootLayoutInner>
     </RootLayoutContext.Provider>
   )
 }

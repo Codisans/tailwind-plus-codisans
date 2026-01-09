@@ -1,13 +1,14 @@
 import { type Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
-import { ContactSection } from '@/components/ContactSection'
+import { ContactBlock } from '@/blocks/ContactBlock'
 import heroImage from '@/images/web-dev-landscape.webp'
+import plantImage from '@/images/plant.png'
 import { RootLayout } from '@/components/RootLayout'
-import { Card, CardsBlock } from '../../blocks/CardsBlock'
-import { ListBlock } from '../../blocks/ListBlock'
-import { PageHeader } from '../../blocks/PageHeader'
 import { loadCaseStudies } from '@/lib/mdx'
+import { ServiceListBlock } from '@/blocks/ServiceListBlock'
+import { CaseStudyCard, HeroCardsBlock } from '@/blocks/HeroCardsBlock'
 import { Container } from '@/components/Container'
+import { Button } from '@/components/Button'
 
 export async function generateMetadata({
   params,
@@ -30,42 +31,49 @@ export default async function Home({
   params: { locale: string }
 }) {
   const t = await getTranslations()
-  const caseStudies = await loadCaseStudies(locale)
+  const caseStudies = await loadCaseStudies(locale, [
+    'swid-studio',
+    'keai',
+    'la-torre-ambulante',
+    'nuestros-tiempos',
+  ])
 
   const services = [
     {
-      title: t('HomePage.services.web-development.title'),
-      description: t('HomePage.services.web-development.description'),
+      service: 'software-development',
+      title: t('components.service-cards.web-development.title'),
+      description: t('components.service-cards.web-development.description'),
+      href: '/services/software-development',
     },
     {
-      title: t('HomePage.services.ai-solutions.title'),
-      description: t('HomePage.services.ai-solutions.description'),
+      service: 'e-commerce',
+      title: t('components.service-cards.e-commerce.title'),
+      description: t('components.service-cards.e-commerce.description'),
+      href: '/services/e-commerce',
     },
     {
-      title: t('HomePage.services.e-commerce.title'),
-      description: t('HomePage.services.e-commerce.description'),
+      service: 'ai-automation',
+      title: t('components.service-cards.ai-solutions.title'),
+      description: t('components.service-cards.ai-solutions.description'),
+      href: '/services/ai-automation',
     },
     {
-      title: t('HomePage.services.custom-content-management.title'),
-      description: t('HomePage.services.custom-content-management.description'),
+      service: 'custom-cms',
+      title: t('components.service-cards.custom-content-management.title'),
+      description: t(
+        'components.service-cards.custom-content-management.description',
+      ),
+      href: '/services/cms-websites',
     },
   ]
 
   return (
     <RootLayout>
-      <PageHeader title={t('HomePage.title')} summary={t('HomePage.intro')} />
-
-      {/*<div className="mt-24 rounded-4xl bg-theme-950 py-20 text-white sm:mt-32 sm:py-32 lg:mt-56">
-        <Container className="!max-w-4xl text-center font-display text-3xl font-medium tracking-tight sm:text-4xl">
-          {t('HomePage.pain-point')}
-        </Container>
-      </div>*/}
-
-      <CardsBlock
-        title={t('HomePage.case-studies.title')}
-        // summary={t('HomePage.case-studies.summary')}
-        cards={caseStudies.map<Card>((caseStudy) => ({
-          type: t('Global.case-study'),
+      <HeroCardsBlock
+        title={t('HomePage.title')}
+        summary={t('HomePage.case-studies.title')}
+        cards={caseStudies.map<CaseStudyCard>((caseStudy) => ({
+          service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
           image:
@@ -76,17 +84,39 @@ export default async function Home({
         }))}
       />
 
-      <ListBlock
-        eyebrow={t('HomePage.services.eyebrow')}
-        title={t('HomePage.services.title')}
-        summary={t('HomePage.services.summary')}
-        image={heroImage}
-        // video="/hero-loop.mp4"
-        grayscale={false}
+      <ServiceListBlock
+        eyebrow={t('components.service-cards.eyebrow')}
+        title={t('components.service-cards.title')}
+        summary={t('components.service-cards.summary')}
+        image={plantImage}
         items={services}
       />
 
-      <ContactSection />
+      <Container className="mt-24 sm:mt-32 lg:mt-40">
+        <h2 className="font-display text-3xl font-medium text-balance text-theme-950">
+          We're a team of developers who are passionate about building software
+          solutions that make an impact.
+        </h2>
+        <p className="mt-6 max-w-3xl text-2xl text-theme-600">
+          Learn more about what we do and who we are:
+        </p>
+        <div className="flex gap-x-4 gap-y-2">
+          <Button className="mt-6" href="/about">
+            About
+          </Button>
+          <Button className="mt-6" href="/services">
+            Services
+          </Button>
+          <Button className="mt-6" href="/work">
+            Case studies
+          </Button>
+          <Button className="mt-6" href="/blog">
+            Blog
+          </Button>
+        </div>
+      </Container>
+
+      <ContactBlock />
     </RootLayout>
   )
 }

@@ -29,7 +29,7 @@ interface Page {
 }
 
 function PageLink({ page, locale = 'en' }: { page: Page; locale: string }) {
-  const t = useTranslations('Global')
+  const t = useTranslations('global')
 
   return (
     <article key={page.href}>
