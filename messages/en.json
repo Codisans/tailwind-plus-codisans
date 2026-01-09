@@ -274,6 +274,9 @@
     "specialists": {
       "title": "Laravel Specialists ",
       "description": "We've spent years building custom websites, platforms, and APIs with Laravel. We know the framework inside and out, from rapid prototyping to production-ready systems. If you're looking for a team that can deliver solid, scalable Laravel applications, we're ready to build with you."
+    },
+    "contact": {
+      "cta": "Let's build"
     }
   },
   "services": {

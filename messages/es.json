@@ -274,6 +274,9 @@
     "specialists": {
       "title": "Especialistas en Laravel",
       "description": "Hemos pasado años construyendo sitios web, plataformas y APIs personalizados con Laravel. Conocemos el framework por dentro y por fuera, desde prototipos rápidos hasta sistemas listos para producción. Si estás buscando un equipo que pueda entregar aplicaciones Laravel sólidas y escalables, estamos listos para construir contigo."
+    },
+    "contact": {
+      "cta": "Construyamos juntos"
     }
   },
   "services": {
