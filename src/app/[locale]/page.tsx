@@ -1,7 +1,6 @@
 import { type Metadata } from 'next'
 import { getTranslations } from 'next-intl/server'
 import { ContactBlock } from '@/blocks/ContactBlock'
-import heroImage from '@/images/web-dev-landscape.webp'
 import plantImage from '@/images/plant.png'
 import { RootLayout } from '@/components/RootLayout'
 import { loadCaseStudies } from '@/lib/mdx'
@@ -41,28 +40,26 @@ export default async function Home({
   const services = [
     {
       service: 'software-development',
-      title: t('components.service-cards.web-development.title'),
-      description: t('components.service-cards.web-development.description'),
+      title: t('HomePage.service-list.software-development.title'),
+      description: t('HomePage.service-list.software-development.description'),
       href: '/services/software-development',
     },
     {
       service: 'e-commerce',
-      title: t('components.service-cards.e-commerce.title'),
-      description: t('components.service-cards.e-commerce.description'),
+      title: t('HomePage.service-list.e-commerce.title'),
+      description: t('HomePage.service-list.e-commerce.description'),
       href: '/services/e-commerce',
     },
     {
       service: 'ai-automation',
-      title: t('components.service-cards.ai-solutions.title'),
-      description: t('components.service-cards.ai-solutions.description'),
+      title: t('HomePage.service-list.ai-solutions.title'),
+      description: t('HomePage.service-list.ai-automation.description'),
       href: '/services/ai-automation',
     },
     {
-      service: 'custom-cms',
-      title: t('components.service-cards.custom-content-management.title'),
-      description: t(
-        'components.service-cards.custom-content-management.description',
-      ),
+      service: 'cms-websites',
+      title: t('HomePage.service-list.cms-websites.title'),
+      description: t('HomePage.service-list.cms-websites.description'),
       href: '/services/cms-websites',
     },
   ]
@@ -85,9 +82,9 @@ export default async function Home({
       />
 
       <ServiceListBlock
-        eyebrow={t('components.service-cards.eyebrow')}
-        title={t('components.service-cards.title')}
-        summary={t('components.service-cards.summary')}
+        eyebrow={t('HomePage.service-list.eyebrow')}
+        title={t('HomePage.service-list.title')}
+        summary={t('HomePage.service-list.summary')}
         image={plantImage}
         items={services}
       />
