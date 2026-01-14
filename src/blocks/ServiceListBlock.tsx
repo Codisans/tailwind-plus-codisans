@@ -35,7 +35,7 @@ export const serviceShapePaths = {
     'M30 0L90 0L120 30L90 60L120 90L90 120L30 120L15 90L0 60L15 30L30 0Z',
   'ai-automation':
     'M8 30L30 10L60 0L90 10L112 30L103 65L85 95L60 120L35 95L17 65L8 30Z',
-  'custom-cms':
+  'cms-websites':
     'M0 30L30 0L60 0L90 0L120 30L120 90L90 120L60 120L30 120L0 90L0 30Z',
 }
 
@@ -66,7 +66,7 @@ export const ServiceListBlock = ({
     // Calculate current step weights with smooth easing
     // Lower values (e.g., 0.06) = slower/smoother, higher values (e.g., 0.15) = faster
     currentWeightsRef.current = currentWeightsRef.current.map(
-      (w, i) => w + (targetWeightsRef.current[i] - w) * 0.04,
+      (w, i) => w + (targetWeightsRef.current[i] - w) * 0.12,
     )
 
     // Calculate morphed path with current step weights

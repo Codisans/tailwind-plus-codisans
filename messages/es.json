@@ -7,24 +7,24 @@
     "title": "Partners en tu Camino Digital.",
     "intro": "Productos digitales sólidos, creados por un equipo comprometido con tu crecimiento.",
     "pain-point": "Somos un equipo de profesionales apasionados, motivados por nuevos desafíos y colaboración.",
-    "services": {
-      "eyebrow": "Servicios",
+    "service-list": {
+      "eyebrow": "Nuestros Servicios",
       "title": "Impulsando el crecimiento, juntos.",
       "summary": "Nos especializamos en desarrollo web y soluciones de software de alto impacto. Al alinear la tecnología con tus objetivos de negocio, creamos productos digitales que no solo funcionan: impulsan ingresos y eficiencia.",
-      "web-development": {
-        "title": "Desarrollo Web",
+      "software-development": {
+        "title": "Desarrollo de Software",
         "description": "Construimos la base digital que tu negocio necesita para crecer. Nuestras aplicaciones a medida están diseñadas para ofrecer seguridad y rendimiento, brindando experiencias fluidas que convierten usuarios en clientes leales."
-      },
-      "ai-solutions": {
-        "title": "Soluciones de IA",
-        "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa."
       },
       "e-commerce": {
         "title": "E-Commerce",
         "description": "Diseñamos plataformas de comercio headless pensadas para escalar contigo. Mediante un enfoque componible, integramos herramientas líderes para crear experiencias de compra ágiles y centradas en el cliente, capaces de adaptarse a los cambios del mercado."
       },
-      "custom-content-management": {
-        "title": "CMS Personalizados",
+      "ai-automation": {
+        "title": "Automatización & IA",
+        "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa."
+      },
+      "cms-websites": {
+        "title": "Sitios Web con CMS Personalizados",
         "description": "Toma el control de tu narrativa. Creamos sistemas de gestión de contenido personalizados según tu flujo de trabajo, dando a tu equipo de marketing la velocidad y flexibilidad que las soluciones genéricas no pueden ofrecer."
       }
     },
@@ -96,71 +96,71 @@
   },
   "EcommercePage": {
     "meta": {
-      "title": "Codisans | Tiendas Shopify Personalizadas",
-      "description": "Construimos tiendas Shopify headless con Hydrogen y frameworks modernos — diseñadas para velocidad, escalabilidad y optimizadas para convertir visitantes en compradores."
+      "title": "Codisans | Storefronts Shopify a medida",
+      "description": "Storefronts headless con Hydrogen: rápidos, escalables y hechos para convertir."
     },
     "header": {
-      "title": "Tiendas Shopify Personalizadas para Rendimiento, Escalabilidad y Conversiones",
-      "summary": "Construimos tiendas Shopify headless con Hydrogen y frameworks modernos — diseñadas para velocidad, escalabilidad y optimizadas para convertir visitantes en compradores. Obtén el rendimiento del desarrollo personalizado con la confiabilidad de la plataforma de comercio líder mundial."
+      "title": "Storefronts Shopify a Medida que Cargan Rápido y Venden Más",
+      "summary": "Un storefront headless con Hydrogen: UX rápida, listo para escalar y pensado para convertir — con la solidez de Shopify."
     },
     "benefits": {
-      "eyebrow": "Más Allá de las Plantillas",
-      "title": "Por qué las Tiendas Personalizadas Superan los Temas Estándar",
-      "description": "Los temas de Shopify te ayudan a lanzar rápidamente, pero las marcas en crecimiento necesitan más que plantillas. Las tiendas personalizadas te dan la flexibilidad para innovar, el rendimiento para competir y la base para crecer sin deuda técnica.",
+      "eyebrow": "Más allá de las plantillas",
+      "title": "Por qué un Storefront a Medida le Gana a un Tema",
+      "description": "Los temas sirven para partir. Si necesitas más velocidad y flexibilidad sin llenarte de apps, un storefront a medida es mejor.",
       "performance": {
         "heading": "Rendimiento Ultra Rápido que Convierte",
-        "description": "Nuestras tiendas personalizadas cargan en menos de 50 milisegundos, ofreciendo experiencias ultrarrápidas que mejoran el SEO, el rendimiento móvil e impactan directamente en tus resultados."
+        "description": "Carga rápido, mejora SEO y móvil, y sube la conversión."
       },
       "brand": {
         "heading": "Experiencias de Marca Únicas, Sin Compromisos",
-        "description": "Libérate de las restricciones de plantillas. Diseña flujos de productos sofisticados, funciones interactivas y recorridos de cliente que se alinean perfectamente con tu marca y modelo de negocio."
+        "description": "Diseña flujos e interacciones a tu medida, sin límites de tema."
       },
       "scale": {
         "heading": "Construido para Escalar sin Reconstruir",
-        "description": "Expándete a nuevos mercados, agrega funciones complejas e integra funcionalidades avanzadas a medida que creces — todo sin costosas migraciones o limitaciones técnicas."
+        "description": "Suma features, mercados e integraciones sin reconstruir."
       },
       "tco": {
         "heading": "Menor TCO, Mayor Control",
-        "description": "Reemplaza costosas suscripciones de apps con lógica personalizada. Reduce gastos mensuales, elimina conflictos entre apps y mantén control total sobre las capacidades de tu tienda."
+        "description": "Menos apps y costos. Más control con funciones a medida."
       },
       "commerce": {
         "heading": "Lógica de Comercio Avanzada, Simplificada",
-        "description": "Maneja reglas de precios complejas, flujos B2B, modelos de suscripción y experiencias de checkout personalizadas que los temas estándar simplemente no pueden soportar."
+        "description": "B2B, suscripciones, precios a medida y checkout avanzado — sin hacks."
       }
     },
     "why-shopify": {
       "eyebrow": "¿Por qué Shopify?",
-      "title": "La Plataforma de Comercio Más Confiable, Personalizada para tu Negocio",
-      "summary": "Construimos en Shopify porque ofrece infraestructura de nivel empresarial con la flexibilidad del desarrollo personalizado.",
+      "title": "La Confiabilidad de Shopify, Construida a Medida para tu Marca",
+      "summary": "La base sólida de Shopify, con desarrollo a medida donde importa.",
       "checkout": {
-        "heading": "El Mejor Checkout que Convierte",
-        "description": "El Checkout de Shopify convierte 15% más que otras plataformas y alcanza más de 150M de usuarios de Shop Pay con alta intención de compra."
+        "heading": "Un Checkout de Primera que Convierte",
+        "description": "Shopify Checkout + Shop Pay: diseñado para convertir y usado por 150M+ usuarios."
       },
       "infrastructure": {
         "heading": "Infraestructura Sólida que Escala",
-        "description": "Maneja picos de tráfico, lanzamientos de productos y momentos virales sin problemas. La infraestructura de Shopify potencia más de $1 billón en ventas globales y está construida para soportar tu crecimiento desde el día uno."
+        "description": "Soporta lanzamientos, picos y crecimiento sin drama."
       },
       "apis": {
         "heading": "APIs Potentes y Ecosistema de Desarrolladores",
-        "description": "Accede a más de 13,000 apps de comercio y APIs robustas que nos permiten construir exactamente lo que necesitas. Desde analíticas avanzadas hasta flujos de fulfillment personalizados — si puedes imaginarlo, podemos construirlo."
+        "description": "APIs y apps cuando conviene; a medida cuando lo necesitas exacto."
       },
       "innovation": {
         "heading": "Innovación Continua y Herramientas con IA",
-        "description": "Benefíciate de las mejoras constantes de Shopify — más de 150 nuevas funciones cada 6 meses. Obtén generación de contenido con IA, recomendaciones inteligentes y herramientas de comercio de vanguardia sin desarrollo adicional."
+        "description": "Mejoras constantes sin rehacer tu tienda cada año."
       },
       "global": {
         "heading": "Construido para el Comercio Global",
-        "description": "Lanza internacionalmente con confianza. Precios multi-moneda, experiencias localizadas, optimización de envíos internacionales y herramientas de cumplimiento están integradas en la plataforma."
+        "description": "Localización, multi-moneda, envíos y cumplimiento integrados."
       }
     },
     "case-studies": {
       "eyebrow": "Nuestro Trabajo",
       "title": "De Buenas Tiendas a Máquinas de Ventas",
-      "summary": "Nos hemos asociado con marcas ambiciosas para construir tiendas Shopify personalizadas que reflejan tu marca e impulsan el crecimiento del negocio a través de rendimiento superior, experiencia de usuario y optimización de conversiones."
+      "summary": "Casos reales: más velocidad, mejor UX y mejor conversión."
     },
     "contact": {
       "heading": "¿Listo para Construir una Tienda que Rinda?",
-      "description": "Ya sea que estés escalando más allá de tu tema actual, lanzando una nueva marca o reconstruyendo para rendimiento — te ayudaremos a aprovechar Shopify con una tienda personalizada que genere resultados reales.",
+      "description": "Si tu tema ya no da, estás lanzando o quieres más velocidad, te ayudamos a crear un storefront a medida con resultados medibles.",
       "cta": "Inicia tu proyecto"
     }
   },
@@ -274,6 +274,9 @@
     "specialists": {
       "title": "Especialistas en Laravel",
       "description": "Hemos pasado años construyendo sitios web, plataformas y APIs personalizados con Laravel. Conocemos el framework por dentro y por fuera, desde prototipos rápidos hasta sistemas listos para producción. Si estás buscando un equipo que pueda entregar aplicaciones Laravel sólidas y escalables, estamos listos para construir contigo."
+    },
+    "contact": {
+      "cta": "Construyamos juntos"
     }
   },
   "services": {
@@ -297,7 +300,7 @@
       "description": "Colaboramos contigo para identificar oportunidades de alto valor para la automatización. Nuestras soluciones de IA a medida eliminan cuellos de botella y reducen costos, liberando a tu equipo para centrarse en la innovación en lugar de la gestión operativa.",
       "tag": "Automatización & IA"
     },
-    "custom-cms": {
+    "cms-websites": {
       "title": "Sitios Web Personalizados",
       "description": "Toma el control de tu narrativa. Creamos sistemas de gestión de contenido personalizados según tu flujo de trabajo, dando a tu equipo de marketing la velocidad y flexibilidad que las soluciones genéricas no pueden ofrecer.",
       "tag": "Sitio Web"
@@ -352,11 +355,11 @@
     }
   },
   "global": {
-    "about": "About",
-    "services": "Services",
-    "work": "Work",
+    "about": "Nosotros",
+    "services": "Servicios",
+    "work": "Proyectos",
     "blog": "Blog",
-    "contact": "Contact",
+    "contact": "Contacto",
     "case-study": "Proyecto",
     "more-case-studies": "Más proyectos",
     "locale": "es-CL",

@@ -41,9 +41,9 @@ export default async function Statamic({
   ])
 
   return (
-    <RootLayout className="custom-cms">
+    <RootLayout className="cms-websites">
       <ServiceHeader
-        service="custom-cms"
+        service="cms-websites"
         title={t('header.title')}
         summary={t('header.summary')}
       />

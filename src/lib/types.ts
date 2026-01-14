@@ -1,1 +1,1 @@
-export type ServiceSlug = "software-development" | "e-commerce" | "ai-automation" | "custom-cms"
+export type ServiceSlug = "software-development" | "e-commerce" | "ai-automation" | "cms-websites"

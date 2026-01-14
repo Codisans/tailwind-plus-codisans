@@ -52,7 +52,7 @@ export default async function Home({
     },
     {
       service: 'ai-automation',
-      title: t('HomePage.service-list.ai-solutions.title'),
+      title: t('HomePage.service-list.ai-automation.title'),
       description: t('HomePage.service-list.ai-automation.description'),
       href: '/services/ai-automation',
     },
