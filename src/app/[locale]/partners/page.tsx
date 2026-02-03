@@ -736,14 +736,14 @@ export default async function PartnersPage() {
                   className={clsx(
                     'h-full rounded-3xl p-8',
                     index === 0
-                      ? 'bg-gradient-to-br from-violet-600 via-violet-700 to-purple-800 text-white'
+                      ? 'bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 text-white'
                       : 'bg-gradient-to-br from-teal-50/50 via-white to-cyan-50/50 ring-1 ring-teal-100',
                   )}
                 >
                   <p
                     className={clsx(
                       'text-xs font-semibold tracking-wider uppercase',
-                      index === 0 ? 'text-violet-200' : 'text-teal-600',
+                      index === 0 ? 'text-slate-300' : 'text-teal-600',
                     )}
                   >
                     {t(`partnership.models.${index + 1}.pricing`) ||
@@ -760,7 +760,7 @@ export default async function PartnersPage() {
                   <p
                     className={clsx(
                       'mt-4',
-                      index === 0 ? 'text-white/80' : 'text-theme-600',
+                      index === 0 ? 'text-slate-200' : 'text-theme-600',
                     )}
                   >
                     {t(`partnership.models.${index + 1}.description`) ||
@@ -775,7 +775,7 @@ export default async function PartnersPage() {
                     <p
                       className={clsx(
                         'text-sm',
-                        index === 0 ? 'text-white/80' : 'text-teal-800',
+                        index === 0 ? 'text-slate-100' : 'text-teal-800',
                       )}
                     >
                       <span className="font-semibold">
