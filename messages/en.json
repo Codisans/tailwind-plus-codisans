@@ -94,6 +94,144 @@
     "form-submit": "Let's talk",
     "form-title": "Work inquiries"
   },
+  "PartnersPage": {
+    "meta": {
+      "title": "Partners | Codisans",
+      "description": "White-label development partner for design agencies. Technical excellence, pixel-perfect implementation, seamless collaboration."
+    },
+    "hero": {
+      "title": "The technical partner your design team has been waiting for",
+      "description": "We turn your high-fidelity Figma files into pixel-perfect builds using Statamic, Umbraco, and Headless Shopify. No template restrictions. No \"we can't do that.\"",
+      "cta": "Book a 15-Minute Introduction",
+      "caption": "Design intent preserved at the pixel level"
+    },
+    "speak-designer": {
+      "title": "You're tired of developers who don't get it",
+      "body-1": "You hand off files and get back something that looks... different. Tracking is off. Animations are \"too hard.\" Your beautiful layout gets stuffed into a rigid theme.",
+      "body-2": "We understand the gap between design vision and delivered product because we've built our practice around closing it.",
+      "promise-label": "The Promise:",
+      "promises": {
+        "pixel-integrity": {
+          "title": "Pixel integrity",
+          "description": "If you set the tracking to -2%, we code it at -2%. Your Figma file isn't a suggestion—it's the blueprint."
+        },
+        "interaction-first": {
+          "title": "Interaction first",
+          "description": "We build with GSAP, Framer Motion, and Alpine.js to make designs feel alive. Animations are never \"too hard.\""
+        },
+        "design-as-spec": {
+          "title": "Design as spec",
+          "description": "We treat your Figma files as living documentation. Every spacing, every state, every breakpoint preserved."
+        }
+      }
+    },
+    "risks": {
+      "title": "What you don't risk by partnering with us",
+      "items": {
+        "we-never-pitch-your-clients": {
+          "title": "We never pitch your clients",
+          "description": "No branding, no credit, no visibility unless you explicitly ask. We succeed only if you look good."
+        },
+        "no-hiring-gamble": {
+          "title": "No hiring gamble",
+          "description": "You don't carry salary risk, onboarding overhead, or bench time. We scale with your project flow."
+        },
+        "your-client-relationship-stays-yours": {
+          "title": "Your client relationship stays yours",
+          "description": "We join your Slack. We use your email domain if needed. To the client, we're your dev team."
+        },
+        "long-term-thinking": {
+          "title": "Long-term thinking",
+          "description": "We're not project-flipping freelancers. We build partnerships that span years, not weeks."
+        }
+      },
+      "note": "NDAs standard. References available upon request."
+    },
+    "toolkit": {
+      "eyebrow": "The Toolkit",
+      "title": "The right tools for custom design",
+      "description": "We don't force your designs into templates. We use platforms that separate content from code, giving you total creative freedom.",
+      "cards": {
+        "content-sites": {
+          "category": "Content Sites",
+          "title": "Statamic & Umbraco",
+          "description": "Forget WordPress bloat. We build component-based systems that let you design modularly while your clients get a backend that's actually a joy to use.",
+          "benefit": "The CMS bends to your design, not the other way around.",
+          "timeline": "Typical timeline: 4-8 weeks"
+        },
+        "e-commerce": {
+          "category": "E-Commerce",
+          "title": "Shopify Hydrogen",
+          "description": "Standard Shopify themes kill creativity. We build headless Shopify stores using Hydrogen—you design the ultimate brand experience, we handle checkout and inventory behind the scenes.",
+          "benefit": "No Liquid limitations. No theme constraints.",
+          "timeline": "Typical timeline: 6-12 weeks"
+        },
+        "custom-software": {
+          "category": "Custom Software",
+          "title": "Laravel + AI Integration",
+          "description": "When your client asks for a custom portal, SaaS product, or internal tool, don't refer them away. We build robust software with Laravel and integrate AI capabilities that make your agency look like a tech powerhouse.",
+          "benefit": "Client-facing chatbots. Smart search. Content generation.",
+          "timeline": "Typical timeline: 8-16 weeks"
+        }
+      }
+    },
+    "proof": {
+      "title": "See the difference",
+      "left-label": "Approved Figma Design",
+      "left-caption": "Typography specs visible. Interaction notes in comments.",
+      "right-label": "Live Coded Result",
+      "right-caption": "Dev tools open showing matching CSS. Interaction working in real-time.",
+      "stat-line": "12 projects delivered in 18 months for design agencies. Zero missed deadlines."
+    },
+    "ai": {
+      "title": "We help you upsell AI capabilities",
+      "description": "We don't just build static pages. We integrate AI in ways that let you offer more to clients and charge accordingly.",
+      "examples": {
+        "1": {
+          "context": "For a law firm website:",
+          "feature": "Search bar that uses AI to answer legal questions based on their content library"
+        },
+        "2": {
+          "context": "For e-commerce:",
+          "feature": "Product descriptions that generate dynamically based on inventory and user behavior"
+        },
+        "3": {
+          "context": "For content sites:",
+          "feature": "Smart content recommendations that actually understand context, not just tags"
+        }
+      },
+      "sell": "You sell the vision. We wire up the APIs and make it work.",
+      "note": "This is what separates you from typical WordPress shops."
+    },
+    "partnership": {
+      "title": "Two ways to work together",
+      "best-for": "Best for:",
+      "how-start": "Most partnerships begin with one pilot project. Low commitment, high clarity. If it works, we scale from there.",
+      "models": {
+        "1": {
+          "pricing": "Retainer or per-project",
+          "type": "White Label Partnership",
+          "description": "We join your Slack. We use your processes. We attend standups if needed. To the client, we are your in-house engineering department.",
+          "best-for": "Agencies with consistent project flow who want predictable capacity"
+        },
+        "2": {
+          "pricing": "Project-based collaboration",
+          "type": "Design-Build Handoff",
+          "description": "You handle strategy and design. Once Figma is signed off, you introduce us. We handle build, QA, and launch directly with the client, keeping you in the loop for design approval.",
+          "best-for": "Agencies who want to stay design-focused without dev overhead"
+        }
+      }
+    },
+    "final-cta": {
+      "title": "Worth a conversation?",
+      "body": "We're selectively partnering with design agencies where this model makes sense on both sides. No pitch. No pressure. Just a 15-minute conversation to see if there's a fit.",
+      "primary": "Book 15 Minutes",
+      "secondary": "Or reply with a recent project—we'd love to see what you're working on."
+    },
+    "footer": {
+      "note": "Everything about this page communicates our commitment to design craft. If this page wasn't meticulously designed, the message would fail."
+    }
+  },
   "EcommercePage": {
     "meta": {
       "title": "Codisans | Custom Shopify Storefronts",

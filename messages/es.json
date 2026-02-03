@@ -94,6 +94,144 @@
     "form-submit": "Hablemos",
     "form-title": "Cotizaciones"
   },
+  "PartnersPage": {
+    "meta": {
+      "title": "Partners | Codisans",
+      "description": "Socio de desarrollo white-label para agencias de diseño. Excelencia técnica, implementación pixel-perfect, colaboración sin fricciones."
+    },
+    "hero": {
+      "title": "El socio técnico que tu equipo de diseño estaba esperando",
+      "description": "Convertimos tus archivos Figma de alta fidelidad en desarrollos perfectos usando Statamic, Umbraco y Shopify Headless. Sin restricciones de plantillas. Sin \"no podemos hacer eso.\"",
+      "cta": "Agenda una Introducción de 15 Minutos",
+      "caption": "Intención de diseño preservada al nivel del píxel"
+    },
+    "speak-designer": {
+      "title": "Estás cansado de desarrolladores que no entienden",
+      "body-1": "Entregas archivos y recibes algo que se ve... diferente. El tracking está desajustado. Las animaciones son \"muy difíciles.\" Tu hermoso diseño termina en una plantilla rígida.",
+      "body-2": "Entendemos la brecha entre la visión del diseño y el producto entregado porque hemos construido nuestra práctica alrededor de cerrarla.",
+      "promise-label": "La Promesa:",
+      "promises": {
+        "pixel-integrity": {
+          "title": "Integridad de píxel",
+          "description": "Si configuras el tracking a -2%, lo codeamos a -2%. Tu archivo de Figma no es una sugerencia—es el plano."
+        },
+        "interaction-first": {
+          "title": "Interacción primero",
+          "description": "Construimos con GSAP, Framer Motion y Alpine.js para hacer que los diseños cobren vida. Las animaciones nunca son \"muy difíciles.\""
+        },
+        "design-as-spec": {
+          "title": "Diseño como especificación",
+          "description": "Tratamos tus archivos de Figma como documentación viva. Cada espaciado, cada estado, cada punto de quiebre preservado."
+        }
+      }
+    },
+    "risks": {
+      "title": "Lo que no arriesgas al asociarte con nosotros",
+      "items": {
+        "we-never-pitch-your-clients": {
+          "title": "Nunca contactamos a tus clientes",
+          "description": "Sin branding, sin crédito, sin visibilidad a menos que tú lo pidas explícitamente. Solo tenemos éxito si tú te ves bien."
+        },
+        "no-hiring-gamble": {
+          "title": "Sin apuesta de contratación",
+          "description": "No asumes riesgo salarial, overhead de onboarding ni tiempo en banca. Escalamos con tu flujo de proyectos."
+        },
+        "your-client-relationship-stays-yours": {
+          "title": "Tu relación con el cliente permanece tuya",
+          "description": "Nos unimos a tu Slack. Usamos tu dominio de email si es necesario. Para el cliente, somos tu equipo de desarrollo."
+        },
+        "long-term-thinking": {
+          "title": "Pensamiento a largo plazo",
+          "description": "No somos freelancers de proyectos rápidos. Construimos alianzas que duran años, no semanas."
+        }
+      },
+      "note": "NDAs estándar. Referencias disponibles bajo petición."
+    },
+    "toolkit": {
+      "eyebrow": "El Toolkit",
+      "title": "Las herramientas correctas para diseño personalizado",
+      "description": "No forzamos tus diseños en plantillas. Usamos plataformas que separan contenido de código, dándote libertad creativa total.",
+      "cards": {
+        "content-sites": {
+          "category": "Sitios de Contenido",
+          "title": "Statamic & Umbraco",
+          "description": "Olvídate del bloat de WordPress. Construimos sistemas basados en componentes que te permiten diseñar de forma modular mientras tus clientes obtienen un backend que es realmente un placer usar.",
+          "benefit": "El CMS se adapta a tu diseño, no al revés.",
+          "timeline": "Tiempo típico: 4-8 semanas"
+        },
+        "e-commerce": {
+          "category": "E-Commerce",
+          "title": "Shopify Hydrogen",
+          "description": "Los temas estándar de Shopify matan la creatividad. Construimos tiendas Shopify headless usando Hydrogen—tú diseñas la experiencia de marca definitiva, nosotros manejamos checkout e inventario detrás de escena.",
+          "benefit": "Sin limitaciones de Liquid. Sin restricciones de tema.",
+          "timeline": "Tiempo típico: 6-12 semanas"
+        },
+        "custom-software": {
+          "category": "Software Personalizado",
+          "title": "Laravel + Integración IA",
+          "description": "Cuando tu cliente pide un portal personalizado, producto SaaS o herramienta interna, no lo refieras a otros. Construimos software robusto con Laravel e integramos capacidades de IA que hacen que tu agencia se vea como una potencia tecnológica.",
+          "benefit": "Chatbots clientes. Búsqueda inteligente. Generación de contenido.",
+          "timeline": "Tiempo típico: 8-16 semanas"
+        }
+      }
+    },
+    "proof": {
+      "title": "Ve la diferencia",
+      "left-label": "Diseño Aprobado en Figma",
+      "left-caption": "Especificaciones de tipografía visibles. Notas de interacción en comentarios.",
+      "right-label": "Resultado Código en Vivo",
+      "right-caption": "Dev tools abiertos mostrando CSS idéntico. Interacción funcionando en tiempo real.",
+      "stat-line": "12 proyectos entregados en 18 meses para agencias de diseño. Cero plazos perdidos."
+    },
+    "ai": {
+      "title": "Te ayudamos a vender capacidades de IA",
+      "description": "No solo construimos páginas estáticas. Integramos IA de maneras que te permiten ofrecer más a clientes y cobrar en consecuencia.",
+      "examples": {
+        "1": {
+          "context": "Para un sitio web de bufete legal:",
+          "feature": "Barra de búsqueda que usa IA para responder preguntas legales basadas en su biblioteca de contenido"
+        },
+        "2": {
+          "context": "Para e-commerce:",
+          "feature": "Descripciones de productos que se generan dinámicamente basadas en inventario y comportamiento de usuario"
+        },
+        "3": {
+          "context": "Para sitios de contenido:",
+          "feature": "Recomendaciones de contenido inteligentes que realmente entienden contexto, no solo etiquetas"
+        }
+      },
+      "sell": "Tú vendes la visión. Nosotros conectamos las APIs y lo hacemos funcionar.",
+      "note": "Esto es lo que te separa de las tiendas típicas de WordPress."
+    },
+    "partnership": {
+      "title": "Dos formas de trabajar juntos",
+      "best-for": "Ideal para:",
+      "how-start": "La mayoría de las alianzas comienzan con un proyecto piloto. Bajo compromiso, alta claridad. Si funciona, escalamos desde ahí.",
+      "models": {
+        "1": {
+          "pricing": "Retainer o por proyecto",
+          "type": "Alianza White Label",
+          "description": "Nos unimos a tu Slack. Usamos tus procesos. Asistimos a standups si es necesario. Para el cliente, somos tu departamento de ingeniería interno.",
+          "best-for": "Agencias con flujo consistente de proyectos que quieren capacidad predecible"
+        },
+        "2": {
+          "pricing": "Colaboración por proyecto",
+          "type": "Handoff Diseño-Construcción",
+          "description": "Tú manejas estrategia y diseño. Una vez aprobado Figma, nos presentas. Nosotros manejamos construcción, QA y lanzamiento directamente con el cliente, manteniéndote al tanto para aprobación de diseño.",
+          "best-for": "Agencias que quieren mantenerse enfocadas en diseño sin overhead de desarrollo"
+        }
+      }
+    },
+    "final-cta": {
+      "title": "¿Vale la pena una conversación?",
+      "body": "Estamos asociándonos selectivamente con agencias de diseño donde este modelo tiene sentido para ambos lados. Sin pitch. Sin presión. Solo una conversación de 15 minutos para ver si hay afinidad.",
+      "primary": "Agenda 15 Minutos",
+      "secondary": "O responde con un proyecto reciente—nos encantaría ver en qué estás trabajando."
+    },
+    "footer": {
+      "note": "Todo en esta página comunica nuestro compromiso con el oficio del diseño. Si esta página no estuviera meticulosamente diseñada, el mensaje fallaría."
+    }
+  },
   "EcommercePage": {
     "meta": {
       "title": "Codisans | Storefronts Shopify a medida",
