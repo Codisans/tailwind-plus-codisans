@@ -345,65 +345,78 @@ export default async function PartnersPage() {
 
         {/* Hero Visual - Split Screen Concept */}
         <FadeIn className="mt-16">
-          <div className="relative overflow-hidden rounded-3xl bg-theme-950 p-8 sm:p-12 lg:p-16">
+          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-theme-950 via-theme-900 to-theme-950 p-8 sm:p-12 lg:p-16">
             <GridPattern
-              className="absolute inset-0 h-full w-full fill-theme-800 stroke-theme-800"
+              className="absolute inset-0 h-full w-full fill-theme-800/30 stroke-theme-800/30"
               yOffset={-96}
               interactive={false}
             />
             <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <div className="rounded-2xl bg-theme-800/50 p-6 backdrop-blur-sm">
-                <div className="flex items-center gap-2 border-b border-theme-700 pb-4">
-                  <FigmaIcon className="h-5 w-5 text-white" />
-                  <span className="text-sm font-medium text-white">
+              <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm">
+                <div className="flex items-center gap-2 border-b border-white/10 pb-4">
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-3 w-3 rounded-full bg-rose-400/80" />
+                    <div className="h-3 w-3 rounded-full bg-amber-400/80" />
+                    <div className="h-3 w-3 rounded-full bg-emerald-400/80" />
+                  </div>
+                  <FigmaIcon className="ml-2 h-5 w-5 text-white/80" />
+                  <span className="text-sm font-medium text-white/80">
                     Figma Design
                   </span>
                 </div>
                 <div className="mt-4 space-y-3">
-                  <div className="flex items-center justify-between rounded-lg bg-theme-900/50 p-3">
-                    <span className="text-xs text-theme-400">Typography</span>
-                    <span className="text-xs text-white">
+                  <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
+                    <span className="text-xs text-white/50">Typography</span>
+                    <span className="text-xs text-white/80">
                       Inter / -2% tracking
                     </span>
                   </div>
-                  <div className="flex items-center justify-between rounded-lg bg-theme-900/50 p-3">
-                    <span className="text-xs text-theme-400">Spacing</span>
-                    <span className="text-xs text-white">
+                  <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
+                    <span className="text-xs text-white/50">Spacing</span>
+                    <span className="text-xs text-white/80">
                       24px / 32px / 48px
                     </span>
                   </div>
-                  <div className="flex items-center justify-between rounded-lg bg-theme-900/50 p-3">
-                    <span className="text-xs text-theme-400">Interaction</span>
-                    <span className="text-xs text-white">
+                  <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
+                    <span className="text-xs text-white/50">Interaction</span>
+                    <span className="text-xs text-white/80">
                       Hover: scale(1.02)
                     </span>
                   </div>
                 </div>
               </div>
-              <div className="rounded-2xl bg-theme-800/50 p-6 backdrop-blur-sm">
-                <div className="flex items-center gap-2 border-b border-theme-700 pb-4">
-                  <CodeIcon className="h-5 w-5 text-white" />
-                  <span className="text-sm font-medium text-white">
+              <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm">
+                <div className="flex items-center gap-2 border-b border-white/10 pb-4">
+                  <div className="flex items-center gap-1.5">
+                    <div className="h-3 w-3 rounded-full bg-rose-400/80" />
+                    <div className="h-3 w-3 rounded-full bg-amber-400/80" />
+                    <div className="h-3 w-3 rounded-full bg-emerald-400/80" />
+                  </div>
+                  <CodeIcon className="ml-2 h-5 w-5 text-white/80" />
+                  <span className="text-sm font-medium text-white/80">
                     Live Implementation
                   </span>
                 </div>
                 <div className="mt-4 space-y-3 font-mono text-xs">
-                  <div className="rounded-lg bg-theme-900/50 p-3 text-theme-300">
-                    <span className="text-purple-400">font-family:</span>{' '}
-                    <span className="text-green-400">'Inter', sans-serif</span>;
+                  <div className="rounded-lg bg-white/5 p-3 text-white/70">
+                    <span className="text-violet-300">font-family:</span>{' '}
+                    <span className="text-emerald-300">
+                      'Inter', sans-serif
+                    </span>
+                    ;
                   </div>
-                  <div className="rounded-lg bg-theme-900/50 p-3 text-theme-300">
-                    <span className="text-purple-400">letter-spacing:</span>{' '}
-                    <span className="text-orange-400">-0.02em</span>;
+                  <div className="rounded-lg bg-white/5 p-3 text-white/70">
+                    <span className="text-violet-300">letter-spacing:</span>{' '}
+                    <span className="text-amber-300">-0.02em</span>;
                   </div>
-                  <div className="rounded-lg bg-theme-900/50 p-3 text-theme-300">
-                    <span className="text-purple-400">transform:</span>{' '}
-                    <span className="text-green-400">scale(1.02)</span>;
+                  <div className="rounded-lg bg-white/5 p-3 text-white/70">
+                    <span className="text-violet-300">transform:</span>{' '}
+                    <span className="text-emerald-300">scale(1.02)</span>;
                   </div>
                 </div>
               </div>
             </div>
-            <p className="relative mt-8 text-center text-sm text-theme-400">
+            <p className="relative mt-8 text-center text-sm text-white/50">
               {t('hero.caption')}
             </p>
           </div>
@@ -423,32 +436,41 @@ export default async function PartnersPage() {
             </div>
           </FadeIn>
           <FadeIn>
-            <div className="rounded-3xl bg-theme-50 p-8">
-              <p className="mb-6 text-sm font-semibold tracking-wider text-theme-400 uppercase">
+            <div className="rounded-3xl bg-gradient-to-br from-orange-50/80 via-white to-rose-50/80 p-8 ring-1 ring-orange-100">
+              <p className="mb-6 text-sm font-semibold tracking-wider text-orange-600 uppercase">
                 {t('speak-designer.promise-label')}
               </p>
               <div className="space-y-6">
-                {promises.map((promise) => (
-                  <div key={promise.title} className="flex gap-4">
-                    <div className="flex-shrink-0">
-                      <div className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-theme-950 text-white">
-                        <promise.icon className="h-5 w-5" />
+                {promises.map((promise, index) => {
+                  const iconColors = [
+                    'bg-violet-500 text-white',
+                    'bg-teal-500 text-white',
+                    'bg-rose-500 text-white',
+                  ]
+                  return (
+                    <div key={promise.title} className="flex gap-4">
+                      <div className="flex-shrink-0">
+                        <div
+                          className={`inline-flex h-10 w-10 items-center justify-center rounded-xl ${iconColors[index]}`}
+                        >
+                          <promise.icon className="h-5 w-5" />
+                        </div>
+                      </div>
+                      <div>
+                        <h3 className="font-display text-base font-semibold text-theme-950">
+                          {t(
+                            `speak-designer.promises.${promise.title.toLowerCase().replace(/\s+/g, '-')}.title`,
+                          ) || promise.title}
+                        </h3>
+                        <p className="mt-1 text-sm text-theme-600">
+                          {t(
+                            `speak-designer.promises.${promise.title.toLowerCase().replace(/\s+/g, '-')}.description`,
+                          ) || promise.description}
+                        </p>
                       </div>
                     </div>
-                    <div>
-                      <h3 className="font-display text-base font-semibold text-theme-950">
-                        {t(
-                          `speak-designer.promises.${promise.title.toLowerCase().replace(/\s+/g, '-')}.title`,
-                        ) || promise.title}
-                      </h3>
-                      <p className="mt-1 text-sm text-theme-600">
-                        {t(
-                          `speak-designer.promises.${promise.title.toLowerCase().replace(/\s+/g, '-')}.description`,
-                        ) || promise.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+                  )
+                })}
               </div>
             </div>
           </FadeIn>
@@ -513,39 +535,68 @@ export default async function PartnersPage() {
 
           <div className="mt-16">
             <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-              {toolkit.map((tool) => (
-                <FadeIn key={tool.title}>
-                  <div className="group flex h-full flex-col rounded-3xl bg-white p-8 shadow-sm ring-1 ring-theme-200 transition-all duration-300 hover:shadow-lg">
-                    <p className="text-xs font-semibold tracking-wider text-theme-400 uppercase">
-                      {t(
-                        `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.category`,
-                      ) || tool.category}
-                    </p>
-                    <h3 className="mt-3 font-display text-xl font-bold text-theme-950">
-                      {t(
-                        `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.title`,
-                      ) || tool.title}
-                    </h3>
-                    <p className="mt-4 flex-grow text-theme-600">
-                      {t(
-                        `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.description`,
-                      ) || tool.description}
-                    </p>
-                    <div className="mt-6 rounded-2xl bg-theme-50 p-4">
-                      <p className="text-sm font-medium text-theme-950">
+              {toolkit.map((tool, index) => {
+                const cardStyles = [
+                  {
+                    bg: 'from-violet-50/60 via-white to-purple-50/60',
+                    ring: 'ring-violet-100',
+                    category: 'text-violet-600',
+                    benefitBg: 'bg-violet-50/80',
+                  },
+                  {
+                    bg: 'from-emerald-50/60 via-white to-teal-50/60',
+                    ring: 'ring-emerald-100',
+                    category: 'text-emerald-600',
+                    benefitBg: 'bg-emerald-50/80',
+                  },
+                  {
+                    bg: 'from-amber-50/60 via-white to-orange-50/60',
+                    ring: 'ring-amber-100',
+                    category: 'text-amber-600',
+                    benefitBg: 'bg-amber-50/80',
+                  },
+                ]
+                const style = cardStyles[index]
+                return (
+                  <FadeIn key={tool.title}>
+                    <div
+                      className={`group flex h-full flex-col rounded-3xl bg-gradient-to-br ${style.bg} p-8 shadow-sm ring-1 ${style.ring} transition-all duration-300 hover:shadow-lg`}
+                    >
+                      <p
+                        className={`text-xs font-semibold tracking-wider uppercase ${style.category}`}
+                      >
                         {t(
-                          `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.benefit`,
-                        ) || tool.benefit}
+                          `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.category`,
+                        ) || tool.category}
+                      </p>
+                      <h3 className="mt-3 font-display text-xl font-bold text-theme-950">
+                        {t(
+                          `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.title`,
+                        ) || tool.title}
+                      </h3>
+                      <p className="mt-4 flex-grow text-theme-600">
+                        {t(
+                          `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.description`,
+                        ) || tool.description}
+                      </p>
+                      <div
+                        className={`mt-6 rounded-2xl ${style.benefitBg} p-4`}
+                      >
+                        <p className="text-sm font-medium text-theme-950">
+                          {t(
+                            `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.benefit`,
+                          ) || tool.benefit}
+                        </p>
+                      </div>
+                      <p className="mt-4 text-xs text-theme-400">
+                        {t(
+                          `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.timeline`,
+                        ) || tool.timeline}
                       </p>
                     </div>
-                    <p className="mt-4 text-xs text-theme-400">
-                      {t(
-                        `toolkit.cards.${tool.category.toLowerCase().replace(/\s+/g, '-')}.timeline`,
-                      ) || tool.timeline}
-                    </p>
-                  </div>
-                </FadeIn>
-              ))}
+                  </FadeIn>
+                )
+              })}
             </FadeInStagger>
           </div>
         </Container>
@@ -627,11 +678,11 @@ export default async function PartnersPage() {
 
       {/* SECTION 6: MAKE YOUR WEBSITES SMARTER */}
       <Container className="mt-32 sm:mt-40">
-        <div className="rounded-4xl bg-theme-50 px-8 py-16 sm:px-12 sm:py-24">
+        <div className="rounded-4xl bg-gradient-to-br from-indigo-50/60 via-violet-50/40 to-fuchsia-50/60 px-8 py-16 ring-1 ring-indigo-100 sm:px-12 sm:py-24">
           <FadeIn className="text-center">
-            <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm ring-1 ring-theme-200">
-              <SparklesIcon className="h-4 w-4 text-theme-950" />
-              <span className="text-xs font-semibold text-theme-950">
+            <div className="mx-auto inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm ring-1 ring-indigo-200">
+              <SparklesIcon className="h-4 w-4 text-indigo-600" />
+              <span className="text-xs font-semibold text-indigo-700">
                 AI Integration
               </span>
             </div>
@@ -647,8 +698,8 @@ export default async function PartnersPage() {
             <FadeInStagger className="grid grid-cols-1 gap-6 lg:grid-cols-3">
               {aiExamples.map((example, index) => (
                 <FadeIn key={index}>
-                  <div className="rounded-2xl border border-theme-200 bg-white p-6">
-                    <p className="text-xs font-semibold tracking-wider text-theme-400 uppercase">
+                  <div className="rounded-2xl border border-indigo-100 bg-white/80 p-6 shadow-sm backdrop-blur-sm">
+                    <p className="text-xs font-semibold tracking-wider text-indigo-500 uppercase">
                       {t(`ai.examples.${index + 1}.context`) || example.context}
                     </p>
                     <p className="mt-3 text-theme-950">
@@ -664,7 +715,7 @@ export default async function PartnersPage() {
             <p className="font-display text-lg font-medium text-theme-950">
               {t('ai.sell')}
             </p>
-            <p className="mt-2 text-sm text-theme-400">{t('ai.note')}</p>
+            <p className="mt-2 text-sm text-indigo-600/70">{t('ai.note')}</p>
           </FadeIn>
         </div>
       </Container>
@@ -685,14 +736,14 @@ export default async function PartnersPage() {
                   className={clsx(
                     'h-full rounded-3xl p-8',
                     index === 0
-                      ? 'bg-theme-950 text-white'
-                      : 'border-2 border-theme-200',
+                      ? 'bg-gradient-to-br from-violet-600 via-violet-700 to-purple-800 text-white'
+                      : 'bg-gradient-to-br from-teal-50/50 via-white to-cyan-50/50 ring-1 ring-teal-100',
                   )}
                 >
                   <p
                     className={clsx(
                       'text-xs font-semibold tracking-wider uppercase',
-                      index === 0 ? 'text-theme-400' : 'text-theme-400',
+                      index === 0 ? 'text-violet-200' : 'text-teal-600',
                     )}
                   >
                     {t(`partnership.models.${index + 1}.pricing`) ||
@@ -709,7 +760,7 @@ export default async function PartnersPage() {
                   <p
                     className={clsx(
                       'mt-4',
-                      index === 0 ? 'text-theme-300' : 'text-theme-600',
+                      index === 0 ? 'text-white/80' : 'text-theme-600',
                     )}
                   >
                     {t(`partnership.models.${index + 1}.description`) ||
@@ -718,13 +769,13 @@ export default async function PartnersPage() {
                   <div
                     className={clsx(
                       'mt-6 rounded-2xl p-4',
-                      index === 0 ? 'bg-theme-800' : 'bg-theme-50',
+                      index === 0 ? 'bg-white/10' : 'bg-teal-50/60',
                     )}
                   >
                     <p
                       className={clsx(
                         'text-sm',
-                        index === 0 ? 'text-theme-300' : 'text-theme-600',
+                        index === 0 ? 'text-white/80' : 'text-teal-800',
                       )}
                     >
                       <span className="font-semibold">
@@ -740,17 +791,19 @@ export default async function PartnersPage() {
           </FadeInStagger>
         </div>
 
-        <FadeIn className="mt-12 rounded-2xl bg-theme-100 p-6 text-center">
-          <p className="text-sm text-theme-600">{t('partnership.how-start')}</p>
+        <FadeIn className="mt-12 rounded-2xl bg-gradient-to-r from-amber-100/50 via-orange-50/50 to-rose-100/50 p-6 text-center ring-1 ring-orange-100">
+          <p className="text-sm text-orange-800">
+            {t('partnership.how-start')}
+          </p>
         </FadeIn>
       </Container>
 
       {/* SECTION 8: FINAL CTA */}
       <Container className="mt-32 sm:mt-40">
         <FadeIn>
-          <div className="relative overflow-hidden rounded-4xl bg-theme-950 px-8 py-20 text-center sm:px-12 sm:py-32">
+          <div className="relative overflow-hidden rounded-4xl bg-gradient-to-br from-violet-900 via-theme-950 to-purple-950 px-8 py-20 text-center sm:px-12 sm:py-32">
             <GridPattern
-              className="absolute inset-0 h-full w-full fill-theme-800 stroke-theme-800"
+              className="absolute inset-0 h-full w-full fill-white/5 stroke-white/5"
               yOffset={-96}
               interactive={false}
             />
@@ -758,7 +811,7 @@ export default async function PartnersPage() {
               <h2 className="font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
                 {t('final-cta.title')}
               </h2>
-              <p className="mx-auto mt-6 max-w-xl text-lg text-theme-300">
+              <p className="mx-auto mt-6 max-w-xl text-lg text-violet-200">
                 {t('final-cta.body')}
               </p>
               <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -767,7 +820,7 @@ export default async function PartnersPage() {
                   <ArrowRightIcon className="ml-2 inline-block h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </div>
-              <p className="mt-8 text-sm text-theme-400">
+              <p className="mt-8 text-sm text-violet-300/70">
                 {t('final-cta.secondary')}
               </p>
             </div>
