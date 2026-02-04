@@ -113,11 +113,11 @@
       "promises": {
         "pixel-integrity": {
           "title": "Pixel integrity",
-          "description": "If you set the tracking to -2%, we code it at -2%. Your Figma file isn't a suggestion—it's the blueprint."
+          "description": "If you set the tracking to -2%, we code it at -2%. Your Figma file is the blueprint."
         },
         "interaction-first": {
           "title": "Interaction first",
-          "description": "We build with GSAP, Framer Motion, and Alpine.js to make designs feel alive. Animations are never \"too hard.\""
+          "description": "We build with GSAP, Framer Motion, and Native to make designs feel alive. Animations are never \"too hard.\""
         },
         "design-as-spec": {
           "title": "Design as spec",
@@ -226,7 +226,7 @@
       "title": "Worth a conversation?",
       "body": "We're selectively partnering with design agencies where this model makes sense on both sides. No pitch. No pressure. Just a 15-minute conversation to see if there's a fit.",
       "primary": "Book 15 Minutes",
-      "secondary": "Or reply with a recent project—we'd love to see what you're working on."
+      "secondary": "Or reply with a recent project, we'd love to see what you're working on."
     },
     "footer": {
       "note": "Everything about this page communicates our commitment to design craft. If this page wasn't meticulously designed, the message would fail."
