@@ -188,8 +188,8 @@
       "description": "We don't just build static pages. We integrate AI in ways that let you offer more to clients and charge accordingly.",
       "examples": {
         "1": {
-          "context": "For a law firm website:",
-          "feature": "Search bar that uses AI to answer legal questions based on their content library"
+          "context": "For an events catalog:",
+          "feature": "A fully-fledged recommendation engine that suggests relevant events based on user preferences and past interactions."
         },
         "2": {
           "context": "For e-commerce:",
