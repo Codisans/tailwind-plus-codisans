@@ -352,7 +352,29 @@ export default async function PartnersPage() {
               interactive={false}
             />
             <div className="relative grid grid-cols-1 gap-8 lg:grid-cols-2">
-              <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm">
+              <div className="rounded-2xl backdrop-blur-sm">
+                <video
+                  src="/videos/felici-clip.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full rounded-lg"
+                />
+              </div>
+              <div className="rounded-2xl backdrop-blur-sm">
+                <video
+                  src="/videos/felici-clip.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full rounded-lg"
+                />
+              </div>
+
+              {/* Browser on */}
+              {/*<div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm">
                 <div className="flex items-center gap-2 border-b border-white/10 pb-4">
                   <div className="flex items-center gap-1.5">
                     <div className="h-3 w-3 rounded-full bg-rose-400/80" />
@@ -361,60 +383,43 @@ export default async function PartnersPage() {
                   </div>
                   <FigmaIcon className="ml-2 h-5 w-5 text-white/80" />
                   <span className="text-sm font-medium text-white/80">
-                    Figma Design
+                    Felici House
                   </span>
                 </div>
                 <div className="mt-4 space-y-3">
-                  <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
-                    <span className="text-xs text-white/50">Typography</span>
-                    <span className="text-xs text-white/80">
-                      Inter / -2% tracking
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
-                    <span className="text-xs text-white/50">Spacing</span>
-                    <span className="text-xs text-white/80">
-                      24px / 32px / 48px
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
-                    <span className="text-xs text-white/50">Interaction</span>
-                    <span className="text-xs text-white/80">
-                      Hover: scale(1.02)
-                    </span>
-                  </div>
+                  <video
+                    src="/videos/felici-video.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full rounded-lg"
+                  />
                 </div>
-              </div>
-              <div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm">
+              </div>*/}
+              {/*<div className="rounded-2xl bg-white/5 p-6 ring-1 ring-white/10 backdrop-blur-sm">
                 <div className="flex items-center gap-2 border-b border-white/10 pb-4">
                   <div className="flex items-center gap-1.5">
                     <div className="h-3 w-3 rounded-full bg-rose-400/80" />
                     <div className="h-3 w-3 rounded-full bg-amber-400/80" />
                     <div className="h-3 w-3 rounded-full bg-emerald-400/80" />
                   </div>
-                  <CodeIcon className="ml-2 h-5 w-5 text-white/80" />
+                  <FigmaIcon className="ml-2 h-5 w-5 text-white/80" />
                   <span className="text-sm font-medium text-white/80">
-                    Live Implementation
+                    Felici House
                   </span>
                 </div>
-                <div className="mt-4 space-y-3 font-mono text-xs">
-                  <div className="rounded-lg bg-white/5 p-3 text-white/70">
-                    <span className="text-violet-300">font-family:</span>{' '}
-                    <span className="text-emerald-300">
-                      'Inter', sans-serif
-                    </span>
-                    ;
-                  </div>
-                  <div className="rounded-lg bg-white/5 p-3 text-white/70">
-                    <span className="text-violet-300">letter-spacing:</span>{' '}
-                    <span className="text-amber-300">-0.02em</span>;
-                  </div>
-                  <div className="rounded-lg bg-white/5 p-3 text-white/70">
-                    <span className="text-violet-300">transform:</span>{' '}
-                    <span className="text-emerald-300">scale(1.02)</span>;
-                  </div>
+                <div className="mt-4 space-y-3">
+                  <video
+                    src="/videos/felici-video.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="w-full rounded-lg"
+                  />
                 </div>
-              </div>
+              </div>*/}
             </div>
             <p className="relative mt-8 text-center text-sm text-white/50">
               {t('hero.caption')}
