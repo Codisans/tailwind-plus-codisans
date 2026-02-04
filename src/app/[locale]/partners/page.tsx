@@ -5,7 +5,6 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { Button } from '@/components/Button'
 import { GridPattern } from '@/components/GridPattern'
-import { Border } from '@/components/Border'
 import clsx from 'clsx'
 
 export async function generateMetadata({
@@ -30,21 +29,6 @@ function FigmaIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
       <path d="M15.332 8.668a3.333 3.333 0 0 0-3.333-3.334H12v6.667h.333a3.333 3.333 0 0 0 3-3.333zM8.668 5.334A3.333 3.333 0 0 0 5.335 8.67a3.333 3.333 0 0 0 3.333 3.333H12V5.334H8.668zM8.668 12.002a3.333 3.333 0 1 0 3.333 3.333v-3.333H8.668zM8.668 18.668A3.333 3.333 0 1 0 12 15.335v3.333H8.668zM15.332 12.002a3.333 3.333 0 1 1-3.333 3.333 3.333 3.333 0 0 1 3.333-3.333z" />
-    </svg>
-  )
-}
-
-function EyeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      {...props}
-    >
-      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
-      <circle cx="12" cy="12" r="3" />
     </svg>
   )
 }
@@ -147,22 +131,6 @@ function HandshakeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-function LayersIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      {...props}
-    >
-      <path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
-      <path d="M2 12.58a1 1 0 0 0 .6.92l8.6 3.91a2 2 0 0 0 1.62 0l8.48-3.9a1 1 0 0 0 .02-1.82L12.5 8.08a2 2 0 0 0-1.68 0L2.4 10.76a1 1 0 0 0-.4.82Z" />
-      <path d="M2 17.83a1 1 0 0 0 .6.92l8.6 3.91a2 2 0 0 0 1.62 0l8.48-3.9a1 1 0 0 0 .02-1.82L12.5 13.33a2 2 0 0 0-1.68 0L2.4 16.01a1 1 0 0 0-.4.82Z" />
-    </svg>
-  )
-}
-
 function SparklesIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
@@ -192,21 +160,6 @@ function ArrowRightIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     >
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />
-    </svg>
-  )
-}
-
-function CheckCircleIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      {...props}
-    >
-      <circle cx="12" cy="12" r="10" />
-      <path d="m9 12 2 2 4-4" />
     </svg>
   )
 }
@@ -808,20 +761,5 @@ export default async function PartnersPage() {
         </FadeIn>
       </Container>
     </RootLayout>
-  )
-}
-
-function CodeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      {...props}
-    >
-      <path d="m16 18 6-6-6-6" />
-      <path d="m8 6-6 6 6 6" />
-    </svg>
   )
 }
