@@ -365,7 +365,7 @@ export default async function PartnersPage() {
               </div>
               <div className="rounded-2xl">
                 <video
-                  src="/videos/felici-clip.mp4"
+                  src="/videos/felici-project.mov"
                   autoPlay
                   loop
                   muted
@@ -750,7 +750,22 @@ export default async function PartnersPage() {
         </div>
 
         <FadeIn className="mt-12 rounded-2xl bg-gradient-to-r from-amber-100/50 via-orange-50/50 to-rose-100/50 p-6 text-center ring-1 ring-orange-100">
-          <p className="text-sm text-orange-800">
+          <p className="justify-left flex items-center gap-4 text-sm text-orange-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+              />
+            </svg>
+
             {t('partnership.how-start')}
           </p>
         </FadeIn>

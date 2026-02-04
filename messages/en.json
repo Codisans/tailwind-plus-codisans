@@ -189,15 +189,15 @@
       "examples": {
         "1": {
           "context": "For an events catalog:",
-          "feature": "A fully-fledged recommendation engine that suggests relevant events based on user preferences and past interactions."
+          "feature": "A fully-fledged recommendations engine that suggests relevant events based on user preferences and past interactions"
         },
         "2": {
           "context": "For e-commerce:",
-          "feature": "Product descriptions that generate dynamically based on inventory and user behavior"
+          "feature": "SEO optimization that improves search engine rankings and increases organic traffic"
         },
         "3": {
           "context": "For content sites:",
-          "feature": "Smart content recommendations that actually understand context, not just tags"
+          "feature": "Clustering algorithms that group similar content together"
         }
       },
       "sell": "You sell the vision. We wire up the APIs and make it work.",
@@ -215,9 +215,9 @@
           "best-for": "Agencies with consistent project flow who want predictable capacity"
         },
         "2": {
-          "pricing": "Project-based collaboration",
-          "type": "Design-Build Handoff",
-          "description": "You handle strategy and design. Once Figma is signed off, you introduce us. We handle build, QA, and launch directly with the client, keeping you in the loop for design approval.",
+          "pricing": "Per-project",
+          "type": "Build Partner",
+          "description": "You handle strategy and design. After Figma sign-off, we take over build, QA, and launch—working directly with the client while keeping you looped on design decisions.",
           "best-for": "Agencies who want to stay design-focused without dev overhead"
         }
       }

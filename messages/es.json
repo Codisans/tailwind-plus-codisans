@@ -188,16 +188,16 @@
       "description": "No solo construimos páginas estáticas. Integramos IA de maneras que te permiten ofrecer más a clientes y cobrar en consecuencia.",
       "examples": {
         "1": {
-          "context": "Para un sitio web de bufete legal:",
-          "feature": "Barra de búsqueda que usa IA para responder preguntas legales basadas en su biblioteca de contenido"
+          "context": "Para un catálogo de eventos:",
+          "feature": "Un motor de recomendación completo que sugiere eventos relevantes basados en preferencias del usuario y sus interacciones pasadas."
         },
         "2": {
           "context": "Para e-commerce:",
-          "feature": "Descripciones de productos que se generan dinámicamente basadas en inventario y comportamiento de usuario"
+          "feature": "Optimización de SEO que mejora las puntuaciones de los motores de búsqueda y aumenta el tráfico orgánico"
         },
         "3": {
           "context": "Para sitios de contenido:",
-          "feature": "Recomendaciones de contenido inteligentes que realmente entienden contexto, no solo etiquetas"
+          "feature": "Algoritmos de agrupación que agrupan contenido similar juntos"
         }
       },
       "sell": "Tú vendes la visión. Nosotros conectamos las APIs y lo hacemos funcionar.",
