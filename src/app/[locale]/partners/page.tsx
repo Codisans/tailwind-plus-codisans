@@ -703,14 +703,14 @@ export default async function PartnersPage() {
         </div>
 
         <FadeIn className="mt-12 rounded-2xl bg-gradient-to-r from-amber-100/50 via-orange-50/50 to-rose-100/50 p-6 text-center ring-1 ring-orange-100">
-          <p className="justify-left flex items-center gap-4 text-sm text-orange-800">
+          <div className="justify-left flex items-center gap-4 text-sm text-orange-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6"
+              className="size-8 shrink-0 lg:size-6"
             >
               <path
                 strokeLinecap="round"
@@ -719,8 +719,10 @@ export default async function PartnersPage() {
               />
             </svg>
 
-            {t('partnership.how-start')}
-          </p>
+            <span className="text-left text-balance">
+              {t('partnership.how-start')}
+            </span>
+          </div>
         </FadeIn>
       </Container>
 
