@@ -31,6 +31,14 @@
     "case-studies": {
       "title": "Nuestras colaboraciones generan resultados duraderos y significativos:",
       "summary": "Creemos en la eficiencia y en aprovechar al máximo nuestros recursos para ofrecer el mayor valor posible a nuestros clientes."
+    },
+    "team-cta": {
+      "title": "Somos un equipo de desarrolladores apasionados por crear soluciones de software que generan impacto real.",
+      "subtitle": "Conoce más sobre lo que hacemos y quiénes somos:",
+      "about": "Nosotros",
+      "services": "Servicios",
+      "case-studies": "Casos de estudio",
+      "blog": "Blog"
     }
   },
   "AboutPage": {
@@ -387,7 +395,7 @@
     "our-work": "Proyectos",
     "phone": "Teléfono",
     "read-more": "Leer más",
-    "read-case-study": "Leer proyecto",
+    "read-case-study": "Ver proyecto",
     "see-all": "Ver todos",
     "service": "Servicio",
     "services-title": "Nos especializamos en crear páginas de marketing de alta calidad.",

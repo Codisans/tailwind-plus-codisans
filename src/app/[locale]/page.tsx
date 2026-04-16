@@ -91,24 +91,23 @@ export default async function Home({
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <h2 className="font-display text-3xl font-medium text-balance text-theme-950">
-          We're a team of developers who are passionate about building software
-          solutions that make an impact.
+          {t('HomePage.team-cta.title')}
         </h2>
         <p className="mt-6 max-w-3xl text-2xl text-theme-600">
-          Learn more about what we do and who we are:
+          {t('HomePage.team-cta.subtitle')}
         </p>
         <div className="flex gap-x-4 gap-y-2">
           <Button className="mt-6" href="/about">
-            About
+            {t('HomePage.team-cta.about')}
           </Button>
           <Button className="mt-6" href="/services">
-            Services
+            {t('HomePage.team-cta.services')}
           </Button>
           <Button className="mt-6" href="/work">
-            Case studies
+            {t('HomePage.team-cta.case-studies')}
           </Button>
           <Button className="mt-6" href="/blog">
-            Blog
+            {t('HomePage.team-cta.blog')}
           </Button>
         </div>
       </Container>
