@@ -31,6 +31,14 @@
     "case-studies": {
       "title": "Our client partnerships achieve lasting, meaningful results:",
       "summary": "We believe in efficiency and maximizing our resources to provide the best value to our clients."
+    },
+    "team-cta": {
+      "title": "We're a team of developers who are passionate about building software solutions that make an impact.",
+      "subtitle": "Learn more about what we do and who we are:",
+      "about": "About",
+      "services": "Services",
+      "case-studies": "Case studies",
+      "blog": "Blog"
     }
   },
   "AboutPage": {
