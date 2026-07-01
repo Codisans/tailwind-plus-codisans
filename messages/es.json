@@ -192,8 +192,8 @@
           "feature": "Un motor de recomendación completo que sugiere eventos relevantes basados en preferencias del usuario y sus interacciones pasadas."
         },
         "2": {
-          "context": "Para e-commerce:",
-          "feature": "Optimización de SEO que mejora las puntuaciones de los motores de búsqueda y aumenta el tráfico orgánico"
+          "context": "Para una tienda online:",
+          "feature": "Búsqueda que entiende lo que busca el cliente, no solo palabras clave. 'Una chaqueta abrigada para días de lluvia' igual encuentra los productos correctos."
         },
         "3": {
           "context": "Para una plataforma de noticias:",
