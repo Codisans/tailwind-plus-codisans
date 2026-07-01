@@ -183,14 +183,6 @@
         }
       }
     },
-    "proof": {
-      "title": "See the difference",
-      "left-label": "Approved Figma Design",
-      "left-caption": "Typography specs visible. Interaction notes in comments.",
-      "right-label": "Live Coded Result",
-      "right-caption": "Dev tools open showing matching CSS. Interaction working in real-time.",
-      "stat-line": "12 projects delivered in 18 months for design agencies. Zero missed deadlines."
-    },
     "ai": {
       "title": "We help you upsell AI capabilities",
       "description": "We don't just build static pages. We integrate AI in ways that let you offer more to clients and charge accordingly.",

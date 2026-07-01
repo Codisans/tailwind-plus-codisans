@@ -183,14 +183,6 @@
         }
       }
     },
-    "proof": {
-      "title": "Ve la diferencia",
-      "left-label": "Diseño Aprobado en Figma",
-      "left-caption": "Especificaciones de tipografía visibles. Notas de interacción en comentarios.",
-      "right-label": "Resultado Código en Vivo",
-      "right-caption": "Dev tools abiertos mostrando CSS idéntico. Interacción funcionando en tiempo real.",
-      "stat-line": "12 proyectos entregados en 18 meses para agencias de diseño. Cero plazos perdidos."
-    },
     "ai": {
       "title": "Te ayudamos a vender capacidades de IA",
       "description": "No solo construimos páginas estáticas. Integramos IA de maneras que te permiten ofrecer más a clientes y cobrar en consecuencia.",
