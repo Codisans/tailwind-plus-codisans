@@ -170,7 +170,7 @@
         "e-commerce": {
           "category": "E-Commerce",
           "title": "Shopify Hydrogen",
-          "description": "Standard Shopify themes kill creativity. We build headless Shopify stores using Hydrogen—you design the ultimate brand experience, we handle checkout and inventory behind the scenes.",
+          "description": "Standard Shopify themes kill creativity. We build headless Shopify stores using Hydrogen. You design the ultimate brand experience, we handle checkout and inventory behind the scenes.",
           "benefit": "No Liquid limitations. No theme constraints.",
           "timeline": "Typical timeline: 6-12 weeks"
         },
@@ -196,8 +196,8 @@
           "feature": "SEO optimization that improves search engine rankings and increases organic traffic"
         },
         "3": {
-          "context": "For content sites:",
-          "feature": "Clustering algorithms that group similar content together"
+          "context": "For a news platform:",
+          "feature": "A Ground News-style engine that auto-groups every article on a story. All sides in one place, no manual tagging."
         }
       },
       "sell": "You sell the vision. We wire up the APIs and make it work.",
@@ -217,7 +217,7 @@
         "2": {
           "pricing": "Per-project",
           "type": "Build Partner",
-          "description": "You handle strategy and design. After Figma sign-off, we take over build, QA, and launch—working directly with the client while keeping you looped on design decisions.",
+          "description": "You handle strategy and design. After Figma sign-off, we take over build, QA, and launch, working directly with the client while keeping you looped on design decisions.",
           "best-for": "Agencies who want to stay design-focused without dev overhead"
         }
       }

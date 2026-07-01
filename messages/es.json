@@ -121,7 +121,7 @@
       "promises": {
         "pixel-integrity": {
           "title": "Integridad de píxel",
-          "description": "Si configuras el tracking a -2%, lo codeamos a -2%. Tu archivo de Figma no es una sugerencia—es el plano."
+          "description": "Si configuras el tracking a -2%, lo codeamos a -2%. Tu archivo de Figma no es una sugerencia, es el plano."
         },
         "interaction-first": {
           "title": "Interacción primero",
@@ -170,7 +170,7 @@
         "e-commerce": {
           "category": "E-Commerce",
           "title": "Shopify Hydrogen",
-          "description": "Los temas estándar de Shopify matan la creatividad. Construimos tiendas Shopify headless usando Hydrogen—tú diseñas la experiencia de marca definitiva, nosotros manejamos checkout e inventario detrás de escena.",
+          "description": "Los temas estándar de Shopify matan la creatividad. Construimos tiendas Shopify headless usando Hydrogen. Tú diseñas la experiencia de marca definitiva, nosotros manejamos checkout e inventario detrás de escena.",
           "benefit": "Sin limitaciones de Liquid. Sin restricciones de tema.",
           "timeline": "Tiempo típico: 6-12 semanas"
         },
@@ -196,8 +196,8 @@
           "feature": "Optimización de SEO que mejora las puntuaciones de los motores de búsqueda y aumenta el tráfico orgánico"
         },
         "3": {
-          "context": "Para sitios de contenido:",
-          "feature": "Algoritmos de agrupación que agrupan contenido similar juntos"
+          "context": "Para una plataforma de noticias:",
+          "feature": "Un motor estilo Ground News que agrupa cada artículo sobre una noticia. Todos los ángulos en un lugar, sin etiquetado manual."
         }
       },
       "sell": "Tú vendes la visión. Nosotros conectamos las APIs y lo hacemos funcionar.",

@@ -457,7 +457,7 @@ export default async function PartnersPage() {
                   {
                     bg: 'from-emerald-50/60 via-white to-teal-50/60',
                     ring: 'ring-emerald-100',
-                    category: 'text-emerald-600',
+                    category: 'text-emerald-700',
                     benefitBg: 'bg-emerald-50/80',
                   },
                   {
@@ -580,7 +580,7 @@ export default async function PartnersPage() {
                   <p
                     className={clsx(
                       'text-xs font-semibold tracking-wider uppercase',
-                      index === 0 ? 'text-slate-300' : 'text-teal-600',
+                      index === 0 ? 'text-slate-300' : 'text-teal-700',
                     )}
                   >
                     {t(`partnership.models.${index + 1}.pricing`) ||
