@@ -3,12 +3,10 @@ import clsx from 'clsx'
 
 export function Logomark({
   invert = false,
-  filled = false,
   className,
   ...props
 }: React.ComponentPropsWithoutRef<'svg'> & {
   invert?: boolean
-  filled?: boolean
 }) {
   return (
     <svg

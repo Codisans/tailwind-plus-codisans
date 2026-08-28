@@ -29,10 +29,11 @@ export async function generateMetadata({
 }
 
 export default async function Statamic({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('CmsWebsitesPage')
   const caseStudies = await loadCaseStudies(locale, [
     'swid-studio',

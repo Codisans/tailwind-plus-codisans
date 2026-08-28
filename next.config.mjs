@@ -1,5 +1,5 @@
-import rehypeShiki from '@leafac/rehype-shiki'
 import nextMDX from '@next/mdx'
+import rehypeShiki from '@shikijs/rehype'
 import { Parser } from 'acorn'
 import jsx from 'acorn-jsx'
 import escapeStringRegexp from 'escape-string-regexp'
@@ -8,15 +8,18 @@ import { recmaImportImages } from 'recma-import-images'
 import remarkGfm from 'remark-gfm'
 import { remarkRehypeWrap } from 'remark-rehype-wrap'
 import remarkUnwrapImages from 'remark-unwrap-images'
-import shiki from 'shiki'
+import { createCssVariablesTheme } from 'shiki/core'
 import { unifiedConditional } from 'unified-conditional'
-import createNextIntlPlugin from 'next-intl/plugin';
+import createNextIntlPlugin from 'next-intl/plugin'
 
-const withNextIntl = createNextIntlPlugin();
+const withNextIntl = createNextIntlPlugin()
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  images: {
+    qualities: [75, 90],
+  },
 }
 
 function remarkMDXLayout(source, metaName) {
@@ -45,8 +48,9 @@ function remarkMDXLayout(source, metaName) {
 }
 
 export default async function config() {
-  let highlighter = await shiki.getHighlighter({
-    theme: 'css-variables',
+  const shikiTheme = createCssVariablesTheme({
+    name: 'css-variables',
+    variablePrefix: '--shiki-',
   })
 
   let withMDX = nextMDX({
@@ -54,7 +58,7 @@ export default async function config() {
     options: {
       recmaPlugins: [recmaImportImages],
       rehypePlugins: [
-        [rehypeShiki, { highlighter }],
+        [rehypeShiki, { theme: shikiTheme }],
         [
           remarkRehypeWrap,
           {

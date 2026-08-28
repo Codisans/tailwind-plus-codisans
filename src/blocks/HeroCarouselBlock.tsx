@@ -1,6 +1,5 @@
 'use client'
 
-import { type CaseStudy, type MDXEntry } from '@/lib/mdx'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { Link } from '@/i18n/navigation'
@@ -24,7 +23,6 @@ export type CardsBlockProps = {
   cards: Card[]
 }
 export const HeroCardsBlock = ({
-  eyebrow,
   title,
   summary,
   cards,

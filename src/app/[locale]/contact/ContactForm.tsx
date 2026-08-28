@@ -81,19 +81,3 @@ function TextInput({
     </div>
   )
 }
-
-function RadioInput({
-  label,
-  ...props
-}: React.ComponentPropsWithoutRef<'input'> & { label: string }) {
-  return (
-    <label className="flex gap-x-3">
-      <input
-        type="radio"
-        {...props}
-        className="h-6 w-6 flex-none appearance-none rounded-full border border-theme-950/20 outline-hidden checked:border-[0.5rem] checked:border-theme-950 focus-visible:ring-1 focus-visible:ring-theme-950 focus-visible:ring-offset-2"
-      />
-      <span className="text-base/6 text-theme-950">{label}</span>
-    </label>
-  )
-}

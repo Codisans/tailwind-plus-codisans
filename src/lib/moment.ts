@@ -52,7 +52,7 @@ moment.updateLocale('es', {
     // meridiemHour : function (hour, meridiem) {
     //     return /* 0-23 hour, given meridiem token and hour 1-12 */ ;
     // },
-    meridiem : function (hours, minutes, isLower) {
+    meridiem : function (hours) {
         return hours < 12 ? 'AM' : 'PM';
     },
     week : {

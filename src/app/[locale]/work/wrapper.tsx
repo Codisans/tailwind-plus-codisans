@@ -29,7 +29,6 @@ export default async function CaseStudyWrapper({
     .slice(0, 2)
 
   // Generate structured data for rich snippets
-  const slug = caseStudy.href.split('/').pop()
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',

@@ -20,7 +20,6 @@ export type CardsBlockProps = {
   cards: CaseStudyCard[]
 }
 export const HeroCardsBlock = ({
-  eyebrow,
   title,
   summary,
   cards,

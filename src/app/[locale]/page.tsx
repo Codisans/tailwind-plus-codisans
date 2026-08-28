@@ -25,10 +25,11 @@ export async function generateMetadata({
 }
 
 export default async function Home({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations()
   const caseStudies = await loadCaseStudies(locale, [
     'swid-studio',

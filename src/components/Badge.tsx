@@ -37,5 +37,5 @@ export function Badge({
   className,
   ...props
 }: BadgeProps & React.ComponentPropsWithoutRef<'span'>) {
-  return <span {...props} className={badgeClassName(color)} />
+  return <span {...props} className={clsx(badgeClassName(color), className)} />
 }

@@ -9,5 +9,6 @@ dist
 node_modules
 coverage
 *.log
+*.tsbuildinfo
 .vercel
 .turbo

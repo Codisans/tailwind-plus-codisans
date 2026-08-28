@@ -26,10 +26,11 @@ export async function generateMetadata({
   }
 }
 export default async function Shopify({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('EcommercePage')
   const caseStudies = await loadCaseStudies(locale, [
     'dcv87',

@@ -20,7 +20,7 @@ export function Header({
   icon: React.ComponentType<{ className?: string }>
   expanded: boolean
   onToggle: () => void
-  toggleRef: React.RefObject<HTMLButtonElement>
+  toggleRef: React.RefObject<HTMLButtonElement | null>
   invert?: boolean
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)!

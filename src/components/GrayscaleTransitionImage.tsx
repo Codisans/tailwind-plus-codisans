@@ -9,7 +9,7 @@ import {
   useTransform,
 } from 'framer-motion'
 
-const MotionImage = motion(Image)
+const MotionImage = motion.create(Image)
 
 export function GrayscaleTransitionImage(
   props: Pick<

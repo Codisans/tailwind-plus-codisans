@@ -1,13 +1,11 @@
 import { RootLayout } from '@/components/RootLayout'
 import { ListBlock } from '@/blocks/ListBlock'
-import laravelLogo from '@/images/logos/laravel-logotype.svg'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { getTranslations } from 'next-intl/server'
 import { loadCaseStudies } from '@/lib/mdx'
 import { SectionIntro } from '@/components/SectionIntro'
 import { ContactBlock } from '@/blocks/ContactBlock'
-import Image from 'next/image'
 import { ServiceHeader } from '@/blocks/ServiceHeader'
 import { CaseStudyCardsBlock } from '@/blocks/CaseStudyCardsBlock'
 import { CaseStudyCard } from '@/blocks/HeroCardsBlock'
@@ -27,10 +25,11 @@ export async function generateMetadata({
 }
 
 export default async function Laravel({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('LaravelPage')
   const caseStudies = await loadCaseStudies(locale, [
     'keai',

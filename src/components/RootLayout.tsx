@@ -56,8 +56,7 @@ function RootLayoutInner({
         <div
           className="absolute top-2 right-0 left-0 z-40 pt-14"
           aria-hidden={expanded ? 'true' : undefined}
-          // @ts-ignore (https://github.com/facebook/react/issues/17157)
-          inert={expanded ? '' : undefined}
+          inert={expanded || undefined}
         >
           <Header
             panelId={panelId}
@@ -80,8 +79,7 @@ function RootLayoutInner({
           style={{ height: expanded ? 'auto' : '0.5rem' }}
           className="relative z-50 overflow-hidden bg-theme-950 pt-2"
           aria-hidden={expanded ? undefined : 'true'}
-          // @ts-ignore (https://github.com/facebook/react/issues/17157)
-          inert={expanded ? undefined : ''}
+          inert={expanded ? undefined : true}
         >
           <motion.div layout className="bg-theme-800">
             <div ref={navRef} className="bg-theme-950 pt-14 pb-16">

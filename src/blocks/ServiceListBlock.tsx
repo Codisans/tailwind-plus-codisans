@@ -60,7 +60,7 @@ export const ServiceListBlock = ({
   const shapeKeys = Object.keys(serviceShapePaths)
 
   // Animation step function
-  const step = useCallback(() => {
+  const step = useCallback(function animateStep() {
     if (!normalizedPathsRef.current || !activePathRef.current) return
 
     // Calculate current step weights with smooth easing
@@ -89,7 +89,7 @@ export const ServiceListBlock = ({
       return
     }
 
-    animationFrameIdRef.current = requestAnimationFrame(step)
+    animationFrameIdRef.current = requestAnimationFrame(animateStep)
   }, [])
 
   // Start animation
@@ -127,8 +127,6 @@ export const ServiceListBlock = ({
   const handleMouseEnter = useCallback(
     (service: string) => {
       if (!svgRef.current) return
-
-      console.log('service', service)
 
       const shapeIndex = shapeKeys.indexOf(service)
       if (shapeIndex === -1 || shapeIndex === currentShapeIndexRef.current)
@@ -245,7 +243,9 @@ export const ServiceListBlock = ({
                 {items?.map((item, index) => (
                   <li
                     key={index}
-                    ref={(el) => (itemRefs.current[index] = el)}
+                    ref={(el) => {
+                      itemRefs.current[index] = el
+                    }}
                     className={clsx(
                       'group/card relative flex w-full',
                       item.service,

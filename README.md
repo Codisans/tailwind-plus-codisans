@@ -4,6 +4,8 @@ Studio is a [Tailwind Plus](https://tailwindcss.com/plus) site template built us
 
 ## Getting started
 
+This project requires Node.js 20.9 or newer.
+
 To get started with this template, first install the npm dependencies:
 
 ```bash

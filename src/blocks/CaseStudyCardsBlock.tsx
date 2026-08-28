@@ -1,4 +1,3 @@
-import { type CaseStudy, type MDXEntry } from '@/lib/mdx'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { Link } from '@/i18n/navigation'

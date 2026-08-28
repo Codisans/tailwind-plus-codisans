@@ -106,10 +106,11 @@ export async function generateMetadata({
 }
 
 export default async function Work({
-  params: { locale },
+  params,
 }: {
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }) {
+  const { locale } = await params
   const t = await getTranslations('WorkPage')
   let caseStudies = await loadCaseStudies(locale)
 
