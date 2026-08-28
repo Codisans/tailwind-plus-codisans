@@ -5,7 +5,7 @@ import { GrayscaleTransitionImage } from '@/components/GrayscaleTransitionImage'
 import { MDXComponents } from '@/components/MDXComponents'
 import { PageIntro } from '@/components/PageIntro'
 import { RootLayout } from '@/components/RootLayout'
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import { type CaseStudy, type MDXEntry, loadProjects } from '@/lib/mdx'
 import { getTranslations } from 'next-intl/server'
 import { ServiceTag } from '@/components/ServiceTag'
 import {
@@ -23,7 +23,7 @@ export default async function CaseStudyWrapper({
   locale?: string
 }) {
   const t = await getTranslations()
-  let allCaseStudies = await loadCaseStudies(locale)
+  const allCaseStudies = await loadProjects(locale)
   let moreCaseStudies = allCaseStudies
     .filter(({ metadata }) => metadata.title !== caseStudy.title)
     .slice(0, 2)
@@ -184,11 +184,10 @@ export default async function CaseStudyWrapper({
             service: caseStudy.service?.[0],
             date: caseStudy.date,
             title: caseStudy.title,
-            image:
-              (caseStudy.thumbnail?.src as string) ??
-              (caseStudy.image?.src as string),
+            image: caseStudy.thumbnail?.src ?? caseStudy.image.src,
             description: caseStudy.description,
             link: caseStudy.href,
+            external: caseStudy.isExternal,
           }))}
         />
       )}

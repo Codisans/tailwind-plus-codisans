@@ -1,5 +1,7 @@
 import { type ImageProps } from 'next/image'
 
+import { lightweightProjects } from '@/data/projects'
+
 // Import all blog posts statically
 import * as yourGpuEn from '../app/[locale]/blog/your-gpu-is-the-new-printing-press/page.en.mdx'
 import * as yourGpuEs from '../app/[locale]/blog/your-gpu-is-the-new-printing-press/page.es.mdx'
@@ -62,6 +64,26 @@ export interface CaseStudy {
     content: string
   }
   url?: string
+}
+
+export interface Project {
+  date: string
+  client: string
+  title: string
+  description: string
+  image: ImagePropsWithOptionalAlt
+  thumbnail?: ImagePropsWithOptionalAlt
+  logo?: ImageProps['src']
+  service: ServiceSlug[]
+  summary?: string[]
+  testimonial?: CaseStudy['testimonial']
+  url?: string
+}
+
+export type ProjectEntry = MDXEntry<Project> & {
+  slug: string
+  hasCaseStudy: boolean
+  isExternal: boolean
 }
 
 // Static blog post registry
@@ -227,11 +249,14 @@ export function loadCaseStudies(
     caseStudyRegistry[locale as keyof typeof caseStudyRegistry] ||
     caseStudyRegistry.en
 
-  const studies = slugs.length > 0 
-    ? caseStudies.filter((study) => slugs.includes(study.slug)).sort((a, b) => slugs.indexOf(a.slug) - slugs.indexOf(b.slug))
-    : caseStudies
+  const studies =
+    slugs.length > 0
+      ? caseStudies
+          .filter((study) => slugs.includes(study.slug))
+          .sort((a, b) => slugs.indexOf(a.slug) - slugs.indexOf(b.slug))
+      : caseStudies
 
-  const data =studies.map((study) => ({
+  const data = studies.map((study) => ({
     ...study.metadata,
     metadata: study.metadata,
     href: `/work/${study.slug}`,
@@ -239,6 +264,59 @@ export function loadCaseStudies(
   }))
 
   return Promise.resolve(data)
+}
+
+function localize(value: { en: string; es?: string }, locale: string): string {
+  return locale === 'es' ? (value.es ?? value.en) : value.en
+}
+
+export async function loadProjects(
+  locale: string = 'en',
+  slugs: string[] = [],
+): Promise<ProjectEntry[]> {
+  const caseStudies = await loadCaseStudies(locale)
+
+  const fullProjects: ProjectEntry[] = caseStudies.map((caseStudy) => ({
+    ...caseStudy,
+    slug: caseStudy.href.split('/').pop()!,
+    hasCaseStudy: true,
+    isExternal: false,
+  }))
+
+  const simpleProjects: ProjectEntry[] = lightweightProjects.map((project) => {
+    const title = localize(project.title, locale)
+    const description = localize(project.description, locale)
+    const metadata: Project = {
+      client: project.client,
+      title,
+      description,
+      summary: [description],
+      date: project.date,
+      image: { src: project.image, alt: title },
+      service: project.service,
+      url: project.url,
+    }
+
+    return {
+      ...metadata,
+      slug: project.slug,
+      href: project.url,
+      metadata,
+      isLocalized: locale === 'es',
+      hasCaseStudy: false,
+      isExternal: true,
+    }
+  })
+
+  const projects = [...fullProjects, ...simpleProjects]
+
+  if (slugs.length > 0) {
+    return projects
+      .filter((project) => slugs.includes(project.slug))
+      .sort((a, b) => slugs.indexOf(a.slug) - slugs.indexOf(b.slug))
+  }
+
+  return projects.sort((a, b) => b.date.localeCompare(a.date))
 }
 
 export async function loadCaseStudy(

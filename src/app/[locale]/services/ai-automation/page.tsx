@@ -2,7 +2,7 @@ import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
 import { Card, CardsBlock } from '@/blocks/CardsBlock'
 import { PromoListBlock } from '@/blocks/PromoListBlock'
-import { loadCaseStudies } from '@/lib/mdx'
+import { loadProjects } from '@/lib/mdx'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import { ServiceHeader } from '@/blocks/ServiceHeader'
 
@@ -27,10 +27,7 @@ export default async function Automation({
 }) {
   const { locale } = await params
   const t = await getTranslations('AutomationPage')
-  const caseStudies = await loadCaseStudies(locale, [
-    'nuestros-tiempos',
-    'keai',
-  ])
+  const caseStudies = await loadProjects(locale, ['nuestros-tiempos', 'keai'])
 
   return (
     <RootLayout className="ai-automation">
@@ -65,11 +62,10 @@ export default async function Automation({
           type: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
-          image:
-            (caseStudy.thumbnail?.src as string) ??
-            (caseStudy.image?.src as string),
+          image: caseStudy.thumbnail?.src ?? caseStudy.image.src,
           description: caseStudy.description,
           link: caseStudy.href,
+          external: caseStudy.isExternal,
         }))}
       />
 

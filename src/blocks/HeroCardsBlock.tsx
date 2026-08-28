@@ -2,15 +2,16 @@ import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { ServiceTag } from '@/components/ServiceTag'
 import { Link } from '@/i18n/navigation'
-import Image from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 
 export type CaseStudyCard = {
   service?: string
   title: string
   link: string
   date?: string
-  image: string
+  image: ImageProps['src']
   description: string
+  external?: boolean
 }
 
 export type CardsBlockProps = {
@@ -19,11 +20,7 @@ export type CardsBlockProps = {
   summary?: string
   cards: CaseStudyCard[]
 }
-export const HeroCardsBlock = ({
-  title,
-  summary,
-  cards,
-}: CardsBlockProps) => {
+export const HeroCardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
@@ -44,6 +41,9 @@ export const HeroCardsBlock = ({
                   <Link
                     className="absolute inset-0 rounded-3xl"
                     href={card.link}
+                    {...(card.external
+                      ? { target: '_blank', rel: 'noreferrer' }
+                      : {})}
                   >
                     <span className="sr-only">{card.title}</span>
                   </Link>

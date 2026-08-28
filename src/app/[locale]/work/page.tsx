@@ -8,7 +8,7 @@ import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
-import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
+import { type ProjectEntry, loadProjects } from '@/lib/mdx'
 import { RootLayout } from '@/components/RootLayout'
 import { getTranslations } from 'next-intl/server'
 
@@ -17,7 +17,7 @@ async function CaseStudies({
   caseStudies,
 }: {
   title: string
-  caseStudies: Array<MDXEntry<CaseStudy>>
+  caseStudies: ProjectEntry[]
 }) {
   const t = await getTranslations('global')
   return (
@@ -29,17 +29,29 @@ async function CaseStudies({
       </FadeIn>
       <div className="mt-10 space-y-20 sm:space-y-24 lg:space-y-32">
         {caseStudies.map((caseStudy) => (
-          <FadeIn key={caseStudy.client}>
+          <FadeIn key={caseStudy.slug}>
             <article>
               <Border className="grid grid-cols-3 gap-x-8 gap-y-8 pt-16">
                 <div className="col-span-full sm:flex sm:items-center sm:justify-between sm:gap-x-8 lg:col-span-1 lg:block">
                   <div className="sm:flex sm:items-center sm:gap-x-6 lg:block">
-                    <Image
-                      src={caseStudy.logo}
-                      alt=""
-                      className="h-16 max-w-40 flex-none object-contain object-left"
-                      unoptimized
-                    />
+                    {caseStudy.logo ? (
+                      <Image
+                        src={caseStudy.logo}
+                        alt=""
+                        className="h-16 max-w-40 flex-none object-contain object-left"
+                        unoptimized
+                      />
+                    ) : (
+                      <div className="relative aspect-4/3 overflow-hidden rounded-2xl bg-theme-100 sm:w-48 lg:w-full">
+                        <Image
+                          src={caseStudy.thumbnail?.src ?? caseStudy.image.src}
+                          alt={caseStudy.title}
+                          fill
+                          sizes="(min-width: 1024px) 25vw, (min-width: 640px) 12rem, 100vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
                     <h3 className="mt-6 text-sm font-semibold text-theme-950 sm:mt-0 lg:mt-8">
                       {caseStudy.client}
                     </h3>
@@ -57,19 +69,41 @@ async function CaseStudies({
                 </div>
                 <div className="col-span-full lg:col-span-2 lg:max-w-2xl">
                   <p className="font-display text-4xl font-medium text-theme-950">
-                    <Link href={caseStudy.href}>{caseStudy.title}</Link>
+                    <Link
+                      href={caseStudy.href}
+                      {...(caseStudy.isExternal
+                        ? { target: '_blank', rel: 'noreferrer' }
+                        : {})}
+                    >
+                      {caseStudy.title}
+                    </Link>
                   </p>
                   <div className="mt-6 space-y-6 text-base text-theme-600">
-                    {caseStudy.summary.map((paragraph) => (
-                      <p key={paragraph}>{paragraph}</p>
-                    ))}
+                    {(caseStudy.summary ?? [caseStudy.description]).map(
+                      (paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                      ),
+                    )}
                   </div>
                   <div className="mt-8 flex">
                     <Button
                       href={caseStudy.href}
-                      aria-label={`Read case study: ${caseStudy.client}`}
+                      aria-label={
+                        caseStudy.hasCaseStudy
+                          ? t('read-case-study-label', {
+                              client: caseStudy.client,
+                            })
+                          : t('view-project-label', {
+                              client: caseStudy.client,
+                            })
+                      }
+                      {...(caseStudy.isExternal
+                        ? { target: '_blank', rel: 'noreferrer' }
+                        : {})}
                     >
-                      {t('read-case-study')}
+                      {caseStudy.hasCaseStudy
+                        ? t('read-case-study')
+                        : t('view-project')}
                     </Button>
                   </div>
                   {caseStudy.testimonial && (
@@ -112,7 +146,7 @@ export default async function Work({
 }) {
   const { locale } = await params
   const t = await getTranslations('WorkPage')
-  let caseStudies = await loadCaseStudies(locale)
+  const caseStudies = await loadProjects(locale)
 
   return (
     <RootLayout>

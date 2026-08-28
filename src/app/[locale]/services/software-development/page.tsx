@@ -3,7 +3,7 @@ import { ListBlock } from '@/blocks/ListBlock'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { getTranslations } from 'next-intl/server'
-import { loadCaseStudies } from '@/lib/mdx'
+import { loadProjects } from '@/lib/mdx'
 import { SectionIntro } from '@/components/SectionIntro'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import { ServiceHeader } from '@/blocks/ServiceHeader'
@@ -31,10 +31,7 @@ export default async function Laravel({
 }) {
   const { locale } = await params
   const t = await getTranslations('LaravelPage')
-  const caseStudies = await loadCaseStudies(locale, [
-    'keai',
-    'nuestros-tiempos',
-  ])
+  const caseStudies = await loadProjects(locale, ['keai', 'nuestros-tiempos'])
 
   const services = [
     {
@@ -145,11 +142,10 @@ export default async function Laravel({
           service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
-          image:
-            (caseStudy.thumbnail?.src as string) ??
-            (caseStudy.image?.src as string),
+          image: caseStudy.thumbnail?.src ?? caseStudy.image.src,
           description: caseStudy.description,
           link: caseStudy.href,
+          external: caseStudy.isExternal,
         }))}
       />
 

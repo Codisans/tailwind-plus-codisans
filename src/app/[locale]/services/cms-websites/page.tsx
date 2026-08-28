@@ -5,7 +5,7 @@ import statamicScreenshot from '@/images/statamic-screenshot.png'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { getTranslations } from 'next-intl/server'
-import { loadCaseStudies } from '@/lib/mdx'
+import { loadProjects } from '@/lib/mdx'
 import { ContactBlock } from '@/blocks/ContactBlock'
 import Image from 'next/image'
 import { ServiceHeader } from '@/blocks/ServiceHeader'
@@ -35,7 +35,7 @@ export default async function Statamic({
 }) {
   const { locale } = await params
   const t = await getTranslations('CmsWebsitesPage')
-  const caseStudies = await loadCaseStudies(locale, [
+  const caseStudies = await loadProjects(locale, [
     'swid-studio',
     'felici-house',
     'sunday-chapter',
@@ -94,11 +94,10 @@ export default async function Statamic({
           service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
-          image:
-            (caseStudy.thumbnail?.src as string) ??
-            (caseStudy.image?.src as string),
+          image: caseStudy.thumbnail?.src ?? caseStudy.image.src,
           description: caseStudy.description,
           link: caseStudy.href,
+          external: caseStudy.isExternal,
         }))}
       />
 

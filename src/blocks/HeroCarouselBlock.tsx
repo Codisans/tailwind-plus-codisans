@@ -3,7 +3,7 @@
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { Link } from '@/i18n/navigation'
-import Image from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 
@@ -12,8 +12,9 @@ export type Card = {
   title: string
   link: string
   date?: string
-  image: string
+  image: ImageProps['src']
   description: string
+  external?: boolean
 }
 
 export type CardsBlockProps = {
@@ -22,11 +23,7 @@ export type CardsBlockProps = {
   summary?: string
   cards: Card[]
 }
-export const HeroCardsBlock = ({
-  title,
-  summary,
-  cards,
-}: CardsBlockProps) => {
+export const HeroCardsBlock = ({ title, summary, cards }: CardsBlockProps) => {
   const [emblaRef] = useEmblaCarousel({ dragFree: true }, [
     WheelGesturesPlugin(),
   ])
@@ -57,6 +54,9 @@ export const HeroCardsBlock = ({
                         <Link
                           className="absolute inset-0 rounded-3xl"
                           href={card.link}
+                          {...(card.external
+                            ? { target: '_blank', rel: 'noreferrer' }
+                            : {})}
                         >
                           <span className="sr-only">{card.title}</span>
                         </Link>

@@ -4,7 +4,7 @@ import { PromoListBlock } from '@/blocks/PromoListBlock'
 import { ListBlock } from '@/blocks/ListBlock'
 import heroImage from '@/images/shopify-screenshot.png'
 import { ContactBlock } from '@/blocks/ContactBlock'
-import { loadCaseStudies } from '@/lib/mdx'
+import { loadProjects } from '@/lib/mdx'
 import {
   CaseStudyCard,
   CaseStudyCardsBlock,
@@ -32,7 +32,7 @@ export default async function Shopify({
 }) {
   const { locale } = await params
   const t = await getTranslations('EcommercePage')
-  const caseStudies = await loadCaseStudies(locale, [
+  const caseStudies = await loadProjects(locale, [
     'dcv87',
     'la-torre-ambulante',
   ])
@@ -111,11 +111,10 @@ export default async function Shopify({
           service: caseStudy.service?.[0],
           date: caseStudy.date,
           title: caseStudy.title,
-          image:
-            (caseStudy.thumbnail?.src as string) ??
-            (caseStudy.image?.src as string),
+          image: caseStudy.thumbnail?.src ?? caseStudy.image.src,
           description: caseStudy.description,
           link: caseStudy.href,
+          external: caseStudy.isExternal,
         }))}
       />
 

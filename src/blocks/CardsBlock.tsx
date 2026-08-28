@@ -1,7 +1,7 @@
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
 import { Link } from '@/i18n/navigation'
-import Image from 'next/image'
+import Image, { type ImageProps } from 'next/image'
 import { SectionIntro } from '@/components/SectionIntro'
 
 export type Card = {
@@ -9,8 +9,9 @@ export type Card = {
   title: string
   link: string
   date?: string
-  image: string
+  image: ImageProps['src']
   description: string
+  external?: boolean
 }
 
 export type CardsBlockProps = {
@@ -45,7 +46,12 @@ export const CardsBlock = ({
             <FadeIn key={index} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl bg-white p-6 ring-1 ring-theme-950/5 transition hover:bg-theme-50 sm:p-8">
                 <h3>
-                  <Link href={card.link}>
+                  <Link
+                    href={card.link}
+                    {...(card.external
+                      ? { target: '_blank', rel: 'noreferrer' }
+                      : {})}
+                  >
                     <span className="absolute inset-0 rounded-3xl" />
                     <Image
                       src={card.image}
